@@ -45,7 +45,7 @@
 ### 准备预训练 tfrecords
 
     - max sentence length = 128
-    - dupe_factor = 2
+    - dupe_factor = 1
     
 ```bash
 
