@@ -24,7 +24,17 @@
 | :----: | :----: | :----: | 
 | char_no_space	     |      char_no_space_21128     |   char_no_space_10564      |   
 |  char_spaced       |     char_spaced_21128      |   char_spaced_10564    |   
-|  char_segmented       |       char_segmented_21128    |     char_segmented_10564       |   
+|  char_segmented       |       char_segmented_21128    |     char_segmented_10564       |
+
+```bash
+# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_segmented_21128-vocab.txt
+# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_segmented_10564-vocab.txt
+# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_segmented_5282-vocab.txt
+# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_spaced_21128-vocab.txt
+# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_spaced_10564-vocab.txt
+# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_spaced_5282-vocab.txt
+
+```
 
 
 ### 准备预训练 tfrecords

@@ -8,11 +8,11 @@ __pycache__/
 .idea/*
 experiments/*
 
-*.tsv
-*.raw
+# *.tsv
+# *.raw
 *.txt
-*.jsonl
-datasets/*
+# *.jsonl
+# datasets/*
 
 
 # Distribution / packaging
