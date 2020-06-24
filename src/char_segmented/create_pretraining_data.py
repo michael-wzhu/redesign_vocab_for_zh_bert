@@ -748,4 +748,4 @@ if __name__ == "__main__":
     # flags.mark_flag_as_required("bert_tokenizer_name")
     tf.app.run()
 
-    # c
+    # python3 src/char_spaced/create_pretraining_data.py --input_file=datasets/zh_sample/wiki.valid.raw --output_file=experiments/zh_sample/wiki.valid.%s.tfrecord --do_lower_case=True --do_whole_word_mask=True --max_seq_length=128 --max_predictions_per_seq=13 --masked_lm_prob=0.1 --dupe_factor=2 --vocab_file data_proc/tokenizers/sentencepiece/char_segmented-21128-clean.vocab --spm_model_file data_proc/tokenizers/sentencepiece/char_segmented-21128-clean.model
