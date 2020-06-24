@@ -31,7 +31,7 @@ import tensorflow.compat.v1 as tf
 
 import sys
 sys.path.append("./")
-from src.char_segmented.text_utils import tokenize_single_sent
+from src.char_segmented.text_utils import tokenize_single_sent, printable_text
 from src import tokenization
 
 
