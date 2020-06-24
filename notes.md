@@ -36,12 +36,8 @@
 |  char_segmented       |       char_segmented_21128    |     char_segmented_10564       |
 
 ```bash
-# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_segmented_21128-vocab.txt
-# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_segmented_10564-vocab.txt
-# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_segmented_5282-vocab.txt
-# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_spaced_21128-vocab.txt
-# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_spaced_10564-vocab.txt
-# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/char_spaced_5282-vocab.txt
+# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/sentencepiece/char_segmented-21128-clean.model
+# /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/sentencepiece/char_segmented-21128-clean.vocab
 
 ```
 
