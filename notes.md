@@ -57,7 +57,7 @@ python3 src/char_spaced/create_pretraining_data.py --input_file=datasets/zh_samp
 
 $ export PROJECT_NAME=subchar-transformers
 $ gcloud config set project ${PROJECT_NAME}
-$ ctpu up --tpu-size=v3-8 --machine-type=n1-standard-16 --zone=europe-west4-a --tf-version=1.15 --name=h-bert-0
+$ ctpu up --tpu-size=v3-8 --machine-type=n1-standard-2 --zone=europe-west4-a --tf-version=1.15 --name=h-bert-1
 
 
 # char_spaced, vocab=21128

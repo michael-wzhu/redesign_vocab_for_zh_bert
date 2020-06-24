@@ -10,7 +10,8 @@ sys.path.append("./")
 
 if __name__ == "__main__":
 
-    vocab_sizes = [21128]
+    vocab_sizes = [10564]
+    # vocab_sizes = [21128]
     # vocab_sizes = [31692]
     prefixes = [
 
