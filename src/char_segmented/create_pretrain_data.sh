@@ -8,7 +8,9 @@ pip3 install boto3
 
 export STORAGE_BUCKET=gs://sbt0
 PREFIX=char_segmented
-VOCAB_SIZE=21128
+# VOCAB_SIZE=21128
+VOCAB_SIZE=31692
+# VOCAB_SIZE=10564
 
 
 # NUM_PROC=218
