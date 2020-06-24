@@ -27,16 +27,12 @@ import six
 import tqdm
 from six.moves import range
 import tensorflow.compat.v1 as tf
-# import tensorflow as tf
 
 import sys
-
-from src.char_segmented.text_utils import printable_text
-
 sys.path.append("./")
 from src.char_spaced.text_utils import tokenize_single_sent
-from src.tokenization_bert import BertTokenizer
 from src import tokenization
+from src.char_segmented.text_utils import printable_text
 
 
 flags = tf.flags
@@ -296,7 +292,7 @@ def create_training_instances(input_files,
                     line,
                     tokenizer=tokenizer
                 )
-                print(tokens)
+                # print(tokens)
                 if tokens:
                     all_documents[-1].append(tokens)
 
