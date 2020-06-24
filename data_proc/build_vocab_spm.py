@@ -10,7 +10,8 @@ sys.path.append("./")
 
 if __name__ == "__main__":
 
-    vocab_sizes = [21128, 10564, 31692]
+    # vocab_sizes = [21128, 10564, 31692]
+    vocab_sizes = [31692]
     prefixes = [
 
         "char_segmented",
