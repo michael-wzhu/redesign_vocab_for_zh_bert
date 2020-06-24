@@ -1,0 +1,5 @@
+sentencepiece
+tokenizers
+jieba
+boto3
+tensorflow_hub
