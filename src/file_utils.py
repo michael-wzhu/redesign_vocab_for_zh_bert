@@ -28,7 +28,6 @@ from tqdm.auto import tqdm
 
 from src.char_spaced import __version__
 
-
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 try:
@@ -90,7 +89,6 @@ TF2_WEIGHTS_NAME = "tf_model.h5"
 TF_WEIGHTS_NAME = "model.ckpt"
 CONFIG_NAME = "config.json"
 MODEL_CARD_NAME = "modelcard.json"
-
 
 MULTIPLE_CHOICE_DUMMY_INPUTS = [[[0], [1]], [[0], [1]]]
 DUMMY_INPUTS = [[7, 6, 0, 0, 1], [1, 2, 3, 0, 0], [0, 0, 0, 4, 5]]
@@ -206,15 +204,15 @@ def filename_to_url(filename, cache_dir=None):
 
 
 def cached_path(
-    url_or_filename,
-    cache_dir=None,
-    force_download=False,
-    proxies=None,
-    resume_download=False,
-    user_agent=None,
-    extract_compressed_file=False,
-    force_extract=False,
-    local_files_only=False,
+        url_or_filename,
+        cache_dir=None,
+        force_download=False,
+        proxies=None,
+        resume_download=False,
+        user_agent=None,
+        extract_compressed_file=False,
+        force_extract=False,
+        local_files_only=False,
 ) -> Optional[str]:
     """
     Given something that might be a URL (or might be a local path),
@@ -380,14 +378,14 @@ def http_get(url, temp_file, proxies=None, resume_size=0, user_agent=None):
 
 
 def get_from_cache(
-    url,
-    cache_dir=None,
-    force_download=False,
-    proxies=None,
-    etag_timeout=10,
-    resume_download=False,
-    user_agent=None,
-    local_files_only=False,
+        url,
+        cache_dir=None,
+        force_download=False,
+        proxies=None,
+        etag_timeout=10,
+        resume_download=False,
+        user_agent=None,
+        local_files_only=False,
 ) -> Optional[str]:
     """
     Given a URL, look for the corresponding file in the local cache.

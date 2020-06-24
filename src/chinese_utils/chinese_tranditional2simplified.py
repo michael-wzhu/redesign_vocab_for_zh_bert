@@ -1,4 +1,3 @@
-
 from src.chinese_utils.langconv import *
 
 
@@ -12,7 +11,7 @@ def traditional2simplified(sentence):
     return sentence
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     # traditional_sentence = '憂郁的臺灣烏龜'
     traditional_sentence = '褲的台湾乌龟'
     simplified_sentence = traditional2simplified(traditional_sentence)

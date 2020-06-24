@@ -29,11 +29,11 @@ from six.moves import range
 import tensorflow.compat.v1 as tf
 
 import sys
+
 sys.path.append("./")
 from src.char_no_space.text_utils import tokenize_single_sent
 from src import tokenization
 from src.char_no_space.text_utils import printable_text
-
 
 flags = tf.flags
 
@@ -242,9 +242,9 @@ def write_instance_to_example_files(instances,
     tf.logging.info("Wrote %d total instances", total_written)
 
 
-#生成字符串属性
+# 生成字符串属性
 def create_byte_feature(value):
-    return tf.train.Feature(bytes_list = tf.train.BytesList(value=[value]))
+    return tf.train.Feature(bytes_list=tf.train.BytesList(value=[value]))
 
 
 def create_int_feature(values):
@@ -265,7 +265,7 @@ def create_training_instances(input_files,
                               short_seq_prob,
                               masked_lm_prob,
                               max_predictions_per_seq,
-                              rng,):
+                              rng, ):
     """Create `TrainingInstance`s from raw text."""
     all_documents = [[]]
     count = 0
@@ -325,7 +325,7 @@ def create_training_instances(input_files,
         write_instance_to_example_files(instances, tokenizer,
                                         FLAGS.max_seq_length,
                                         FLAGS.max_predictions_per_seq,
-                                        [output_file_i],)
+                                        [output_file_i], )
 
 
 def create_instances_from_document(
@@ -740,6 +740,7 @@ def main(_):
         FLAGS.max_predictions_per_seq,
         rng,
     )
+
 
 if __name__ == "__main__":
     flags.mark_flag_as_required("input_file")
