@@ -13,8 +13,9 @@ if __name__ == "__main__":
     # vocab_sizes = [5000, 10000, 15000, 20000, 25000, 30000]
     vocab_sizes = [21128, 10564]
     prefixes = [
-        "char_spaced",
+
         "char_segmented",
+        "char_spaced",
     ]
 
     STORAGE_BUCKET = "gs://sbt0"
