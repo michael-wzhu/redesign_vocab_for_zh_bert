@@ -19,18 +19,16 @@ if __name__ == "__main__":
 
     STORAGE_BUCKET = "gs://sbt0"
 
+
+
     for prefix in prefixes:
-        input_dir_gs = os.path.join(
-            STORAGE_BUCKET,
-            "data/corpus/%s_lower/zhwiki-latest-pages-articles_%s_lower_simplified.txt" % (prefix, prefix)
-        )
-        input_dir_local = "./tmp/zhwiki-latest-pages-articles_%s_lower_simplified.txt" % prefix
-        tf.gfile.Copy(input_dir_gs, input_dir_local, overwrite=True)
-
-
-    for vocab_size in vocab_sizes:
-        for prefix in prefixes:
-            # )
+        for vocab_size in vocab_sizes:
+            input_dir_gs = os.path.join(
+                STORAGE_BUCKET,
+                "data/corpus/%s_lower/zhwiki-latest-pages-articles_%s_lower_simplified.txt" % (prefix, prefix)
+            )
+            input_dir_local = "./tmp/zhwiki-latest-pages-articles_%s_lower_simplified.txt" % prefix
+            tf.gfile.Copy(input_dir_gs, input_dir_local, overwrite=True)
 
             try:
                 spm.SentencePieceTrainer.train(
