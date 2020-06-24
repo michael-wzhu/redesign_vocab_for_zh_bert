@@ -19,8 +19,8 @@ if __name__ == "__main__":
     vocab_sizes = [21128, 10564, 5282]
     prefixes = [
         "char_no_space",
-        # "char_spaced",
-        # "char_segmented",
+        "char_spaced",
+        "char_segmented",
     ]
 
     STORAGE_BUCKET = "gs://sbt0"
@@ -38,7 +38,8 @@ if __name__ == "__main__":
             try:
                 tokenizer_name = prefix + "_" + str(vocab_size)
                 tokenizer = BertWordPieceTokenizer(
-                    handle_chinese_chars=False
+                    handle_chinese_chars=False,
+                    clean_text=True
                 )
 
                 tokenizer.train(
