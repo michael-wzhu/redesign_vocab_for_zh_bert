@@ -36,7 +36,7 @@ if __name__ == "__main__":
     for vocab_size in vocab_sizes:
         for prefix in prefixes:
             try:
-                tokenizer_name = prefix + "_" + str(vocab_sizes)
+                tokenizer_name = prefix + "_" + str(vocab_size)
                 tokenizer = BertWordPieceTokenizer(
                     handle_chinese_chars=False
                 )
@@ -44,6 +44,7 @@ if __name__ == "__main__":
                 tokenizer.train(
                     [
                         "./zhwiki-latest-pages-articles_%s_lower.txt" % prefix
+                        # "./zhwiki-latest-pages-articles_lower.txt"
                     ],
                     vocab_size=vocab_size,
                     show_progress=True
