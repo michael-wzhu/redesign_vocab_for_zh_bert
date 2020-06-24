@@ -37,14 +37,28 @@ if __name__ == "__main__":
     for i in range(num_files):
         file_ = os.path.join(
             STORAGE_BUCKET,
-            "data/corpus/subchar_segmented_lower/zhwiki-latest-pages-articles_%d_subchar_segmented_lower.txt" % (i + 1)
+            "data/corpus/char_no_space_lower/zhwiki-latest-pages-articles_%d_char_no_space_lower_simplified.txt" % (i + 1)
         )
         list_files_.append(file_)
 
     to_dir_ = os.path.join(
         STORAGE_BUCKET,
-        "data/corpus/subchar_segmented_lower/zhwiki-latest-pages-articles_subchar_segmented_lower.txt")
+        "data/corpus/char_no_space_lower/zhwiki-latest-pages-articles_char_no_space_lower_simplified.txt")
     txt_files2file(list_files_, to_dir_)
+
+    # list_files_ = []
+    # num_files = 218
+    # for i in range(num_files):
+    #     file_ = os.path.join(
+    #         STORAGE_BUCKET,
+    #         "data/corpus/subchar_segmented_lower/zhwiki-latest-pages-articles_%d_subchar_segmented_lower.txt" % (i + 1)
+    #     )
+    #     list_files_.append(file_)
+    #
+    # to_dir_ = os.path.join(
+    #     STORAGE_BUCKET,
+    #     "data/corpus/subchar_segmented_lower/zhwiki-latest-pages-articles_subchar_segmented_lower.txt")
+    # txt_files2file(list_files_, to_dir_)
 
     # list_files_ = []
     # num_files = 218
