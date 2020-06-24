@@ -46,6 +46,7 @@ if __name__ == "__main__":
                         "./zhwiki-latest-pages-articles_%s_lower.txt" % prefix
                     ],
                     vocab_size=vocab_size,
+                    show_progress=True
 
                 )
                 tokenizer.save("data_proc/tokenizers", tokenizer_name)
