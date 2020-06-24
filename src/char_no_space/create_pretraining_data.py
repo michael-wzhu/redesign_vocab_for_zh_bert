@@ -30,9 +30,9 @@ import tensorflow.compat.v1 as tf
 
 import sys
 sys.path.append("./")
-from src.char_spaced.text_utils import tokenize_single_sent
+from src.char_no_space.text_utils import tokenize_single_sent
 from src import tokenization
-from src.char_spaced.text_utils import printable_text
+from src.char_no_space.text_utils import printable_text
 
 
 flags = tf.flags
