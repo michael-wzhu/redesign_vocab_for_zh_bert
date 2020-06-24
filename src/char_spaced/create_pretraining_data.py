@@ -20,21 +20,23 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 import collections
-import json
 import random
 
 import numpy as np
 import six
 import tqdm
 from six.moves import range
-from six.moves import zip
 import tensorflow.compat.v1 as tf
 # import tensorflow as tf
 
 import sys
+
+
+
 sys.path.append("./")
 from src.char_spaced.text_utils import tokenize_single_sent
-from src.char_spaced.tokenization_bert import BertTokenizer
+from src.tokenization_bert import BertTokenizer
+from src import tokenization
 
 
 flags = tf.flags
@@ -716,6 +718,10 @@ def main(_):
     )
     bpe_tokenizer.tokenize_chinese_chars = False
     print("bpe_tokenizer.tokenize_chinese_chars: ", bpe_tokenizer.tokenize_chinese_chars)
+
+    tokenizer = tokenization.FullTokenizer(
+        vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case,
+        spm_model_file=FLAGS.spm_model_file)
 
     input_files = []
     for input_pattern in FLAGS.input_file.split(","):

@@ -26,7 +26,7 @@ from typing import List, Optional, Tuple, Union
 
 from tokenizers.implementations import BaseTokenizer
 
-from .file_utils import cached_path, hf_bucket_url, is_remote_url, is_tf_available, is_torch_available
+from src.char_spaced.file_utils import cached_path, hf_bucket_url, is_remote_url, is_tf_available, is_torch_available
 
 
 if is_tf_available():
