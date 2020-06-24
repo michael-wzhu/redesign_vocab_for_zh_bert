@@ -24,29 +24,21 @@ if __name__ == "__main__":
             STORAGE_BUCKET,
             "data/corpus/%s_lower/zhwiki-latest-pages-articles_%s_lower_simplified.txt" % (prefix, prefix)
         )
-        input_dir_local = "./zhwiki-latest-pages-articles_%s.txt" % prefix
+        input_dir_local = "./tmp/zhwiki-latest-pages-articles_%s_lower_simplified.txt" % prefix
         tf.gfile.Copy(input_dir_gs, input_dir_local, overwrite=True)
 
 
     for vocab_size in vocab_sizes:
         for prefix in prefixes:
-            # print("spm_train --input=zhwiki-latest-pages-articles_%s_small.txt --model_prefix=./resources/tokenizer/%s-%d-clean --vocab_size=%d --pad_id=0 --unk_id=1 --eos_id=-1 --bos_id=-1 --control_symbols=[CLS],[SEP],[MASK] --user_defined_symbols='(,),”,-,.,–,£,€' --shuffle_input_sentence=true --input_sentence_size=3000000 --model_type=bpe --num_threads=32" % (prefix, prefix, vocab_size, vocab_size)
             # )
 
             try:
                 spm.SentencePieceTrainer.train(
-                    '--input=zhwiki-latest-pages-articles_%s_small.txt --model_prefix=./resources/tokenizer/%s-%d-clean --vocab_size=%d --pad_id=0 --unk_id=1 --eos_id=-1 --bos_id=-1 --control_symbols=[CLS],[SEP],[MASK] --user_defined_symbols=(,),”,-,.,–,£,€ --shuffle_input_sentence=true --input_sentence_size=4000000 --model_type=bpe --num_threads=32' % (
+                    '--input=./tmp/zhwiki-latest-pages-articles_%s_lower_simplified.txt --model_prefix=./data_proc/tokenizers/sentencepiece/%s-%d-clean --vocab_size=%d --pad_id=0 --unk_id=1 --eos_id=-1 --bos_id=-1 --control_symbols=[CLS],[SEP],[MASK] --user_defined_symbols=(,),”,-,.,–,£,€ --shuffle_input_sentence=true --input_sentence_size=30000000 --model_type=bpe --num_threads=12' % (
                     prefix, prefix, vocab_size, vocab_size)
                 )
 
             except Exception as e:
                 print(e)
-                try:
-                    spm.SentencePieceTrainer.train(
-                        '--input=zhwiki-latest-pages-articles_%s_small.txt --model_prefix=./resources/tokenizer/%s-%d-clean --vocab_size=%d --pad_id=0 --unk_id=1 --eos_id=-1 --bos_id=-1 --control_symbols=[CLS],[SEP],[MASK] --user_defined_symbols=(,),”,-,.,–,£,€ --shuffle_input_sentence=true --input_sentence_size=4000000 --model_type=bpe --character_coverage=0.98 --num_threads=32' % (
-                            prefix, prefix, vocab_size, vocab_size)
-                    )
 
-                except Exception as e:
-                    print(e)
 
