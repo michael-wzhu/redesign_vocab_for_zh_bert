@@ -68,7 +68,7 @@ $ ctpu up --tpu-size=v3-8 --machine-type=n1-standard-16 --zone=europe-west4-a --
 
 # char_segmented, vocab=21128
 
-nohup ./src/char_segmented/create_pretrain_data.sh > pretrain_data_char_segmented_21128.log &
+nohup ./src/char_segmented/scripts/create_pretrain_data.sh > pretrain_data_char_segmented.log &
 
 # char_segmented, vocab=10564
 
