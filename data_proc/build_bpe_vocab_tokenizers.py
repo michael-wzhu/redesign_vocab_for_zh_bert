@@ -37,8 +37,8 @@ if __name__ == "__main__":
         for prefix in prefixes:
             try:
                 tokenizer_name = prefix + "_" + str(vocab_size)
-                tokenizer = BertWordPieceTokenizer(
-                    handle_chinese_chars=False
+                tokenizer = SentencePieceBPETokenizer(
+
                 )
 
                 tokenizer.train(
@@ -49,9 +49,10 @@ if __name__ == "__main__":
                     vocab_size=vocab_size,
                     show_progress=True,
                     min_frequency=1,
+                    special_tokens=["<unk>", "[SEP]", "[CLS]", "[PAD]", "[MASK]"]
 
                 )
-                tokenizer.save("data_proc/tokenizers/wordpiece", tokenizer_name)
+                tokenizer.save("data_proc/tokenizers/sentencepiece", tokenizer_name)
 
             except Exception as e:
                 print(e)

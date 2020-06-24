@@ -47,5 +47,20 @@
 # debug
 python3 src/char_spaced/create_pretraining_data.py --input_file=datasets/zh_sample/wiki.valid.raw --output_file=experiments/zh_sample/wiki.valid.%s.tfrecord --do_lower_case=True --do_whole_word_mask=True --max_seq_length=128 --max_predictions_per_seq=13 --masked_lm_prob=0.1 --dupe_factor=2 --bert_tokenizer_name data_proc/tokenizers/char_spaced_21128-vocab.txt
 
+
+# 启动VMs
+
+$ export PROJECT_NAME=subchar-transformers
+$ gcloud config set project ${PROJECT_NAME}
+$ ctpu up --tpu-size=v3-8 --machine-type=n1-standard-16 --zone=europe-west4-a --tf-version=1.15 --name=h-bert-0
+
+
+# char_no_space, vocab=21128
+
+# char_spaced, vocab=21128
+
+# char_segmented, vocab=21128
+
+
 ```
 
