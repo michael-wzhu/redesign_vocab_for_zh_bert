@@ -14,10 +14,19 @@
     - data_proc/char2char_segmented_mp.sh
     - outputs: ${STORAGE_BUCKET}/data/corpus/char_segmented_lower/zhwiki-latest-pages-articles_${i}_char_segmented_lower.txt
 
+3. 合并文件
+    - data_proc/merge_file_utils.py
+
+
 
 ### 建立词汇表
 
-    - nohup python3 data_proc/build_wp_vocab_tokenizers.py > build_vocab_0624.log &
+'''bash
+
+- nohup python3 data_proc/build_vocab_spm.py > build_vocab_0624.log &
+
+'''
+    
 
 
 |  | #vocab=21128 | #vocab=10564 |  #vocab=5282   |
