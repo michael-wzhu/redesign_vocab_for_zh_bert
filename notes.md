@@ -17,7 +17,7 @@
 
 ### 建立词汇表
 
-vocab = 21128; or  #vocab=10564
+    - nohup python3 data_proc/build_wp_vocab_tokenizers.py > build_vocab_0624.log &
 
 
 |  | #vocab=21128 | #vocab=10564 |  #vocab=5282   |
