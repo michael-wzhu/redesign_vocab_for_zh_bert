@@ -30,12 +30,8 @@ import tensorflow.compat.v1 as tf
 # import tensorflow as tf
 
 import sys
-
-
-
 sys.path.append("./")
-from src.char_spaced.text_utils import tokenize_single_sent
-from src.tokenization_bert import BertTokenizer
+from src.char_segmented.text_utils import tokenize_single_sent
 from src import tokenization
 
 
