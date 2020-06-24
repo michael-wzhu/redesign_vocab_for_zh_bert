@@ -14,7 +14,7 @@ import sys
 sys.path.append("./")
 
 
-if __name__ == "__name__":
+if __name__ == "__main__":
 
     vocab_sizes = [21128, 10564, 5282]
     prefixes = [
