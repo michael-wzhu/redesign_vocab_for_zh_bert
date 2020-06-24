@@ -292,7 +292,7 @@ def create_training_instances(input_files,
                     line,
                     tokenizer=tokenizer
                 )
-                # print(tokens)
+                print(tokens)
                 if tokens:
                     all_documents[-1].append(tokens)
 
