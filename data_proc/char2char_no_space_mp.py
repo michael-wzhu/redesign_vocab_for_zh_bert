@@ -15,6 +15,7 @@ import tqdm
 import tensorflow.compat.v1 as tf
 
 sys.path.append("./")
+from src.chinese_utils.chinese_tranditional2simplified import traditional2simplified
 
 
 def drop_extra_blank(sent):
@@ -77,6 +78,9 @@ def char2comp_file(txt_file, to_file, do_lower_case=1):
                         sent_new_ = sent.lower()
                     else:
                         sent_new_ = sent
+
+                    # 繁体转简体
+                    sent_new_ = traditional2simplified(sent_new_)
 
                     out_f.write(sent_new_ + "\n")
 
