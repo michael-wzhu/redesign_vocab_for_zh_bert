@@ -289,12 +289,12 @@ def create_training_instances(input_files,
                 if not line:
                     all_documents.append([])
 
-                print(line)
+                # print(line)
                 tokens = tokenize_single_sent(
                     line,
                     tokenizer=tokenizer
                 )
-                print(tokens)
+                # print(tokens)
                 if tokens:
                     all_documents[-1].append(tokens)
 
