@@ -23,7 +23,7 @@ pip3 install sklearn
 # run task
 
 echo "Start running..."
-RUN_TIMES=1
+RUN_TIMES=11
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
     python3 src/char_no_space/run_classifier.py \
@@ -44,7 +44,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --learning_rate=2e-5 \
       --warmup_step=250 \
       --save_checkpoints_steps=300 \
-      --train_step=3600 \
+      --train_step=6000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
       --num_tpu_cores=1 \
