@@ -1,0 +1,837 @@
+INFO:tensorflow:*** Input Files ***
+I0625 01:41:42.937731 140173119637248 run_pretraining.py:498] *** Input Files ***
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_100_0.tfrecord
+I0625 01:41:42.939358 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_100_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_101_0.tfrecord
+I0625 01:41:42.939459 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_101_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_102_0.tfrecord
+I0625 01:41:42.939518 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_102_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_103_0.tfrecord
+I0625 01:41:42.939571 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_103_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_104_0.tfrecord
+I0625 01:41:42.939621 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_104_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_105_0.tfrecord
+I0625 01:41:42.939670 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_105_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_106_0.tfrecord
+I0625 01:41:42.939719 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_106_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_107_0.tfrecord
+I0625 01:41:42.939768 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_107_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_108_0.tfrecord
+I0625 01:41:42.939816 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_108_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_109_0.tfrecord
+I0625 01:41:42.939864 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_109_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_10_0.tfrecord
+I0625 01:41:42.939912 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_10_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_110_0.tfrecord
+I0625 01:41:42.940028 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_110_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_111_0.tfrecord
+I0625 01:41:42.940085 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_111_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_112_0.tfrecord
+I0625 01:41:42.940146 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_112_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_113_0.tfrecord
+I0625 01:41:42.940207 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_113_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_114_0.tfrecord
+I0625 01:41:42.940256 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_114_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_115_0.tfrecord
+I0625 01:41:42.940303 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_115_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_116_0.tfrecord
+I0625 01:41:42.940351 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_116_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_117_0.tfrecord
+I0625 01:41:42.940399 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_117_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_118_0.tfrecord
+I0625 01:41:42.940447 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_118_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_119_0.tfrecord
+I0625 01:41:42.940494 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_119_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_11_0.tfrecord
+I0625 01:41:42.940542 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_11_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_120_0.tfrecord
+I0625 01:41:42.940590 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_120_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_121_0.tfrecord
+I0625 01:41:42.940637 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_121_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_122_0.tfrecord
+I0625 01:41:42.940685 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_122_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_123_0.tfrecord
+I0625 01:41:42.940732 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_123_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_124_0.tfrecord
+I0625 01:41:42.940779 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_124_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_125_0.tfrecord
+I0625 01:41:42.940831 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_125_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_126_0.tfrecord
+I0625 01:41:42.940879 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_126_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_127_0.tfrecord
+I0625 01:41:42.940926 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_127_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_128_0.tfrecord
+I0625 01:41:42.940981 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_128_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_129_0.tfrecord
+I0625 01:41:42.941028 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_129_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_12_0.tfrecord
+I0625 01:41:42.941076 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_12_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_130_0.tfrecord
+I0625 01:41:42.941123 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_130_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_131_0.tfrecord
+I0625 01:41:42.941170 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_131_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_132_0.tfrecord
+I0625 01:41:42.941218 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_132_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_133_0.tfrecord
+I0625 01:41:42.941265 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_133_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_134_0.tfrecord
+I0625 01:41:42.941312 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_134_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_135_0.tfrecord
+I0625 01:41:42.941359 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_135_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_136_0.tfrecord
+I0625 01:41:42.941406 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_136_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_137_0.tfrecord
+I0625 01:41:42.941457 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_137_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_138_0.tfrecord
+I0625 01:41:42.941505 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_138_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_139_0.tfrecord
+I0625 01:41:42.941553 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_139_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_13_0.tfrecord
+I0625 01:41:42.941600 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_13_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_140_0.tfrecord
+I0625 01:41:42.941647 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_140_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_141_0.tfrecord
+I0625 01:41:42.941701 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_141_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_142_0.tfrecord
+I0625 01:41:42.941749 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_142_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_143_0.tfrecord
+I0625 01:41:42.941796 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_143_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_144_0.tfrecord
+I0625 01:41:42.941843 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_144_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_145_0.tfrecord
+I0625 01:41:42.941891 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_145_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_146_0.tfrecord
+I0625 01:41:42.941939 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_146_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_147_0.tfrecord
+I0625 01:41:42.941992 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_147_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_148_0.tfrecord
+I0625 01:41:42.942039 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_148_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_149_0.tfrecord
+I0625 01:41:42.942090 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_149_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_14_0.tfrecord
+I0625 01:41:42.942138 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_14_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_150_0.tfrecord
+I0625 01:41:42.942185 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_150_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_151_0.tfrecord
+I0625 01:41:42.942232 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_151_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_152_0.tfrecord
+I0625 01:41:42.942278 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_152_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_153_0.tfrecord
+I0625 01:41:42.942325 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_153_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_154_0.tfrecord
+I0625 01:41:42.942372 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_154_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_155_0.tfrecord
+I0625 01:41:42.942419 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_155_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_156_0.tfrecord
+I0625 01:41:42.942466 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_156_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_157_0.tfrecord
+I0625 01:41:42.942513 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_157_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_158_0.tfrecord
+I0625 01:41:42.942560 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_158_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_159_0.tfrecord
+I0625 01:41:42.942607 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_159_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_15_0.tfrecord
+I0625 01:41:42.942662 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_15_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_160_0.tfrecord
+I0625 01:41:42.942713 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_160_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_161_0.tfrecord
+I0625 01:41:42.942767 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_161_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_162_0.tfrecord
+I0625 01:41:42.942814 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_162_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_163_0.tfrecord
+I0625 01:41:42.942862 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_163_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_164_0.tfrecord
+I0625 01:41:42.942909 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_164_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_165_0.tfrecord
+I0625 01:41:42.942962 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_165_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_166_0.tfrecord
+I0625 01:41:42.943009 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_166_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_167_0.tfrecord
+I0625 01:41:42.943056 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_167_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_168_0.tfrecord
+I0625 01:41:42.943104 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_168_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_169_0.tfrecord
+I0625 01:41:42.943150 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_169_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_16_0.tfrecord
+I0625 01:41:42.943197 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_16_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_170_0.tfrecord
+I0625 01:41:42.943244 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_170_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_171_0.tfrecord
+I0625 01:41:42.943291 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_171_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_172_0.tfrecord
+I0625 01:41:42.943338 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_172_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_173_0.tfrecord
+I0625 01:41:42.943388 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_173_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_174_0.tfrecord
+I0625 01:41:42.943436 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_174_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_175_0.tfrecord
+I0625 01:41:42.943483 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_175_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_176_0.tfrecord
+I0625 01:41:42.943531 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_176_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_177_0.tfrecord
+I0625 01:41:42.943577 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_177_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_178_0.tfrecord
+I0625 01:41:42.943624 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_178_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_179_0.tfrecord
+I0625 01:41:42.943671 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_179_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_17_0.tfrecord
+I0625 01:41:42.943718 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_17_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_180_0.tfrecord
+I0625 01:41:42.943765 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_180_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_181_0.tfrecord
+I0625 01:41:42.943812 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_181_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_182_0.tfrecord
+I0625 01:41:42.943859 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_182_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_183_0.tfrecord
+I0625 01:41:42.943906 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_183_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_184_0.tfrecord
+I0625 01:41:42.943978 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_184_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_185_0.tfrecord
+I0625 01:41:42.944030 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_185_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_186_0.tfrecord
+I0625 01:41:42.944078 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_186_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_187_0.tfrecord
+I0625 01:41:42.944126 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_187_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_188_0.tfrecord
+I0625 01:41:42.944173 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_188_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_189_0.tfrecord
+I0625 01:41:42.944220 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_189_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_18_0.tfrecord
+I0625 01:41:42.944267 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_18_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_190_0.tfrecord
+I0625 01:41:42.944315 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_190_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_191_0.tfrecord
+I0625 01:41:42.944362 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_191_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_192_0.tfrecord
+I0625 01:41:42.944409 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_192_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_193_0.tfrecord
+I0625 01:41:42.944457 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_193_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_194_0.tfrecord
+I0625 01:41:42.944504 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_194_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_195_0.tfrecord
+I0625 01:41:42.944550 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_195_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_196_0.tfrecord
+I0625 01:41:42.944597 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_196_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_197_0.tfrecord
+I0625 01:41:42.944644 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_197_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_198_0.tfrecord
+I0625 01:41:42.944695 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_198_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_199_0.tfrecord
+I0625 01:41:42.944743 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_199_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_19_0.tfrecord
+I0625 01:41:42.944790 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_19_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_1_0.tfrecord
+I0625 01:41:42.944838 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_1_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_200_0.tfrecord
+I0625 01:41:42.944885 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_200_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_201_0.tfrecord
+I0625 01:41:42.944931 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_201_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_202_0.tfrecord
+I0625 01:41:42.944985 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_202_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_203_0.tfrecord
+I0625 01:41:42.945032 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_203_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_204_0.tfrecord
+I0625 01:41:42.945079 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_204_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_205_0.tfrecord
+I0625 01:41:42.945126 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_205_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_206_0.tfrecord
+I0625 01:41:42.945173 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_206_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_207_0.tfrecord
+I0625 01:41:42.945220 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_207_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_208_0.tfrecord
+I0625 01:41:42.945267 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_208_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_209_0.tfrecord
+I0625 01:41:42.945319 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_209_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_20_0.tfrecord
+I0625 01:41:42.945366 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_20_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_210_0.tfrecord
+I0625 01:41:42.945413 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_210_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_211_0.tfrecord
+I0625 01:41:42.945460 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_211_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_212_0.tfrecord
+I0625 01:41:42.945506 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_212_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_213_0.tfrecord
+I0625 01:41:42.945553 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_213_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_214_0.tfrecord
+I0625 01:41:42.945600 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_214_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_215_0.tfrecord
+I0625 01:41:42.945647 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_215_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_216_0.tfrecord
+I0625 01:41:42.945693 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_216_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_217_0.tfrecord
+I0625 01:41:42.945740 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_217_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_218_0.tfrecord
+I0625 01:41:42.945787 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_218_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_21_0.tfrecord
+I0625 01:41:42.945834 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_21_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_22_0.tfrecord
+I0625 01:41:42.945881 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_22_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_23_0.tfrecord
+I0625 01:41:42.945932 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_23_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_24_0.tfrecord
+I0625 01:41:42.945986 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_24_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_25_0.tfrecord
+I0625 01:41:42.946034 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_25_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_26_0.tfrecord
+I0625 01:41:42.946081 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_26_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_27_0.tfrecord
+I0625 01:41:42.946128 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_27_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_28_0.tfrecord
+I0625 01:41:42.946175 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_28_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_29_0.tfrecord
+I0625 01:41:42.946223 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_29_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_2_0.tfrecord
+I0625 01:41:42.946270 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_2_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_30_0.tfrecord
+I0625 01:41:42.946317 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_30_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_31_0.tfrecord
+I0625 01:41:42.946364 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_31_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_32_0.tfrecord
+I0625 01:41:42.946412 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_32_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_33_0.tfrecord
+I0625 01:41:42.946460 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_33_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_34_0.tfrecord
+I0625 01:41:42.946507 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_34_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_35_0.tfrecord
+I0625 01:41:42.946555 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_35_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_36_0.tfrecord
+I0625 01:41:42.946606 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_36_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_37_0.tfrecord
+I0625 01:41:42.946653 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_37_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_38_0.tfrecord
+I0625 01:41:42.946701 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_38_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_39_0.tfrecord
+I0625 01:41:42.946748 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_39_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_3_0.tfrecord
+I0625 01:41:42.946795 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_3_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_40_0.tfrecord
+I0625 01:41:42.946842 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_40_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_41_0.tfrecord
+I0625 01:41:42.946889 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_41_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_42_0.tfrecord
+I0625 01:41:42.946937 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_42_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_43_0.tfrecord
+I0625 01:41:42.946989 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_43_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_44_0.tfrecord
+I0625 01:41:42.947037 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_44_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_45_0.tfrecord
+I0625 01:41:42.947084 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_45_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_46_0.tfrecord
+I0625 01:41:42.947131 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_46_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_47_0.tfrecord
+I0625 01:41:42.947177 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_47_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_48_0.tfrecord
+I0625 01:41:42.947228 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_48_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_49_0.tfrecord
+I0625 01:41:42.947276 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_49_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_4_0.tfrecord
+I0625 01:41:42.947323 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_4_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_50_0.tfrecord
+I0625 01:41:42.947371 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_50_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_51_0.tfrecord
+I0625 01:41:42.947418 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_51_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_52_0.tfrecord
+I0625 01:41:42.947464 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_52_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_53_0.tfrecord
+I0625 01:41:42.947512 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_53_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_54_0.tfrecord
+I0625 01:41:42.947558 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_54_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_55_0.tfrecord
+I0625 01:41:42.947605 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_55_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_56_0.tfrecord
+I0625 01:41:42.947659 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_56_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_57_0.tfrecord
+I0625 01:41:42.947711 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_57_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_58_0.tfrecord
+I0625 01:41:42.947759 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_58_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_59_0.tfrecord
+I0625 01:41:42.947806 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_59_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_5_0.tfrecord
+I0625 01:41:42.947857 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_5_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_60_0.tfrecord
+I0625 01:41:42.947905 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_60_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_61_0.tfrecord
+I0625 01:41:42.947996 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_61_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_62_0.tfrecord
+I0625 01:41:42.948059 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_62_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_63_0.tfrecord
+I0625 01:41:42.948108 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_63_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_64_0.tfrecord
+I0625 01:41:42.948156 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_64_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_65_0.tfrecord
+I0625 01:41:42.948204 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_65_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_66_0.tfrecord
+I0625 01:41:42.948251 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_66_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_67_0.tfrecord
+I0625 01:41:42.948299 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_67_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_68_0.tfrecord
+I0625 01:41:42.948346 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_68_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_69_0.tfrecord
+I0625 01:41:42.948394 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_69_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_6_0.tfrecord
+I0625 01:41:42.948441 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_6_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_70_0.tfrecord
+I0625 01:41:42.948488 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_70_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_71_0.tfrecord
+I0625 01:41:42.948536 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_71_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_72_0.tfrecord
+I0625 01:41:42.948589 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_72_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_73_0.tfrecord
+I0625 01:41:42.948637 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_73_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_74_0.tfrecord
+I0625 01:41:42.948684 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_74_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_75_0.tfrecord
+I0625 01:41:42.948731 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_75_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_76_0.tfrecord
+I0625 01:41:42.948778 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_76_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_77_0.tfrecord
+I0625 01:41:42.948824 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_77_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_78_0.tfrecord
+I0625 01:41:42.948871 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_78_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_79_0.tfrecord
+I0625 01:41:42.948919 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_79_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_7_0.tfrecord
+I0625 01:41:42.948975 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_7_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_80_0.tfrecord
+I0625 01:41:42.949022 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_80_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_81_0.tfrecord
+I0625 01:41:42.949069 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_81_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_82_0.tfrecord
+I0625 01:41:42.949116 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_82_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_83_0.tfrecord
+I0625 01:41:42.949163 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_83_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_84_0.tfrecord
+I0625 01:41:42.949214 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_84_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_85_0.tfrecord
+I0625 01:41:42.949262 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_85_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_86_0.tfrecord
+I0625 01:41:42.949315 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_86_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_87_0.tfrecord
+I0625 01:41:42.949363 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_87_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_88_0.tfrecord
+I0625 01:41:42.949410 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_88_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_89_0.tfrecord
+I0625 01:41:42.949457 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_89_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_8_0.tfrecord
+I0625 01:41:42.949504 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_8_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_90_0.tfrecord
+I0625 01:41:42.949552 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_90_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_91_0.tfrecord
+I0625 01:41:42.949598 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_91_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_92_0.tfrecord
+I0625 01:41:42.949648 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_92_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_93_0.tfrecord
+I0625 01:41:42.949710 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_93_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_94_0.tfrecord
+I0625 01:41:42.949759 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_94_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_95_0.tfrecord
+I0625 01:41:42.949807 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_95_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_96_0.tfrecord
+I0625 01:41:42.949854 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_96_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_97_0.tfrecord
+I0625 01:41:42.949907 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_97_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_98_0.tfrecord
+I0625 01:41:42.949959 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_98_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_99_0.tfrecord
+I0625 01:41:42.950008 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_99_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_9_0.tfrecord
+I0625 01:41:42.950055 140173119637248 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_segmented_31692/zhwiki_train_examples_9_0.tfrecord
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f7c42661268>) includes params argument, but params are not passed to Estimator.
+W0625 01:41:42.955426 140173119637248 estimator.py:1994] Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f7c42661268>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_device_fn': None, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.27.160.98:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_num_worker_replicas': 1, '_tf_random_seed': None, '_session_creation_timeout_secs': 7200, '_save_summary_steps': 100, '_model_dir': 'gs://sbt0/experiments/rethink_vocab/pretraining/char_segmented_31692/', '_log_step_count_steps': None, '_keep_checkpoint_max': 5, '_save_checkpoints_secs': None, '_experimental_max_worker_delay_secs': None, '_task_type': 'worker', '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f7c42660550>, '_num_ps_replicas': 0, '_save_checkpoints_steps': 5000, '_is_chief': True, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_master': 'grpc://10.27.160.98:8470', '_experimental_distribute': None, '_task_id': 0, '_protocol': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f7c42660cc0>, '_eval_distribute': None, '_train_distribute': None, '_keep_checkpoint_every_n_hours': 10000, '_evaluation_master': 'grpc://10.27.160.98:8470', '_service': None, '_global_id_in_cluster': 0}
+I0625 01:41:42.956423 140173119637248 estimator.py:212] Using config: {'_device_fn': None, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.27.160.98:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_num_worker_replicas': 1, '_tf_random_seed': None, '_session_creation_timeout_secs': 7200, '_save_summary_steps': 100, '_model_dir': 'gs://sbt0/experiments/rethink_vocab/pretraining/char_segmented_31692/', '_log_step_count_steps': None, '_keep_checkpoint_max': 5, '_save_checkpoints_secs': None, '_experimental_max_worker_delay_secs': None, '_task_type': 'worker', '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f7c42660550>, '_num_ps_replicas': 0, '_save_checkpoints_steps': 5000, '_is_chief': True, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_master': 'grpc://10.27.160.98:8470', '_experimental_distribute': None, '_task_id': 0, '_protocol': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f7c42660cc0>, '_eval_distribute': None, '_train_distribute': None, '_keep_checkpoint_every_n_hours': 10000, '_evaluation_master': 'grpc://10.27.160.98:8470', '_service': None, '_global_id_in_cluster': 0}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+I0625 01:41:42.956982 140173119637248 tpu_context.py:220] _TPUContext: eval_on_tpu True
+INFO:tensorflow:***** Running training *****
+I0625 01:41:42.957371 140173119637248 run_pretraining.py:542] ***** Running training *****
+INFO:tensorflow:  Batch size = 1024
+I0625 01:41:42.957441 140173119637248 run_pretraining.py:543]   Batch size = 1024
+INFO:tensorflow:Querying Tensorflow master (grpc://10.27.160.98:8470) for TPU system metadata.
+I0625 01:41:43.238636 140173119637248 tpu_system_metadata.py:78] Querying Tensorflow master (grpc://10.27.160.98:8470) for TPU system metadata.
+2020-06-25 01:41:43.239804: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:370] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+INFO:tensorflow:Found TPU system:
+I0625 01:41:43.252585 140173119637248 tpu_system_metadata.py:148] Found TPU system:
+INFO:tensorflow:*** Num TPU Cores: 8
+I0625 01:41:43.252800 140173119637248 tpu_system_metadata.py:149] *** Num TPU Cores: 8
+INFO:tensorflow:*** Num TPU Workers: 1
+I0625 01:41:43.252882 140173119637248 tpu_system_metadata.py:150] *** Num TPU Workers: 1
+INFO:tensorflow:*** Num TPU Cores Per Worker: 8
+I0625 01:41:43.252950 140173119637248 tpu_system_metadata.py:152] *** Num TPU Cores Per Worker: 8
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 17912972310589086429)
+I0625 01:41:43.253007 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 17912972310589086429)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, 4994992388349980416)
+I0625 01:41:43.253467 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, 4994992388349980416)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, 4070258932064935924)
+I0625 01:41:43.253530 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, 4070258932064935924)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, 13968715162880699231)
+I0625 01:41:43.253587 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, 13968715162880699231)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 4839831646543418500)
+I0625 01:41:43.253643 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 4839831646543418500)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, 11958184375516641998)
+I0625 01:41:43.253697 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, 11958184375516641998)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, 14399677271268676507)
+I0625 01:41:43.253763 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, 14399677271268676507)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, 12870018226314860897)
+I0625 01:41:43.253825 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, 12870018226314860897)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, 2980983928016743776)
+I0625 01:41:43.253879 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, 2980983928016743776)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 4785339918194087461)
+I0625 01:41:43.253933 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 4785339918194087461)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 2862082664984191622)
+I0625 01:41:43.253995 140173119637248 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 2862082664984191622)
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0625 01:41:43.259173 140173119637248 deprecation.py:506] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0625 01:41:43.259648 140173119637248 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:Calling model_fn.
+I0625 01:41:43.271413 140173119637248 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From src/run_pretraining.py:439: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.parallel_interleave(...)`.
+W0625 01:41:43.277829 140173119637248 deprecation.py:323] From src/run_pretraining.py:439: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.parallel_interleave(...)`.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
+W0625 01:41:43.278052 140173119637248 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
+WARNING:tensorflow:From src/run_pretraining.py:456: map_and_batch_with_legacy_function (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch()
+W0625 01:41:43.305619 140173119637248 deprecation.py:323] From src/run_pretraining.py:456: map_and_batch_with_legacy_function (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch()
+WARNING:tensorflow:From src/run_pretraining.py:472: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0625 01:41:43.563278 140173119637248 deprecation.py:323] From src/run_pretraining.py:472: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:<DatasetV1Adapter shapes: {input_mask: (128, 128), masked_lm_positions: (128, 13), input_ids: (128, 128), masked_lm_weights: (128, 13), next_sentence_labels: (128, 1), masked_lm_ids: (128, 13), segment_ids: (128, 128)}, types: {input_mask: tf.int32, masked_lm_positions: tf.int32, input_ids: tf.int32, masked_lm_weights: tf.float32, next_sentence_labels: tf.int32, masked_lm_ids: tf.int32, segment_ids: tf.int32}>
+I0625 01:41:43.572239 140173119637248 run_pretraining.py:457] <DatasetV1Adapter shapes: {input_mask: (128, 128), masked_lm_positions: (128, 13), input_ids: (128, 128), masked_lm_weights: (128, 13), next_sentence_labels: (128, 1), masked_lm_ids: (128, 13), segment_ids: (128, 128)}, types: {input_mask: tf.int32, masked_lm_positions: tf.int32, input_ids: tf.int32, masked_lm_weights: tf.float32, next_sentence_labels: tf.int32, masked_lm_ids: tf.int32, segment_ids: tf.int32}>
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 01:41:43.592514 140173119637248 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 01:41:43.594344 140173119637248 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 01:41:43.596025 140173119637248 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 01:41:43.597666 140173119637248 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 01:41:43.599362 140173119637248 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 01:41:43.601113 140173119637248 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 01:41:43.602854 140173119637248 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 01:41:43.605178 140173119637248 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+2020-06-25 01:41:43.622968: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-06-25 01:41:43.623007: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2020-06-25 01:41:43.623032: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (h-bert-1): /proc/driver/nvidia/version does not exist
+INFO:tensorflow:*** Features ***
+I0625 01:41:43.641483 140173119637248 run_pretraining.py:150] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (128, 128)
+I0625 01:41:43.641709 140173119637248 run_pretraining.py:152]   name = input_ids, shape = (128, 128)
+INFO:tensorflow:  name = input_mask, shape = (128, 128)
+I0625 01:41:43.641790 140173119637248 run_pretraining.py:152]   name = input_mask, shape = (128, 128)
+INFO:tensorflow:  name = masked_lm_ids, shape = (128, 13)
+I0625 01:41:43.641858 140173119637248 run_pretraining.py:152]   name = masked_lm_ids, shape = (128, 13)
+INFO:tensorflow:  name = masked_lm_positions, shape = (128, 13)
+I0625 01:41:43.641922 140173119637248 run_pretraining.py:152]   name = masked_lm_positions, shape = (128, 13)
+INFO:tensorflow:  name = masked_lm_weights, shape = (128, 13)
+I0625 01:41:43.641996 140173119637248 run_pretraining.py:152]   name = masked_lm_weights, shape = (128, 13)
+INFO:tensorflow:  name = next_sentence_labels, shape = (128, 1)
+I0625 01:41:43.642055 140173119637248 run_pretraining.py:152]   name = next_sentence_labels, shape = (128, 1)
+INFO:tensorflow:  name = segment_ids, shape = (128, 128)
+I0625 01:41:43.642115 140173119637248 run_pretraining.py:152]   name = segment_ids, shape = (128, 128)
+WARNING:tensorflow:From ./src/modeling.py:254: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0625 01:41:44.855647 140173119637248 deprecation.py:323] From ./src/modeling.py:254: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0625 01:41:44.857104 140173119637248 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+INFO:tensorflow:**** Trainable Variables ****
+I0625 01:41:44.990120 140173119637248 run_pretraining.py:221] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (31692, 128)
+I0625 01:41:44.990342 140173119637248 run_pretraining.py:227]   name = bert/embeddings/word_embeddings:0, shape = (31692, 128)
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 128)
+I0625 01:41:44.990450 140173119637248 run_pretraining.py:227]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 128)
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 128)
+I0625 01:41:44.990530 140173119637248 run_pretraining.py:227]   name = bert/embeddings/position_embeddings:0, shape = (512, 128)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (128,)
+I0625 01:41:44.990605 140173119637248 run_pretraining.py:227]   name = bert/embeddings/LayerNorm/beta:0, shape = (128,)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (128,)
+I0625 01:41:44.990673 140173119637248 run_pretraining.py:227]   name = bert/embeddings/LayerNorm/gamma:0, shape = (128,)
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768)
+I0625 01:41:44.990748 140173119637248 run_pretraining.py:227]   name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768)
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,)
+I0625 01:41:44.990819 140173119637248 run_pretraining.py:227]   name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768)
+I0625 01:41:44.990883 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,)
+I0625 01:41:44.990954 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768)
+I0625 01:41:44.991031 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,)
+I0625 01:41:44.991099 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768)
+I0625 01:41:44.991163 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,)
+I0625 01:41:44.991230 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768)
+I0625 01:41:44.991293 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,)
+I0625 01:41:44.991360 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,)
+I0625 01:41:44.991423 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,)
+I0625 01:41:44.991487 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072)
+I0625 01:41:44.991549 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,)
+I0625 01:41:44.991617 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768)
+I0625 01:41:44.991680 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,)
+I0625 01:41:44.991752 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,)
+I0625 01:41:44.991816 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,)
+I0625 01:41:44.991878 140173119637248 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768)
+I0625 01:41:44.991963 140173119637248 run_pretraining.py:227]   name = bert/pooler/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,)
+I0625 01:41:44.992046 140173119637248 run_pretraining.py:227]   name = bert/pooler/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/transform/dense/kernel:0, shape = (768, 128)
+I0625 01:41:44.992110 140173119637248 run_pretraining.py:227]   name = cls/predictions/transform/dense/kernel:0, shape = (768, 128)
+INFO:tensorflow:  name = cls/predictions/transform/dense/bias:0, shape = (128,)
+I0625 01:41:44.992180 140173119637248 run_pretraining.py:227]   name = cls/predictions/transform/dense/bias:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/beta:0, shape = (128,)
+I0625 01:41:44.992244 140173119637248 run_pretraining.py:227]   name = cls/predictions/transform/LayerNorm/beta:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/gamma:0, shape = (128,)
+I0625 01:41:44.992307 140173119637248 run_pretraining.py:227]   name = cls/predictions/transform/LayerNorm/gamma:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/output_bias:0, shape = (31692,)
+I0625 01:41:44.992370 140173119637248 run_pretraining.py:227]   name = cls/predictions/output_bias:0, shape = (31692,)
+INFO:tensorflow:  name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+I0625 01:41:44.992432 140173119637248 run_pretraining.py:227]   name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = cls/seq_relationship/output_bias:0, shape = (2,)
+I0625 01:41:44.992500 140173119637248 run_pretraining.py:227]   name = cls/seq_relationship/output_bias:0, shape = (2,)
+INFO:tensorflow:++++++ warmup starts at step 0, for 3125 steps ++++++
+I0625 01:41:45.004916 140173119637248 optimization.py:50] ++++++ warmup starts at step 0, for 3125 steps ++++++
+INFO:tensorflow:using lamb
+I0625 01:41:45.016767 140173119637248 optimization.py:83] using lamb
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0625 01:41:45.215610 140173119637248 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Create CheckpointSaverHook.
+I0625 01:41:49.219794 140173119637248 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+I0625 01:41:49.278305 140173119637248 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:TPU job name worker
+I0625 01:41:51.786003 140173119637248 tpu_estimator.py:506] TPU job name worker
+INFO:tensorflow:Graph was finalized.
+I0625 01:41:52.020617 140173119637248 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Running local_init_op.
+I0625 01:41:54.118678 140173119637248 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0625 01:41:54.366415 140173119637248 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into gs://sbt0/experiments/rethink_vocab/pretraining/char_segmented_31692/model.ckpt.
+I0625 01:42:00.116114 140173119637248 basic_session_run_hooks.py:606] Saving checkpoints for 0 into gs://sbt0/experiments/rethink_vocab/pretraining/char_segmented_31692/model.ckpt.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:751: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Variable.assign which has equivalent behavior in 2.X.
+W0625 01:42:14.641352 140173119637248 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:751: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Variable.assign which has equivalent behavior in 2.X.
+INFO:tensorflow:Initialized dataset iterators in 0 seconds
+I0625 01:42:15.192017 140173119637248 util.py:98] Initialized dataset iterators in 0 seconds
+INFO:tensorflow:Installing graceful shutdown hook.
+I0625 01:42:15.192427 140173119637248 session_support.py:332] Installing graceful shutdown hook.
+2020-06-25 01:42:15.192784: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:370] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+INFO:tensorflow:Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
+I0625 01:42:15.196894 140173119637248 session_support.py:82] Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
+INFO:tensorflow:Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
+
+I0625 01:42:15.198643 140173119637248 session_support.py:105] Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
+
+INFO:tensorflow:Init TPU system
+I0625 01:42:15.202075 140173119637248 tpu_estimator.py:567] Init TPU system
+INFO:tensorflow:Initialized TPU in 2 seconds
+I0625 01:42:18.011363 140173119637248 tpu_estimator.py:576] Initialized TPU in 2 seconds
+INFO:tensorflow:Starting infeed thread controller.
+I0625 01:42:18.013379 140171156649728 tpu_estimator.py:521] Starting infeed thread controller.
+INFO:tensorflow:Starting outfeed thread controller.
+I0625 01:42:18.013967 140171148257024 tpu_estimator.py:540] Starting outfeed thread controller.
+I0625 01:42:18.060228 140171139864320 transport.py:157] Attempting refresh to obtain initial access_token
+W0625 01:42:18.091092 140171139864320 http.py:118] Invalid JSON content from response: b'{\n  "error": {\n    "code": 403,\n    "message": "Permission denied on resource project None.",\n    "status": "PERMISSION_DENIED",\n    "details": [\n      {\n        "@type": "type.googleapis.com/google.rpc.Help",\n        "links": [\n          {\n            "description": "Google developer console API key",\n            "url": "https://console.developers.google.com/project/None/apiui/credential"\n          }\n        ]\n      }\n    ]\n  }\n}\n'
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 476, in _fetch_cloud_tpu_metadata
+    return request.execute()
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/http.py", line 856, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.27.160.98:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/project/None/apiui/credential'}], '@type': 'type.googleapis.com/google.rpc.Help'}]">
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/tpu/preempted_hook.py", line 87, in run
+    response = self._cluster._fetch_cloud_tpu_metadata()  # pylint: disable=protected-access
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 480, in _fetch_cloud_tpu_metadata
+    "constructor. Exception: %s" % (self._tpu, e))
+ValueError: Could not lookup TPU metadata from name 'b'10.27.160.98:8470''. Please doublecheck the tpu argument in the TPUClusterResolver constructor. Exception: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.27.160.98:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/project/None/apiui/credential'}], '@type': 'type.googleapis.com/google.rpc.Help'}]">
+
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 01:42:18.278653 140173119637248 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 01:42:18.278987 140173119637248 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (0, 0)
+I0625 01:42:39.287213 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (0, 0)
+INFO:tensorflow:Outfeed finished for iteration (0, 217)
+I0625 01:43:39.474678 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (0, 217)
+INFO:tensorflow:Outfeed finished for iteration (0, 434)
+I0625 01:44:39.663666 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (0, 434)
+INFO:tensorflow:Outfeed finished for iteration (0, 651)
+I0625 01:45:39.850332 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (0, 651)
+INFO:tensorflow:Outfeed finished for iteration (0, 868)
+I0625 01:46:40.038872 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (0, 868)
+INFO:tensorflow:loss = 9.740614, step = 1000
+I0625 01:47:17.379926 140173119637248 basic_session_run_hooks.py:262] loss = 9.740614, step = 1000
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 01:47:17.381797 140173119637248 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 01:47:17.382069 140173119637248 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (1, 77)
+I0625 01:47:40.089768 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (1, 77)
+INFO:tensorflow:Outfeed finished for iteration (1, 294)
+I0625 01:48:40.276774 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (1, 294)
+INFO:tensorflow:Outfeed finished for iteration (1, 511)
+I0625 01:49:40.464503 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (1, 511)
+INFO:tensorflow:Outfeed finished for iteration (1, 728)
+I0625 01:50:40.651890 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (1, 728)
+INFO:tensorflow:Outfeed finished for iteration (1, 945)
+I0625 01:51:40.839918 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (1, 945)
+INFO:tensorflow:loss = 7.330565, step = 2000 (278.713 sec)
+I0625 01:51:56.092979 140173119637248 basic_session_run_hooks.py:260] loss = 7.330565, step = 2000 (278.713 sec)
+INFO:tensorflow:global_step/sec: 3.58792
+I0625 01:51:56.094602 140173119637248 tpu_estimator.py:2307] global_step/sec: 3.58792
+INFO:tensorflow:examples/sec: 3674.03
+I0625 01:51:56.095271 140173119637248 tpu_estimator.py:2308] examples/sec: 3674.03
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 01:51:56.934583 140173119637248 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 01:51:56.935034 140173119637248 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (2, 158)
+I0625 01:52:41.114366 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (2, 158)
+INFO:tensorflow:Outfeed finished for iteration (2, 375)
+I0625 01:53:41.300300 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (2, 375)
+INFO:tensorflow:Outfeed finished for iteration (2, 592)
+I0625 01:54:41.486723 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (2, 592)
+INFO:tensorflow:Outfeed finished for iteration (2, 809)
+I0625 01:55:41.672816 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (2, 809)
+INFO:tensorflow:loss = 4.47022, step = 3000 (278.544 sec)
+I0625 01:56:34.636955 140173119637248 basic_session_run_hooks.py:260] loss = 4.47022, step = 3000 (278.544 sec)
+INFO:tensorflow:global_step/sec: 3.5901
+I0625 01:56:34.638026 140173119637248 tpu_estimator.py:2307] global_step/sec: 3.5901
+INFO:tensorflow:examples/sec: 3676.27
+I0625 01:56:34.638216 140173119637248 tpu_estimator.py:2308] examples/sec: 3676.27
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 01:56:36.333557 140173119637248 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 01:56:36.333819 140173119637248 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (3, 19)
+I0625 01:56:41.941682 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (3, 19)
+INFO:tensorflow:Outfeed finished for iteration (3, 236)
+I0625 01:57:42.128311 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (3, 236)
+INFO:tensorflow:Outfeed finished for iteration (3, 453)
+I0625 01:58:42.314631 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (3, 453)
+INFO:tensorflow:Outfeed finished for iteration (3, 670)
+I0625 01:59:42.501080 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (3, 670)
+INFO:tensorflow:Outfeed finished for iteration (3, 887)
+I0625 02:00:42.690135 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (3, 887)
+INFO:tensorflow:loss = 3.839689, step = 4000 (280.522 sec)
+I0625 02:01:15.158510 140173119637248 basic_session_run_hooks.py:260] loss = 3.839689, step = 4000 (280.522 sec)
+INFO:tensorflow:global_step/sec: 3.56479
+I0625 02:01:15.159669 140173119637248 tpu_estimator.py:2307] global_step/sec: 3.56479
+INFO:tensorflow:examples/sec: 3650.34
+I0625 02:01:15.159868 140173119637248 tpu_estimator.py:2308] examples/sec: 3650.34
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:01:15.161383 140173119637248 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:01:15.161589 140173119637248 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (4, 99)
+I0625 02:01:42.836843 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (4, 99)
+INFO:tensorflow:Outfeed finished for iteration (4, 316)
+I0625 02:02:43.023029 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (4, 316)
+INFO:tensorflow:Outfeed finished for iteration (4, 533)
+I0625 02:03:43.208426 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (4, 533)
+INFO:tensorflow:Outfeed finished for iteration (4, 750)
+I0625 02:04:43.394135 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (4, 750)
+INFO:tensorflow:Outfeed finished for iteration (4, 967)
+I0625 02:05:43.580852 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (4, 967)
+INFO:tensorflow:Saving checkpoints for 5000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_segmented_31692/model.ckpt.
+I0625 02:05:52.724060 140173119637248 basic_session_run_hooks.py:606] Saving checkpoints for 5000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_segmented_31692/model.ckpt.
+INFO:tensorflow:loss = 3.1113048, step = 5000 (292.477 sec)
+I0625 02:06:07.635022 140173119637248 basic_session_run_hooks.py:260] loss = 3.1113048, step = 5000 (292.477 sec)
+INFO:tensorflow:global_step/sec: 3.41908
+I0625 02:06:07.636358 140173119637248 tpu_estimator.py:2307] global_step/sec: 3.41908
+INFO:tensorflow:examples/sec: 3501.13
+I0625 02:06:07.636598 140173119637248 tpu_estimator.py:2308] examples/sec: 3501.13
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:06:07.638210 140173119637248 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:06:07.638381 140173119637248 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (5, 129)
+I0625 02:06:43.635331 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (5, 129)
+INFO:tensorflow:Outfeed finished for iteration (5, 346)
+I0625 02:07:43.822438 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (5, 346)
+INFO:tensorflow:Outfeed finished for iteration (5, 563)
+I0625 02:08:44.008877 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (5, 563)
+INFO:tensorflow:Outfeed finished for iteration (5, 780)
+I0625 02:09:44.195291 140171148257024 tpu_estimator.py:279] Outfeed finished for iteration (5, 780)
+./src/char_segmented/scripts/run_pretrain_31692.sh: line 14:  9215 Killed                  python3 src/run_pretraining.py --input_file=${STORAGE_BUCKET}/experiments/rethink_vocab/pretrain_tfrecords/${PREFIX}_${VOCAB_SIZE}/zhwiki_train_examples_*_*.tfrecord --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/pretraining/${PREFIX}_${VOCAB_SIZE}/ --albert_config_file=./src/config_${VOCAB_SIZE}.json --do_train --do_eval --dev_input_file=${STORAGE_BUCKET}/experiments/rethink_vocab/pretrain_tfrecords/${PREFIX}_${VOCAB_SIZE}/zhwiki_train_examples_150_*.tfrecord --use_tpu --num_tpu_cores=8 --tpu_name=${TPU_NAME} --train_batch_size=1024 --eval_batch_size=64 --max_seq_length=128 --max_predictions_per_seq=13 --optimizer="lamb" --learning_rate=4e-4 --num_train_steps=45000 --num_warmup_steps=3125 --save_checkpoints_steps=5000
