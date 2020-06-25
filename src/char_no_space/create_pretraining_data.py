@@ -288,6 +288,8 @@ def create_training_instances(input_files,
                 # Empty lines are used as document delimiters
                 if not line:
                     all_documents.append([])
+
+                print(line)
                 tokens = tokenize_single_sent(
                     line,
                     tokenizer=tokenizer
