@@ -30,7 +30,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
     python3 src/run_classifier.py \
       --task_name=lcqmc \
       --data_dir=datasets/LCQMC \
-      --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/finetune/xnli/length_128_steps_4.5k_time_0625_run_${run_idx}/ \
+      --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/finetune/lcqmc/length_128_steps_4.5k_time_0625_run_${run_idx}/ \
       --init_checkpoint=${STORAGE_BUCKET}/experiments/rethink_vocab/pretraining/${PREFIX}_${VOCAB_SIZE}/model.ckpt-45000 \
       --albert_config_file=./src/config_${VOCAB_SIZE}.json \
       --do_train=true \
@@ -38,6 +38,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --do_predict \
       --do_lower_case \
       --max_seq_length=128 \
+      --max_num_chars=128 \
       --optimizer=adamw \
       --train_batch_size=256 \
       --eval_batch_size=32 \
