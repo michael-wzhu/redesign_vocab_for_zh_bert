@@ -169,5 +169,27 @@ nohup ./src/char_segmented/scripts/run_classifier_lcqmc_21128.sh > char_segmente
 nohup ./src/char_segmented/scripts/run_classifier_xnli_21128.sh > char_segmented_xnli_21128.log &
 
 
+######################################
+# char_spaced, vocab=21128
+######################################
+
+# on chn
+nohup ./src/char_spaced/scripts/run_classifier_chn_21128.sh > char_spaced_chn_21128.log &
+
+# on lcqmc
+nohup ./src/char_spaced/scripts/run_classifier_lcqmc_21128.sh > char_spaced_lcqmc_21128.log &
+
+# on xnli
+nohup ./src/char_spaced/scripts/run_classifier_xnli_21128.sh > char_spaced_xnli_21128.log &
+
+
+
+
+
+
+
+
+
+
 ```
 
