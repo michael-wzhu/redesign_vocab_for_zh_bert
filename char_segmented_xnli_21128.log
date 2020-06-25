@@ -24411,3 +24411,7 @@ INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
 I0625 13:30:01.020970 140378091616000 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
 I0625 13:30:01.021281 140378091616000 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (9, 435)
+I0625 13:30:57.350972 140376085108480 tpu_estimator.py:279] Outfeed finished for iteration (9, 435)
+INFO:tensorflow:Outfeed finished for iteration (9, 901)
+I0625 13:31:57.405549 140376085108480 tpu_estimator.py:279] Outfeed finished for iteration (9, 901)
