@@ -103,12 +103,10 @@ $ ctpu up --tpu-size=v3-8 --machine-type=n1-standard-2 --zone=europe-west4-a --t
 ### run pretrain
 
 # char_segmented, vocab=10564
-
+nohup ./src/char_segmented/scripts/run_pretrain_10564.sh > pretrain_char_segmented_10564.log &
 
 # char_segmented, vocab=21128
-
 nohup ./src/char_segmented/scripts/run_pretrain_21128.sh > pretrain_char_segmented_21128.log &
-
 
 # char_segmented, vocab=31692
 
