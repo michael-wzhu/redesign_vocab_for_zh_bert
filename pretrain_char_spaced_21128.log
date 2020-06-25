@@ -1,0 +1,1843 @@
+INFO:tensorflow:*** Input Files ***
+I0625 02:22:01.896166 140422933784320 run_pretraining.py:498] *** Input Files ***
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_100_0.tfrecord
+I0625 02:22:01.897784 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_100_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_101_0.tfrecord
+I0625 02:22:01.897886 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_101_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_102_0.tfrecord
+I0625 02:22:01.897946 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_102_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_103_0.tfrecord
+I0625 02:22:01.898000 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_103_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_104_0.tfrecord
+I0625 02:22:01.898051 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_104_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_105_0.tfrecord
+I0625 02:22:01.898100 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_105_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_106_0.tfrecord
+I0625 02:22:01.898148 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_106_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_107_0.tfrecord
+I0625 02:22:01.898197 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_107_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_108_0.tfrecord
+I0625 02:22:01.898245 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_108_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_109_0.tfrecord
+I0625 02:22:01.898293 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_109_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_10_0.tfrecord
+I0625 02:22:01.898341 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_10_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_110_0.tfrecord
+I0625 02:22:01.898388 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_110_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_111_0.tfrecord
+I0625 02:22:01.898436 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_111_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_112_0.tfrecord
+I0625 02:22:01.898494 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_112_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_113_0.tfrecord
+I0625 02:22:01.898554 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_113_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_114_0.tfrecord
+I0625 02:22:01.898602 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_114_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_115_0.tfrecord
+I0625 02:22:01.898650 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_115_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_116_0.tfrecord
+I0625 02:22:01.898697 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_116_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_117_0.tfrecord
+I0625 02:22:01.898745 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_117_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_118_0.tfrecord
+I0625 02:22:01.898793 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_118_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_119_0.tfrecord
+I0625 02:22:01.898840 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_119_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_11_0.tfrecord
+I0625 02:22:01.898888 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_11_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_120_0.tfrecord
+I0625 02:22:01.898936 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_120_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_121_0.tfrecord
+I0625 02:22:01.898988 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_121_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_122_0.tfrecord
+I0625 02:22:01.899036 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_122_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_123_0.tfrecord
+I0625 02:22:01.899083 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_123_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_124_0.tfrecord
+I0625 02:22:01.899131 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_124_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_125_0.tfrecord
+I0625 02:22:01.899183 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_125_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_126_0.tfrecord
+I0625 02:22:01.899231 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_126_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_127_0.tfrecord
+I0625 02:22:01.899279 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_127_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_128_0.tfrecord
+I0625 02:22:01.899326 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_128_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_129_0.tfrecord
+I0625 02:22:01.899374 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_129_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_12_0.tfrecord
+I0625 02:22:01.899421 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_12_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_130_0.tfrecord
+I0625 02:22:01.899469 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_130_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_131_0.tfrecord
+I0625 02:22:01.899524 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_131_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_132_0.tfrecord
+I0625 02:22:01.899586 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_132_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_133_0.tfrecord
+I0625 02:22:01.899635 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_133_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_134_0.tfrecord
+I0625 02:22:01.899683 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_134_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_135_0.tfrecord
+I0625 02:22:01.899731 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_135_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_136_0.tfrecord
+I0625 02:22:01.899780 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_136_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_137_0.tfrecord
+I0625 02:22:01.899832 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_137_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_138_0.tfrecord
+I0625 02:22:01.899880 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_138_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_139_0.tfrecord
+I0625 02:22:01.899929 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_139_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_13_0.tfrecord
+I0625 02:22:01.900035 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_13_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_140_0.tfrecord
+I0625 02:22:01.900087 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_140_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_141_0.tfrecord
+I0625 02:22:01.900136 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_141_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_142_0.tfrecord
+I0625 02:22:01.900184 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_142_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_143_0.tfrecord
+I0625 02:22:01.900233 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_143_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_144_0.tfrecord
+I0625 02:22:01.900281 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_144_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_145_0.tfrecord
+I0625 02:22:01.900329 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_145_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_146_0.tfrecord
+I0625 02:22:01.900377 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_146_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_147_0.tfrecord
+I0625 02:22:01.900434 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_147_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_148_0.tfrecord
+I0625 02:22:01.900489 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_148_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_149_0.tfrecord
+I0625 02:22:01.900540 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_149_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_14_0.tfrecord
+I0625 02:22:01.900595 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_14_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_150_0.tfrecord
+I0625 02:22:01.900644 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_150_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_151_0.tfrecord
+I0625 02:22:01.900692 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_151_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_152_0.tfrecord
+I0625 02:22:01.900740 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_152_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_153_0.tfrecord
+I0625 02:22:01.900788 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_153_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_154_0.tfrecord
+I0625 02:22:01.900836 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_154_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_155_0.tfrecord
+I0625 02:22:01.900883 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_155_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_156_0.tfrecord
+I0625 02:22:01.900931 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_156_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_157_0.tfrecord
+I0625 02:22:01.900979 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_157_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_158_0.tfrecord
+I0625 02:22:01.901026 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_158_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_159_0.tfrecord
+I0625 02:22:01.901074 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_159_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_15_0.tfrecord
+I0625 02:22:01.901122 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_15_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_160_0.tfrecord
+I0625 02:22:01.901170 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_160_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_161_0.tfrecord
+I0625 02:22:01.901221 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_161_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_162_0.tfrecord
+I0625 02:22:01.901270 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_162_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_163_0.tfrecord
+I0625 02:22:01.901318 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_163_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_164_0.tfrecord
+I0625 02:22:01.901366 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_164_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_165_0.tfrecord
+I0625 02:22:01.901413 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_165_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_166_0.tfrecord
+I0625 02:22:01.901461 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_166_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_167_0.tfrecord
+I0625 02:22:01.901515 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_167_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_168_0.tfrecord
+I0625 02:22:01.901564 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_168_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_169_0.tfrecord
+I0625 02:22:01.901611 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_169_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_16_0.tfrecord
+I0625 02:22:01.901661 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_16_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_170_0.tfrecord
+I0625 02:22:01.901709 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_170_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_171_0.tfrecord
+I0625 02:22:01.901757 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_171_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_172_0.tfrecord
+I0625 02:22:01.901805 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_172_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_173_0.tfrecord
+I0625 02:22:01.901861 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_173_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_174_0.tfrecord
+I0625 02:22:01.901910 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_174_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_175_0.tfrecord
+I0625 02:22:01.901958 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_175_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_176_0.tfrecord
+I0625 02:22:01.902006 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_176_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_177_0.tfrecord
+I0625 02:22:01.902054 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_177_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_178_0.tfrecord
+I0625 02:22:01.902102 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_178_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_179_0.tfrecord
+I0625 02:22:01.902150 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_179_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_17_0.tfrecord
+I0625 02:22:01.902198 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_17_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_180_0.tfrecord
+I0625 02:22:01.902246 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_180_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_181_0.tfrecord
+I0625 02:22:01.902294 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_181_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_182_0.tfrecord
+I0625 02:22:01.902342 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_182_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_183_0.tfrecord
+I0625 02:22:01.902390 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_183_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_184_0.tfrecord
+I0625 02:22:01.902438 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_184_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_185_0.tfrecord
+I0625 02:22:01.902491 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_185_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_186_0.tfrecord
+I0625 02:22:01.902543 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_186_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_187_0.tfrecord
+I0625 02:22:01.902591 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_187_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_188_0.tfrecord
+I0625 02:22:01.902639 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_188_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_189_0.tfrecord
+I0625 02:22:01.902686 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_189_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_18_0.tfrecord
+I0625 02:22:01.902734 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_18_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_190_0.tfrecord
+I0625 02:22:01.902782 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_190_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_191_0.tfrecord
+I0625 02:22:01.902830 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_191_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_192_0.tfrecord
+I0625 02:22:01.902877 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_192_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_193_0.tfrecord
+I0625 02:22:01.902925 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_193_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_194_0.tfrecord
+I0625 02:22:01.902972 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_194_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_195_0.tfrecord
+I0625 02:22:01.903020 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_195_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_196_0.tfrecord
+I0625 02:22:01.903068 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_196_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_197_0.tfrecord
+I0625 02:22:01.903115 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_197_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_198_0.tfrecord
+I0625 02:22:01.903166 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_198_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_199_0.tfrecord
+I0625 02:22:01.903214 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_199_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_19_0.tfrecord
+I0625 02:22:01.903264 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_19_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_1_0.tfrecord
+I0625 02:22:01.903312 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_1_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_200_0.tfrecord
+I0625 02:22:01.903360 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_200_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_201_0.tfrecord
+I0625 02:22:01.903407 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_201_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_202_0.tfrecord
+I0625 02:22:01.903454 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_202_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_203_0.tfrecord
+I0625 02:22:01.903508 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_203_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_204_0.tfrecord
+I0625 02:22:01.903555 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_204_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_205_0.tfrecord
+I0625 02:22:01.903602 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_205_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_206_0.tfrecord
+I0625 02:22:01.903650 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_206_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_207_0.tfrecord
+I0625 02:22:01.903697 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_207_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_208_0.tfrecord
+I0625 02:22:01.903744 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_208_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_209_0.tfrecord
+I0625 02:22:01.903792 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_209_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_20_0.tfrecord
+I0625 02:22:01.903843 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_20_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_210_0.tfrecord
+I0625 02:22:01.903890 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_210_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_211_0.tfrecord
+I0625 02:22:01.903954 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_211_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_212_0.tfrecord
+I0625 02:22:01.904005 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_212_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_213_0.tfrecord
+I0625 02:22:01.904052 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_213_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_214_0.tfrecord
+I0625 02:22:01.904100 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_214_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_215_0.tfrecord
+I0625 02:22:01.904147 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_215_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_216_0.tfrecord
+I0625 02:22:01.904194 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_216_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_217_0.tfrecord
+I0625 02:22:01.904241 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_217_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_218_0.tfrecord
+I0625 02:22:01.904288 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_218_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_21_0.tfrecord
+I0625 02:22:01.904335 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_21_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_22_0.tfrecord
+I0625 02:22:01.904382 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_22_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_23_0.tfrecord
+I0625 02:22:01.904429 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_23_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_24_0.tfrecord
+I0625 02:22:01.904487 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_24_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_25_0.tfrecord
+I0625 02:22:01.904535 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_25_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_26_0.tfrecord
+I0625 02:22:01.904583 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_26_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_27_0.tfrecord
+I0625 02:22:01.904630 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_27_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_28_0.tfrecord
+I0625 02:22:01.904677 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_28_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_29_0.tfrecord
+I0625 02:22:01.904725 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_29_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_2_0.tfrecord
+I0625 02:22:01.904772 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_2_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_30_0.tfrecord
+I0625 02:22:01.904819 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_30_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_31_0.tfrecord
+I0625 02:22:01.904867 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_31_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_32_0.tfrecord
+I0625 02:22:01.904915 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_32_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_33_0.tfrecord
+I0625 02:22:01.904962 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_33_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_34_0.tfrecord
+I0625 02:22:01.905008 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_34_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_35_0.tfrecord
+I0625 02:22:01.905055 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_35_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_36_0.tfrecord
+I0625 02:22:01.905102 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_36_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_37_0.tfrecord
+I0625 02:22:01.905154 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_37_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_38_0.tfrecord
+I0625 02:22:01.905201 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_38_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_39_0.tfrecord
+I0625 02:22:01.905248 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_39_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_3_0.tfrecord
+I0625 02:22:01.905296 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_3_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_40_0.tfrecord
+I0625 02:22:01.905343 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_40_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_41_0.tfrecord
+I0625 02:22:01.905390 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_41_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_42_0.tfrecord
+I0625 02:22:01.905450 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_42_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_43_0.tfrecord
+I0625 02:22:01.905505 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_43_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_44_0.tfrecord
+I0625 02:22:01.905553 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_44_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_45_0.tfrecord
+I0625 02:22:01.905601 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_45_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_46_0.tfrecord
+I0625 02:22:01.905649 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_46_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_47_0.tfrecord
+I0625 02:22:01.905697 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_47_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_48_0.tfrecord
+I0625 02:22:01.905744 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_48_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_49_0.tfrecord
+I0625 02:22:01.905796 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_49_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_4_0.tfrecord
+I0625 02:22:01.905844 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_4_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_50_0.tfrecord
+I0625 02:22:01.905891 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_50_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_51_0.tfrecord
+I0625 02:22:01.905939 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_51_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_52_0.tfrecord
+I0625 02:22:01.905986 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_52_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_53_0.tfrecord
+I0625 02:22:01.906057 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_53_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_54_0.tfrecord
+I0625 02:22:01.906105 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_54_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_55_0.tfrecord
+I0625 02:22:01.906153 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_55_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_56_0.tfrecord
+I0625 02:22:01.906201 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_56_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_57_0.tfrecord
+I0625 02:22:01.906248 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_57_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_58_0.tfrecord
+I0625 02:22:01.906296 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_58_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_59_0.tfrecord
+I0625 02:22:01.906343 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_59_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_5_0.tfrecord
+I0625 02:22:01.906391 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_5_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_60_0.tfrecord
+I0625 02:22:01.906438 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_60_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_61_0.tfrecord
+I0625 02:22:01.906503 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_61_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_62_0.tfrecord
+I0625 02:22:01.906551 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_62_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_63_0.tfrecord
+I0625 02:22:01.906599 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_63_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_64_0.tfrecord
+I0625 02:22:01.906647 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_64_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_65_0.tfrecord
+I0625 02:22:01.906695 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_65_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_66_0.tfrecord
+I0625 02:22:01.906742 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_66_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_67_0.tfrecord
+I0625 02:22:01.906789 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_67_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_68_0.tfrecord
+I0625 02:22:01.906836 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_68_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_69_0.tfrecord
+I0625 02:22:01.906888 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_69_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_6_0.tfrecord
+I0625 02:22:01.906935 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_6_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_70_0.tfrecord
+I0625 02:22:01.906982 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_70_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_71_0.tfrecord
+I0625 02:22:01.907030 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_71_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_72_0.tfrecord
+I0625 02:22:01.907077 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_72_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_73_0.tfrecord
+I0625 02:22:01.907129 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_73_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_74_0.tfrecord
+I0625 02:22:01.907177 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_74_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_75_0.tfrecord
+I0625 02:22:01.907225 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_75_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_76_0.tfrecord
+I0625 02:22:01.907273 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_76_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_77_0.tfrecord
+I0625 02:22:01.907320 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_77_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_78_0.tfrecord
+I0625 02:22:01.907367 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_78_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_79_0.tfrecord
+I0625 02:22:01.907415 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_79_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_7_0.tfrecord
+I0625 02:22:01.907462 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_7_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_80_0.tfrecord
+I0625 02:22:01.907515 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_80_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_81_0.tfrecord
+I0625 02:22:01.907562 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_81_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_82_0.tfrecord
+I0625 02:22:01.907610 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_82_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_83_0.tfrecord
+I0625 02:22:01.907657 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_83_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_84_0.tfrecord
+I0625 02:22:01.907705 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_84_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_85_0.tfrecord
+I0625 02:22:01.907756 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_85_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_86_0.tfrecord
+I0625 02:22:01.907805 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_86_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_87_0.tfrecord
+I0625 02:22:01.907852 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_87_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_88_0.tfrecord
+I0625 02:22:01.907899 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_88_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_89_0.tfrecord
+I0625 02:22:01.907979 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_89_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_8_0.tfrecord
+I0625 02:22:01.908048 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_8_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_90_0.tfrecord
+I0625 02:22:01.908097 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_90_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_91_0.tfrecord
+I0625 02:22:01.908145 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_91_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_92_0.tfrecord
+I0625 02:22:01.908193 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_92_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_93_0.tfrecord
+I0625 02:22:01.908241 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_93_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_94_0.tfrecord
+I0625 02:22:01.908289 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_94_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_95_0.tfrecord
+I0625 02:22:01.908337 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_95_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_96_0.tfrecord
+I0625 02:22:01.908385 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_96_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_97_0.tfrecord
+I0625 02:22:01.908433 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_97_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_98_0.tfrecord
+I0625 02:22:01.908493 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_98_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_99_0.tfrecord
+I0625 02:22:01.908543 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_99_0.tfrecord
+INFO:tensorflow:  gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_9_0.tfrecord
+I0625 02:22:01.908591 140422933784320 run_pretraining.py:500]   gs://sbt0/experiments/rethink_vocab/pretrain_tfrecords/char_no_space_21128/zhwiki_train_examples_9_0.tfrecord
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fb66c7b72f0>) includes params argument, but params are not passed to Estimator.
+W0625 02:22:01.914087 140422933784320 estimator.py:1994] Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fb66c7b72f0>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_log_step_count_steps': None, '_evaluation_master': 'grpc://10.89.98.210:8470', '_global_id_in_cluster': 0, '_model_dir': 'gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_21128/', '_service': None, '_eval_distribute': None, '_keep_checkpoint_every_n_hours': 10000, '_tf_random_seed': None, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_experimental_max_worker_delay_secs': None, '_train_distribute': None, '_keep_checkpoint_max': 20, '_num_ps_replicas': 0, '_experimental_distribute': None, '_protocol': None, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.89.98.210:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_save_checkpoints_steps': 5000, '_device_fn': None, '_save_checkpoints_secs': None, '_task_id': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fb66c7b5cc0>, '_save_summary_steps': 100, '_is_chief': True, '_session_creation_timeout_secs': 7200, '_master': 'grpc://10.89.98.210:8470', '_num_worker_replicas': 1, '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7fb66c7b5550>, '_task_type': 'worker'}
+I0625 02:22:01.915025 140422933784320 estimator.py:212] Using config: {'_log_step_count_steps': None, '_evaluation_master': 'grpc://10.89.98.210:8470', '_global_id_in_cluster': 0, '_model_dir': 'gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_21128/', '_service': None, '_eval_distribute': None, '_keep_checkpoint_every_n_hours': 10000, '_tf_random_seed': None, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_experimental_max_worker_delay_secs': None, '_train_distribute': None, '_keep_checkpoint_max': 20, '_num_ps_replicas': 0, '_experimental_distribute': None, '_protocol': None, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.89.98.210:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_save_checkpoints_steps': 5000, '_device_fn': None, '_save_checkpoints_secs': None, '_task_id': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fb66c7b5cc0>, '_save_summary_steps': 100, '_is_chief': True, '_session_creation_timeout_secs': 7200, '_master': 'grpc://10.89.98.210:8470', '_num_worker_replicas': 1, '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7fb66c7b5550>, '_task_type': 'worker'}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+I0625 02:22:01.915610 140422933784320 tpu_context.py:220] _TPUContext: eval_on_tpu True
+INFO:tensorflow:***** Running training *****
+I0625 02:22:01.916052 140422933784320 run_pretraining.py:542] ***** Running training *****
+INFO:tensorflow:  Batch size = 1024
+I0625 02:22:01.916136 140422933784320 run_pretraining.py:543]   Batch size = 1024
+INFO:tensorflow:Querying Tensorflow master (grpc://10.89.98.210:8470) for TPU system metadata.
+I0625 02:22:02.190011 140422933784320 tpu_system_metadata.py:78] Querying Tensorflow master (grpc://10.89.98.210:8470) for TPU system metadata.
+2020-06-25 02:22:02.191195: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:370] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+INFO:tensorflow:Found TPU system:
+I0625 02:22:02.202074 140422933784320 tpu_system_metadata.py:148] Found TPU system:
+INFO:tensorflow:*** Num TPU Cores: 8
+I0625 02:22:02.202272 140422933784320 tpu_system_metadata.py:149] *** Num TPU Cores: 8
+INFO:tensorflow:*** Num TPU Workers: 1
+I0625 02:22:02.202355 140422933784320 tpu_system_metadata.py:150] *** Num TPU Workers: 1
+INFO:tensorflow:*** Num TPU Cores Per Worker: 8
+I0625 02:22:02.202415 140422933784320 tpu_system_metadata.py:152] *** Num TPU Cores Per Worker: 8
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 4588245348639178046)
+I0625 02:22:02.202472 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 4588245348639178046)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, 9885324863728524847)
+I0625 02:22:02.202947 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, 9885324863728524847)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, 4430509656145572992)
+I0625 02:22:02.203013 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, 4430509656145572992)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, 1180964423261302752)
+I0625 02:22:02.203072 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, 1180964423261302752)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 2112619005248341315)
+I0625 02:22:02.203129 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 2112619005248341315)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, 13181712761070901926)
+I0625 02:22:02.203192 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, 13181712761070901926)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, 1824744705043601808)
+I0625 02:22:02.203248 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, 1824744705043601808)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, 7513162227061469531)
+I0625 02:22:02.203304 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, 7513162227061469531)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, 14934219396132183187)
+I0625 02:22:02.203374 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, 14934219396132183187)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 17725788874059321396)
+I0625 02:22:02.203430 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 17725788874059321396)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 2170583247443609562)
+I0625 02:22:02.203489 140422933784320 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 2170583247443609562)
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0625 02:22:02.208653 140422933784320 deprecation.py:506] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0625 02:22:02.209125 140422933784320 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:Calling model_fn.
+I0625 02:22:02.220738 140422933784320 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From src/run_pretraining.py:439: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.parallel_interleave(...)`.
+W0625 02:22:02.227085 140422933784320 deprecation.py:323] From src/run_pretraining.py:439: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.parallel_interleave(...)`.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
+W0625 02:22:02.227282 140422933784320 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
+WARNING:tensorflow:From src/run_pretraining.py:456: map_and_batch_with_legacy_function (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch()
+W0625 02:22:02.252868 140422933784320 deprecation.py:323] From src/run_pretraining.py:456: map_and_batch_with_legacy_function (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch()
+WARNING:tensorflow:From src/run_pretraining.py:472: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0625 02:22:02.511561 140422933784320 deprecation.py:323] From src/run_pretraining.py:472: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:<DatasetV1Adapter shapes: {next_sentence_labels: (128, 1), masked_lm_positions: (128, 13), input_ids: (128, 128), input_mask: (128, 128), segment_ids: (128, 128), masked_lm_ids: (128, 13), masked_lm_weights: (128, 13)}, types: {next_sentence_labels: tf.int32, masked_lm_positions: tf.int32, input_ids: tf.int32, input_mask: tf.int32, segment_ids: tf.int32, masked_lm_ids: tf.int32, masked_lm_weights: tf.float32}>
+I0625 02:22:02.520270 140422933784320 run_pretraining.py:457] <DatasetV1Adapter shapes: {next_sentence_labels: (128, 1), masked_lm_positions: (128, 13), input_ids: (128, 128), input_mask: (128, 128), segment_ids: (128, 128), masked_lm_ids: (128, 13), masked_lm_weights: (128, 13)}, types: {next_sentence_labels: tf.int32, masked_lm_positions: tf.int32, input_ids: tf.int32, input_mask: tf.int32, segment_ids: tf.int32, masked_lm_ids: tf.int32, masked_lm_weights: tf.float32}>
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 02:22:02.540690 140422933784320 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 02:22:02.542452 140422933784320 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 02:22:02.544107 140422933784320 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 02:22:02.545744 140422933784320 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 02:22:02.547419 140422933784320 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 02:22:02.549173 140422933784320 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 02:22:02.550952 140422933784320 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0625 02:22:02.553278 140422933784320 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+2020-06-25 02:22:02.571211: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-06-25 02:22:02.571250: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2020-06-25 02:22:02.571285: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (h-bert-1): /proc/driver/nvidia/version does not exist
+INFO:tensorflow:*** Features ***
+I0625 02:22:02.589701 140422933784320 run_pretraining.py:150] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (128, 128)
+I0625 02:22:02.589935 140422933784320 run_pretraining.py:152]   name = input_ids, shape = (128, 128)
+INFO:tensorflow:  name = input_mask, shape = (128, 128)
+I0625 02:22:02.590027 140422933784320 run_pretraining.py:152]   name = input_mask, shape = (128, 128)
+INFO:tensorflow:  name = masked_lm_ids, shape = (128, 13)
+I0625 02:22:02.590096 140422933784320 run_pretraining.py:152]   name = masked_lm_ids, shape = (128, 13)
+INFO:tensorflow:  name = masked_lm_positions, shape = (128, 13)
+I0625 02:22:02.590161 140422933784320 run_pretraining.py:152]   name = masked_lm_positions, shape = (128, 13)
+INFO:tensorflow:  name = masked_lm_weights, shape = (128, 13)
+I0625 02:22:02.590223 140422933784320 run_pretraining.py:152]   name = masked_lm_weights, shape = (128, 13)
+INFO:tensorflow:  name = next_sentence_labels, shape = (128, 1)
+I0625 02:22:02.590286 140422933784320 run_pretraining.py:152]   name = next_sentence_labels, shape = (128, 1)
+INFO:tensorflow:  name = segment_ids, shape = (128, 128)
+I0625 02:22:02.590347 140422933784320 run_pretraining.py:152]   name = segment_ids, shape = (128, 128)
+WARNING:tensorflow:From ./src/modeling.py:254: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0625 02:22:03.840724 140422933784320 deprecation.py:323] From ./src/modeling.py:254: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0625 02:22:03.842176 140422933784320 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+INFO:tensorflow:**** Trainable Variables ****
+I0625 02:22:03.978872 140422933784320 run_pretraining.py:221] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (21128, 128)
+I0625 02:22:03.979101 140422933784320 run_pretraining.py:227]   name = bert/embeddings/word_embeddings:0, shape = (21128, 128)
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 128)
+I0625 02:22:03.979217 140422933784320 run_pretraining.py:227]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 128)
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 128)
+I0625 02:22:03.979306 140422933784320 run_pretraining.py:227]   name = bert/embeddings/position_embeddings:0, shape = (512, 128)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (128,)
+I0625 02:22:03.979382 140422933784320 run_pretraining.py:227]   name = bert/embeddings/LayerNorm/beta:0, shape = (128,)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (128,)
+I0625 02:22:03.979452 140422933784320 run_pretraining.py:227]   name = bert/embeddings/LayerNorm/gamma:0, shape = (128,)
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768)
+I0625 02:22:03.979519 140422933784320 run_pretraining.py:227]   name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768)
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,)
+I0625 02:22:03.979590 140422933784320 run_pretraining.py:227]   name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768)
+I0625 02:22:03.979678 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,)
+I0625 02:22:03.979752 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768)
+I0625 02:22:03.979818 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,)
+I0625 02:22:03.979889 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768)
+I0625 02:22:03.979974 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,)
+I0625 02:22:03.980047 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768)
+I0625 02:22:03.980113 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,)
+I0625 02:22:03.980183 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,)
+I0625 02:22:03.980248 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,)
+I0625 02:22:03.980313 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072)
+I0625 02:22:03.980377 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,)
+I0625 02:22:03.980447 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768)
+I0625 02:22:03.980512 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,)
+I0625 02:22:03.980594 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,)
+I0625 02:22:03.980673 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,)
+I0625 02:22:03.980738 140422933784320 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768)
+I0625 02:22:03.980802 140422933784320 run_pretraining.py:227]   name = bert/pooler/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,)
+I0625 02:22:03.980874 140422933784320 run_pretraining.py:227]   name = bert/pooler/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/transform/dense/kernel:0, shape = (768, 128)
+I0625 02:22:03.980939 140422933784320 run_pretraining.py:227]   name = cls/predictions/transform/dense/kernel:0, shape = (768, 128)
+INFO:tensorflow:  name = cls/predictions/transform/dense/bias:0, shape = (128,)
+I0625 02:22:03.981009 140422933784320 run_pretraining.py:227]   name = cls/predictions/transform/dense/bias:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/beta:0, shape = (128,)
+I0625 02:22:03.981075 140422933784320 run_pretraining.py:227]   name = cls/predictions/transform/LayerNorm/beta:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/gamma:0, shape = (128,)
+I0625 02:22:03.981140 140422933784320 run_pretraining.py:227]   name = cls/predictions/transform/LayerNorm/gamma:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/output_bias:0, shape = (21128,)
+I0625 02:22:03.981204 140422933784320 run_pretraining.py:227]   name = cls/predictions/output_bias:0, shape = (21128,)
+INFO:tensorflow:  name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+I0625 02:22:03.981269 140422933784320 run_pretraining.py:227]   name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = cls/seq_relationship/output_bias:0, shape = (2,)
+I0625 02:22:03.981339 140422933784320 run_pretraining.py:227]   name = cls/seq_relationship/output_bias:0, shape = (2,)
+INFO:tensorflow:++++++ warmup starts at step 0, for 3125 steps ++++++
+I0625 02:22:03.993503 140422933784320 optimization.py:50] ++++++ warmup starts at step 0, for 3125 steps ++++++
+INFO:tensorflow:using lamb
+I0625 02:22:04.005445 140422933784320 optimization.py:83] using lamb
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0625 02:22:04.208576 140422933784320 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Create CheckpointSaverHook.
+I0625 02:22:08.236400 140422933784320 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+I0625 02:22:08.295425 140422933784320 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:TPU job name worker
+I0625 02:22:10.989228 140422933784320 tpu_estimator.py:506] TPU job name worker
+INFO:tensorflow:Graph was finalized.
+I0625 02:22:11.231629 140422933784320 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Running local_init_op.
+I0625 02:22:13.136264 140422933784320 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0625 02:22:13.339699 140422933784320 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_21128/model.ckpt.
+I0625 02:22:18.003151 140422933784320 basic_session_run_hooks.py:606] Saving checkpoints for 0 into gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_21128/model.ckpt.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:751: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Variable.assign which has equivalent behavior in 2.X.
+W0625 02:22:30.872671 140422933784320 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:751: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Variable.assign which has equivalent behavior in 2.X.
+INFO:tensorflow:Initialized dataset iterators in 0 seconds
+I0625 02:22:31.346060 140422933784320 util.py:98] Initialized dataset iterators in 0 seconds
+INFO:tensorflow:Installing graceful shutdown hook.
+I0625 02:22:31.347827 140422933784320 session_support.py:332] Installing graceful shutdown hook.
+2020-06-25 02:22:31.348276: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:370] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+INFO:tensorflow:Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
+I0625 02:22:31.352219 140422933784320 session_support.py:82] Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
+INFO:tensorflow:Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
+
+I0625 02:22:31.353841 140422933784320 session_support.py:105] Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
+
+INFO:tensorflow:Init TPU system
+I0625 02:22:31.357030 140422933784320 tpu_estimator.py:567] Init TPU system
+INFO:tensorflow:Initialized TPU in 2 seconds
+I0625 02:22:34.077472 140422933784320 tpu_estimator.py:576] Initialized TPU in 2 seconds
+INFO:tensorflow:Starting infeed thread controller.
+I0625 02:22:34.078247 140421176981248 tpu_estimator.py:521] Starting infeed thread controller.
+INFO:tensorflow:Starting outfeed thread controller.
+I0625 02:22:34.078712 140421168588544 tpu_estimator.py:540] Starting outfeed thread controller.
+I0625 02:22:34.126051 140421160195840 transport.py:157] Attempting refresh to obtain initial access_token
+W0625 02:22:34.164267 140421160195840 http.py:118] Invalid JSON content from response: b'{\n  "error": {\n    "code": 403,\n    "message": "Permission denied on resource project None.",\n    "status": "PERMISSION_DENIED",\n    "details": [\n      {\n        "@type": "type.googleapis.com/google.rpc.Help",\n        "links": [\n          {\n            "description": "Google developer console API key",\n            "url": "https://console.developers.google.com/project/None/apiui/credential"\n          }\n        ]\n      }\n    ]\n  }\n}\n'
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 476, in _fetch_cloud_tpu_metadata
+    return request.execute()
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/http.py", line 856, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.89.98.210:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/project/None/apiui/credential'}], '@type': 'type.googleapis.com/google.rpc.Help'}]">
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/tpu/preempted_hook.py", line 87, in run
+    response = self._cluster._fetch_cloud_tpu_metadata()  # pylint: disable=protected-access
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 480, in _fetch_cloud_tpu_metadata
+    "constructor. Exception: %s" % (self._tpu, e))
+ValueError: Could not lookup TPU metadata from name 'b'10.89.98.210:8470''. Please doublecheck the tpu argument in the TPUClusterResolver constructor. Exception: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.89.98.210:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/proINFO:tensorflow:Outfeed finished for iteration (0, 219)
+I0625 02:22:43.858826 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (0, 219)
+INFO:tensorflow:Outfeed finished for iteration (0, 438)
+I0625 02:23:43.887061 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (0, 438)
+INFO:tensorflow:Outfeed finished for iteration (0, 657)
+I0625 02:24:43.915903 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (0, 657)
+INFO:tensorflow:Outfeed finished for iteration (0, 876)
+I0625 02:25:43.944920 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (0, 876)
+INFO:tensorflow:loss = 8.793417, step = 1000
+I0625 02:26:18.655893 139838649452288 basic_session_run_hooks.py:262] loss = 8.793417, step = 1000
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:26:18.658659 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:26:18.658909 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (1, 88)
+I0625 02:26:44.075774 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (1, 88)
+INFO:tensorflow:Outfeed finished for iteration (1, 307)
+I0625 02:27:44.104802 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (1, 307)
+INFO:tensorflow:Outfeed finished for iteration (1, 526)
+I0625 02:28:44.134224 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (1, 526)
+INFO:tensorflow:Outfeed finished for iteration (1, 745)
+I0625 02:29:44.163653 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (1, 745)
+INFO:tensorflow:Outfeed finished for iteration (1, 964)
+I0625 02:30:44.195734 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (1, 964)
+INFO:tensorflow:loss = 6.8149023, step = 2000 (275.393 sec)
+I0625 02:30:54.048733 139838649452288 basic_session_run_hooks.py:260] loss = 6.8149023, step = 2000 (275.393 sec)
+INFO:tensorflow:global_step/sec: 3.63118
+I0625 02:30:54.050281 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.63118
+INFO:tensorflow:examples/sec: 3718.33
+I0625 02:30:54.051025 139838649452288 tpu_estimator.py:2308] examples/sec: 3718.33
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:30:54.848832 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:30:54.849267 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (2, 179)
+I0625 02:31:44.280130 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (2, 179)
+INFO:tensorflow:Outfeed finished for iteration (2, 398)
+I0625 02:32:44.310526 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (2, 398)
+INFO:tensorflow:Outfeed finished for iteration (2, 617)
+I0625 02:33:44.340141 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (2, 617)
+INFO:tensorflow:Outfeed finished for iteration (2, 836)
+I0625 02:34:44.370463 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (2, 836)
+INFO:tensorflow:loss = 3.767525, step = 3000 (275.253 sec)
+I0625 02:35:29.301251 139838649452288 basic_session_run_hooks.py:260] loss = 3.767525, step = 3000 (275.253 sec)
+INFO:tensorflow:global_step/sec: 3.63303
+I0625 02:35:29.302652 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.63303
+INFO:tensorflow:examples/sec: 3720.22
+I0625 02:35:30.475478 139838649452288 tpu_estimator.py:2308] examples/sec: 3720.22
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:35:30.476963 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:35:30.477169 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (3, 50)
+I0625 02:35:44.387249 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (3, 50)
+INFO:tensorflow:Outfeed finished for iteration (3, 269)
+I0625 02:36:44.417143 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (3, 269)
+INFO:tensorflow:Outfeed finished for iteration (3, 488)
+I0625 02:37:44.448040 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (3, 488)
+INFO:tensorflow:Outfeed finished for iteration (3, 707)
+I0625 02:38:44.478724 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (3, 707)
+INFO:tensorflow:Outfeed finished for iteration (3, 926)
+I0625 02:39:44.511462 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (3, 926)
+INFO:tensorflow:loss = 2.3910313, step = 4000 (276.273 sec)
+I0625 02:40:05.574726 139838649452288 basic_session_run_hooks.py:260] loss = 2.3910313, step = 4000 (276.273 sec)
+INFO:tensorflow:global_step/sec: 3.6196
+I0625 02:40:05.576150 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.6196
+INFO:tensorflow:examples/sec: 3706.47
+I0625 02:40:05.576494 139838649452288 tpu_estimator.py:2308] examples/sec: 3706.47
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:40:05.577601 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:40:05.577903 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (4, 142)
+I0625 02:40:44.711830 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (4, 142)
+INFO:tensorflow:Outfeed finished for iteration (4, 361)
+I0625 02:41:44.740950 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (4, 361)
+INFO:tensorflow:Outfeed finished for iteration (4, 580)
+I0625 02:42:44.770698 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (4, 580)
+INFO:tensorflow:Outfeed finished for iteration (4, 799)
+I0625 02:43:44.799914 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (4, 799)
+INFO:tensorflow:Saving checkpoints for 5000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+I0625 02:44:39.874569 139838649452288 basic_session_run_hooks.py:606] Saving checkpoints for 5000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+INFO:tensorflow:loss = 2.3287747, step = 5000 (288.558 sec)
+I0625 02:44:54.133178 139838649452288 basic_session_run_hooks.py:260] loss = 2.3287747, step = 5000 (288.558 sec)
+INFO:tensorflow:global_step/sec: 3.4655
+I0625 02:44:54.134607 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.4655
+INFO:tensorflow:examples/sec: 3548.67
+I0625 02:44:54.135073 139838649452288 tpu_estimator.py:2308] examples/sec: 3548.67
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:44:54.136401 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:44:54.136644 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (5, 0)
+I0625 02:44:54.345783 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (5, 0)
+INFO:tensorflow:Outfeed finished for iteration (5, 219)
+I0625 02:45:54.376581 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (5, 219)
+INFO:tensorflow:Outfeed finished for iteration (5, 438)
+I0625 02:46:54.407418 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (5, 438)
+INFO:tensorflow:Outfeed finished for iteration (5, 657)
+I0625 02:47:54.438287 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (5, 657)
+INFO:tensorflow:Outfeed finished for iteration (5, 876)
+I0625 02:48:54.471559 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (5, 876)
+INFO:tensorflow:loss = 2.347587, step = 6000 (274.305 sec)
+I0625 02:49:28.438231 139838649452288 basic_session_run_hooks.py:260] loss = 2.347587, step = 6000 (274.305 sec)
+INFO:tensorflow:global_step/sec: 3.64558
+I0625 02:49:28.439724 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64558
+INFO:tensorflow:examples/sec: 3733.07
+I0625 02:49:29.278907 139838649452288 tpu_estimator.py:2308] examples/sec: 3733.07
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:49:29.280387 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:49:29.280601 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (6, 92)
+I0625 02:49:54.709993 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (6, 92)
+INFO:tensorflow:Outfeed finished for iteration (6, 311)
+I0625 02:50:54.740262 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (6, 311)
+INFO:tensorflow:Outfeed finished for iteration (6, 530)
+I0625 02:51:54.769977 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (6, 530)
+INFO:tensorflow:Outfeed finished for iteration (6, 749)
+I0625 02:52:54.800194 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (6, 749)
+INFO:tensorflow:Outfeed finished for iteration (6, 968)
+I0625 02:53:54.832375 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (6, 968)
+INFO:tensorflow:loss = 1.4311246, step = 7000 (276.335 sec)
+I0625 02:54:04.773321 139838649452288 basic_session_run_hooks.py:260] loss = 1.4311246, step = 7000 (276.335 sec)
+INFO:tensorflow:global_step/sec: 3.6188
+I0625 02:54:04.774710 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.6188
+INFO:tensorflow:examples/sec: 3705.65
+I0625 02:54:04.775157 139838649452288 tpu_estimator.py:2308] examples/sec: 3705.65
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:54:04.776286 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:54:04.776524 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (7, 182)
+I0625 02:54:55.030455 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (7, 182)
+INFO:tensorflow:Outfeed finished for iteration (7, 401)
+I0625 02:55:55.059199 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (7, 401)
+INFO:tensorflow:Outfeed finished for iteration (7, 620)
+I0625 02:56:55.088617 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (7, 620)
+INFO:tensorflow:Outfeed finished for iteration (7, 839)
+I0625 02:57:55.118274 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (7, 839)
+INFO:tensorflow:loss = 1.8938898, step = 8000 (274.464 sec)
+I0625 02:58:39.237086 139838649452288 basic_session_run_hooks.py:260] loss = 1.8938898, step = 8000 (274.464 sec)
+INFO:tensorflow:global_step/sec: 3.64347
+I0625 02:58:39.238409 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64347
+INFO:tensorflow:examples/sec: 3730.91
+I0625 02:58:40.487775 139838649452288 tpu_estimator.py:2308] examples/sec: 3730.91
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 02:58:40.489366 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 02:58:40.489675 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (8, 53)
+I0625 02:58:55.218415 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (8, 53)
+INFO:tensorflow:Outfeed finished for iteration (8, 272)
+I0625 02:59:55.247233 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (8, 272)
+INFO:tensorflow:Outfeed finished for iteration (8, 491)
+I0625 03:00:55.276793 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (8, 491)
+INFO:tensorflow:Outfeed finished for iteration (8, 710)
+I0625 03:01:55.306154 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (8, 710)
+INFO:tensorflow:Outfeed finished for iteration (8, 929)
+I0625 03:02:55.337495 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (8, 929)
+INFO:tensorflow:loss = 1.6883787, step = 9000 (275.537 sec)
+I0625 03:03:14.774312 139838649452288 basic_session_run_hooks.py:260] loss = 1.6883787, step = 9000 (275.537 sec)
+INFO:tensorflow:global_step/sec: 3.62927
+I0625 03:03:14.776198 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.62927
+INFO:tensorflow:examples/sec: 3716.37
+I0625 03:03:15.868225 139838649452288 tpu_estimator.py:2308] examples/sec: 3716.37
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:03:15.869667 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:03:15.870048 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (9, 144)
+I0625 03:03:55.549661 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (9, 144)
+INFO:tensorflow:Outfeed finished for iteration (9, 363)
+I0625 03:04:55.578688 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (9, 363)
+INFO:tensorflow:Outfeed finished for iteration (9, 582)
+I0625 03:05:55.608119 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (9, 582)
+INFO:tensorflow:Outfeed finished for iteration (9, 801)
+I0625 03:06:55.637791 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (9, 801)
+INFO:tensorflow:Saving checkpoints for 10000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+I0625 03:07:50.165211 139838649452288 basic_session_run_hooks.py:606] Saving checkpoints for 10000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+INFO:tensorflow:loss = 1.4933764, step = 10000 (289.154 sec)
+I0625 03:08:03.928184 139838649452288 basic_session_run_hooks.py:260] loss = 1.4933764, step = 10000 (289.154 sec)
+INFO:tensorflow:global_step/sec: 3.45837
+I0625 03:08:03.929621 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.45837
+INFO:tensorflow:examples/sec: 3541.37
+I0625 03:08:03.930125 139838649452288 tpu_estimator.py:2308] examples/sec: 3541.37
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:08:03.931139 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:08:03.931444 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (10, 0)
+I0625 03:08:04.131061 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (10, 0)
+INFO:tensorflow:Outfeed finished for iteration (10, 219)
+I0625 03:09:04.172394 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (10, 219)
+INFO:tensorflow:Outfeed finished for iteration (10, 438)
+I0625 03:10:04.202796 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (10, 438)
+INFO:tensorflow:Outfeed finished for iteration (10, 657)
+I0625 03:11:04.234562 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (10, 657)
+INFO:tensorflow:Outfeed finished for iteration (10, 876)
+I0625 03:12:04.266623 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (10, 876)
+INFO:tensorflow:loss = 1.765707, step = 11000 (274.309 sec)
+I0625 03:12:38.237267 139838649452288 basic_session_run_hooks.py:260] loss = 1.765707, step = 11000 (274.309 sec)
+INFO:tensorflow:global_step/sec: 3.64552
+I0625 03:12:38.238557 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64552
+INFO:tensorflow:examples/sec: 3733.02
+I0625 03:12:39.203740 139838649452288 tpu_estimator.py:2308] examples/sec: 3733.02
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:12:39.205684 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:12:39.206085 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (11, 91)
+I0625 03:13:04.381086 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (11, 91)
+INFO:tensorflow:Outfeed finished for iteration (11, 310)
+I0625 03:14:04.410375 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (11, 310)
+INFO:tensorflow:Outfeed finished for iteration (11, 529)
+I0625 03:15:04.440269 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (11, 529)
+INFO:tensorflow:Outfeed finished for iteration (11, 748)
+I0625 03:16:04.470176 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (11, 748)
+INFO:tensorflow:Outfeed finished for iteration (11, 967)
+I0625 03:17:04.501567 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (11, 967)
+INFO:tensorflow:loss = 1.348218, step = 12000 (275.282 sec)
+I0625 03:17:13.519730 139838649452288 basic_session_run_hooks.py:260] loss = 1.348218, step = 12000 (275.282 sec)
+INFO:tensorflow:global_step/sec: 3.63263
+I0625 03:17:13.521312 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.63263
+INFO:tensorflow:examples/sec: 3719.81
+I0625 03:17:14.219108 139838649452288 tpu_estimator.py:2308] examples/sec: 3719.81
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:17:14.220799 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:17:14.221196 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (12, 183)
+I0625 03:18:04.589964 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (12, 183)
+INFO:tensorflow:Outfeed finished for iteration (12, 402)
+I0625 03:19:04.620311 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (12, 402)
+INFO:tensorflow:Outfeed finished for iteration (12, 621)
+I0625 03:20:04.650043 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (12, 621)
+INFO:tensorflow:Outfeed finished for iteration (12, 840)
+I0625 03:21:04.680312 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (12, 840)
+INFO:tensorflow:loss = 1.690721, step = 13000 (275.748 sec)
+I0625 03:21:49.267842 139838649452288 basic_session_run_hooks.py:260] loss = 1.690721, step = 13000 (275.748 sec)
+INFO:tensorflow:global_step/sec: 3.6265
+I0625 03:21:49.269491 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.6265
+INFO:tensorflow:examples/sec: 3713.53
+I0625 03:21:49.269941 139838649452288 tpu_estimator.py:2308] examples/sec: 3713.53
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:21:49.271028 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:21:49.271252 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (13, 56)
+I0625 03:22:04.842726 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (13, 56)
+INFO:tensorflow:Outfeed finished for iteration (13, 275)
+I0625 03:23:04.872980 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (13, 275)
+INFO:tensorflow:Outfeed finished for iteration (13, 494)
+I0625 03:24:04.904428 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (13, 494)
+INFO:tensorflow:Outfeed finished for iteration (13, 713)
+I0625 03:25:04.934025 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (13, 713)
+INFO:tensorflow:Outfeed finished for iteration (13, 932)
+I0625 03:26:04.966393 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (13, 932)
+INFO:tensorflow:loss = 1.5598848, step = 14000 (274.317 sec)
+I0625 03:26:23.584543 139838649452288 basic_session_run_hooks.py:260] loss = 1.5598848, step = 14000 (274.317 sec)
+INFO:tensorflow:global_step/sec: 3.64542
+I0625 03:26:23.586117 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64542
+INFO:tensorflow:examples/sec: 3732.91
+I0625 03:26:24.281086 139838649452288 tpu_estimator.py:2308] examples/sec: 3732.91
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:26:24.282764 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:26:24.283108 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (14, 148)
+I0625 03:27:05.087867 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (14, 148)
+INFO:tensorflow:Outfeed finished for iteration (14, 367)
+I0625 03:28:05.120856 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (14, 367)
+INFO:tensorflow:Outfeed finished for iteration (14, 586)
+I0625 03:29:05.150550 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (14, 586)
+INFO:tensorflow:Outfeed finished for iteration (14, 805)
+I0625 03:30:05.182167 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (14, 805)
+INFO:tensorflow:Saving checkpoints for 15000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+I0625 03:30:58.609927 139838649452288 basic_session_run_hooks.py:606] Saving checkpoints for 15000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+INFO:tensorflow:loss = 1.6356561, step = 15000 (289.273 sec)
+I0625 03:31:12.857465 139838649452288 basic_session_run_hooks.py:260] loss = 1.6356561, step = 15000 (289.273 sec)
+INFO:tensorflow:global_step/sec: 3.45694
+I0625 03:31:12.859202 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.45694
+INFO:tensorflow:examples/sec: 3539.91
+I0625 03:31:12.859620 139838649452288 tpu_estimator.py:2308] examples/sec: 3539.91
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:31:12.860635 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:31:12.860837 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (15, 0)
+I0625 03:31:13.060023 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (15, 0)
+INFO:tensorflow:Outfeed finished for iteration (15, 219)
+I0625 03:32:13.088790 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (15, 219)
+INFO:tensorflow:Outfeed finished for iteration (15, 438)
+I0625 03:33:13.117640 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (15, 438)
+INFO:tensorflow:Outfeed finished for iteration (15, 657)
+I0625 03:34:13.145923 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (15, 657)
+INFO:tensorflow:Outfeed finished for iteration (15, 876)
+I0625 03:35:13.177903 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (15, 876)
+INFO:tensorflow:loss = 1.8297977, step = 16000 (275.357 sec)
+I0625 03:35:48.214892 139838649452288 basic_session_run_hooks.py:260] loss = 1.8297977, step = 16000 (275.357 sec)
+INFO:tensorflow:global_step/sec: 3.63165
+I0625 03:35:48.216358 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.63165
+INFO:tensorflow:examples/sec: 3718.81
+I0625 03:35:48.216827 139838649452288 tpu_estimator.py:2308] examples/sec: 3718.81
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:35:48.217989 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:35:48.218216 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (16, 91)
+I0625 03:36:13.357642 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (16, 91)
+INFO:tensorflow:Outfeed finished for iteration (16, 310)
+I0625 03:37:13.388113 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (16, 310)
+INFO:tensorflow:Outfeed finished for iteration (16, 529)
+I0625 03:38:13.416806 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (16, 529)
+INFO:tensorflow:Outfeed finished for iteration (16, 748)
+I0625 03:39:13.446250 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (16, 748)
+INFO:tensorflow:Outfeed finished for iteration (16, 967)
+I0625 03:40:13.477181 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (16, 967)
+INFO:tensorflow:loss = 1.2449075, step = 17000 (274.287 sec)
+I0625 03:40:22.502334 139838649452288 basic_session_run_hooks.py:260] loss = 1.2449075, step = 17000 (274.287 sec)
+INFO:tensorflow:global_step/sec: 3.64581
+I0625 03:40:22.503792 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64581
+INFO:tensorflow:examples/sec: 3733.31
+I0625 03:40:22.504024 139838649452288 tpu_estimator.py:2308] examples/sec: 3733.31
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:40:23.399496 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:40:23.400145 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (17, 182)
+I0625 03:41:13.505711 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (17, 182)
+INFO:tensorflow:Outfeed finished for iteration (17, 401)
+I0625 03:42:13.535617 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (17, 401)
+INFO:tensorflow:Outfeed finished for iteration (17, 620)
+I0625 03:43:13.564664 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (17, 620)
+INFO:tensorflow:Outfeed finished for iteration (17, 839)
+I0625 03:44:13.593748 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (17, 839)
+INFO:tensorflow:loss = 1.5971605, step = 18000 (275.200 sec)
+I0625 03:44:57.702286 139838649452288 basic_session_run_hooks.py:260] loss = 1.5971605, step = 18000 (275.200 sec)
+INFO:tensorflow:global_step/sec: 3.63372
+I0625 03:44:57.703609 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.63372
+INFO:tensorflow:examples/sec: 3720.93
+I0625 03:44:58.869382 139838649452288 tpu_estimator.py:2308] examples/sec: 3720.93
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:44:58.870886 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:44:58.871219 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (18, 53)
+I0625 03:45:13.600373 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (18, 53)
+INFO:tensorflow:Outfeed finished for iteration (18, 272)
+I0625 03:46:13.628588 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (18, 272)
+INFO:tensorflow:Outfeed finished for iteration (18, 491)
+I0625 03:47:13.656864 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (18, 491)
+INFO:tensorflow:Outfeed finished for iteration (18, 710)
+I0625 03:48:13.685526 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (18, 710)
+INFO:tensorflow:Outfeed finished for iteration (18, 929)
+I0625 03:49:13.713686 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (18, 929)
+INFO:tensorflow:loss = 1.7132506, step = 19000 (276.161 sec)
+I0625 03:49:33.862956 139838649452288 basic_session_run_hooks.py:260] loss = 1.7132506, step = 19000 (276.161 sec)
+INFO:tensorflow:global_step/sec: 3.62107
+I0625 03:49:33.864766 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.62107
+INFO:tensorflow:examples/sec: 3707.98
+I0625 03:49:33.865257 139838649452288 tpu_estimator.py:2308] examples/sec: 3707.98
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:49:33.866504 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:49:33.866809 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (19, 145)
+I0625 03:50:13.818711 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (19, 145)
+INFO:tensorflow:Outfeed finished for iteration (19, 364)
+I0625 03:51:13.849647 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (19, 364)
+INFO:tensorflow:Outfeed finished for iteration (19, 583)
+I0625 03:52:13.881360 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (19, 583)
+INFO:tensorflow:Outfeed finished for iteration (19, 802)
+I0625 03:53:13.912816 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (19, 802)
+INFO:tensorflow:Saving checkpoints for 20000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+I0625 03:54:08.174293 139838649452288 basic_session_run_hooks.py:606] Saving checkpoints for 20000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+INFO:tensorflow:loss = 1.1983901, step = 20000 (289.638 sec)
+I0625 03:54:23.501102 139838649452288 basic_session_run_hooks.py:260] loss = 1.1983901, step = 20000 (289.638 sec)
+INFO:tensorflow:global_step/sec: 3.45259
+I0625 03:54:23.502756 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.45259
+INFO:tensorflow:examples/sec: 3535.45
+I0625 03:54:23.503214 139838649452288 tpu_estimator.py:2308] examples/sec: 3535.45
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:54:23.504419 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:54:23.504646 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (20, 0)
+I0625 03:54:23.725697 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (20, 0)
+INFO:tensorflow:Outfeed finished for iteration (20, 219)
+I0625 03:55:23.752303 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (20, 219)
+INFO:tensorflow:Outfeed finished for iteration (20, 438)
+I0625 03:56:23.782081 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (20, 438)
+INFO:tensorflow:Outfeed finished for iteration (20, 657)
+I0625 03:57:23.812303 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (20, 657)
+INFO:tensorflow:Outfeed finished for iteration (20, 876)
+I0625 03:58:23.844452 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (20, 876)
+INFO:tensorflow:loss = 1.5947095, step = 21000 (274.312 sec)
+I0625 03:58:57.812689 139838649452288 basic_session_run_hooks.py:260] loss = 1.5947095, step = 21000 (274.312 sec)
+INFO:tensorflow:global_step/sec: 3.64549
+I0625 03:58:57.814598 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64549
+INFO:tensorflow:examples/sec: 3732.98
+I0625 03:58:59.042241 139838649452288 tpu_estimator.py:2308] examples/sec: 3732.98
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 03:58:59.044477 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 03:58:59.044710 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (21, 90)
+I0625 03:59:24.060801 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (21, 90)
+INFO:tensorflow:Outfeed finished for iteration (21, 309)
+I0625 04:00:24.091145 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (21, 309)
+INFO:tensorflow:Outfeed finished for iteration (21, 528)
+I0625 04:01:24.121209 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (21, 528)
+INFO:tensorflow:Outfeed finished for iteration (21, 747)
+I0625 04:02:24.151608 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (21, 747)
+INFO:tensorflow:Outfeed finished for iteration (21, 966)
+I0625 04:03:24.184156 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (21, 966)
+INFO:tensorflow:loss = 1.8668034, step = 22000 (276.825 sec)
+I0625 04:03:34.637385 139838649452288 basic_session_run_hooks.py:260] loss = 1.8668034, step = 22000 (276.825 sec)
+INFO:tensorflow:global_step/sec: 3.61239
+I0625 04:03:34.638889 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.61239
+INFO:tensorflow:examples/sec: 3699.09
+I0625 04:03:34.639235 139838649452288 tpu_estimator.py:2308] examples/sec: 3699.09
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:03:34.640233 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:03:34.640455 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (22, 180)
+I0625 04:04:24.184691 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (22, 180)
+INFO:tensorflow:Outfeed finished for iteration (22, 399)
+I0625 04:05:24.213840 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (22, 399)
+INFO:tensorflow:Outfeed finished for iteration (22, 618)
+I0625 04:06:24.243711 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (22, 618)
+INFO:tensorflow:Outfeed finished for iteration (22, 837)
+I0625 04:07:24.272350 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (22, 837)
+INFO:tensorflow:loss = 1.2855748, step = 23000 (274.297 sec)
+I0625 04:08:08.934009 139838649452288 basic_session_run_hooks.py:260] loss = 1.2855748, step = 23000 (274.297 sec)
+INFO:tensorflow:global_step/sec: 3.64569
+I0625 04:08:08.935309 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64569
+INFO:tensorflow:examples/sec: 3733.19
+I0625 04:08:10.160082 139838649452288 tpu_estimator.py:2308] examples/sec: 3733.19
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:08:10.161718 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:08:10.162089 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (23, 51)
+I0625 04:08:24.369754 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (23, 51)
+INFO:tensorflow:Outfeed finished for iteration (23, 270)
+I0625 04:09:24.400287 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (23, 270)
+INFO:tensorflow:Outfeed finished for iteration (23, 489)
+I0625 04:10:24.430888 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (23, 489)
+INFO:tensorflow:Outfeed finished for iteration (23, 708)
+I0625 04:11:24.461539 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (23, 708)
+INFO:tensorflow:Outfeed finished for iteration (23, 927)
+I0625 04:12:24.492701 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (23, 927)
+INFO:tensorflow:loss = 1.4048291, step = 24000 (275.555 sec)
+I0625 04:12:44.488560 139838649452288 basic_session_run_hooks.py:260] loss = 1.4048291, step = 24000 (275.555 sec)
+INFO:tensorflow:global_step/sec: 3.62904
+I0625 04:12:44.490094 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.62904
+INFO:tensorflow:examples/sec: 3716.14
+I0625 04:12:46.123685 139838649452288 tpu_estimator.py:2308] examples/sec: 3716.14
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:12:46.125218 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:12:46.125499 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (24, 140)
+I0625 04:13:24.733920 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (24, 140)
+INFO:tensorflow:Outfeed finished for iteration (24, 359)
+I0625 04:14:24.764103 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (24, 359)
+INFO:tensorflow:Outfeed finished for iteration (24, 578)
+I0625 04:15:24.795202 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (24, 578)
+INFO:tensorflow:Outfeed finished for iteration (24, 797)
+I0625 04:16:24.824275 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (24, 797)
+INFO:tensorflow:Saving checkpoints for 25000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+I0625 04:17:20.443009 139838649452288 basic_session_run_hooks.py:606] Saving checkpoints for 25000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+INFO:tensorflow:loss = 1.7959144, step = 25000 (290.248 sec)
+I0625 04:17:34.737001 139838649452288 basic_session_run_hooks.py:260] loss = 1.7959144, step = 25000 (290.248 sec)
+INFO:tensorflow:global_step/sec: 3.44533
+I0625 04:17:34.738321 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.44533
+INFO:tensorflow:examples/sec: 3528.01
+I0625 04:17:34.738788 139838649452288 tpu_estimator.py:2308] examples/sec: 3528.01
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:17:34.740160 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:17:34.740348 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (25, 0)
+I0625 04:17:34.940591 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (25, 0)
+INFO:tensorflow:Outfeed finished for iteration (25, 219)
+I0625 04:18:35.010571 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (25, 219)
+INFO:tensorflow:Outfeed finished for iteration (25, 438)
+I0625 04:19:35.041078 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (25, 438)
+INFO:tensorflow:Outfeed finished for iteration (25, 657)
+I0625 04:20:35.072057 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (25, 657)
+INFO:tensorflow:Outfeed finished for iteration (25, 876)
+I0625 04:21:35.105098 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (25, 876)
+INFO:tensorflow:loss = 1.6002742, step = 26000 (274.335 sec)
+I0625 04:22:09.071662 139838649452288 basic_session_run_hooks.py:260] loss = 1.6002742, step = 26000 (274.335 sec)
+INFO:tensorflow:global_step/sec: 3.64518
+I0625 04:22:09.073140 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64518
+INFO:tensorflow:examples/sec: 3732.66
+I0625 04:22:10.266503 139838649452288 tpu_estimator.py:2308] examples/sec: 3732.66
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:22:10.268175 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:22:10.268419 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (26, 90)
+I0625 04:22:35.290781 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (26, 90)
+INFO:tensorflow:Outfeed finished for iteration (26, 309)
+I0625 04:23:35.321340 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (26, 309)
+INFO:tensorflow:Outfeed finished for iteration (26, 528)
+I0625 04:24:35.351807 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (26, 528)
+INFO:tensorflow:Outfeed finished for iteration (26, 747)
+I0625 04:25:35.382367 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (26, 747)
+INFO:tensorflow:Outfeed finished for iteration (26, 966)
+I0625 04:26:35.412868 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (26, 966)
+INFO:tensorflow:loss = 1.5763054, step = 27000 (275.636 sec)
+I0625 04:26:44.707677 139838649452288 basic_session_run_hooks.py:260] loss = 1.5763054, step = 27000 (275.636 sec)
+INFO:tensorflow:global_step/sec: 3.62798
+I0625 04:26:44.709011 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.62798
+INFO:tensorflow:examples/sec: 3715.05
+I0625 04:26:45.473427 139838649452288 tpu_estimator.py:2308] examples/sec: 3715.05
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:26:45.474867 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:26:45.475112 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (27, 182)
+I0625 04:27:35.603039 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (27, 182)
+INFO:tensorflow:Outfeed finished for iteration (27, 401)
+I0625 04:28:35.634598 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (27, 401)
+INFO:tensorflow:Outfeed finished for iteration (27, 620)
+I0625 04:29:35.666421 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (27, 620)
+INFO:tensorflow:Outfeed finished for iteration (27, 839)
+I0625 04:30:35.697679 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (27, 839)
+INFO:tensorflow:loss = 1.3757975, step = 28000 (276.363 sec)
+I0625 04:31:21.070674 139838649452288 basic_session_run_hooks.py:260] loss = 1.3757975, step = 28000 (276.363 sec)
+INFO:tensorflow:global_step/sec: 3.61842
+I0625 04:31:21.072489 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.61842
+INFO:tensorflow:examples/sec: 3705.26
+I0625 04:31:21.072925 139838649452288 tpu_estimator.py:2308] examples/sec: 3705.26
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:31:21.074112 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:31:21.074335 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (28, 53)
+I0625 04:31:35.802466 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (28, 53)
+INFO:tensorflow:Outfeed finished for iteration (28, 272)
+I0625 04:32:35.832015 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (28, 272)
+INFO:tensorflow:Outfeed finished for iteration (28, 491)
+I0625 04:33:35.861017 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (28, 491)
+INFO:tensorflow:Outfeed finished for iteration (28, 710)
+I0625 04:34:35.890116 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (28, 710)
+INFO:tensorflow:Outfeed finished for iteration (28, 929)
+I0625 04:35:35.919712 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (28, 929)
+INFO:tensorflow:loss = 1.4103667, step = 29000 (274.293 sec)
+I0625 04:35:55.363634 139838649452288 basic_session_run_hooks.py:260] loss = 1.4103667, step = 29000 (274.293 sec)
+INFO:tensorflow:global_step/sec: 3.64574
+I0625 04:35:55.365176 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64574
+INFO:tensorflow:examples/sec: 3733.24
+I0625 04:35:55.365387 139838649452288 tpu_estimator.py:2308] examples/sec: 3733.24
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:35:56.366175 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:35:56.366813 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (29, 144)
+I0625 04:36:36.101962 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (29, 144)
+INFO:tensorflow:Outfeed finished for iteration (29, 363)
+I0625 04:37:36.131616 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (29, 363)
+INFO:tensorflow:Outfeed finished for iteration (29, 582)
+I0625 04:38:36.161190 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (29, 582)
+INFO:tensorflow:Outfeed finished for iteration (29, 801)
+I0625 04:39:36.191760 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (29, 801)
+INFO:tensorflow:Saving checkpoints for 30000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+I0625 04:40:30.725765 139838649452288 basic_session_run_hooks.py:606] Saving checkpoints for 30000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+INFO:tensorflow:loss = 1.2262056, step = 30000 (289.059 sec)
+I0625 04:40:44.423093 139838649452288 basic_session_run_hooks.py:260] loss = 1.2262056, step = 30000 (289.059 sec)
+INFO:tensorflow:global_step/sec: 3.4595
+I0625 04:40:44.424470 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.4595
+INFO:tensorflow:examples/sec: 3542.53
+I0625 04:40:44.424874 139838649452288 tpu_estimator.py:2308] examples/sec: 3542.53
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:40:44.426148 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:40:44.426358 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (30, 0)
+I0625 04:40:44.628864 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (30, 0)
+INFO:tensorflow:Outfeed finished for iteration (30, 219)
+I0625 04:41:44.689565 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (30, 219)
+INFO:tensorflow:Outfeed finished for iteration (30, 438)
+I0625 04:42:44.718804 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (30, 438)
+INFO:tensorflow:Outfeed finished for iteration (30, 657)
+I0625 04:43:44.747425 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (30, 657)
+INFO:tensorflow:Outfeed finished for iteration (30, 876)
+I0625 04:44:44.778301 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (30, 876)
+INFO:tensorflow:loss = 1.1834111, step = 31000 (275.512 sec)
+I0625 04:45:19.934915 139838649452288 basic_session_run_hooks.py:260] loss = 1.1834111, step = 31000 (275.512 sec)
+INFO:tensorflow:global_step/sec: 3.6296
+I0625 04:45:19.936686 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.6296
+INFO:tensorflow:examples/sec: 3716.71
+I0625 04:45:19.937143 139838649452288 tpu_estimator.py:2308] examples/sec: 3716.71
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:45:19.938601 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:45:19.938813 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (31, 90)
+I0625 04:45:44.847350 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (31, 90)
+INFO:tensorflow:Outfeed finished for iteration (31, 309)
+I0625 04:46:44.877429 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (31, 309)
+INFO:tensorflow:Outfeed finished for iteration (31, 528)
+I0625 04:47:44.908373 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (31, 528)
+INFO:tensorflow:Outfeed finished for iteration (31, 747)
+I0625 04:48:44.938873 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (31, 747)
+INFO:tensorflow:Outfeed finished for iteration (31, 966)
+I0625 04:49:44.971405 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (31, 966)
+INFO:tensorflow:loss = 1.1474038, step = 32000 (274.334 sec)
+I0625 04:49:54.268462 139838649452288 basic_session_run_hooks.py:260] loss = 1.1474038, step = 32000 (274.334 sec)
+INFO:tensorflow:global_step/sec: 3.6452
+I0625 04:49:54.269750 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.6452
+INFO:tensorflow:examples/sec: 3732.69
+I0625 04:49:54.938740 139838649452288 tpu_estimator.py:2308] examples/sec: 3732.69
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:49:54.940482 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:49:54.940877 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (32, 182)
+I0625 04:50:45.034686 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (32, 182)
+INFO:tensorflow:Outfeed finished for iteration (32, 401)
+I0625 04:51:45.064105 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (32, 401)
+INFO:tensorflow:Outfeed finished for iteration (32, 620)
+I0625 04:52:45.095288 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (32, 620)
+INFO:tensorflow:Outfeed finished for iteration (32, 839)
+I0625 04:53:45.124615 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (32, 839)
+INFO:tensorflow:loss = 1.502189, step = 33000 (274.973 sec)
+I0625 04:54:29.241371 139838649452288 basic_session_run_hooks.py:260] loss = 1.502189, step = 33000 (274.973 sec)
+INFO:tensorflow:global_step/sec: 3.63672
+I0625 04:54:29.242985 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.63672
+INFO:tensorflow:examples/sec: 3724
+I0625 04:54:30.453795 139838649452288 tpu_estimator.py:2308] examples/sec: 3724
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:54:30.455708 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:54:30.455963 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (33, 53)
+I0625 04:54:45.199029 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (33, 53)
+INFO:tensorflow:Outfeed finished for iteration (33, 272)
+I0625 04:55:45.231111 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (33, 272)
+INFO:tensorflow:Outfeed finished for iteration (33, 491)
+I0625 04:56:45.262398 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (33, 491)
+INFO:tensorflow:Outfeed finished for iteration (33, 710)
+I0625 04:57:45.294226 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (33, 710)
+INFO:tensorflow:Outfeed finished for iteration (33, 929)
+I0625 04:58:45.329394 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (33, 929)
+INFO:tensorflow:loss = 1.3942826, step = 34000 (276.810 sec)
+I0625 04:59:06.051807 139838649452288 basic_session_run_hooks.py:260] loss = 1.3942826, step = 34000 (276.810 sec)
+INFO:tensorflow:global_step/sec: 3.61258
+I0625 04:59:06.053330 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.61258
+INFO:tensorflow:examples/sec: 3699.28
+I0625 04:59:06.053758 139838649452288 tpu_estimator.py:2308] examples/sec: 3699.28
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 04:59:06.054984 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 04:59:06.055196 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (34, 142)
+I0625 04:59:45.394821 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (34, 142)
+INFO:tensorflow:Outfeed finished for iteration (34, 361)
+I0625 05:00:45.424793 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (34, 361)
+INFO:tensorflow:Outfeed finished for iteration (34, 580)
+I0625 05:01:45.454737 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (34, 580)
+INFO:tensorflow:Outfeed finished for iteration (34, 799)
+I0625 05:02:45.485369 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (34, 799)
+INFO:tensorflow:Saving checkpoints for 35000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+I0625 05:03:40.558577 139838649452288 basic_session_run_hooks.py:606] Saving checkpoints for 35000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+INFO:tensorflow:loss = 1.2993277, step = 35000 (288.618 sec)
+I0625 05:03:54.669618 139838649452288 basic_session_run_hooks.py:260] loss = 1.2993277, step = 35000 (288.618 sec)
+INFO:tensorflow:global_step/sec: 3.46479
+I0625 05:03:54.671381 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.46479
+INFO:tensorflow:examples/sec: 3547.94
+I0625 05:03:54.671784 139838649452288 tpu_estimator.py:2308] examples/sec: 3547.94
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:03:54.673058 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:03:54.673381 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (35, 0)
+I0625 05:03:54.875975 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (35, 0)
+INFO:tensorflow:Outfeed finished for iteration (35, 219)
+I0625 05:04:55.053238 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (35, 219)
+INFO:tensorflow:Outfeed finished for iteration (35, 438)
+I0625 05:05:55.084185 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (35, 438)
+INFO:tensorflow:Outfeed finished for iteration (35, 657)
+I0625 05:06:55.114760 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (35, 657)
+INFO:tensorflow:Outfeed finished for iteration (35, 876)
+I0625 05:07:55.146316 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (35, 876)
+INFO:tensorflow:loss = 1.2383349, step = 36000 (274.451 sec)
+I0625 05:08:29.120926 139838649452288 basic_session_run_hooks.py:260] loss = 1.2383349, step = 36000 (274.451 sec)
+INFO:tensorflow:global_step/sec: 3.64364
+I0625 05:08:29.122389 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64364
+INFO:tensorflow:examples/sec: 3731.08
+I0625 05:08:29.964614 139838649452288 tpu_estimator.py:2308] examples/sec: 3731.08
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:08:29.966492 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:08:29.966883 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (36, 92)
+I0625 05:08:55.408736 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (36, 92)
+INFO:tensorflow:Outfeed finished for iteration (36, 311)
+I0625 05:09:55.439663 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (36, 311)
+INFO:tensorflow:Outfeed finished for iteration (36, 530)
+I0625 05:10:55.470200 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (36, 530)
+INFO:tensorflow:Outfeed finished for iteration (36, 749)
+I0625 05:11:55.500611 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (36, 749)
+INFO:tensorflow:Outfeed finished for iteration (36, 968)
+I0625 05:12:55.532289 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (36, 968)
+INFO:tensorflow:loss = 1.5676262, step = 37000 (276.340 sec)
+I0625 05:13:05.461094 139838649452288 basic_session_run_hooks.py:260] loss = 1.5676262, step = 37000 (276.340 sec)
+INFO:tensorflow:global_step/sec: 3.61873
+I0625 05:13:05.462570 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.61873
+INFO:tensorflow:examples/sec: 3705.58
+I0625 05:13:05.462991 139838649452288 tpu_estimator.py:2308] examples/sec: 3705.58
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:13:05.464277 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:13:05.464526 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (37, 182)
+I0625 05:13:55.712588 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (37, 182)
+INFO:tensorflow:Outfeed finished for iteration (37, 401)
+I0625 05:14:55.743904 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (37, 401)
+INFO:tensorflow:Outfeed finished for iteration (37, 620)
+I0625 05:15:55.775039 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (37, 620)
+INFO:tensorflow:Outfeed finished for iteration (37, 839)
+I0625 05:16:55.806301 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (37, 839)
+INFO:tensorflow:loss = 1.2480865, step = 38000 (274.450 sec)
+I0625 05:17:39.911011 139838649452288 basic_session_run_hooks.py:260] loss = 1.2480865, step = 38000 (274.450 sec)
+INFO:tensorflow:global_step/sec: 3.64365
+I0625 05:17:39.912287 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64365
+INFO:tensorflow:examples/sec: 3731.1
+I0625 05:17:39.912496 139838649452288 tpu_estimator.py:2308] examples/sec: 3731.1
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:17:41.065150 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:17:41.065535 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (38, 54)
+I0625 05:17:56.070769 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (38, 54)
+INFO:tensorflow:Outfeed finished for iteration (38, 273)
+I0625 05:18:56.102037 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (38, 273)
+INFO:tensorflow:Outfeed finished for iteration (38, 492)
+I0625 05:19:56.133125 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (38, 492)
+INFO:tensorflow:Outfeed finished for iteration (38, 711)
+I0625 05:20:56.164950 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (38, 711)
+INFO:tensorflow:Outfeed finished for iteration (38, 930)
+I0625 05:21:56.197501 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (38, 930)
+INFO:tensorflow:loss = 1.2609586, step = 39000 (275.459 sec)
+I0625 05:22:15.369790 139838649452288 basic_session_run_hooks.py:260] loss = 1.2609586, step = 39000 (275.459 sec)
+INFO:tensorflow:global_step/sec: 3.6303
+I0625 05:22:15.371616 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.6303
+INFO:tensorflow:examples/sec: 3717.43
+I0625 05:22:16.006589 139838649452288 tpu_estimator.py:2308] examples/sec: 3717.43
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:22:16.008247 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:22:16.008635 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (39, 146)
+I0625 05:22:56.264033 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (39, 146)
+INFO:tensorflow:Outfeed finished for iteration (39, 365)
+I0625 05:23:56.292192 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (39, 365)
+INFO:tensorflow:Outfeed finished for iteration (39, 584)
+I0625 05:24:56.322057 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (39, 584)
+INFO:tensorflow:Outfeed finished for iteration (39, 803)
+I0625 05:25:56.351527 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (39, 803)
+INFO:tensorflow:Saving checkpoints for 40000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+I0625 05:26:50.318384 139838649452288 basic_session_run_hooks.py:606] Saving checkpoints for 40000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+INFO:tensorflow:loss = 1.3977242, step = 40000 (290.016 sec)
+I0625 05:27:05.385688 139838649452288 basic_session_run_hooks.py:260] loss = 1.3977242, step = 40000 (290.016 sec)
+INFO:tensorflow:global_step/sec: 3.44809
+I0625 05:27:05.387467 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.44809
+INFO:tensorflow:examples/sec: 3530.84
+I0625 05:27:05.387878 139838649452288 tpu_estimator.py:2308] examples/sec: 3530.84
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:27:05.388891 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:27:05.389089 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (40, 0)
+I0625 05:27:05.592507 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (40, 0)
+INFO:tensorflow:Outfeed finished for iteration (40, 219)
+I0625 05:28:05.643038 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (40, 219)
+INFO:tensorflow:Outfeed finished for iteration (40, 438)
+I0625 05:29:05.672734 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (40, 438)
+INFO:tensorflow:Outfeed finished for iteration (40, 657)
+I0625 05:30:05.701944 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (40, 657)
+INFO:tensorflow:Outfeed finished for iteration (40, 876)
+I0625 05:31:05.733638 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (40, 876)
+INFO:tensorflow:loss = 1.5756246, step = 41000 (274.315 sec)
+I0625 05:31:39.701114 139838649452288 basic_session_run_hooks.py:260] loss = 1.5756246, step = 41000 (274.315 sec)
+INFO:tensorflow:global_step/sec: 3.64544
+I0625 05:31:39.702610 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64544
+INFO:tensorflow:examples/sec: 3732.93
+I0625 05:31:40.632951 139838649452288 tpu_estimator.py:2308] examples/sec: 3732.93
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:31:40.634397 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:31:40.634768 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (41, 91)
+I0625 05:32:05.926311 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (41, 91)
+INFO:tensorflow:Outfeed finished for iteration (41, 310)
+I0625 05:33:05.955691 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (41, 310)
+INFO:tensorflow:Outfeed finished for iteration (41, 529)
+I0625 05:34:05.984379 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (41, 529)
+INFO:tensorflow:Outfeed finished for iteration (41, 748)
+I0625 05:35:06.013545 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (41, 748)
+INFO:tensorflow:Outfeed finished for iteration (41, 967)
+I0625 05:36:06.042671 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (41, 967)
+INFO:tensorflow:loss = 1.4598079, step = 42000 (275.362 sec)
+I0625 05:36:15.063107 139838649452288 basic_session_run_hooks.py:260] loss = 1.4598079, step = 42000 (275.362 sec)
+INFO:tensorflow:global_step/sec: 3.63158
+I0625 05:36:15.064674 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.63158
+INFO:tensorflow:examples/sec: 3718.74
+I0625 05:36:16.228625 139838649452288 tpu_estimator.py:2308] examples/sec: 3718.74
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:36:16.230144 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:36:16.230409 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (42, 181)
+I0625 05:37:06.208630 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (42, 181)
+INFO:tensorflow:Outfeed finished for iteration (42, 400)
+I0625 05:38:06.236754 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (42, 400)
+INFO:tensorflow:Outfeed finished for iteration (42, 619)
+I0625 05:39:06.264768 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (42, 619)
+INFO:tensorflow:Outfeed finished for iteration (42, 838)
+I0625 05:40:06.292753 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (42, 838)
+INFO:tensorflow:loss = 1.2372434, step = 43000 (276.866 sec)
+I0625 05:40:51.929575 139838649452288 basic_session_run_hooks.py:260] loss = 1.2372434, step = 43000 (276.866 sec)
+INFO:tensorflow:global_step/sec: 3.61185
+I0625 05:40:51.930939 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.61185
+INFO:tensorflow:examples/sec: 3698.54
+I0625 05:40:51.931389 139838649452288 tpu_estimator.py:2308] examples/sec: 3698.54
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:40:51.932338 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:40:51.932523 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (43, 52)
+I0625 05:41:06.416218 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (43, 52)
+INFO:tensorflow:Outfeed finished for iteration (43, 271)
+I0625 05:42:06.445069 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (43, 271)
+INFO:tensorflow:Outfeed finished for iteration (43, 490)
+I0625 05:43:06.474270 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (43, 490)
+INFO:tensorflow:Outfeed finished for iteration (43, 709)
+I0625 05:44:06.503336 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (43, 709)
+INFO:tensorflow:Outfeed finished for iteration (43, 928)
+I0625 05:45:06.532433 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (43, 928)
+INFO:tensorflow:loss = 1.3388218, step = 44000 (274.317 sec)
+I0625 05:45:26.246812 139838649452288 basic_session_run_hooks.py:260] loss = 1.3388218, step = 44000 (274.317 sec)
+INFO:tensorflow:global_step/sec: 3.64541
+I0625 05:45:26.248296 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.64541
+INFO:tensorflow:examples/sec: 3732.9
+I0625 05:45:27.461276 139838649452288 tpu_estimator.py:2308] examples/sec: 3732.9
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 05:45:27.462839 139838649452288 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 05:45:27.463177 139838649452288 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (44, 142)
+I0625 05:46:06.582690 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (44, 142)
+INFO:tensorflow:Outfeed finished for iteration (44, 361)
+I0625 05:47:06.612597 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (44, 361)
+INFO:tensorflow:Outfeed finished for iteration (44, 580)
+I0625 05:48:06.641711 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (44, 580)
+INFO:tensorflow:Outfeed finished for iteration (44, 799)
+I0625 05:49:06.671653 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (44, 799)
+INFO:tensorflow:Saving checkpoints for 45000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+I0625 05:50:01.743509 139838649452288 basic_session_run_hooks.py:606] Saving checkpoints for 45000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt.
+INFO:tensorflow:loss = 1.3938574, step = 45000 (289.840 sec)
+I0625 05:50:16.086473 139838649452288 basic_session_run_hooks.py:260] loss = 1.3938574, step = 45000 (289.840 sec)
+INFO:tensorflow:global_step/sec: 3.45018
+I0625 05:50:16.088148 139838649452288 tpu_estimator.py:2307] global_step/sec: 3.45018
+INFO:tensorflow:examples/sec: 3532.99
+I0625 05:50:16.088588 139838649452288 tpu_estimator.py:2308] examples/sec: 3532.99
+INFO:tensorflow:Stop infeed thread controller
+I0625 05:50:17.311292 139838649452288 tpu_estimator.py:608] Stop infeed thread controller
+INFO:tensorflow:Shutting down InfeedController thread.
+I0625 05:50:17.311608 139838649452288 tpu_estimator.py:434] Shutting down InfeedController thread.
+INFO:tensorflow:InfeedController received shutdown signal, stopping.
+I0625 05:50:17.311863 139836686071552 tpu_estimator.py:429] InfeedController received shutdown signal, stopping.
+INFO:tensorflow:Infeed thread finished, shutting down.
+I0625 05:50:17.312047 139836686071552 tpu_estimator.py:537] Infeed thread finished, shutting down.
+INFO:tensorflow:infeed marked as finished
+I0625 05:50:17.312310 139838649452288 error_handling.py:101] infeed marked as finished
+INFO:tensorflow:Stop output thread controller
+I0625 05:50:17.312463 139838649452288 tpu_estimator.py:612] Stop output thread controller
+INFO:tensorflow:Shutting down OutfeedController thread.
+I0625 05:50:17.312579 139838649452288 tpu_estimator.py:434] Shutting down OutfeedController thread.
+INFO:tensorflow:OutfeedController received shutdown signal, stopping.
+I0625 05:50:17.312778 139836677678848 tpu_estimator.py:429] OutfeedController received shutdown signal, stopping.
+INFO:tensorflow:Outfeed thread finished, shutting down.
+I0625 05:50:17.312928 139836677678848 tpu_estimator.py:551] Outfeed thread finished, shutting down.
+INFO:tensorflow:outfeed marked as finished
+I0625 05:50:17.313101 139838649452288 error_handling.py:101] outfeed marked as finished
+INFO:tensorflow:Shutdown TPU system.
+I0625 05:50:17.313295 139838649452288 tpu_estimator.py:616] Shutdown TPU system.
+INFO:tensorflow:Loss for final step: 1.3938574.
+I0625 05:50:17.756031 139838649452288 estimator.py:371] Loss for final step: 1.3938574.
+INFO:tensorflow:training_loop marked as finished
+I0625 05:50:17.758918 139838649452288 error_handling.py:101] training_loop marked as finished
+INFO:tensorflow:***** Running evaluation *****
+I0625 05:50:17.759259 139838649452288 run_pretraining.py:552] ***** Running evaluation *****
+INFO:tensorflow:  Batch size = 64
+I0625 05:50:17.759463 139838649452288 run_pretraining.py:553]   Batch size = 64
+INFO:tensorflow:Calling model_fn.
+I0625 05:50:18.838929 139838649452288 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:<DatasetV1Adapter shapes: {masked_lm_ids: (8, 13), masked_lm_positions: (8, 13), input_mask: (8, 128), segment_ids: (8, 128), masked_lm_weights: (8, 13), input_ids: (8, 128), next_sentence_labels: (8, 1)}, types: {masked_lm_ids: tf.int32, masked_lm_positions: tf.int32, input_mask: tf.int32, segment_ids: tf.int32, masked_lm_weights: tf.float32, input_ids: tf.int32, next_sentence_labels: tf.int32}>
+I0625 05:50:18.876694 139838649452288 run_pretraining.py:457] <DatasetV1Adapter shapes: {masked_lm_ids: (8, 13), masked_lm_positions: (8, 13), input_mask: (8, 128), segment_ids: (8, 128), masked_lm_weights: (8, 13), input_ids: (8, 128), next_sentence_labels: (8, 1)}, types: {masked_lm_ids: tf.int32, masked_lm_positions: tf.int32, input_mask: tf.int32, segment_ids: tf.int32, masked_lm_weights: tf.float32, input_ids: tf.int32, next_sentence_labels: tf.int32}>
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 05:50:18.898927 139838649452288 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 05:50:18.901046 139838649452288 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 05:50:18.902983 139838649452288 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 05:50:18.904949 139838649452288 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 05:50:18.907001 139838649452288 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 05:50:18.909043 139838649452288 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 05:50:18.911080 139838649452288 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 05:50:18.913163 139838649452288 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:*** Features ***
+I0625 05:50:18.956125 139838649452288 run_pretraining.py:150] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (8, 128)
+I0625 05:50:18.956460 139838649452288 run_pretraining.py:152]   name = input_ids, shape = (8, 128)
+INFO:tensorflow:  name = input_mask, shape = (8, 128)
+I0625 05:50:18.956639 139838649452288 run_pretraining.py:152]   name = input_mask, shape = (8, 128)
+INFO:tensorflow:  name = masked_lm_ids, shape = (8, 13)
+I0625 05:50:18.956796 139838649452288 run_pretraining.py:152]   name = masked_lm_ids, shape = (8, 13)
+INFO:tensorflow:  name = masked_lm_positions, shape = (8, 13)
+I0625 05:50:18.956948 139838649452288 run_pretraining.py:152]   name = masked_lm_positions, shape = (8, 13)
+INFO:tensorflow:  name = masked_lm_weights, shape = (8, 13)
+I0625 05:50:18.957097 139838649452288 run_pretraining.py:152]   name = masked_lm_weights, shape = (8, 13)
+INFO:tensorflow:  name = next_sentence_labels, shape = (8, 1)
+I0625 05:50:18.957235 139838649452288 run_pretraining.py:152]   name = next_sentence_labels, shape = (8, 1)
+INFO:tensorflow:  name = segment_ids, shape = (8, 128)
+I0625 05:50:18.957370 139838649452288 run_pretraining.py:152]   name = segment_ids, shape = (8, 128)
+INFO:tensorflow:**** Trainable Variables ****
+I0625 05:50:20.348931 139838649452288 run_pretraining.py:221] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (21128, 128)
+I0625 05:50:20.349246 139838649452288 run_pretraining.py:227]   name = bert/embeddings/word_embeddings:0, shape = (21128, 128)
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 128)
+I0625 05:50:20.349486 139838649452288 run_pretraining.py:227]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 128)
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 128)
+I0625 05:50:20.349686 139838649452288 run_pretraining.py:227]   name = bert/embeddings/position_embeddings:0, shape = (512, 128)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (128,)
+I0625 05:50:20.349896 139838649452288 run_pretraining.py:227]   name = bert/embeddings/LayerNorm/beta:0, shape = (128,)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (128,)
+I0625 05:50:20.350052 139838649452288 run_pretraining.py:227]   name = bert/embeddings/LayerNorm/gamma:0, shape = (128,)
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768)
+I0625 05:50:20.350208 139838649452288 run_pretraining.py:227]   name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768)
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,)
+I0625 05:50:20.350369 139838649452288 run_pretraining.py:227]   name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768)
+I0625 05:50:20.350523 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,)
+I0625 05:50:20.350669 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768)
+I0625 05:50:20.350816 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,)
+I0625 05:50:20.350960 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768)
+I0625 05:50:20.351094 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,)
+I0625 05:50:20.351245 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768)
+I0625 05:50:20.351378 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,)
+I0625 05:50:20.351519 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,)
+I0625 05:50:20.351652 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,)
+I0625 05:50:20.351783 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072)
+I0625 05:50:20.351915 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,)
+I0625 05:50:20.352094 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768)
+I0625 05:50:20.352239 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,)
+I0625 05:50:20.352381 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,)
+I0625 05:50:20.352523 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,)
+I0625 05:50:20.352657 139838649452288 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768)
+I0625 05:50:20.352790 139838649452288 run_pretraining.py:227]   name = bert/pooler/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,)
+I0625 05:50:20.352936 139838649452288 run_pretraining.py:227]   name = bert/pooler/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/transform/dense/kernel:0, shape = (768, 128)
+I0625 05:50:20.353068 139838649452288 run_pretraining.py:227]   name = cls/predictions/transform/dense/kernel:0, shape = (768, 128)
+INFO:tensorflow:  name = cls/predictions/transform/dense/bias:0, shape = (128,)
+I0625 05:50:20.353218 139838649452288 run_pretraining.py:227]   name = cls/predictions/transform/dense/bias:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/beta:0, shape = (128,)
+I0625 05:50:20.353353 139838649452288 run_pretraining.py:227]   name = cls/predictions/transform/LayerNorm/beta:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/gamma:0, shape = (128,)
+I0625 05:50:20.353484 139838649452288 run_pretraining.py:227]   name = cls/predictions/transform/LayerNorm/gamma:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/output_bias:0, shape = (21128,)
+I0625 05:50:20.353616 139838649452288 run_pretraining.py:227]   name = cls/predictions/output_bias:0, shape = (21128,)
+INFO:tensorflow:  name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+I0625 05:50:20.353749 139838649452288 run_pretraining.py:227]   name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = cls/seq_relationship/output_bias:0, shape = (2,)
+I0625 05:50:20.353898 139838649452288 run_pretraining.py:227]   name = cls/seq_relationship/output_bias:0, shape = (2,)
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:3322: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0625 05:50:20.367059 139838649452288 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:3322: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+INFO:tensorflow:Done calling model_fn.
+I0625 05:50:20.512707 139838649452288 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2020-06-25T05:50:20Z
+I0625 05:50:20.529329 139838649452288 evaluation.py:255] Starting evaluation at 2020-06-25T05:50:20Z
+INFO:tensorflow:TPU job name worker
+I0625 05:50:20.529757 139838649452288 tpu_estimator.py:506] TPU job name worker
+INFO:tensorflow:Graph was finalized.
+I0625 05:50:20.651829 139838649452288 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000
+I0625 05:50:20.796766 139838649452288 saver.py:1284] Restoring parameters from gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000
+INFO:tensorflow:Running local_init_op.
+I0625 05:50:24.813410 139838649452288 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0625 05:50:24.926934 139838649452288 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Init TPU system
+I0625 05:50:25.126004 139838649452288 tpu_estimator.py:567] Init TPU system
+INFO:tensorflow:Initialized TPU in 7 seconds
+I0625 05:50:32.398835 139838649452288 tpu_estimator.py:576] Initialized TPU in 7 seconds
+INFO:tensorflow:Starting infeed thread controller.
+I0625 05:50:32.399716 139836686071552 tpu_estimator.py:521] Starting infeed thread controller.
+INFO:tensorflow:Starting outfeed thread controller.
+I0625 05:50:32.400237 139836677678848 tpu_estimator.py:540] Starting outfeed thread controller.
+INFO:tensorflow:Initialized dataset iterators in 0 seconds
+I0625 05:50:32.531915 139838649452288 util.py:98] Initialized dataset iterators in 0 seconds
+I0625 05:50:32.581412 139836669286144 transport.py:157] Attempting refresh to obtain initial access_token
+W0625 05:50:32.612392 139836669286144 http.py:118] Invalid JSON content from response: b'{\n  "error": {\n    "code": 403,\n    "message": "Permission denied on resource project None.",\n    "status": "PERMISSION_DENIED",\n    "details": [\n      {\n        "@type": "type.googleapis.com/google.rpc.Help",\n        "links": [\n          {\n            "description": "Google developer console API key",\n            "url": "https://console.developers.google.com/project/None/apiui/credential"\n          }\n        ]\n      }\n    ]\n  }\n}\n'
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 476, in _fetch_cloud_tpu_metadata
+    return request.execute()
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/http.py", line 856, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.61.91.10:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'url': 'https://console.developers.google.com/project/None/apiui/credential', 'description': 'Google developer console API key'}]}]">
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/tpu/preempted_hook.py", line 87, in run
+    response = self._cluster._fetch_cloud_tpu_metadata()  # pylint: disable=protected-access
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 480, in _fetch_cloud_tpu_metadata
+    "constructor. Exception: %s" % (self._tpu, e))
+ValueError: Could not lookup TPU metadata from name 'b'10.61.91.10:8470''. Please doublecheck the tpu argument in the TPUClusterResolver constructor. Exception: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.61.91.10:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'url': 'https://console.developers.google.com/project/None/apiui/credential', 'description': 'Google developer console API key'}]}]">
+
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+I0625 05:50:32.636804 139838649452288 tpu_estimator.py:600] Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+I0625 05:50:32.637419 139838649452288 tpu_estimator.py:604] Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (0, 0)
+I0625 05:50:38.332528 139836677678848 tpu_estimator.py:279] Outfeed finished for iteration (0, 0)
+INFO:tensorflow:Evaluation [100/100]
+I0625 05:50:40.263416 139838649452288 evaluation.py:167] Evaluation [100/100]
+INFO:tensorflow:Stop infeed thread controller
+I0625 05:50:40.263865 139838649452288 tpu_estimator.py:608] Stop infeed thread controller
+INFO:tensorflow:Shutting down InfeedController thread.
+I0625 05:50:40.264244 139838649452288 tpu_estimator.py:434] Shutting down InfeedController thread.
+INFO:tensorflow:InfeedController received shutdown signal, stopping.
+I0625 05:50:40.264540 139836686071552 tpu_estimator.py:429] InfeedController received shutdown signal, stopping.
+INFO:tensorflow:Infeed thread finished, shutting down.
+I0625 05:50:40.264725 139836686071552 tpu_estimator.py:537] Infeed thread finished, shutting down.
+INFO:tensorflow:infeed marked as finished
+I0625 05:50:40.265053 139838649452288 error_handling.py:101] infeed marked as finished
+INFO:tensorflow:Stop output thread controller
+I0625 05:50:40.265233 139838649452288 tpu_estimator.py:612] Stop output thread controller
+INFO:tensorflow:Shutting down OutfeedController thread.
+I0625 05:50:40.265387 139838649452288 tpu_estimator.py:434] Shutting down OutfeedController thread.
+INFO:tensorflow:OutfeedController received shutdown signal, stopping.
+I0625 05:50:42.128010 139836677678848 tpu_estimator.py:429] OutfeedController received shutdown signal, stopping.
+INFO:tensorflow:Outfeed thread finished, shutting down.
+I0625 05:50:42.128329 139836677678848 tpu_estimator.py:551] Outfeed thread finished, shutting down.
+INFO:tensorflow:outfeed marked as finished
+I0625 05:50:42.128680 139838649452288 error_handling.py:101] outfeed marked as finished
+INFO:tensorflow:Shutdown TPU system.
+I0625 05:50:42.128860 139838649452288 tpu_estimator.py:616] Shutdown TPU system.
+INFO:tensorflow:Finished evaluation at 2020-06-25-05:50:42
+I0625 05:50:42.414503 139838649452288 evaluation.py:275] Finished evaluation at 2020-06-25-05:50:42
+INFO:tensorflow:Saving dict for global step 45000: global_step = 45000, loss = 1.2023997, masked_lm_accuracy = 0.7909943, masked_lm_loss = 1.0669879, sentence_order_accuracy = 0.87640625, sentence_order_loss = 0.18724822
+I0625 05:50:42.415129 139838649452288 estimator.py:2049] Saving dict for global step 45000: global_step = 45000, loss = 1.2023997, masked_lm_accuracy = 0.7909943, masked_lm_loss = 1.0669879, sentence_order_accuracy = 0.87640625, sentence_order_loss = 0.18724822
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 45000: gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000
+I0625 05:50:46.707627 139838649452288 estimator.py:2109] Saving 'checkpoint_path' summary for global step 45000: gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000
+INFO:tensorflow:evaluation_loop marked as finished
+I0625 05:50:47.435289 139838649452288 error_handling.py:101] evaluation_loop marked as finished
+INFO:tensorflow:***** Eval results *****
+I0625 05:50:47.435665 139838649452288 run_pretraining.py:572] ***** Eval results *****
+INFO:tensorflow:  global_step = 45000
+I0625 05:50:47.927896 139838649452288 run_pretraining.py:575]   global_step = 45000
+INFO:tensorflow:saving gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000.meta to gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-best.meta
+I0625 05:50:47.928543 139838649452288 run_pretraining.py:583] saving gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000.meta to gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-best.meta
+INFO:tensorflow:saving gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000.data-00000-of-00001 to gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-best.data-00000-of-00001
+I0625 05:50:49.114363 139838649452288 run_pretraining.py:583] saving gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000.data-00000-of-00001 to gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-best.data-00000-of-00001
+INFO:tensorflow:saving gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000.index to gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-best.index
+I0625 05:50:54.699859 139838649452288 run_pretraining.py:583] saving gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-45000.index to gs://sbt0/experiments/rethink_vocab/pretraining/char_spaced_21128/model.ckpt-best.index
+INFO:tensorflow:  loss = 1.2023997
+I0625 05:50:55.444642 139838649452288 run_pretraining.py:575]   loss = 1.2023997
+INFO:tensorflow:  masked_lm_accuracy = 0.7909943
+I0625 05:50:55.445006 139838649452288 run_pretraining.py:575]   masked_lm_accuracy = 0.7909943
+INFO:tensorflow:  masked_lm_loss = 1.0669879
+I0625 05:50:55.445175 139838649452288 run_pretraining.py:575]   masked_lm_loss = 1.0669879
+INFO:tensorflow:  sentence_order_accuracy = 0.87640625
+I0625 05:50:55.445328 139838649452288 run_pretraining.py:575]   sentence_order_accuracy = 0.87640625
+INFO:tensorflow:  sentence_order_loss = 0.18724822
+I0625 05:50:55.445480 139838649452288 run_pretraining.py:575]   sentence_order_loss = 0.18724822
+self.word_embedding_output:  (128, 128, 128)
+self.word_embedding_output:  (8, 128, 128)
