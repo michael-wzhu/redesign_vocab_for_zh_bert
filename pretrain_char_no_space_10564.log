@@ -1824,3 +1824,430 @@ INFO:tensorflow:Outfeed finished for iteration (38, 630)
 I0625 08:18:31.074489 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (38, 630)
 INFO:tensorflow:Outfeed finished for iteration (38, 741)
 I0625 08:19:31.294167 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (38, 741)
+INFO:tensorflow:Outfeed finished for iteration (38, 852)
+I0625 08:20:31.515167 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (38, 852)
+INFO:tensorflow:Outfeed finished for iteration (38, 963)
+I0625 08:21:31.735259 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (38, 963)
+INFO:tensorflow:loss = 0.5966697, step = 39000 (545.338 sec)
+I0625 08:21:51.974526 139863191582464 basic_session_run_hooks.py:260] loss = 0.5966697, step = 39000 (545.338 sec)
+INFO:tensorflow:global_step/sec: 1.83372
+I0625 08:21:52.078935 139863191582464 tpu_estimator.py:2307] global_step/sec: 1.83372
+INFO:tensorflow:examples/sec: 1877.73
+I0625 08:21:53.187266 139863191582464 tpu_estimator.py:2308] examples/sec: 1877.73
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 08:21:53.293292 139863191582464 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 08:21:53.293648 139863191582464 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (39, 71)
+I0625 08:22:32.227157 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (39, 71)
+INFO:tensorflow:Outfeed finished for iteration (39, 182)
+I0625 08:23:32.446930 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (39, 182)
+INFO:tensorflow:Outfeed finished for iteration (39, 293)
+I0625 08:24:32.666689 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (39, 293)
+INFO:tensorflow:Outfeed finished for iteration (39, 404)
+I0625 08:25:32.886348 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (39, 404)
+INFO:tensorflow:Outfeed finished for iteration (39, 515)
+I0625 08:26:33.106033 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (39, 515)
+INFO:tensorflow:Outfeed finished for iteration (39, 626)
+I0625 08:27:33.326046 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (39, 626)
+INFO:tensorflow:Outfeed finished for iteration (39, 737)
+I0625 08:28:33.545992 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (39, 737)
+INFO:tensorflow:Outfeed finished for iteration (39, 848)
+I0625 08:29:33.766677 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (39, 848)
+INFO:tensorflow:Outfeed finished for iteration (39, 959)
+I0625 08:30:33.986698 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (39, 959)
+INFO:tensorflow:Saving checkpoints for 40000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt.
+I0625 08:30:56.200871 139863191582464 basic_session_run_hooks.py:606] Saving checkpoints for 40000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt.
+INFO:tensorflow:loss = 0.9094321, step = 40000 (557.426 sec)
+I0625 08:31:09.400995 139863191582464 basic_session_run_hooks.py:260] loss = 0.9094321, step = 40000 (557.426 sec)
+INFO:tensorflow:global_step/sec: 1.79395
+I0625 08:31:09.509012 139863191582464 tpu_estimator.py:2307] global_step/sec: 1.79395
+INFO:tensorflow:examples/sec: 1837
+I0625 08:31:09.509440 139863191582464 tpu_estimator.py:2308] examples/sec: 1837
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 08:31:09.617135 139863191582464 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 08:31:09.617440 139863191582464 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (40, 45)
+I0625 08:31:34.475229 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (40, 45)
+INFO:tensorflow:Outfeed finished for iteration (40, 156)
+I0625 08:32:34.695906 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (40, 156)
+INFO:tensorflow:Outfeed finished for iteration (40, 267)
+I0625 08:33:34.914949 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (40, 267)
+INFO:tensorflow:Outfeed finished for iteration (40, 378)
+I0625 08:34:35.135277 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (40, 378)
+INFO:tensorflow:Outfeed finished for iteration (40, 489)
+I0625 08:35:35.355762 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (40, 489)
+INFO:tensorflow:Outfeed finished for iteration (40, 600)
+I0625 08:36:35.575556 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (40, 600)
+INFO:tensorflow:Outfeed finished for iteration (40, 711)
+I0625 08:37:35.795779 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (40, 711)
+INFO:tensorflow:Outfeed finished for iteration (40, 822)
+I0625 08:38:36.017005 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (40, 822)
+INFO:tensorflow:Outfeed finished for iteration (40, 933)
+I0625 08:39:36.239353 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (40, 933)
+INFO:tensorflow:loss = 0.97318333, step = 41000 (543.377 sec)
+I0625 08:40:12.778068 139863191582464 basic_session_run_hooks.py:260] loss = 0.97318333, step = 41000 (543.377 sec)
+INFO:tensorflow:global_step/sec: 1.84033
+I0625 08:40:12.889480 139863191582464 tpu_estimator.py:2307] global_step/sec: 1.84033
+INFO:tensorflow:examples/sec: 1884.5
+I0625 08:40:13.639474 139863191582464 tpu_estimator.py:2308] examples/sec: 1884.5
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 08:40:13.750844 139863191582464 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 08:40:13.751261 139863191582464 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (41, 41)
+I0625 08:40:36.421493 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (41, 41)
+INFO:tensorflow:Outfeed finished for iteration (41, 152)
+I0625 08:41:36.641502 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (41, 152)
+INFO:tensorflow:Outfeed finished for iteration (41, 263)
+I0625 08:42:36.861264 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (41, 263)
+INFO:tensorflow:Outfeed finished for iteration (41, 374)
+I0625 08:43:37.081381 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (41, 374)
+INFO:tensorflow:Outfeed finished for iteration (41, 485)
+I0625 08:44:37.301824 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (41, 485)
+INFO:tensorflow:Outfeed finished for iteration (41, 596)
+I0625 08:45:37.521959 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (41, 596)
+INFO:tensorflow:Outfeed finished for iteration (41, 707)
+I0625 08:46:37.745073 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (41, 707)
+INFO:tensorflow:Outfeed finished for iteration (41, 818)
+I0625 08:47:37.965991 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (41, 818)
+INFO:tensorflow:Outfeed finished for iteration (41, 929)
+I0625 08:48:38.188223 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (41, 929)
+INFO:tensorflow:loss = 0.92436135, step = 42000 (544.119 sec)
+I0625 08:49:16.897547 139863191582464 basic_session_run_hooks.py:260] loss = 0.92436135, step = 42000 (544.119 sec)
+INFO:tensorflow:global_step/sec: 1.83783
+I0625 08:49:17.009552 139863191582464 tpu_estimator.py:2307] global_step/sec: 1.83783
+INFO:tensorflow:examples/sec: 1881.94
+I0625 08:49:18.155345 139863191582464 tpu_estimator.py:2308] examples/sec: 1881.94
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 08:49:18.265882 139863191582464 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 08:49:18.266216 139863191582464 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (42, 36)
+I0625 08:49:38.213247 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (42, 36)
+INFO:tensorflow:Outfeed finished for iteration (42, 147)
+I0625 08:50:38.434553 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (42, 147)
+INFO:tensorflow:Outfeed finished for iteration (42, 258)
+I0625 08:51:38.654053 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (42, 258)
+INFO:tensorflow:Outfeed finished for iteration (42, 369)
+I0625 08:52:38.875305 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (42, 369)
+INFO:tensorflow:Outfeed finished for iteration (42, 480)
+I0625 08:53:39.096110 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (42, 480)
+INFO:tensorflow:Outfeed finished for iteration (42, 591)
+I0625 08:54:39.315607 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (42, 591)
+INFO:tensorflow:Outfeed finished for iteration (42, 702)
+I0625 08:55:39.535383 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (42, 702)
+INFO:tensorflow:Outfeed finished for iteration (42, 813)
+I0625 08:56:39.756088 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (42, 813)
+INFO:tensorflow:Outfeed finished for iteration (42, 924)
+I0625 08:57:39.980023 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (42, 924)
+INFO:tensorflow:loss = 0.7016482, step = 43000 (545.243 sec)
+I0625 08:58:22.140841 139863191582464 basic_session_run_hooks.py:260] loss = 0.7016482, step = 43000 (545.243 sec)
+INFO:tensorflow:global_step/sec: 1.83403
+I0625 08:58:22.255515 139863191582464 tpu_estimator.py:2307] global_step/sec: 1.83403
+INFO:tensorflow:examples/sec: 1878.05
+I0625 08:58:22.255803 139863191582464 tpu_estimator.py:2308] examples/sec: 1878.05
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 08:58:22.370558 139863191582464 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 08:58:22.370918 139863191582464 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (43, 32)
+I0625 08:58:40.165189 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (43, 32)
+INFO:tensorflow:Outfeed finished for iteration (43, 143)
+I0625 08:59:40.385451 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (43, 143)
+INFO:tensorflow:Outfeed finished for iteration (43, 254)
+I0625 09:00:40.605819 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (43, 254)
+INFO:tensorflow:Outfeed finished for iteration (43, 365)
+I0625 09:01:40.826137 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (43, 365)
+INFO:tensorflow:Outfeed finished for iteration (43, 476)
+I0625 09:02:41.045089 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (43, 476)
+INFO:tensorflow:Outfeed finished for iteration (43, 587)
+I0625 09:03:41.265478 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (43, 587)
+INFO:tensorflow:Outfeed finished for iteration (43, 698)
+I0625 09:04:41.486019 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (43, 698)
+INFO:tensorflow:Outfeed finished for iteration (43, 809)
+I0625 09:05:41.706113 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (43, 809)
+INFO:tensorflow:Outfeed finished for iteration (43, 920)
+I0625 09:06:41.926738 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (43, 920)
+INFO:tensorflow:loss = 0.9247142, step = 44000 (543.391 sec)
+I0625 09:07:25.531642 139863191582464 basic_session_run_hooks.py:260] loss = 0.9247142, step = 44000 (543.391 sec)
+INFO:tensorflow:global_step/sec: 1.8403
+I0625 09:07:25.646312 139863191582464 tpu_estimator.py:2307] global_step/sec: 1.8403
+INFO:tensorflow:examples/sec: 1884.46
+I0625 09:07:26.808588 139863191582464 tpu_estimator.py:2308] examples/sec: 1884.46
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0625 09:07:26.923043 139863191582464 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0625 09:07:26.923405 139863191582464 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (44, 27)
+I0625 09:07:42.002256 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (44, 27)
+INFO:tensorflow:Outfeed finished for iteration (44, 138)
+I0625 09:08:42.221879 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (44, 138)
+INFO:tensorflow:Outfeed finished for iteration (44, 249)
+I0625 09:09:42.441689 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (44, 249)
+INFO:tensorflow:Outfeed finished for iteration (44, 360)
+I0625 09:10:42.662135 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (44, 360)
+INFO:tensorflow:Outfeed finished for iteration (44, 471)
+I0625 09:11:42.881278 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (44, 471)
+INFO:tensorflow:Outfeed finished for iteration (44, 582)
+I0625 09:12:43.101288 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (44, 582)
+INFO:tensorflow:Outfeed finished for iteration (44, 693)
+I0625 09:13:43.321384 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (44, 693)
+INFO:tensorflow:Outfeed finished for iteration (44, 804)
+I0625 09:14:43.541494 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (44, 804)
+INFO:tensorflow:Outfeed finished for iteration (44, 915)
+I0625 09:15:43.761580 139861298239232 tpu_estimator.py:279] Outfeed finished for iteration (44, 915)
+INFO:tensorflow:Saving checkpoints for 45000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt.
+I0625 09:16:29.852415 139863191582464 basic_session_run_hooks.py:606] Saving checkpoints for 45000 into gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt.
+INFO:tensorflow:loss = 1.0218267, step = 45000 (551.982 sec)
+I0625 09:16:37.513727 139863191582464 basic_session_run_hooks.py:260] loss = 1.0218267, step = 45000 (551.982 sec)
+INFO:tensorflow:global_step/sec: 1.81166
+I0625 09:16:37.626990 139863191582464 tpu_estimator.py:2307] global_step/sec: 1.81166
+INFO:tensorflow:examples/sec: 1855.14
+I0625 09:16:37.627397 139863191582464 tpu_estimator.py:2308] examples/sec: 1855.14
+INFO:tensorflow:Stop infeed thread controller
+I0625 09:16:38.957941 139863191582464 tpu_estimator.py:608] Stop infeed thread controller
+INFO:tensorflow:Shutting down InfeedController thread.
+I0625 09:16:38.958250 139863191582464 tpu_estimator.py:434] Shutting down InfeedController thread.
+INFO:tensorflow:InfeedController received shutdown signal, stopping.
+I0625 09:16:38.958547 139861660534528 tpu_estimator.py:429] InfeedController received shutdown signal, stopping.
+INFO:tensorflow:Infeed thread finished, shutting down.
+I0625 09:16:38.958662 139861660534528 tpu_estimator.py:537] Infeed thread finished, shutting down.
+INFO:tensorflow:infeed marked as finished
+I0625 09:16:38.958796 139863191582464 error_handling.py:101] infeed marked as finished
+INFO:tensorflow:Stop output thread controller
+I0625 09:16:38.958940 139863191582464 tpu_estimator.py:612] Stop output thread controller
+INFO:tensorflow:Shutting down OutfeedController thread.
+I0625 09:16:38.959043 139863191582464 tpu_estimator.py:434] Shutting down OutfeedController thread.
+INFO:tensorflow:OutfeedController received shutdown signal, stopping.
+I0625 09:16:38.959223 139861298239232 tpu_estimator.py:429] OutfeedController received shutdown signal, stopping.
+INFO:tensorflow:Outfeed thread finished, shutting down.
+I0625 09:16:38.959349 139861298239232 tpu_estimator.py:551] Outfeed thread finished, shutting down.
+INFO:tensorflow:outfeed marked as finished
+I0625 09:16:38.959541 139863191582464 error_handling.py:101] outfeed marked as finished
+INFO:tensorflow:Shutdown TPU system.
+I0625 09:16:38.959673 139863191582464 tpu_estimator.py:616] Shutdown TPU system.
+INFO:tensorflow:Loss for final step: 1.0218267.
+I0625 09:16:39.884852 139863191582464 estimator.py:371] Loss for final step: 1.0218267.
+INFO:tensorflow:training_loop marked as finished
+I0625 09:16:39.889827 139863191582464 error_handling.py:101] training_loop marked as finished
+INFO:tensorflow:***** Running evaluation *****
+I0625 09:16:39.890168 139863191582464 run_pretraining.py:552] ***** Running evaluation *****
+INFO:tensorflow:  Batch size = 64
+I0625 09:16:39.890382 139863191582464 run_pretraining.py:553]   Batch size = 64
+INFO:tensorflow:Calling model_fn.
+I0625 09:16:40.945232 139863191582464 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:<DatasetV1Adapter shapes: {input_mask: (8, 128), input_ids: (8, 128), masked_lm_positions: (8, 13), masked_lm_ids: (8, 13), masked_lm_weights: (8, 13), segment_ids: (8, 128), next_sentence_labels: (8, 1)}, types: {input_mask: tf.int32, input_ids: tf.int32, masked_lm_positions: tf.int32, masked_lm_ids: tf.int32, masked_lm_weights: tf.float32, segment_ids: tf.int32, next_sentence_labels: tf.int32}>
+I0625 09:16:40.983207 139863191582464 run_pretraining.py:457] <DatasetV1Adapter shapes: {input_mask: (8, 128), input_ids: (8, 128), masked_lm_positions: (8, 13), masked_lm_ids: (8, 13), masked_lm_weights: (8, 13), segment_ids: (8, 128), next_sentence_labels: (8, 1)}, types: {input_mask: tf.int32, input_ids: tf.int32, masked_lm_positions: tf.int32, masked_lm_ids: tf.int32, masked_lm_weights: tf.float32, segment_ids: tf.int32, next_sentence_labels: tf.int32}>
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 09:16:41.008360 139863191582464 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 09:16:41.010881 139863191582464 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 09:16:41.012664 139863191582464 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 09:16:41.014374 139863191582464 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 09:16:41.016270 139863191582464 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 09:16:41.018085 139863191582464 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 09:16:41.019850 139863191582464 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [8, 1]
+I0625 09:16:41.022052 139863191582464 tpu_estimator.py:1201] Found small feature: next_sentence_labels [8, 1]
+INFO:tensorflow:*** Features ***
+I0625 09:16:41.061564 139863191582464 run_pretraining.py:150] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (8, 128)
+I0625 09:16:41.061804 139863191582464 run_pretraining.py:152]   name = input_ids, shape = (8, 128)
+INFO:tensorflow:  name = input_mask, shape = (8, 128)
+I0625 09:16:41.061884 139863191582464 run_pretraining.py:152]   name = input_mask, shape = (8, 128)
+INFO:tensorflow:  name = masked_lm_ids, shape = (8, 13)
+I0625 09:16:41.061954 139863191582464 run_pretraining.py:152]   name = masked_lm_ids, shape = (8, 13)
+INFO:tensorflow:  name = masked_lm_positions, shape = (8, 13)
+I0625 09:16:41.062018 139863191582464 run_pretraining.py:152]   name = masked_lm_positions, shape = (8, 13)
+INFO:tensorflow:  name = masked_lm_weights, shape = (8, 13)
+I0625 09:16:41.062081 139863191582464 run_pretraining.py:152]   name = masked_lm_weights, shape = (8, 13)
+INFO:tensorflow:  name = next_sentence_labels, shape = (8, 1)
+I0625 09:16:41.062142 139863191582464 run_pretraining.py:152]   name = next_sentence_labels, shape = (8, 1)
+INFO:tensorflow:  name = segment_ids, shape = (8, 128)
+I0625 09:16:41.062201 139863191582464 run_pretraining.py:152]   name = segment_ids, shape = (8, 128)
+INFO:tensorflow:**** Trainable Variables ****
+I0625 09:16:42.692891 139863191582464 run_pretraining.py:221] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (10564, 128)
+I0625 09:16:42.693115 139863191582464 run_pretraining.py:227]   name = bert/embeddings/word_embeddings:0, shape = (10564, 128)
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 128)
+I0625 09:16:42.693228 139863191582464 run_pretraining.py:227]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 128)
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 128)
+I0625 09:16:42.693309 139863191582464 run_pretraining.py:227]   name = bert/embeddings/position_embeddings:0, shape = (512, 128)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (128,)
+I0625 09:16:42.693384 139863191582464 run_pretraining.py:227]   name = bert/embeddings/LayerNorm/beta:0, shape = (128,)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (128,)
+I0625 09:16:42.693454 139863191582464 run_pretraining.py:227]   name = bert/embeddings/LayerNorm/gamma:0, shape = (128,)
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768)
+I0625 09:16:42.693521 139863191582464 run_pretraining.py:227]   name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768)
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,)
+I0625 09:16:42.693613 139863191582464 run_pretraining.py:227]   name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768)
+I0625 09:16:42.693681 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,)
+I0625 09:16:42.693753 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768)
+I0625 09:16:42.693833 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,)
+I0625 09:16:42.693904 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768)
+I0625 09:16:42.693971 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,)
+I0625 09:16:42.694041 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768)
+I0625 09:16:42.694108 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,)
+I0625 09:16:42.694177 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,)
+I0625 09:16:42.694241 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,)
+I0625 09:16:42.694305 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072)
+I0625 09:16:42.694369 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,)
+I0625 09:16:42.694438 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768)
+I0625 09:16:42.694503 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,)
+I0625 09:16:42.694579 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,)
+I0625 09:16:42.694645 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,)
+I0625 09:16:42.694710 139863191582464 run_pretraining.py:227]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768)
+I0625 09:16:42.694778 139863191582464 run_pretraining.py:227]   name = bert/pooler/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,)
+I0625 09:16:42.694849 139863191582464 run_pretraining.py:227]   name = bert/pooler/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/transform/dense/kernel:0, shape = (768, 128)
+I0625 09:16:42.694912 139863191582464 run_pretraining.py:227]   name = cls/predictions/transform/dense/kernel:0, shape = (768, 128)
+INFO:tensorflow:  name = cls/predictions/transform/dense/bias:0, shape = (128,)
+I0625 09:16:42.694982 139863191582464 run_pretraining.py:227]   name = cls/predictions/transform/dense/bias:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/beta:0, shape = (128,)
+I0625 09:16:42.695047 139863191582464 run_pretraining.py:227]   name = cls/predictions/transform/LayerNorm/beta:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/gamma:0, shape = (128,)
+I0625 09:16:42.695110 139863191582464 run_pretraining.py:227]   name = cls/predictions/transform/LayerNorm/gamma:0, shape = (128,)
+INFO:tensorflow:  name = cls/predictions/output_bias:0, shape = (10564,)
+I0625 09:16:42.695173 139863191582464 run_pretraining.py:227]   name = cls/predictions/output_bias:0, shape = (10564,)
+INFO:tensorflow:  name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+I0625 09:16:42.695237 139863191582464 run_pretraining.py:227]   name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = cls/seq_relationship/output_bias:0, shape = (2,)
+I0625 09:16:42.695307 139863191582464 run_pretraining.py:227]   name = cls/seq_relationship/output_bias:0, shape = (2,)
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:3322: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0625 09:16:42.709308 139863191582464 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:3322: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+INFO:tensorflow:Done calling model_fn.
+I0625 09:16:42.854687 139863191582464 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2020-06-25T09:16:42Z
+I0625 09:16:42.869789 139863191582464 evaluation.py:255] Starting evaluation at 2020-06-25T09:16:42Z
+INFO:tensorflow:TPU job name worker
+I0625 09:16:42.870069 139863191582464 tpu_estimator.py:506] TPU job name worker
+INFO:tensorflow:Graph was finalized.
+I0625 09:16:42.992868 139863191582464 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000
+I0625 09:16:43.138301 139863191582464 saver.py:1284] Restoring parameters from gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000
+INFO:tensorflow:Running local_init_op.
+I0625 09:16:48.931031 139863191582464 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0625 09:16:49.162035 139863191582464 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Init TPU system
+I0625 09:16:49.624058 139863191582464 tpu_estimator.py:567] Init TPU system
+INFO:tensorflow:Initialized TPU in 18 seconds
+I0625 09:17:07.770269 139863191582464 tpu_estimator.py:576] Initialized TPU in 18 seconds
+INFO:tensorflow:Starting infeed thread controller.
+I0625 09:17:07.771071 139861298239232 tpu_estimator.py:521] Starting infeed thread controller.
+INFO:tensorflow:Starting outfeed thread controller.
+I0625 09:17:07.771518 139861289846528 tpu_estimator.py:540] Starting outfeed thread controller.
+INFO:tensorflow:Initialized dataset iterators in 0 seconds
+I0625 09:17:08.020410 139863191582464 util.py:98] Initialized dataset iterators in 0 seconds
+I0625 09:17:08.067165 139861281453824 transport.py:157] Attempting refresh to obtain initial access_token
+W0625 09:17:08.096139 139861281453824 http.py:118] Invalid JSON content from response: b'{\n  "error": {\n    "code": 403,\n    "message": "Permission denied on resource project None.",\n    "status": "PERMISSION_DENIED",\n    "details": [\n      {\n        "@type": "type.googleapis.com/google.rpc.Help",\n        "links": [\n          {\n            "description": "Google developer console API key",\n            "url": "https://console.developers.google.com/project/None/apiui/credential"\n          }\n        ]\n      }\n    ]\n  }\n}\n'
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 476, in _fetch_cloud_tpu_metadata
+    return request.execute()
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/http.py", line 856, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.77.62.58:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'url': 'https://console.developers.google.com/project/None/apiui/credential', 'description': 'Google developer console API key'}]}]">
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/tpu/preempted_hook.py", line 87, in run
+    response = self._cluster._fetch_cloud_tpu_metadata()  # pylint: disable=protected-access
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 480, in _fetch_cloud_tpu_metadata
+    "constructor. Exception: %s" % (self._tpu, e))
+ValueError: Could not lookup TPU metadata from name 'b'10.77.62.58:8470''. Please doublecheck the tpu argument in the TPUClusterResolver constructor. Exception: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.77.62.58:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'url': 'https://console.developers.google.com/project/None/apiui/credential', 'description': 'Google developer console API key'}]}]">
+
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+I0625 09:17:08.234192 139863191582464 tpu_estimator.py:600] Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+I0625 09:17:08.234488 139863191582464 tpu_estimator.py:604] Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (0, 0)
+I0625 09:17:11.671849 139861289846528 tpu_estimator.py:279] Outfeed finished for iteration (0, 0)
+INFO:tensorflow:Evaluation [100/100]
+I0625 09:17:13.591740 139863191582464 evaluation.py:167] Evaluation [100/100]
+INFO:tensorflow:Stop infeed thread controller
+I0625 09:17:13.592170 139863191582464 tpu_estimator.py:608] Stop infeed thread controller
+INFO:tensorflow:Shutting down InfeedController thread.
+I0625 09:17:13.592300 139863191582464 tpu_estimator.py:434] Shutting down InfeedController thread.
+INFO:tensorflow:InfeedController received shutdown signal, stopping.
+I0625 09:17:13.592489 139861298239232 tpu_estimator.py:429] InfeedController received shutdown signal, stopping.
+INFO:tensorflow:Infeed thread finished, shutting down.
+I0625 09:17:13.592609 139861298239232 tpu_estimator.py:537] Infeed thread finished, shutting down.
+INFO:tensorflow:infeed marked as finished
+I0625 09:17:13.592860 139863191582464 error_handling.py:101] infeed marked as finished
+INFO:tensorflow:Stop output thread controller
+I0625 09:17:13.592989 139863191582464 tpu_estimator.py:612] Stop output thread controller
+INFO:tensorflow:Shutting down OutfeedController thread.
+I0625 09:17:13.593069 139863191582464 tpu_estimator.py:434] Shutting down OutfeedController thread.
+INFO:tensorflow:OutfeedController received shutdown signal, stopping.
+I0625 09:17:24.795816 139861289846528 tpu_estimator.py:429] OutfeedController received shutdown signal, stopping.
+INFO:tensorflow:Outfeed thread finished, shutting down.
+I0625 09:17:24.796094 139861289846528 tpu_estimator.py:551] Outfeed thread finished, shutting down.
+INFO:tensorflow:outfeed marked as finished
+I0625 09:17:24.796260 139863191582464 error_handling.py:101] outfeed marked as finished
+INFO:tensorflow:Shutdown TPU system.
+I0625 09:17:24.796401 139863191582464 tpu_estimator.py:616] Shutdown TPU system.
+INFO:tensorflow:Finished evaluation at 2020-06-25-09:17:25
+I0625 09:17:25.447006 139863191582464 evaluation.py:275] Finished evaluation at 2020-06-25-09:17:25
+INFO:tensorflow:Saving dict for global step 45000: global_step = 45000, loss = 0.83731323, masked_lm_accuracy = 0.8456358, masked_lm_loss = 0.6075591, sentence_order_accuracy = 0.8390625, sentence_order_loss = 0.24317306
+I0625 09:17:25.447316 139863191582464 estimator.py:2049] Saving dict for global step 45000: global_step = 45000, loss = 0.83731323, masked_lm_accuracy = 0.8456358, masked_lm_loss = 0.6075591, sentence_order_accuracy = 0.8390625, sentence_order_loss = 0.24317306
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 45000: gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000
+I0625 09:17:29.306858 139863191582464 estimator.py:2109] Saving 'checkpoint_path' summary for global step 45000: gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000
+INFO:tensorflow:evaluation_loop marked as finished
+I0625 09:17:30.178546 139863191582464 error_handling.py:101] evaluation_loop marked as finished
+INFO:tensorflow:***** Eval results *****
+I0625 09:17:30.178842 139863191582464 run_pretraining.py:572] ***** Eval results *****
+INFO:tensorflow:  global_step = 45000
+I0625 09:17:30.641285 139863191582464 run_pretraining.py:575]   global_step = 45000
+INFO:tensorflow:saving gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000.meta to gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-best.meta
+I0625 09:17:30.641786 139863191582464 run_pretraining.py:583] saving gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000.meta to gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-best.meta
+INFO:tensorflow:saving gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000.data-00000-of-00001 to gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-best.data-00000-of-00001
+I0625 09:17:31.890490 139863191582464 run_pretraining.py:583] saving gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000.data-00000-of-00001 to gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-best.data-00000-of-00001
+INFO:tensorflow:saving gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000.index to gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-best.index
+I0625 09:17:38.768455 139863191582464 run_pretraining.py:583] saving gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-45000.index to gs://sbt0/experiments/rethink_vocab/pretraining/char_no_space_10564/model.ckpt-best.index
+INFO:tensorflow:  loss = 0.83731323
+I0625 09:17:39.680030 139863191582464 run_pretraining.py:575]   loss = 0.83731323
+INFO:tensorflow:  masked_lm_accuracy = 0.8456358
+I0625 09:17:39.680285 139863191582464 run_pretraining.py:575]   masked_lm_accuracy = 0.8456358
+INFO:tensorflow:  masked_lm_loss = 0.6075591
+I0625 09:17:39.680373 139863191582464 run_pretraining.py:575]   masked_lm_loss = 0.6075591
+INFO:tensorflow:  sentence_order_accuracy = 0.8390625
+I0625 09:17:39.680440 139863191582464 run_pretraining.py:575]   sentence_order_accuracy = 0.8390625
+INFO:tensorflow:  sentence_order_loss = 0.24317306
+I0625 09:17:39.680503 139863191582464 run_pretraining.py:575]   sentence_order_loss = 0.24317306
+self.word_embedding_output:  (128, 128, 128)
+self.word_embedding_output:  (8, 128, 128)
