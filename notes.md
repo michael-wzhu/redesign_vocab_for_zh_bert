@@ -135,3 +135,20 @@ nohup ./src/char_no_space/scripts/run_pretrain_10564.sh > pretrain_char_no_space
 ```
 
 
+
+### finetune
+
+
+```bash
+
+######################################
+# char_no_space, vocab=21128
+######################################
+
+# on chn
+nohup ./src/char_no_space/scripts/run_classifier_chn_21128.sh > char_no_space_chn_21128.log &
+
+
+
+```
+
