@@ -148,6 +148,14 @@ nohup ./src/char_no_space/scripts/run_pretrain_10564.sh > pretrain_char_no_space
 # on chn
 nohup ./src/char_no_space/scripts/run_classifier_chn_21128.sh > char_no_space_chn_21128.log &
 
+# on lcqmc
+nohup ./src/char_no_space/scripts/run_classifier_lcqmc_21128.sh > char_no_space_lcqmc_21128.log &
+
+# on xnli
+nohup ./src/char_no_space/scripts/run_classifier_xnli_21128.sh > char_no_space_xnli_21128.log &
+
+
+
 
 
 ```

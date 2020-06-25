@@ -27,7 +27,7 @@ echo "Start running..."
 RUN_TIMES=11
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
-    python3 src/run_classifier.py \
+    python3 src/char_no_space/run_classifier.py \
       --task_name=xnli \
       --data_dir=datasets/XNLI \
       --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/finetune/xnli/length_128_steps_4.5k_time_0625_run_${run_idx}/ \
