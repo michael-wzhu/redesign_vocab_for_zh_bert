@@ -119,6 +119,19 @@ nohup ./src/char_segmented/scripts/run_pretrain_21128.sh > pretrain_char_segment
 # char_segmented, vocab=31692
 nohup ./src/char_segmented/scripts/run_pretrain_31692.sh > pretrain_char_segmented_31692.log &
 
+
+# char_spaced, vocab=21128
+nohup ./src/char_spaced/scripts/run_pretrain_21128.sh > pretrain_char_spaced_21128.log &
+
+
+# char_no_space, vocab=21128
+nohup ./src/char_no_space/scripts/run_pretrain_21128.sh > pretrain_char_spaced_21128.log &
+
+# char_no_space, vocab=10564
+nohup ./src/char_no_space/scripts/run_pretrain_10564.sh > pretrain_char_spaced_10564.log &
+
+
+
 ```
 
 
