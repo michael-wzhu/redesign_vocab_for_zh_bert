@@ -137,6 +137,26 @@ class DataProcessor(object):
             return lines
 
 
+def _truncate_seq_pair(sent_a,
+                       sent_b,
+                       max_length):
+    """Truncates a sequence pair in place to the maximum length."""
+
+    # This is a simple heuristic which will always truncate the longer sequence
+    # one token at a time. This makes more sense than truncating an equal percent
+    # of sent from each, since if one sequence is very short then each token
+    # that's truncated likely contains more information than a longer sequence.
+    while True:
+        total_length = len(sent_a) + len(sent_b)
+        if total_length <= max_length:
+            break
+
+        if len(sent_a) > len(sent_b):
+            sent_a = sent_a[: -1]
+        else:
+            sent_b = sent_b[: -1]
+
+
 class XnliProcessor(DataProcessor):
     """Processor for the XNLI data set."""
 
@@ -162,14 +182,19 @@ class XnliProcessor(DataProcessor):
             guid = "%s-%s" % (set_type, i)
 
             text_a = line['sentence1']
-            text_a = text_a.strip()[: self.args.max_num_chars]
             if self.args.do_lower_case:
                 text_a = text_a.lower()
 
             text_b = line['sentence2']
-            text_b = text_b.strip()[: self.args.max_num_chars]
             if self.args.do_lower_case:
                 text_b = text_b.lower()
+
+            _truncate_seq_pair(
+                text_a,
+                text_b,
+                self.args.max_num_chars
+            )
+
             label = line['label'] if set_type != 'test' else '0'
 
             examples.append(
@@ -254,13 +279,18 @@ class LCQMCProcessor(DataProcessor):
         for (i, line) in enumerate(lines):
             guid = "%s-%s" % (set_type, i)
             text_a = line['sentence1']
-            text_a = text_a.strip()[: self.args.max_num_chars]
             if self.args.do_lower_case:
                 text_a = text_a.lower()
             text_b = line['sentence2']
-            text_b = text_b.strip()[: self.args.max_num_chars]
             if self.args.do_lower_case:
                 text_b = text_b.lower()
+
+            _truncate_seq_pair(
+                text_a,
+                text_b,
+                self.args.max_num_chars
+            )
+
             label = line['label'] if set_type != 'test' else "0"
             examples.append(
                 InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
