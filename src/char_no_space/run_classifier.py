@@ -87,7 +87,13 @@ flags.DEFINE_bool(
 
 flags.DEFINE_integer(
     "max_seq_length", 512,
-    "The maximum total input sequence length after WordPiece tokenization. "
+    "The maximum total input sequence length after subword tokenization. "
+    "Sequences longer than this will be truncated, and sequences shorter "
+    "than this will be padded.")
+
+flags.DEFINE_integer(
+    "max_num_chars", 512,
+    "The maximum total char sequence length before subword tokenization. "
     "Sequences longer than this will be truncated, and sequences shorter "
     "than this will be padded.")
 
@@ -117,7 +123,7 @@ flags.DEFINE_integer(
 flags.DEFINE_integer("save_checkpoints_steps", 1000,
                      "How often to save the model checkpoint.")
 
-flags.DEFINE_integer("keep_checkpoint_max", 5,
+flags.DEFINE_integer("keep_checkpoint_max", 20,
                      "How many checkpoints to keep.")
 
 flags.DEFINE_integer("iterations_per_loop", 1000,
