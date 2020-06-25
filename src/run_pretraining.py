@@ -95,7 +95,7 @@ flags.DEFINE_integer("start_warmup_step", 0, "The starting step of warmup.")
 flags.DEFINE_integer("save_checkpoints_steps", 5000,
                      "How often to save the model checkpoint.")
 
-flags.DEFINE_integer("keep_checkpoint_max", 5,
+flags.DEFINE_integer("keep_checkpoint_max", 20,
                      "How many checkpoints to keep.")
 
 flags.DEFINE_integer("iterations_per_loop", 1000,
