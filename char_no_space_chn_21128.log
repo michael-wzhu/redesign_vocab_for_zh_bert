@@ -1,0 +1,668 @@
+Requirement already satisfied: tensorflow_hub in /usr/local/lib/python3.5/dist-packages (0.8.0)
+Requirement already satisfied: protobuf>=3.8.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow_hub) (3.11.3)
+Requirement already satisfied: six>=1.12.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow_hub) (1.14.0)
+Requirement already satisfied: numpy>=1.12.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow_hub) (1.18.1)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.5/dist-packages (from protobuf>=3.8.0->tensorflow_hub) (45.2.0)
+WARNING: You are using pip version 20.0.2; however, version 20.1.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+Requirement already satisfied: sentencepiece in /usr/local/lib/python3.5/dist-packages (0.1.91)
+WARNING: You are using pip version 20.0.2; however, version 20.1.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+Requirement already satisfied: jieba in /usr/local/lib/python3.5/dist-packages (0.42.1)
+WARNING: You are using pip version 20.0.2; however, version 20.1.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+Requirement already satisfied: tokenizers in /usr/local/lib/python3.5/dist-packages (0.7.0)
+WARNING: You are using pip version 20.0.2; however, version 20.1.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+Requirement already satisfied: boto3 in /usr/local/lib/python3.5/dist-packages (1.14.10)
+Requirement already satisfied: s3transfer<0.4.0,>=0.3.0 in /usr/local/lib/python3.5/dist-packages (from boto3) (0.3.3)
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in /usr/local/lib/python3.5/dist-packages (from boto3) (0.10.0)
+Requirement already satisfied: botocore<1.18.0,>=1.17.10 in /usr/local/lib/python3.5/dist-packages (from boto3) (1.17.10)
+Requirement already satisfied: urllib3<1.26,>=1.20; python_version != "3.4" in /usr/local/lib/python3.5/dist-packages (from botocore<1.18.0,>=1.17.10->boto3) (1.25.8)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /usr/local/lib/python3.5/dist-packages (from botocore<1.18.0,>=1.17.10->boto3) (2.8.1)
+Requirement already satisfied: docutils<0.16,>=0.10 in /usr/local/lib/python3.5/dist-packages (from botocore<1.18.0,>=1.17.10->boto3) (0.15.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.5/dist-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.18.0,>=1.17.10->boto3) (1.14.0)
+WARNING: You are using pip version 20.0.2; however, version 20.1.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+Requirement already satisfied: jieba_fast in /usr/local/lib/python3.5/dist-packages (0.53)
+WARNING: You are using pip version 20.0.2; however, version 20.1.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+Requirement already satisfied: sklearn in /usr/local/lib/python3.5/dist-packages (0.0)
+Requirement already satisfied: scikit-learn in /usr/local/lib/python3.5/dist-packages (from sklearn) (0.22.2.post1)
+Requirement already satisfied: scipy>=0.17.0 in /usr/local/lib/python3.5/dist-packages (from scikit-learn->sklearn) (1.4.1)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from scikit-learn->sklearn) (1.18.1)
+Requirement already satisfied: joblib>=0.11 in /usr/local/lib/python3.5/dist-packages (from scikit-learn->sklearn) (0.14.1)
+WARNING: You are using pip version 20.0.2; however, version 20.1.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+Start running...
+INFO:tensorflow:loading sentence piece model
+I0625 08:08:06.778581 140186398181120 tokenization.py:240] loading sentence piece model
+WARNING:tensorflow:From ./src/data_processors.py:132: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+W0625 08:08:06.820494 140186398181120 module_wrapper.py:139] From ./src/data_processors.py:132: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f7f4aff21e0>) includes params argument, but params are not passed to Estimator.
+W0625 08:08:07.007817 140186398181120 estimator.py:1994] Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f7f4aff21e0>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_tf_random_seed': None, '_experimental_max_worker_delay_secs': None, '_protocol': None, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.89.98.210:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_global_id_in_cluster': 0, '_session_creation_timeout_secs': 7200, '_device_fn': None, '_eval_distribute': None, '_train_distribute': None, '_evaluation_master': 'grpc://10.89.98.210:8470', '_task_type': 'worker', '_experimental_distribute': None, '_log_step_count_steps': None, '_service': None, '_keep_checkpoint_every_n_hours': 10000, '_keep_checkpoint_max': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f7f5dba18d0>, '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f7f4a863fd0>, '_master': 'grpc://10.89.98.210:8470', '_save_summary_steps': 100, '_num_worker_replicas': 1, '_save_checkpoints_secs': None, '_task_id': 0, '_tpu_config': TPUConfig(iterations_per_loop=300, num_shards=1, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_num_ps_replicas': 0, '_model_dir': 'gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/', '_is_chief': True, '_save_checkpoints_steps': 300}
+I0625 08:08:07.009254 140186398181120 estimator.py:212] Using config: {'_tf_random_seed': None, '_experimental_max_worker_delay_secs': None, '_protocol': None, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.89.98.210:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_global_id_in_cluster': 0, '_session_creation_timeout_secs': 7200, '_device_fn': None, '_eval_distribute': None, '_train_distribute': None, '_evaluation_master': 'grpc://10.89.98.210:8470', '_task_type': 'worker', '_experimental_distribute': None, '_log_step_count_steps': None, '_service': None, '_keep_checkpoint_every_n_hours': 10000, '_keep_checkpoint_max': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f7f5dba18d0>, '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f7f4a863fd0>, '_master': 'grpc://10.89.98.210:8470', '_save_summary_steps': 100, '_num_worker_replicas': 1, '_save_checkpoints_secs': None, '_task_id': 0, '_tpu_config': TPUConfig(iterations_per_loop=300, num_shards=1, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_num_ps_replicas': 0, '_model_dir': 'gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/', '_is_chief': True, '_save_checkpoints_steps': 300}
+WARNING:tensorflow:Setting TPUConfig.num_shards==1 is an unsupported behavior. Please fix as soon as possible (leaving num_shards as None.)
+W0625 08:08:07.010147 140186398181120 tpu_context.py:824] Setting TPUConfig.num_shards==1 is an unsupported behavior. Please fix as soon as possible (leaving num_shards as None.)
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+I0625 08:08:07.010300 140186398181120 tpu_context.py:220] _TPUContext: eval_on_tpu True
+INFO:tensorflow:Writing example 0 of 9600
+I0625 08:08:07.011140 140186398181120 classifier_utils.py:209] Writing example 0 of 9600
+INFO:tensorflow:*** Example ***
+I0625 08:08:07.011751 140186398181120 classifier_utils.py:167] *** Example ***
+INFO:tensorflow:guid: train-0
+I0625 08:08:07.011902 140186398181120 classifier_utils.py:168] guid: train-0
+INFO:tensorflow:tokens: [CLS] ▁ 选择 珠江 花园 的原因 就是 方便 , 有 电动 扶 梯 直接 到达 海 边 , 周围 餐馆 、 食 廊 、 商场 、 超 市 、 摊 位 一 应 俱 全 。 酒店 装 修 一般 , 但 还 算 整 洁 。 ▁ 泳 池 在大 堂 的 屋顶 , 因此 很小 , 不过 女儿 倒 是 喜欢 。 ▁ 包 的 早 餐 是西 式的 , 还 算 丰富 。 ▁ 服务 吗 , 一般 [SEP]
+I0625 08:08:07.012103 140186398181120 classifier_utils.py:170] tokens: [CLS] ▁ 选择 珠江 花园 的原因 就是 方便 , 有 电动 扶 梯 直接 到达 海 边 , 周围 餐馆 、 食 廊 、 商场 、 超 市 、 摊 位 一 应 俱 全 。 酒店 装 修 一般 , 但 还 算 整 洁 。 ▁ 泳 池 在大 堂 的 屋顶 , 因此 很小 , 不过 女儿 倒 是 喜欢 。 ▁ 包 的 早 餐 是西 式的 , 还 算 丰富 。 ▁ 服务 吗 , 一般 [SEP]
+INFO:tensorflow:input_ids: 2 14658 614 10699 2126 3480 336 2926 14657 14678 3923 16562 16290 537 1451 14777 15238 14657 2547 14284 14665 15304 16524 14665 3389 14665 15205 14749 14665 17571 14736 14667 14999 16021 14851 14660 1840 15147 15186 295 14657 14844 15019 15417 15272 16487 14660 14658 16375 15986 2490 15298 14659 6247 14657 92 13558 14657 378 1293 16025 14671 1841 14660 14658 14975 14659 15275 16177 11637 2572 14657 15019 15417 2485 14660 14658 224 17283 14657 295 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.012297 140186398181120 classifier_utils.py:171] input_ids: 2 14658 614 10699 2126 3480 336 2926 14657 14678 3923 16562 16290 537 1451 14777 15238 14657 2547 14284 14665 15304 16524 14665 3389 14665 15205 14749 14665 17571 14736 14667 14999 16021 14851 14660 1840 15147 15186 295 14657 14844 15019 15417 15272 16487 14660 14658 16375 15986 2490 15298 14659 6247 14657 92 13558 14657 378 1293 16025 14671 1841 14660 14658 14975 14659 15275 16177 11637 2572 14657 15019 15417 2485 14660 14658 224 17283 14657 295 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.012512 140186398181120 classifier_utils.py:172] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.012681 140186398181120 classifier_utils.py:173] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: 1 (id = 1)
+I0625 08:08:07.012833 140186398181120 classifier_utils.py:174] label: 1 (id = 1)
+INFO:tensorflow:*** Example ***
+I0625 08:08:07.013671 140186398181120 classifier_utils.py:167] *** Example ***
+INFO:tensorflow:guid: train-1
+I0625 08:08:07.013821 140186398181120 classifier_utils.py:168] guid: train-1
+INFO:tensorflow:tokens: [CLS] ▁15 . 4 寸 笔记 本 的 键盘 确实 爽 , 基本 跟 台 式 机 差不多 了 , 蛮 喜欢 数字 小 键盘 , 输 数字 特 方便 , 样 子 也很 美 观 , 做 工 也 相当 不错 [SEP]
+I0625 08:08:07.013967 140186398181120 classifier_utils.py:170] tokens: [CLS] ▁15 . 4 寸 笔记 本 的 键盘 确实 爽 , 基本 跟 台 式 机 差不多 了 , 蛮 喜欢 数字 小 键盘 , 输 数字 特 方便 , 样 子 也很 美 观 , 做 工 也 相当 不错 [SEP]
+INFO:tensorflow:input_ids: 2 2661 9 14687 16596 9665 14746 14659 9022 5790 17499 14657 639 15766 14778 14866 14806 14413 14694 14657 17232 1841 1667 14820 9022 14657 15602 1667 14765 2926 14657 15217 14760 11290 14794 15146 14657 15431 14830 14783 661 10348 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.014173 140186398181120 classifier_utils.py:171] input_ids: 2 2661 9 14687 16596 9665 14746 14659 9022 5790 17499 14657 639 15766 14778 14866 14806 14413 14694 14657 17232 1841 1667 14820 9022 14657 15602 1667 14765 2926 14657 15217 14760 11290 14794 15146 14657 15431 14830 14783 661 10348 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.014353 140186398181120 classifier_utils.py:172] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.014538 140186398181120 classifier_utils.py:173] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: 1 (id = 1)
+I0625 08:08:07.014664 140186398181120 classifier_utils.py:174] label: 1 (id = 1)
+INFO:tensorflow:*** Example ***
+I0625 08:08:07.015285 140186398181120 classifier_utils.py:167] *** Example ***
+INFO:tensorflow:guid: train-2
+I0625 08:08:07.015434 140186398181120 classifier_utils.py:168] guid: train-2
+INFO:tensorflow:tokens: [CLS] ▁ 房间 太 小 。 其他的 都 一般 。 。 。 。 。 。 。 。 。 [SEP]
+I0625 08:08:07.015576 140186398181120 classifier_utils.py:170] tokens: [CLS] ▁ 房间 太 小 。 其他的 都 一般 。 。 。 。 。 。 。 。 。 [SEP]
+INFO:tensorflow:input_ids: 2 14658 5135 14996 14820 14660 4981 14871 295 14660 14660 14660 14660 14660 14660 14660 14660 14660 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.015759 140186398181120 classifier_utils.py:171] input_ids: 2 14658 5135 14996 14820 14660 4981 14871 295 14660 14660 14660 14660 14660 14660 14660 14660 14660 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.015958 140186398181120 classifier_utils.py:172] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.016142 140186398181120 classifier_utils.py:173] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: 0 (id = 0)
+I0625 08:08:07.016287 140186398181120 classifier_utils.py:174] label: 0 (id = 0)
+INFO:tensorflow:*** Example ***
+I0625 08:08:07.017004 140186398181120 classifier_utils.py:167] *** Example ***
+INFO:tensorflow:guid: train-3
+I0625 08:08:07.017156 140186398181120 classifier_utils.py:168] guid: train-3
+INFO:tensorflow:tokens: [CLS] ▁1 . 接 电源 没有 几 分钟 , 电源 适 配 器 热 的不 行 . ▁2 . 摄 像 头 用 不 起来 . ▁3 . 机 盖 的 钢琴 漆 , 手 不能 摸 , 一 摸 一个 印 . ▁4 . 硬 盘 分区 不好 办 . [SEP]
+I0625 08:08:07.017304 140186398181120 classifier_utils.py:170] tokens: [CLS] ▁1 . 接 电源 没有 几 分钟 , 电源 适 配 器 热 的不 行 . ▁2 . 摄 像 头 用 不 起来 . ▁3 . 机 盖 的 钢琴 漆 , 手 不能 摸 , 一 摸 一个 印 . ▁4 . 硬 盘 分区 不好 办 . [SEP]
+INFO:tensorflow:input_ids: 2 1117 9 14942 10310 70 15370 908 14657 10310 15731 15348 15116 15277 3966 14708 9 978 9 15601 15322 15096 14727 14705 1430 9 956 9 14806 15630 14659 4002 17195 14657 14962 621 17760 14657 14667 17760 17 15235 9 1021 9 16022 15850 4222 13116 15124 9 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.017490 140186398181120 classifier_utils.py:171] input_ids: 2 1117 9 14942 10310 70 15370 908 14657 10310 15731 15348 15116 15277 3966 14708 9 978 9 15601 15322 15096 14727 14705 1430 9 956 9 14806 15630 14659 4002 17195 14657 14962 621 17760 14657 14667 17760 17 15235 9 1021 9 16022 15850 4222 13116 15124 9 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.017668 140186398181120 classifier_utils.py:172] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.017838 140186398181120 classifier_utils.py:173] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: 0 (id = 0)
+I0625 08:08:07.017960 140186398181120 classifier_utils.py:174] label: 0 (id = 0)
+INFO:tensorflow:*** Example ***
+I0625 08:08:07.018708 140186398181120 classifier_utils.py:167] *** Example ***
+INFO:tensorflow:guid: train-4
+I0625 08:08:07.018859 140186398181120 classifier_utils.py:168] guid: train-4
+INFO:tensorflow:tokens: [CLS] ▁今天 才 知道 这 书 还有 第 6 卷 , 真 有点 郁 闷 : 为什么 同一 套 书 有两种 版本 呢 ? 当 当 网 是 不是 该 跟 出版社 商 量 商 量 , 单独 出 个 第 6 卷 , 让 我们的 孩子 不会 有所 遗憾 。 [SEP]
+I0625 08:08:07.019006 140186398181120 classifier_utils.py:170] tokens: [CLS] ▁今天 才 知道 这 书 还有 第 6 卷 , 真 有点 郁 闷 : 为什么 同一 套 书 有两种 版本 呢 ? 当 当 网 是 不是 该 跟 出版社 商 量 商 量 , 单独 出 个 第 6 卷 , 让 我们的 孩子 不会 有所 遗憾 。 [SEP]
+INFO:tensorflow:input_ids: 2 13060 15331 1393 14751 14949 510 14730 14691 15919 14657 15327 13276 16786 18157 14731 9093 1725 15938 14949 12095 506 17435 16082 14818 14818 15153 14671 687 14831 15766 2863 15093 14939 15093 14939 14657 3867 14707 14699 14730 14691 15919 14657 15337 7878 1825 886 1991 14501 14660 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.019188 140186398181120 classifier_utils.py:171] input_ids: 2 13060 15331 1393 14751 14949 510 14730 14691 15919 14657 15327 13276 16786 18157 14731 9093 1725 15938 14949 12095 506 17435 16082 14818 14818 15153 14671 687 14831 15766 2863 15093 14939 15093 14939 14657 3867 14707 14699 14730 14691 15919 14657 15337 7878 1825 886 1991 14501 14660 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.019366 140186398181120 classifier_utils.py:172] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0625 08:08:07.019570 140186398181120 classifier_utils.py:173] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: 1 (id = 1)
+I0625 08:08:07.019691 140186398181120 classifier_utils.py:174] label: 1 (id = 1)
+INFO:tensorflow:Writing example 3000 of 9600
+I0625 08:08:08.241813 140186398181120 classifier_utils.py:209] Writing example 3000 of 9600
+INFO:tensorflow:Writing example 6000 of 9600
+I0625 08:08:09.465292 140186398181120 classifier_utils.py:209] Writing example 6000 of 9600
+INFO:tensorflow:Writing example 9000 of 9600
+I0625 08:08:10.685554 140186398181120 classifier_utils.py:209] Writing example 9000 of 9600
+INFO:tensorflow:***** Running training *****
+I0625 08:08:11.581638 140186398181120 run_classifier.py:287] ***** Running training *****
+INFO:tensorflow:  Num examples = 9600
+I0625 08:08:11.581957 140186398181120 run_classifier.py:288]   Num examples = 9600
+INFO:tensorflow:  Batch size = 32
+I0625 08:08:11.582794 140186398181120 run_classifier.py:289]   Batch size = 32
+INFO:tensorflow:  Num steps = 6000
+I0625 08:08:11.582979 140186398181120 run_classifier.py:290]   Num steps = 6000
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0625 08:08:11.893824 140186398181120 deprecation.py:506] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0625 08:08:11.894548 140186398181120 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:Calling model_fn.
+I0625 08:08:11.907066 140186398181120 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From ./src/char_no_space/classifier_utils.py:296: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+W0625 08:08:11.929954 140186398181120 deprecation.py:323] From ./src/char_no_space/classifier_utils.py:296: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+W0625 08:08:11.930258 140186398181120 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From ./src/char_no_space/classifier_utils.py:273: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0625 08:08:12.111162 140186398181120 deprecation.py:323] From ./src/char_no_space/classifier_utils.py:273: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-06-25 08:08:12.148411: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-06-25 08:08:12.148474: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2020-06-25 08:08:12.148509: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (h-bert-1): /proc/driver/nvidia/version does not exist
+INFO:tensorflow:*** Features ***
+I0625 08:08:12.167769 140186398181120 classifier_utils.py:392] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (32, 128)
+I0625 08:08:12.168135 140186398181120 classifier_utils.py:394]   name = input_ids, shape = (32, 128)
+INFO:tensorflow:  name = input_mask, shape = (32, 128)
+I0625 08:08:12.168300 140186398181120 classifier_utils.py:394]   name = input_mask, shape = (32, 128)
+INFO:tensorflow:  name = is_real_example, shape = (32,)
+I0625 08:08:12.168439 140186398181120 classifier_utils.py:394]   name = is_real_example, shape = (32,)
+INFO:tensorflow:  name = label_ids, shape = (32,)
+I0625 08:08:12.168566 140186398181120 classifier_utils.py:394]   name = label_ids, shape = (32,)
+INFO:tensorflow:  name = segment_ids, shape = (32, 128)
+I0625 08:08:12.168698 140186398181120 classifier_utils.py:394]   name = segment_ids, shape = (32, 128)
+INFO:tensorflow:creating model from albert_config
+I0625 08:08:12.169821 140186398181120 fine_tuning_utils.py:68] creating model from albert_config
+WARNING:tensorflow:From ./src/modeling.py:254: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0625 08:08:13.542470 140186398181120 deprecation.py:323] From ./src/modeling.py:254: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0625 08:08:13.545139 140186398181120 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From ./src/char_no_space/classifier_utils.py:355: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0625 08:08:13.579952 140186398181120 deprecation.py:506] From ./src/char_no_space/classifier_utils.py:355: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+INFO:tensorflow:name bert/embeddings/word_embeddings match to bert/embeddings/word_embeddings
+I0625 08:08:14.745968 140186398181120 modeling.py:390] name bert/embeddings/word_embeddings match to bert/embeddings/word_embeddings
+INFO:tensorflow:name bert/embeddings/token_type_embeddings match to bert/embeddings/token_type_embeddings
+I0625 08:08:14.746324 140186398181120 modeling.py:390] name bert/embeddings/token_type_embeddings match to bert/embeddings/token_type_embeddings
+INFO:tensorflow:name bert/embeddings/position_embeddings match to bert/embeddings/position_embeddings
+I0625 08:08:14.746487 140186398181120 modeling.py:390] name bert/embeddings/position_embeddings match to bert/embeddings/position_embeddings
+INFO:tensorflow:name bert/embeddings/LayerNorm/beta match to bert/embeddings/LayerNorm/beta
+I0625 08:08:14.746619 140186398181120 modeling.py:390] name bert/embeddings/LayerNorm/beta match to bert/embeddings/LayerNorm/beta
+INFO:tensorflow:name bert/embeddings/LayerNorm/gamma match to bert/embeddings/LayerNorm/gamma
+I0625 08:08:14.746737 140186398181120 modeling.py:390] name bert/embeddings/LayerNorm/gamma match to bert/embeddings/LayerNorm/gamma
+INFO:tensorflow:name bert/encoder/embedding_hidden_mapping_in/kernel match to bert/encoder/embedding_hidden_mapping_in/kernel
+I0625 08:08:14.746850 140186398181120 modeling.py:390] name bert/encoder/embedding_hidden_mapping_in/kernel match to bert/encoder/embedding_hidden_mapping_in/kernel
+INFO:tensorflow:name bert/encoder/embedding_hidden_mapping_in/bias match to bert/encoder/embedding_hidden_mapping_in/bias
+I0625 08:08:14.746996 140186398181120 modeling.py:390] name bert/encoder/embedding_hidden_mapping_in/bias match to bert/encoder/embedding_hidden_mapping_in/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel
+I0625 08:08:14.747126 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias
+I0625 08:08:14.747250 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel
+I0625 08:08:14.747373 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias
+I0625 08:08:14.747486 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel
+I0625 08:08:14.747610 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias
+I0625 08:08:14.747728 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel
+I0625 08:08:14.747842 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias
+I0625 08:08:14.747979 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta
+I0625 08:08:14.748101 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma
+I0625 08:08:14.748226 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel
+I0625 08:08:14.748347 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias
+I0625 08:08:14.748470 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel
+I0625 08:08:14.748584 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias
+I0625 08:08:14.748697 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta
+I0625 08:08:14.748809 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma
+I0625 08:08:14.748939 140186398181120 modeling.py:390] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma
+INFO:tensorflow:name bert/pooler/dense/kernel match to bert/pooler/dense/kernel
+I0625 08:08:14.749056 140186398181120 modeling.py:390] name bert/pooler/dense/kernel match to bert/pooler/dense/kernel
+INFO:tensorflow:name bert/pooler/dense/bias match to bert/pooler/dense/bias
+I0625 08:08:14.749169 140186398181120 modeling.py:390] name bert/pooler/dense/bias match to bert/pooler/dense/bias
+INFO:tensorflow:name output_weights does not get matched
+I0625 08:08:14.749595 140186398181120 modeling.py:388] name output_weights does not get matched
+INFO:tensorflow:name output_bias does not get matched
+I0625 08:08:14.749806 140186398181120 modeling.py:388] name output_bias does not get matched
+INFO:tensorflow:**** Trainable Variables ****
+I0625 08:08:14.749979 140186398181120 classifier_utils.py:438] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (21128, 128), *INIT_FROM_CKPT*
+I0625 08:08:14.750124 140186398181120 classifier_utils.py:444]   name = bert/embeddings/word_embeddings:0, shape = (21128, 128), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 128), *INIT_FROM_CKPT*
+I0625 08:08:14.750326 140186398181120 classifier_utils.py:444]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 128), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 128), *INIT_FROM_CKPT*
+I0625 08:08:14.750514 140186398181120 classifier_utils.py:444]   name = bert/embeddings/position_embeddings:0, shape = (512, 128), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (128,), *INIT_FROM_CKPT*
+I0625 08:08:14.750675 140186398181120 classifier_utils.py:444]   name = bert/embeddings/LayerNorm/beta:0, shape = (128,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (128,), *INIT_FROM_CKPT*
+I0625 08:08:14.750819 140186398181120 classifier_utils.py:444]   name = bert/embeddings/LayerNorm/gamma:0, shape = (128,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768), *INIT_FROM_CKPT*
+I0625 08:08:14.750967 140186398181120 classifier_utils.py:444]   name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.751121 140186398181120 classifier_utils.py:444]   name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0625 08:08:14.751261 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.751410 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0625 08:08:14.751551 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.751697 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0625 08:08:14.751836 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.752011 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0625 08:08:14.752156 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.752305 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.752442 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.752591 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0625 08:08:14.752731 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0625 08:08:14.752881 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0625 08:08:14.753029 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.753176 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.753316 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.753453 140186398181120 classifier_utils.py:444]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0625 08:08:14.753594 140186398181120 classifier_utils.py:444]   name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0625 08:08:14.753742 140186398181120 classifier_utils.py:444]   name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = output_weights:0, shape = (2, 768)
+I0625 08:08:14.753886 140186398181120 classifier_utils.py:444]   name = output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = output_bias:0, shape = (2,)
+I0625 08:08:14.754044 140186398181120 classifier_utils.py:444]   name = output_bias:0, shape = (2,)
+INFO:tensorflow:++++++ warmup starts at step 0, for 250 steps ++++++
+I0625 08:08:14.767198 140186398181120 optimization.py:50] ++++++ warmup starts at step 0, for 250 steps ++++++
+INFO:tensorflow:using adamw
+I0625 08:08:14.779376 140186398181120 optimization.py:74] using adamw
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0625 08:08:14.953944 140186398181120 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Create CheckpointSaverHook.
+I0625 08:08:19.875903 140186398181120 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+I0625 08:08:19.929839 140186398181120 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:TPU job name worker
+I0625 08:08:22.532119 140186398181120 tpu_estimator.py:506] TPU job name worker
+INFO:tensorflow:Graph was finalized.
+I0625 08:08:22.773629 140186398181120 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Running local_init_op.
+I0625 08:08:25.861770 140186398181120 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0625 08:08:26.147094 140186398181120 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:08:30.817288 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 0 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:08:39.481527 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:751: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Variable.assign which has equivalent behavior in 2.X.
+W0625 08:08:43.240135 140186398181120 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:751: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Variable.assign which has equivalent behavior in 2.X.
+INFO:tensorflow:Initialized dataset iterators in 0 seconds
+I0625 08:08:43.840696 140186398181120 util.py:98] Initialized dataset iterators in 0 seconds
+INFO:tensorflow:Installing graceful shutdown hook.
+I0625 08:08:43.841261 140186398181120 session_support.py:332] Installing graceful shutdown hook.
+2020-06-25 08:08:43.841751: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:370] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+INFO:tensorflow:Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
+I0625 08:08:43.846931 140186398181120 session_support.py:82] Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
+INFO:tensorflow:Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
+
+I0625 08:08:43.848974 140186398181120 session_support.py:105] Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
+
+INFO:tensorflow:Init TPU system
+I0625 08:08:43.852766 140186398181120 tpu_estimator.py:567] Init TPU system
+INFO:tensorflow:Initialized TPU in 2 seconds
+I0625 08:08:46.803491 140186398181120 tpu_estimator.py:576] Initialized TPU in 2 seconds
+INFO:tensorflow:Starting infeed thread controller.
+I0625 08:08:46.804383 140184544851712 tpu_estimator.py:521] Starting infeed thread controller.
+INFO:tensorflow:Starting outfeed thread controller.
+I0625 08:08:46.804845 140184536459008 tpu_estimator.py:540] Starting outfeed thread controller.
+I0625 08:08:46.858126 140184528066304 transport.py:157] Attempting refresh to obtain initial access_token
+W0625 08:08:46.889046 140184528066304 http.py:118] Invalid JSON content from response: b'{\n  "error": {\n    "code": 403,\n    "message": "Permission denied on resource project None.",\n    "status": "PERMISSION_DENIED",\n    "details": [\n      {\n        "@type": "type.googleapis.com/google.rpc.Help",\n        "links": [\n          {\n            "description": "Google developer console API key",\n            "url": "https://console.developers.google.com/project/None/apiui/credential"\n          }\n        ]\n      }\n    ]\n  }\n}\n'
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 476, in _fetch_cloud_tpu_metadata
+    return request.execute()
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/http.py", line 856, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.89.98.210:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/project/None/apiui/credential'}]}]">
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/tpu/preempted_hook.py", line 87, in run
+    response = self._cluster._fetch_cloud_tpu_metadata()  # pylint: disable=protected-access
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 480, in _fetch_cloud_tpu_metadata
+    "constructor. Exception: %s" % (self._tpu, e))
+ValueError: Could not lookup TPU metadata from name 'b'10.89.98.210:8470''. Please doublecheck the tpu argument in the TPUClusterResolver constructor. Exception: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.89.98.210:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/project/None/apiui/credential'}]}]">
+
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:08:47.117912 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:08:47.118546 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (0, 0)
+I0625 08:09:00.932941 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (0, 0)
+INFO:tensorflow:Saving checkpoints for 300 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:09:22.900812 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 300 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-300 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:09:33.369131 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-300 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.52476716, step = 300
+I0625 08:09:36.931735 140186398181120 basic_session_run_hooks.py:262] loss = 0.52476716, step = 300
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:09:36.933680 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:09:36.933917 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 600 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:09:59.923382 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 600 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-600 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:10:09.364046 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-600 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.31852368, step = 600 (36.217 sec)
+I0625 08:10:13.148427 140186398181120 basic_session_run_hooks.py:260] loss = 0.31852368, step = 600 (36.217 sec)
+INFO:tensorflow:global_step/sec: 8.28345
+I0625 08:10:13.149924 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.28345
+INFO:tensorflow:examples/sec: 265.071
+I0625 08:10:13.150951 140186398181120 tpu_estimator.py:2308] examples/sec: 265.071
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:10:13.152096 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:10:13.152301 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (2, 0)
+I0625 08:10:13.220861 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (2, 0)
+INFO:tensorflow:Saving checkpoints for 900 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:10:35.188081 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 900 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-900 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:10:45.356336 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-900 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.086541966, step = 900 (36.162 sec)
+I0625 08:10:49.310265 140186398181120 basic_session_run_hooks.py:260] loss = 0.086541966, step = 900 (36.162 sec)
+INFO:tensorflow:global_step/sec: 8.29597
+I0625 08:10:49.312165 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.29597
+INFO:tensorflow:examples/sec: 265.471
+I0625 08:10:49.312620 140186398181120 tpu_estimator.py:2308] examples/sec: 265.471
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:10:49.313910 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:10:49.314194 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 1200 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:11:11.352845 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 1200 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-1200 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:11:20.422914 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-1200 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.015145246, step = 1200 (34.258 sec)
+I0625 08:11:23.568545 140186398181120 basic_session_run_hooks.py:260] loss = 0.015145246, step = 1200 (34.258 sec)
+INFO:tensorflow:global_step/sec: 8.75713
+I0625 08:11:23.569862 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.75713
+INFO:tensorflow:examples/sec: 280.228
+I0625 08:11:23.570326 140186398181120 tpu_estimator.py:2308] examples/sec: 280.228
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:11:23.571596 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:11:23.571819 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (4, 0)
+I0625 08:11:23.645776 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (4, 0)
+INFO:tensorflow:Saving checkpoints for 1500 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:11:45.612565 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 1500 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-1500 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:11:55.525103 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-1500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.080593884, step = 1500 (35.520 sec)
+I0625 08:11:59.088380 140186398181120 basic_session_run_hooks.py:260] loss = 0.080593884, step = 1500 (35.520 sec)
+INFO:tensorflow:global_step/sec: 8.4459
+I0625 08:11:59.090130 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.4459
+INFO:tensorflow:examples/sec: 270.269
+I0625 08:11:59.090564 140186398181120 tpu_estimator.py:2308] examples/sec: 270.269
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:11:59.091880 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:11:59.092139 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 1800 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:12:21.122363 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 1800 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-1800 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:12:31.569653 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-1800 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.051164094, step = 1800 (35.957 sec)
+I0625 08:12:35.045439 140186398181120 basic_session_run_hooks.py:260] loss = 0.051164094, step = 1800 (35.957 sec)
+INFO:tensorflow:global_step/sec: 8.3429
+I0625 08:12:35.048821 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.3429
+INFO:tensorflow:examples/sec: 266.973
+I0625 08:12:35.049359 140186398181120 tpu_estimator.py:2308] examples/sec: 266.973
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:12:35.050925 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:12:35.051162 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (6, 0)
+I0625 08:12:35.118740 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (6, 0)
+INFO:tensorflow:Saving checkpoints for 2100 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:12:57.088349 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 2100 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-2100 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:13:07.035262 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-2100 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.016822385, step = 2100 (36.625 sec)
+I0625 08:13:11.670532 140186398181120 basic_session_run_hooks.py:260] loss = 0.016822385, step = 2100 (36.625 sec)
+INFO:tensorflow:global_step/sec: 8.19155
+I0625 08:13:11.671924 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.19155
+INFO:tensorflow:examples/sec: 262.13
+I0625 08:13:11.672418 140186398181120 tpu_estimator.py:2308] examples/sec: 262.13
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:13:11.673795 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:13:11.674029 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 2400 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:13:33.709942 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 2400 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-2400 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:13:43.678726 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-2400 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.0043744473, step = 2400 (35.305 sec)
+I0625 08:13:46.975202 140186398181120 basic_session_run_hooks.py:260] loss = 0.0043744473, step = 2400 (35.305 sec)
+INFO:tensorflow:global_step/sec: 8.49743
+I0625 08:13:46.976706 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.49743
+INFO:tensorflow:examples/sec: 271.918
+I0625 08:13:46.977090 140186398181120 tpu_estimator.py:2308] examples/sec: 271.918
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:13:46.978398 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:13:46.978607 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (8, 0)
+I0625 08:13:47.050166 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (8, 0)
+INFO:tensorflow:Saving checkpoints for 2700 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:14:09.020744 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 2700 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-2700 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:14:18.549610 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-2700 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.00031879652, step = 2700 (35.295 sec)
+I0625 08:14:22.270185 140186398181120 basic_session_run_hooks.py:260] loss = 0.00031879652, step = 2700 (35.295 sec)
+INFO:tensorflow:global_step/sec: 8.49983
+I0625 08:14:22.271559 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.49983
+INFO:tensorflow:examples/sec: 271.995
+I0625 08:14:22.271999 140186398181120 tpu_estimator.py:2308] examples/sec: 271.995
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:14:22.273255 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:14:22.273464 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 3000 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:14:44.318856 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 3000 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-3000 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:14:53.630189 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-3000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 9.529175e-05, step = 3000 (34.678 sec)
+I0625 08:14:56.948237 140186398181120 basic_session_run_hooks.py:260] loss = 9.529175e-05, step = 3000 (34.678 sec)
+INFO:tensorflow:global_step/sec: 8.65099
+I0625 08:14:56.949615 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.65099
+INFO:tensorflow:examples/sec: 276.832
+I0625 08:14:56.950027 140186398181120 tpu_estimator.py:2308] examples/sec: 276.832
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:14:56.951713 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:14:56.951921 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (10, 0)
+I0625 08:14:57.021084 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (10, 0)
+INFO:tensorflow:Saving checkpoints for 3300 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:15:18.989933 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 3300 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-3300 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:15:33.103214 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-3300 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.024008924, step = 3300 (40.624 sec)
+I0625 08:15:37.572167 140186398181120 basic_session_run_hooks.py:260] loss = 0.024008924, step = 3300 (40.624 sec)
+INFO:tensorflow:global_step/sec: 7.38475
+I0625 08:15:37.573923 140186398181120 tpu_estimator.py:2307] global_step/sec: 7.38475
+INFO:tensorflow:examples/sec: 236.312
+I0625 08:15:37.574388 140186398181120 tpu_estimator.py:2308] examples/sec: 236.312
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:15:37.575867 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:15:37.576101 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (11, 266)
+I0625 08:15:57.087657 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (11, 266)
+INFO:tensorflow:Saving checkpoints for 3600 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:15:59.617356 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 3600 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-3600 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:16:09.932750 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-3600 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.022758693, step = 3600 (35.589 sec)
+I0625 08:16:13.161513 140186398181120 basic_session_run_hooks.py:260] loss = 0.022758693, step = 3600 (35.589 sec)
+INFO:tensorflow:global_step/sec: 8.42947
+I0625 08:16:13.163350 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.42947
+INFO:tensorflow:examples/sec: 269.743
+I0625 08:16:13.163846 140186398181120 tpu_estimator.py:2308] examples/sec: 269.743
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:16:13.165180 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:16:13.165411 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 3900 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:16:35.198619 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 3900 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-3900 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:16:44.223291 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-3900 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 2.3062808e-05, step = 3900 (34.587 sec)
+I0625 08:16:47.748199 140186398181120 basic_session_run_hooks.py:260] loss = 2.3062808e-05, step = 3900 (34.587 sec)
+INFO:tensorflow:global_step/sec: 8.67393
+I0625 08:16:47.749728 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.67393
+INFO:tensorflow:examples/sec: 277.566
+I0625 08:16:47.750135 140186398181120 tpu_estimator.py:2308] examples/sec: 277.566
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:16:47.751646 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:16:47.751881 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (13, 127)
+I0625 08:16:57.099847 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (13, 127)
+INFO:tensorflow:Saving checkpoints for 4200 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:17:09.788043 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 4200 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-4200 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:17:18.547153 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-4200 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.017319478, step = 4200 (34.276 sec)
+I0625 08:17:22.024556 140186398181120 basic_session_run_hooks.py:260] loss = 0.017319478, step = 4200 (34.276 sec)
+INFO:tensorflow:global_step/sec: 8.75243
+I0625 08:17:22.025928 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.75243
+INFO:tensorflow:examples/sec: 280.078
+I0625 08:17:22.026297 140186398181120 tpu_estimator.py:2308] examples/sec: 280.078
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:17:22.027543 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:17:22.027741 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 4500 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:17:44.063693 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 4500 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-4500 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:17:52.841889 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-4500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.018825173, step = 4500 (34.973 sec)
+I0625 08:17:56.997148 140186398181120 basic_session_run_hooks.py:260] loss = 0.018825173, step = 4500 (34.973 sec)
+INFO:tensorflow:global_step/sec: 8.57808
+I0625 08:17:56.998806 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.57808
+INFO:tensorflow:examples/sec: 274.499
+I0625 08:17:56.999271 140186398181120 tpu_estimator.py:2308] examples/sec: 274.499
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:17:57.000508 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:17:57.000724 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (15, 1)
+I0625 08:17:57.143388 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (15, 1)
+INFO:tensorflow:Saving checkpoints for 4800 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:18:19.033305 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 4800 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-4800 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:18:28.122220 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-4800 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.00010190908, step = 4800 (34.629 sec)
+I0625 08:18:31.626579 140186398181120 basic_session_run_hooks.py:260] loss = 0.00010190908, step = 4800 (34.629 sec)
+INFO:tensorflow:global_step/sec: 8.66323
+I0625 08:18:31.627918 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.66323
+INFO:tensorflow:examples/sec: 277.223
+I0625 08:18:31.628239 140186398181120 tpu_estimator.py:2308] examples/sec: 277.223
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:18:31.629501 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:18:31.629796 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 5100 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+I0625 08:18:53.662566 140186398181120 basic_session_run_hooks.py:606] Saving checkpoints for 5100 into gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-5100 is not in all_model_checkpoint_paths. Manually adding it.
+I0625 08:19:02.676526 140186398181120 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/chn/length_128_steps_4.5k_time_0625_run_1/model.ckpt-5100 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 5.3111762e-05, step = 5100 (34.277 sec)
+I0625 08:19:05.903548 140186398181120 basic_session_run_hooks.py:260] loss = 5.3111762e-05, step = 5100 (34.277 sec)
+INFO:tensorflow:global_step/sec: 8.75222
+I0625 08:19:05.905000 140186398181120 tpu_estimator.py:2307] global_step/sec: 8.75222
+INFO:tensorflow:examples/sec: 280.071
+I0625 08:19:05.905210 140186398181120 tpu_estimator.py:2308] examples/sec: 280.071
+INFO:tensorflow:Enqueue next (300) batch(es) of data to infeed.
+I0625 08:19:05.906514 140186398181120 tpu_estimator.py:600] Enqueue next (300) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (300) batch(es) of data from outfeed.
+I0625 08:19:05.906685 140186398181120 tpu_estimator.py:604] Dequeue next (300) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (17, 0)
+I0625 08:19:05.972244 140184536459008 tpu_estimator.py:279] Outfeed finished for iteration (17, 0)
