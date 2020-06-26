@@ -35,6 +35,7 @@
 |  char_spaced       |     char_spaced_21128      |   char_spaced_10564    |   
 |  char_segmented       |       char_segmented_21128    |     char_segmented_10564       |
 
+
 ```bash
 # /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/sentencepiece/char_no_space-10564-clean.model
 # /home/michaelwzhu91_gmail_com/redesign_vocab_for_zh_bert/data_proc/tokenizers/sentencepiece/char_no_space-10564-clean.vocab
