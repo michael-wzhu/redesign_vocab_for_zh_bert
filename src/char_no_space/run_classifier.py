@@ -172,6 +172,9 @@ def main(_):
         "chn": data_processors.ChnSentiCorpDataProcessor,
         "lcqmc": data_processors.LCQMCProcessor,
         "xnli": data_processors.XnliProcessor,
+        "book_review": data_processors.BookReviewProcessor,
+        "shopping": data_processors.ShoppingProcessor,
+        "weibo": data_processors.WeiboProcessor,
 
     }
 

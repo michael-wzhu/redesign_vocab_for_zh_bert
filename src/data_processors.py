@@ -251,6 +251,141 @@ class ChnSentiCorpDataProcessor(DataProcessor):
         return examples
 
 
+class BookReviewProcessor(DataProcessor):
+    """Processor for the ChnSentiCorp data set."""
+
+    def __init__(self, args):
+        super(BookReviewProcessor, self).__init__(args)
+        self.args = args
+
+    def get_train_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "train.json")), "train")
+
+    def get_dev_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "dev.json")), "dev")
+
+    def get_test_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "test.json")), "test")
+
+    def get_labels(self):
+        """See base class."""
+        labels = []
+        for i in range(2):
+            labels.append(str(i))
+        return labels
+
+    def _create_examples(self, lines, set_type):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for (i, line) in enumerate(lines):
+            guid = "%s-%s" % (set_type, i)
+            text_a = line['sentence1']
+            text_a = text_a.strip()[: self.args.max_num_chars]
+            if self.args.do_lower_case:
+                text_a = text_a.lower()
+            text_b = None
+            label = line['label'] if set_type != 'test' else "0"
+            examples.append(
+                InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
+        return examples
+
+
+class ShoppingProcessor(DataProcessor):
+    """Processor for the ChnSentiCorp data set."""
+
+    def __init__(self, args):
+        super(ShoppingProcessor, self).__init__(args)
+        self.args = args
+
+    def get_train_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "train.json")), "train")
+
+    def get_dev_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "dev.json")), "dev")
+
+    def get_test_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "test.json")), "test")
+
+    def get_labels(self):
+        """See base class."""
+        labels = []
+        for i in range(2):
+            labels.append(str(i))
+        return labels
+
+    def _create_examples(self, lines, set_type):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for (i, line) in enumerate(lines):
+            guid = "%s-%s" % (set_type, i)
+            text_a = line['sentence1']
+            text_a = text_a.strip()[: self.args.max_num_chars]
+            if self.args.do_lower_case:
+                text_a = text_a.lower()
+            text_b = None
+            label = line['label'] if set_type != 'test' else "0"
+            examples.append(
+                InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
+        return examples
+
+
+class WeiboProcessor(DataProcessor):
+    """Processor for the ChnSentiCorp data set."""
+
+    def __init__(self, args):
+        super(WeiboProcessor, self).__init__(args)
+        self.args = args
+
+    def get_train_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "train.json")), "train")
+
+    def get_dev_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "dev.json")), "dev")
+
+    def get_test_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "test.json")), "test")
+
+    def get_labels(self):
+        """See base class."""
+        labels = []
+        for i in range(2):
+            labels.append(str(i))
+        return labels
+
+    def _create_examples(self, lines, set_type):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for (i, line) in enumerate(lines):
+            guid = "%s-%s" % (set_type, i)
+            text_a = line['sentence1']
+            text_a = text_a.strip()[: self.args.max_num_chars]
+            if self.args.do_lower_case:
+                text_a = text_a.lower()
+            text_b = None
+            label = line['label'] if set_type != 'test' else "0"
+            examples.append(
+                InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
+        return examples
+
+
 class LCQMCProcessor(DataProcessor):
     """Processor for the internal data set. sentence pair classification"""
 
