@@ -177,6 +177,9 @@ def main(_):
         "shopping": data_processors.ShoppingProcessor,
         "weibo": data_processors.WeiboProcessor,
 
+        "law_qa": data_processors.LawQAProcessor,
+        "nlpcc_dbqa": data_processors.NlpccDbqaProcessor,
+
     }
 
     # tokenization.validate_case_matches_checkpoint(FLAGS.do_lower_case,
