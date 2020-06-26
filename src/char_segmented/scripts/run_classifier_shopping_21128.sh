@@ -6,7 +6,7 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.240.1.2
+TPU_IP=10.30.202.250
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_segmented
@@ -27,9 +27,9 @@ RUN_TIMES=11
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
     python3 src/char_segmented/run_classifier.py \
-      --task_name=book_review \
-      --data_dir=datasets/book_review \
-      --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/finetune/book_review/${PREFIX}_${VOCAB_SIZE}_length_128_steps_4.5k_time_0625_run_${run_idx}/ \
+      --task_name=shopping \
+      --data_dir=datasets/shopping \
+      --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/finetune/shopping/${PREFIX}_${VOCAB_SIZE}_length_128_steps_4.5k_time_0625_run_${run_idx}/ \
       --init_checkpoint=${STORAGE_BUCKET}/experiments/rethink_vocab/pretraining/${PREFIX}_${VOCAB_SIZE}/model.ckpt-45000 \
       --albert_config_file=./src/config_${VOCAB_SIZE}.json \
       --do_train=true \

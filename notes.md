@@ -57,7 +57,7 @@ python3 src/char_spaced/create_pretraining_data.py --input_file=datasets/zh_samp
 
 $ export PROJECT_NAME=subchar-transformers
 $ gcloud config set project ${PROJECT_NAME}
-$ ctpu up --tpu-size=v3-8 --machine-type=n1-standard-2 --zone=europe-west4-a --tf-version=1.15 --name=h-bert-1
+$ ctpu up --tpu-size=v2-8 --machine-type=n1-standard-16 --zone=us-central1-f --tf-version=1.15 --name=h-bert-8
 
 
 # char_spaced, vocab=21128
@@ -167,6 +167,16 @@ nohup ./src/char_segmented/scripts/run_classifier_lcqmc_21128.sh > char_segmente
 
 # on xnli
 nohup ./src/char_segmented/scripts/run_classifier_xnli_21128.sh > char_segmented_xnli_21128.log &
+
+# on book_review
+nohup ./src/char_segmented/scripts/run_classifier_book_review_21128.sh > char_segmented_book_review_21128.log &
+
+# on shopping
+nohup ./src/char_segmented/scripts/run_classifier_shopping_21128.sh > char_segmented_shopping_21128.log &
+
+# on weibo
+nohup ./src/char_segmented/scripts/run_classifier_weibo_21128.sh > char_segmented_weibo_21128.log &
+
 
 
 ######################################
