@@ -460,7 +460,7 @@ def model_fn_builder(albert_config,
                 train_op=train_op,
                 scaffold_fn=scaffold_fn)
         elif mode == tf.estimator.ModeKeys.EVAL:
-            if task_name not in ["sts-b", "cola"]:
+            if task_name not in ["sts-b", "cola", "nlpcc_dbqa"]:
                 def metric_fn(per_example_loss, label_ids, logits, is_real_example):
                     predictions = tf.argmax(logits, axis=-1, output_type=tf.int32)
                     accuracy = tf.metrics.accuracy(
