@@ -177,6 +177,9 @@ def main(_):
         "shopping": data_processors.ShoppingProcessor,
         "weibo": data_processors.WeiboProcessor,
 
+        "law_qa": data_processors.LawQAProcessor,
+        "nlpcc_dbqa": data_processors.NlpccDbqaProcessor,
+
     }
 
     # tokenization.validate_case_matches_checkpoint(FLAGS.do_lower_case,
@@ -397,6 +400,7 @@ def main(_):
             key_name = "pearson"
         elif task_name == "cola":
             key_name = "matthew_corr"
+
         elif task_name == "nlpcc_dbqa":
             key_name = "f1_score"
         else:
