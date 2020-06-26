@@ -39,15 +39,15 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --max_seq_length=128 \
       --max_num_chars=128 \
       --optimizer=adamw \
-      --train_batch_size=16 \
+      --train_batch_size=256 \
       --eval_batch_size=32 \
       --learning_rate=2e-5 \
       --warmup_step=300 \
-      --save_checkpoints_steps=450 \
+      --save_checkpoints_steps=400 \
       --train_step=8000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
-      --num_tpu_cores=1 \
+      --num_tpu_cores=8 \
       --vocab_file=./data_proc/tokenizers/sentencepiece/${PREFIX}-${VOCAB_SIZE}-clean.vocab \
       --spm_model_file=./data_proc/tokenizers/sentencepiece/${PREFIX}-${VOCAB_SIZE}-clean.model
 
