@@ -397,6 +397,8 @@ def main(_):
             key_name = "pearson"
         elif task_name == "cola":
             key_name = "matthew_corr"
+        elif task_name == "nlpcc_dbqa":
+            key_name = "f1_score"
         else:
             key_name = "eval_accuracy"
 

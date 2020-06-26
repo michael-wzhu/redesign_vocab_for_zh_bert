@@ -6,10 +6,10 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.89.98.210
+TPU_IP=10.61.91.10
 TPU_NAME=grpc://${TPU_IP}:8470
 
-PREFIX=char_segmented
+PREFIX=char_spaced
 VOCAB_SIZE=21128
 
 
@@ -27,10 +27,10 @@ echo "Start running..."
 RUN_TIMES=11
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
-    python3 src/char_segmented/run_classifier.py \
-      --task_name=nlpcc_dbqa \
-      --data_dir=datasets/nlpcc-dbqa \
-      --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/finetune/nlpcc_dbqa/${PREFIX}_${VOCAB_SIZE}_length_128_steps_4.5k_time_0625_run_${run_idx}/ \
+    python3 src/char_spaced/run_classifier.py \
+      --task_name=law_qa \
+      --data_dir=datasets/law_qa \
+      --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/finetune/law_qa/${PREFIX}_${VOCAB_SIZE}_length_128_steps_4.5k_time_0625_run_${run_idx}/ \
       --init_checkpoint=${STORAGE_BUCKET}/experiments/rethink_vocab/pretraining/${PREFIX}_${VOCAB_SIZE}/model.ckpt-45000 \
       --albert_config_file=./src/config_${VOCAB_SIZE}.json \
       --do_train=true \
@@ -40,12 +40,12 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --max_seq_length=128 \
       --max_num_chars=128 \
       --optimizer=adamw \
-      --train_batch_size=256 \
+      --train_batch_size=64 \
       --eval_batch_size=32 \
-      --learning_rate=1e-5 \
-      --warmup_step=600 \
-      --save_checkpoints_steps=750 \
-      --train_step=1000 \
+      --learning_rate=2e-5 \
+      --warmup_step=250 \
+      --save_checkpoints_steps=300 \
+      --train_step=6000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
       --num_tpu_cores=8 \
