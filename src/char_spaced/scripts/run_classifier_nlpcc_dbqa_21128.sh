@@ -9,7 +9,7 @@ STORAGE_BUCKET=gs://sbt0
 TPU_IP=10.89.98.210
 TPU_NAME=grpc://${TPU_IP}:8470
 
-PREFIX=char_segmented
+PREFIX=char_spaced
 VOCAB_SIZE=21128
 
 
@@ -27,7 +27,7 @@ echo "Start running..."
 RUN_TIMES=11
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
-    python3 src/char_segmented/run_classifier.py \
+    python3 src/char_spaced/run_classifier.py \
       --task_name=nlpcc_dbqa \
       --data_dir=datasets/nlpcc-dbqa \
       --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/finetune/nlpcc_dbqa/${PREFIX}_${VOCAB_SIZE}_length_128_steps_4.5k_time_0625_run_${run_idx}/ \
