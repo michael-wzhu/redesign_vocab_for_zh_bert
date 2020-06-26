@@ -432,3 +432,93 @@ class LCQMCProcessor(DataProcessor):
         return examples
 
 
+class LawQAProcessor(DataProcessor):
+    """Processor for the internal data set. sentence pair classification"""
+
+    def get_train_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "train.json")), "train")
+
+    def get_dev_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "dev.json")), "dev")
+
+    def get_test_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "test.json")), "test")
+
+    def get_labels(self):
+        """See base class."""
+        return ["0", "1"]
+
+    def _create_examples(self, lines, set_type):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for (i, line) in enumerate(lines):
+            guid = "%s-%s" % (set_type, i)
+            text_a = line['sentence1']
+            if self.args.do_lower_case:
+                text_a = text_a.lower()
+            text_b = line['sentence2']
+            if self.args.do_lower_case:
+                text_b = text_b.lower()
+
+            _truncate_seq_pair(
+                text_a,
+                text_b,
+                self.args.max_num_chars
+            )
+
+            label = line['label'] if set_type != 'test' else "0"
+            examples.append(
+                InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
+        return examples
+
+
+class NlpccDbqaProcessor(DataProcessor):
+    """Processor for the internal data set. sentence pair classification"""
+
+    def get_train_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "train.json")), "train")
+
+    def get_dev_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "dev.json")), "dev")
+
+    def get_test_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_jsonl(os.path.join(data_dir, "test.json")), "test")
+
+    def get_labels(self):
+        """See base class."""
+        return ["0", "1"]
+
+    def _create_examples(self, lines, set_type):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for (i, line) in enumerate(lines):
+            guid = "%s-%s" % (set_type, i)
+            text_a = line['sentence1']
+            if self.args.do_lower_case:
+                text_a = text_a.lower()
+            text_b = line['sentence2']
+            if self.args.do_lower_case:
+                text_b = text_b.lower()
+
+            _truncate_seq_pair(
+                text_a,
+                text_b,
+                self.args.max_num_chars
+            )
+
+            label = line['label'] if set_type != 'test' else "0"
+            examples.append(
+                InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
+        return examples
