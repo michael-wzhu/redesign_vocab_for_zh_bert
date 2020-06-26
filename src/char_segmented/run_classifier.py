@@ -173,6 +173,10 @@ def main(_):
         "lcqmc": data_processors.LCQMCProcessor,
         "xnli": data_processors.XnliProcessor,
 
+        "book_review": data_processors.BookReviewProcessor,
+        "shopping": data_processors.ShoppingProcessor,
+        "weibo": data_processors.WeiboProcessor,
+
     }
 
     # tokenization.validate_case_matches_checkpoint(FLAGS.do_lower_case,

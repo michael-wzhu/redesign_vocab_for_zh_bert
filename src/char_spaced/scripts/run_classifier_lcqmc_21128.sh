@@ -31,7 +31,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --task_name=lcqmc \
       --data_dir=datasets/LCQMC \
       --output_dir=${STORAGE_BUCKET}/experiments/rethink_vocab/finetune/lcqmc/${PREFIX}_${VOCAB_SIZE}_length_128_steps_4.5k_time_0625_run_${run_idx}/ \
-      --init_checkpoint=${STORAGE_BUCKET}/experiments/rethink_vocab/pretraining/${PREFIX}_${VOCAB_SIZE}/model.ckpt-45000 \
+      --init_checkpoint=${STORAGE_BUCKET}/experiments/rethink_vocab/pretraining/${PREFIX}_${VOCAB_SIZE}/model.ckpt-20000 \
       --albert_config_file=./src/config_${VOCAB_SIZE}.json \
       --do_train=true \
       --do_eval=true \
