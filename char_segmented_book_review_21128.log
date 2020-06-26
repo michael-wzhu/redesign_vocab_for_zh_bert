@@ -33535,3 +33535,149 @@ INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
 I0626 17:52:00.001262 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
 INFO:tensorflow:Outfeed finished for iteration (3, 62)
 I0626 17:52:04.596161 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (3, 62)
+INFO:tensorflow:Saving checkpoints for 2400 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 17:52:43.954242 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 2400 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-2400 is not in all_model_checkpoint_paths. Manually adding it.
+I0626 17:52:53.770437 140535196116736 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-2400 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.46197706, step = 2400 (58.610 sec)
+I0626 17:52:58.607282 140535196116736 basic_session_run_hooks.py:260] loss = 0.46197706, step = 2400 (58.610 sec)
+INFO:tensorflow:global_step/sec: 10.2372
+I0626 17:52:58.608723 140535196116736 tpu_estimator.py:2307] global_step/sec: 10.2372
+INFO:tensorflow:examples/sec: 327.591
+I0626 17:52:58.609083 140535196116736 tpu_estimator.py:2308] examples/sec: 327.591
+INFO:tensorflow:Enqueue next (600) batch(es) of data to infeed.
+I0626 17:52:58.610037 140535196116736 tpu_estimator.py:600] Enqueue next (600) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
+I0626 17:52:58.610218 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (4, 81)
+I0626 17:53:04.597363 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (4, 81)
+INFO:tensorflow:Saving checkpoints for 3000 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 17:53:42.565487 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 3000 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-3000 is not in all_model_checkpoint_paths. Manually adding it.
+I0626 17:53:51.667405 140535196116736 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-3000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.15609512, step = 3000 (58.280 sec)
+I0626 17:53:56.887529 140535196116736 basic_session_run_hooks.py:260] loss = 0.15609512, step = 3000 (58.280 sec)
+INFO:tensorflow:global_step/sec: 10.295
+I0626 17:53:56.889638 140535196116736 tpu_estimator.py:2307] global_step/sec: 10.295
+INFO:tensorflow:examples/sec: 329.439
+I0626 17:53:56.889877 140535196116736 tpu_estimator.py:2308] examples/sec: 329.439
+INFO:tensorflow:Enqueue next (600) batch(es) of data to infeed.
+I0626 17:53:56.891064 140535196116736 tpu_estimator.py:600] Enqueue next (600) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
+I0626 17:53:56.891295 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (5, 105)
+I0626 17:54:04.627191 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (5, 105)
+INFO:tensorflow:Saving checkpoints for 3600 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 17:54:40.838843 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 3600 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-3600 is not in all_model_checkpoint_paths. Manually adding it.
+I0626 17:54:52.166144 140535196116736 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-3600 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.01169147, step = 3600 (59.477 sec)
+I0626 17:54:56.364634 140535196116736 basic_session_run_hooks.py:260] loss = 0.01169147, step = 3600 (59.477 sec)
+INFO:tensorflow:global_step/sec: 10.088
+I0626 17:54:56.366178 140535196116736 tpu_estimator.py:2307] global_step/sec: 10.088
+INFO:tensorflow:examples/sec: 322.816
+I0626 17:54:56.366555 140535196116736 tpu_estimator.py:2308] examples/sec: 322.816
+INFO:tensorflow:Enqueue next (600) batch(es) of data to infeed.
+I0626 17:54:56.367786 140535196116736 tpu_estimator.py:600] Enqueue next (600) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
+I0626 17:54:56.368084 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (6, 113)
+I0626 17:55:04.695921 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (6, 113)
+INFO:tensorflow:Saving checkpoints for 4200 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 17:55:40.330904 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 4200 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-4200 is not in all_model_checkpoint_paths. Manually adding it.
+I0626 17:55:50.736139 140535196116736 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-4200 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.23230805, step = 4200 (58.656 sec)
+I0626 17:55:55.020473 140535196116736 basic_session_run_hooks.py:260] loss = 0.23230805, step = 4200 (58.656 sec)
+INFO:tensorflow:global_step/sec: 10.2292
+I0626 17:55:55.021947 140535196116736 tpu_estimator.py:2307] global_step/sec: 10.2292
+INFO:tensorflow:examples/sec: 327.333
+I0626 17:55:55.022305 140535196116736 tpu_estimator.py:2308] examples/sec: 327.333
+INFO:tensorflow:Enqueue next (600) batch(es) of data to infeed.
+I0626 17:55:55.023839 140535196116736 tpu_estimator.py:600] Enqueue next (600) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
+I0626 17:55:55.024116 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (7, 132)
+I0626 17:56:04.740618 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (7, 132)
+INFO:tensorflow:Saving checkpoints for 4800 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 17:56:38.984149 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 4800 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-4800 is not in all_model_checkpoint_paths. Manually adding it.
+I0626 17:56:49.182253 140535196116736 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-4800 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.0014351467, step = 4800 (59.134 sec)
+I0626 17:56:54.154590 140535196116736 basic_session_run_hooks.py:260] loss = 0.0014351467, step = 4800 (59.134 sec)
+INFO:tensorflow:global_step/sec: 10.1464
+I0626 17:56:54.156276 140535196116736 tpu_estimator.py:2307] global_step/sec: 10.1464
+INFO:tensorflow:examples/sec: 324.685
+I0626 17:56:54.156552 140535196116736 tpu_estimator.py:2308] examples/sec: 324.685
+INFO:tensorflow:Enqueue next (600) batch(es) of data to infeed.
+I0626 17:56:54.157783 140535196116736 tpu_estimator.py:600] Enqueue next (600) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
+I0626 17:56:54.158030 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (8, 144)
+I0626 17:57:04.748221 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (8, 144)
+INFO:tensorflow:Saving checkpoints for 5400 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 17:57:38.111846 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 5400 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-5400 is not in all_model_checkpoint_paths. Manually adding it.
+I0626 17:57:47.951456 140535196116736 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-5400 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.1927866, step = 5400 (57.607 sec)
+I0626 17:57:51.761116 140535196116736 basic_session_run_hooks.py:260] loss = 0.1927866, step = 5400 (57.607 sec)
+INFO:tensorflow:global_step/sec: 10.4155
+I0626 17:57:51.762566 140535196116736 tpu_estimator.py:2307] global_step/sec: 10.4155
+INFO:tensorflow:examples/sec: 333.297
+I0626 17:57:51.762866 140535196116736 tpu_estimator.py:2308] examples/sec: 333.297
+INFO:tensorflow:Enqueue next (600) batch(es) of data to infeed.
+I0626 17:57:51.764256 140535196116736 tpu_estimator.py:600] Enqueue next (600) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
+I0626 17:57:51.764445 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (9, 177)
+I0626 17:58:04.767141 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (9, 177)
+INFO:tensorflow:Saving checkpoints for 6000 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 17:58:35.724578 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 6000 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-6000 is not in all_model_checkpoint_paths. Manually adding it.
+I0626 17:58:45.677654 140535196116736 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-6000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.0015960797, step = 6000 (57.820 sec)
+I0626 17:58:49.581247 140535196116736 basic_session_run_hooks.py:260] loss = 0.0015960797, step = 6000 (57.820 sec)
+INFO:tensorflow:global_step/sec: 10.377
+I0626 17:58:49.582707 140535196116736 tpu_estimator.py:2307] global_step/sec: 10.377
+INFO:tensorflow:examples/sec: 332.064
+I0626 17:58:49.583111 140535196116736 tpu_estimator.py:2308] examples/sec: 332.064
+INFO:tensorflow:Enqueue next (600) batch(es) of data to infeed.
+I0626 17:58:49.584160 140535196116736 tpu_estimator.py:600] Enqueue next (600) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
+I0626 17:58:49.584393 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (10, 207)
+I0626 17:59:04.775917 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (10, 207)
+INFO:tensorflow:Saving checkpoints for 6600 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 17:59:33.538142 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 6600 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-6600 is not in all_model_checkpoint_paths. Manually adding it.
+I0626 17:59:43.830319 140535196116736 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-6600 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.00024013082, step = 6600 (59.113 sec)
+I0626 17:59:48.693845 140535196116736 basic_session_run_hooks.py:260] loss = 0.00024013082, step = 6600 (59.113 sec)
+INFO:tensorflow:global_step/sec: 10.1501
+I0626 17:59:48.695642 140535196116736 tpu_estimator.py:2307] global_step/sec: 10.1501
+INFO:tensorflow:examples/sec: 324.802
+I0626 17:59:48.696037 140535196116736 tpu_estimator.py:2308] examples/sec: 324.802
+INFO:tensorflow:Enqueue next (600) batch(es) of data to infeed.
+I0626 17:59:48.697155 140535196116736 tpu_estimator.py:600] Enqueue next (600) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
+I0626 17:59:48.697328 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (11, 220)
+I0626 18:00:04.840047 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (11, 220)
+INFO:tensorflow:Saving checkpoints for 7200 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 18:00:32.649636 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 7200 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-7200 is not in all_model_checkpoint_paths. Manually adding it.
+I0626 18:00:42.493527 140535196116736 checkpoint_management.py:95] gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt-7200 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.00027871918, step = 7200 (57.099 sec)
+I0626 18:00:45.792350 140535196116736 basic_session_run_hooks.py:260] loss = 0.00027871918, step = 7200 (57.099 sec)
+INFO:tensorflow:global_step/sec: 10.5082
+I0626 18:00:45.793812 140535196116736 tpu_estimator.py:2307] global_step/sec: 10.5082
+INFO:tensorflow:examples/sec: 336.263
+I0626 18:00:45.794033 140535196116736 tpu_estimator.py:2308] examples/sec: 336.263
+INFO:tensorflow:Enqueue next (600) batch(es) of data to infeed.
+I0626 18:00:45.795315 140535196116736 tpu_estimator.py:600] Enqueue next (600) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (600) batch(es) of data from outfeed.
+I0626 18:00:45.795491 140535196116736 tpu_estimator.py:604] Dequeue next (600) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (12, 260)
+I0626 18:01:04.856063 140533255878400 tpu_estimator.py:279] Outfeed finished for iteration (12, 260)
+INFO:tensorflow:Saving checkpoints for 7800 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
+I0626 18:01:29.743328 140535196116736 basic_session_run_hooks.py:606] Saving checkpoints for 7800 into gs://sbt0/experiments/rethink_vocab/finetune/book_review/char_segmented_21128_length_128_steps_4.5k_time_0625_run_4/model.ckpt.
