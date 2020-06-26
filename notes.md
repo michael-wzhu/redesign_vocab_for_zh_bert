@@ -191,14 +191,27 @@ nohup ./src/char_segmented/scripts/run_classifier_nlpcc_dbqa_21128.sh > char_seg
 # on chn
 nohup ./src/char_spaced/scripts/run_classifier_chn_21128.sh > char_spaced_chn_21128.log &
 
+# on book_review
+nohup ./src/char_spaced/scripts/run_classifier_book_review_21128.sh > char_spaced_book_review_21128.log &
+
+# on shopping
+nohup ./src/char_spaced/scripts/run_classifier_shopping_21128.sh > char_spaced_shopping_21128.log &
+
+# on weibo
+nohup ./src/char_spaced/scripts/run_classifier_weibo_21128.sh > char_spaced_weibo_21128.log &
+
+
 # on lcqmc
 nohup ./src/char_spaced/scripts/run_classifier_lcqmc_21128.sh > char_spaced_lcqmc_21128.log &
 
 # on xnli
 nohup ./src/char_spaced/scripts/run_classifier_xnli_21128.sh > char_spaced_xnli_21128.log &
 
+# on law_qa
+nohup ./src/char_spaced/scripts/run_classifier_law_qa_21128.sh > char_spaced_law_qa_21128.log &
 
-
+# on nlpcc_dbqa
+nohup ./src/char_spaced/scripts/run_classifier_nlpcc_dbqa_21128.sh > char_spaced_nlpcc_dbqa_21128.log &
 
 
 

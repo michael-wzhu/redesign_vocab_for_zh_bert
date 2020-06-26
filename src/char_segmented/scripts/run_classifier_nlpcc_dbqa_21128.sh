@@ -45,7 +45,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --learning_rate=1e-5 \
       --warmup_step=600 \
       --save_checkpoints_steps=750 \
-      --train_step=1000 \
+      --train_step=15000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
       --num_tpu_cores=8 \
