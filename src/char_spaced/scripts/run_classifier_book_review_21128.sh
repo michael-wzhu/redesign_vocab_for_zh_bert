@@ -6,7 +6,7 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.240.1.2
+TPU_IP=10.77.62.58
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_spaced
@@ -47,7 +47,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --train_step=12000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
-      --num_tpu_cores=1 \
+      --num_tpu_cores=8 \
       --vocab_file=./data_proc/tokenizers/sentencepiece/${PREFIX}-${VOCAB_SIZE}-clean.vocab \
       --spm_model_file=./data_proc/tokenizers/sentencepiece/${PREFIX}-${VOCAB_SIZE}-clean.model
 
