@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     # vocab_sizes = [10564]
     # vocab_sizes = [21128]
-    vocab_sizes = [31692]
+    vocab_sizes = [10564, 21128, 31692]
     prefixes = [
 
         # "char_segmented",
@@ -21,8 +21,6 @@ if __name__ == "__main__":
     ]
 
     STORAGE_BUCKET = "gs://sbt0"
-
-
 
     for prefix in prefixes:
         for vocab_size in vocab_sizes:
@@ -35,7 +33,7 @@ if __name__ == "__main__":
 
             try:
                 spm.SentencePieceTrainer.train(
-                    '--input=./tmp/zhwiki-latest-pages-articles_%s_lower_simplified.txt --model_prefix=./data_proc/tokenizers/sentencepiece/%s-%d-clean --vocab_size=%d --pad_id=0 --unk_id=1 --eos_id=-1 --bos_id=-1 --control_symbols=[CLS],[SEP],[MASK] --user_defined_symbols=(,),”,-,.,–,£,€ --shuffle_input_sentence=true --input_sentence_size=5000000 --shuffle_input_sentence=true --model_type=bpe --num_threads=12' % (
+                    '--input=./tmp/zhwiki-latest-pages-articles_%s_lower_simplified.txt --model_prefix=./data_proc/tokenizers/sentencepiece/%s-%d-clean --vocab_size=%d --pad_id=0 --unk_id=1 --eos_id=-1 --bos_id=-1 --control_symbols=[CLS],[SEP],[MASK] --user_defined_symbols=(,),”,-,.,–,£,€ --shuffle_input_sentence=true --input_sentence_size=12000000 --shuffle_input_sentence=true --model_type=bpe --num_threads=12' % (
                     prefix, prefix, vocab_size, vocab_size)
                 )
 
