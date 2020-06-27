@@ -172,9 +172,13 @@ def main(_):
         "chn": data_processors.ChnSentiCorpDataProcessor,
         "lcqmc": data_processors.LCQMCProcessor,
         "xnli": data_processors.XnliProcessor,
+
         "book_review": data_processors.BookReviewProcessor,
         "shopping": data_processors.ShoppingProcessor,
         "weibo": data_processors.WeiboProcessor,
+
+        "law_qa": data_processors.LawQAProcessor,
+        "nlpcc_dbqa": data_processors.NlpccDbqaProcessor,
 
     }
 
@@ -396,6 +400,8 @@ def main(_):
             key_name = "pearson"
         elif task_name == "cola":
             key_name = "matthew_corr"
+        elif task_name == "nlpcc_dbqa":
+            key_name = "f1_score"
         else:
             key_name = "eval_accuracy"
 

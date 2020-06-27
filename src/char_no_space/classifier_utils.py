@@ -526,6 +526,44 @@ def model_fn_builder(albert_config,
                     return {"matthew_corr": (mcc, tf.group(tp_op, tn_op, fp_op, fn_op)),
                             "eval_accuracy": accuracy, "eval_loss": loss, }
 
+            elif task_name == "nlpcc_dbqa":
+                def metric_fn(per_example_loss, label_ids, logits, is_real_example):
+
+                    predictions = tf.argmax(logits, axis=-1, output_type=tf.int32)
+                    precision, precision_update_op = tf.metrics.precision(
+                        labels=label_ids,
+                        predictions=predictions,
+                        weights=is_real_example,
+                        name="precision"
+                    )
+                    recall, recall_update_op = tf.metrics.recall(
+                        labels=label_ids,
+                        predictions=predictions,
+                        weights=is_real_example,
+                        name='recall'
+                    )
+
+                    f1_score, f1_update_op = tf.metrics.mean(
+                        (2 * (precision + 1e-7) * (recall + 1e-7)) / (precision + recall + 2e-7),
+                        name='f1_score'
+                    )
+
+                    # Compute accuracy
+                    accuracy = tf.metrics.accuracy(
+                        labels=label_ids, predictions=predictions,
+                        weights=is_real_example)
+
+                    loss = tf.metrics.mean(
+                        values=per_example_loss,
+                        weights=is_real_example)
+
+                    return {
+                        "precision": (precision, precision_update_op),
+                        "recall": (recall, recall_update_op),
+                        "f1_score": (f1_score, f1_update_op),
+                        "eval_accuracy": accuracy, "eval_loss": loss,
+                    }
+
             eval_metrics = (metric_fn,
                             [per_example_loss, label_ids, logits, is_real_example])
             output_spec = contrib_tpu.TPUEstimatorSpec(
