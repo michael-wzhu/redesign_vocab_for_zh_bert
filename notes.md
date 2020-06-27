@@ -154,11 +154,28 @@ nohup ./src/char_no_space/scripts/run_pretrain_10564.sh > pretrain_char_no_space
 # on chn
 nohup ./src/char_no_space/scripts/run_classifier_chn_21128.sh > char_no_space_chn_21128.log &
 
+# on book_review
+nohup ./src/char_no_space/scripts/run_classifier_book_review_21128.sh > char_no_space_book_review_21128.log &
+
+# on shopping
+nohup ./src/char_no_space/scripts/run_classifier_shopping_21128.sh > char_no_space_shopping_21128.log &
+
+# on weibo
+nohup ./src/char_no_space/scripts/run_classifier_weibo_21128.sh > char_no_space_weibo_21128.log &
+
+
 # on lcqmc
 nohup ./src/char_no_space/scripts/run_classifier_lcqmc_21128.sh > char_no_space_lcqmc_21128.log &
 
 # on xnli
 nohup ./src/char_no_space/scripts/run_classifier_xnli_21128.sh > char_no_space_xnli_21128.log &
+
+
+# on law_qa
+nohup ./src/char_no_space/scripts/run_classifier_law_qa_21128.sh > char_no_space_law_qa_21128.log &
+
+# on nlpcc_dbqa
+nohup ./src/char_no_space/scripts/run_classifier_nlpcc_dbqa_21128.sh > char_no_space_nlpcc_dbqa_21128.log &
 
 
 ######################################
