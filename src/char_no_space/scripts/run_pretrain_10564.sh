@@ -5,7 +5,7 @@
 ### run pretrain
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.77.62.58
+TPU_IP=10.30.202.250
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_no_space
