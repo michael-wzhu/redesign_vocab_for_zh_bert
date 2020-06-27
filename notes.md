@@ -208,6 +208,35 @@ nohup ./src/char_segmented/scripts/run_classifier_nlpcc_dbqa_21128.sh > char_seg
 
 
 ######################################
+# char_segmented, vocab=10564
+######################################
+
+# on chn
+nohup ./src/char_segmented/scripts/run_classifier_chn_10564.sh > char_segmented_chn_10564.log &
+
+# on book_review
+nohup ./src/char_segmented/scripts/run_classifier_book_review_10564.sh > char_segmented_book_review_10564.log &
+
+# on nlpcc_dbqa
+nohup ./src/char_segmented/scripts/run_classifier_nlpcc_dbqa_10564.sh > char_segmented_nlpcc_dbqa_10564.log &
+
+
+######################################
+# char_segmented, vocab=31692
+######################################
+
+# on chn
+nohup ./src/char_segmented/scripts/run_classifier_chn_31692.sh > char_segmented_chn_31692.log &
+
+# on book_review
+nohup ./src/char_segmented/scripts/run_classifier_book_review_31692.sh > char_segmented_book_review_31692.log &
+
+# on nlpcc_dbqa
+nohup ./src/char_segmented/scripts/run_classifier_nlpcc_dbqa_31692.sh > char_segmented_nlpcc_dbqa_31692.log &
+
+
+
+######################################
 # char_spaced, vocab=21128
 ######################################
 
