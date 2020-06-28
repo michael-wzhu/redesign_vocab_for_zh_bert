@@ -588,15 +588,8 @@ INFO:tensorflow:accuracy: 0.812160
 I0626 01:08:32.903674 140557941769984 run_classifier.py:535] accuracy: 0.812160
 
 
-
-
-
-
-
-
 # on xnli
 nohup ./src/char_segmented/scripts/run_classifier_xnli_21128.sh > char_segmented_xnli_21128.log &
-
 
 I0625 15:17:19.600876 140490938377984 run_classifier.py:535] accuracy: 0.612176
 INFO:tensorflow:accuracy: 0.619162
@@ -619,10 +612,6 @@ INFO:tensorflow:accuracy: 0.613772
 I0626 04:46:57.572167 139894134437632 run_classifier.py:535] accuracy: 0.613772
 INFO:tensorflow:accuracy: 0.621956
 I0626 06:16:46.509672 140178131744512 run_classifier.py:535] accuracy: 0.621956
-
-
-
-
 
 
 # on law_qa
@@ -650,9 +639,6 @@ INFO:tensorflow:accuracy: 0.854586
 I0627 01:15:56.111657 139795924260608 run_classifier.py:545] accuracy: 0.854586
 
 
-
-
-
 # on nlpcc_dbqa
 nohup ./src/char_segmented/scripts/run_classifier_nlpcc_dbqa_21128.sh > char_segmented_nlpcc_dbqa_21128.log &
 
@@ -676,11 +662,63 @@ nohup ./src/char_segmented/scripts/run_classifier_nlpcc_dbqa_21128.sh > char_seg
 # on chn
 nohup ./src/char_segmented/scripts/run_classifier_chn_10564.sh > char_segmented_chn_10564.log &
 
+I0627 15:28:42.623456 140285393336064 run_classifier.py:544] accuracy: 0.900000
+INFO:tensorflow:accuracy: 0.895000
+I0627 16:01:34.262805 139774384129792 run_classifier.py:544] accuracy: 0.895000
+INFO:tensorflow:accuracy: 0.890833
+I0627 16:35:10.891569 139713118324480 run_classifier.py:544] accuracy: 0.890833
+INFO:tensorflow:accuracy: 0.893333
+I0627 17:08:16.479279 139851673409280 run_classifier.py:544] accuracy: 0.893333
+INFO:tensorflow:accuracy: 0.884167
+I0627 17:46:06.969177 139917025822464 run_classifier.py:544] accuracy: 0.884167
+INFO:tensorflow:accuracy: 0.895000
+I0627 18:25:07.307997 140354503591680 run_classifier.py:544] accuracy: 0.895000
+INFO:tensorflow:accuracy: 0.902500
+I0627 19:04:05.565606 140414964172544 run_classifier.py:544] accuracy: 0.902500
+INFO:tensorflow:accuracy: 0.883333
+I0627 19:43:05.026529 140071632992000 run_classifier.py:544] accuracy: 0.883333
+INFO:tensorflow:accuracy: 0.883333
+I0627 20:22:06.857652 140318162622208 run_classifier.py:544] accuracy: 0.883333
+INFO:tensorflow:accuracy: 0.901667
+I0627 21:01:05.713776 140413694879488 run_classifier.py:544] accuracy: 0.901667
+INFO:tensorflow:accuracy: 0.888333
+I0627 21:40:05.793964 140221530199808 run_classifier.py:544] accuracy: 0.888333
+
+
 # on book_review
 nohup ./src/char_segmented/scripts/run_classifier_book_review_10564.sh > char_segmented_book_review_10564.log &
 
+I0627 15:04:10.378492 140159645439744 run_classifier.py:544] accuracy: 0.779500
+INFO:tensorflow:accuracy: 0.778600
+I0627 16:03:22.102826 139688184698624 run_classifier.py:544] accuracy: 0.778600
+INFO:tensorflow:accuracy: 0.776400
+I0627 17:03:54.857486 140226910689024 run_classifier.py:544] accuracy: 0.776400
+INFO:tensorflow:accuracy: 0.782600
+I0627 18:04:04.683559 140294636017408 run_classifier.py:544] accuracy: 0.782600
+INFO:tensorflow:accuracy: 0.785300
+I0627 19:03:55.854121 140530756429568 run_classifier.py:544] accuracy: 0.785300
+INFO:tensorflow:accuracy: 0.781200
+I0627 20:03:47.087578 139839796700928 run_classifier.py:544] accuracy: 0.781200
+INFO:tensorflow:accuracy: 0.780000
+I0627 21:03:00.472827 140248503088896 run_classifier.py:544] accuracy: 0.780000
+INFO:tensorflow:accuracy: 0.779800
+I0627 22:02:33.949743 140488191309568 run_classifier.py:544] accuracy: 0.779800
+INFO:tensorflow:accuracy: 0.789200
+I0627 23:01:35.105038 139972090660608 run_classifier.py:544] accuracy: 0.789200
+INFO:tensorflow:accuracy: 0.784400
+I0628 00:03:41.141481 139982385362688 run_classifier.py:544] accuracy: 0.784400
+INFO:tensorflow:accuracy: 0.776800
+I0628 01:02:14.181799 139797458536192 run_classifier.py:544] accuracy: 0.776800
+
 # on nlpcc_dbqa
 nohup ./src/char_segmented/scripts/run_classifier_nlpcc_dbqa_10564.sh > char_segmented_nlpcc_dbqa_10564.log &
+
+grep "weighted avg" char_segmented_nlpcc_dbqa_10564.log
+
+{'macro avg': {'f1-score': 0.655767072282652, 'support': 81536, 'precision': 0.6509902756382959, 'recall': 0.660943012300975}, 'accuracy': 0.9323856946624803, '1': {'f1-score': 0.34718768502072234, 'support': 4080, 'precision': 0.3358533791523482, 'recall': 0.3593137254901961}, '0': {'f1-score': 0.9643464595445816, 'support': 77456, 'precision': 0.9661271721242436, 'recall': 0.9625722991117538}, 'weighted avg': {'f1-score': 0.9334642995164057, 'support': 81536, 'precision': 0.9345887464555165, 'recall': 0.9323856946624803}}
+{'0': {'support': 77456, 'f1-score': 0.9668387379153204, 'precision': 0.9640464149102765, 'recall': 0.9696472836190869}, '1': {'support': 4080, 'f1-score': 0.33177691309987034, 'precision': 0.35234159779614327, 'recall': 0.31348039215686274}, 'macro avg': {'support': 81536, 'f1-score': 0.6493078255075954, 'precision': 0.6581940063532099, 'recall': 0.6415638378879749}, 'accuracy': 0.9368131868131868, 'weighted avg': {'support': 81536, 'f1-score': 0.9350607227410778, 'precision': 0.933437166801151, 'recall': 0.9368131868131868}}
+{'0': {'f1-score': 0.9637608926332037, 'recall': 0.9673879363767817, 'precision': 0.9601609451684414, 'support': 77456}, 'accuracy': 0.9308894230769231, '1': {'f1-score': 0.2563019664774977, 'recall': 0.23799019607843136, 'precision': 0.27766657134686873, 'support': 4080}, 'weighted avg': {'f1-score': 0.9283601810614407, 'recall': 0.9308894230769231, 'precision': 0.9260094409838846, 'support': 81536}, 'macro avg': {'f1-score': 0.6100314295553507, 'recall': 0.6026890662276065, 'precision': 0.618913758257655, 'support': 81536}}
+{'macro avg': {'precision': 0.6302996939813255, 'recall': 0.6887864229558793, 'f1-score': 0.6525184299542839, 'support': 81536}, 'accuracy': 0.9188947213500785, '1': {'precision': 0.29124773364100875, 'recall': 0.43308823529411766, 'f1-score': 0.34828027988568055, 'support': 4080}, '0': {'precision': 0.969351654321642, 'recall': 0.944484610617641, 'f1-score': 0.9567565800228871, 'support': 77456}, 'weighted avg': {'precision': 0.9354198451039103, 'recall': 0.9188947213500785, 'f1-score': 0.9263088844704954, 'support': 81536}}
 
 
 ######################################
@@ -690,11 +728,58 @@ nohup ./src/char_segmented/scripts/run_classifier_nlpcc_dbqa_10564.sh > char_seg
 # on chn
 nohup ./src/char_segmented/scripts/run_classifier_chn_31692.sh > char_segmented_chn_31692.log &
 
+I0627 14:40:40.893581 140190218352384 run_classifier.py:544] accuracy: 0.890000
+INFO:tensorflow:accuracy: 0.895833
+I0627 15:14:20.189674 140335415895808 run_classifier.py:544] accuracy: 0.895833
+INFO:tensorflow:accuracy: 0.895000
+I0627 15:47:50.767106 140012586780416 run_classifier.py:544] accuracy: 0.895000
+INFO:tensorflow:accuracy: 0.885000
+I0627 16:21:01.652197 140065717708544 run_classifier.py:544] accuracy: 0.885000
+INFO:tensorflow:accuracy: 0.900000
+I0627 16:58:55.962467 140601998886656 run_classifier.py:544] accuracy: 0.900000
+INFO:tensorflow:accuracy: 0.911667
+I0627 17:37:56.110481 140524775122688 run_classifier.py:544] accuracy: 0.911667
+INFO:tensorflow:accuracy: 0.902500
+I0627 18:16:56.618967 140018564093696 run_classifier.py:544] accuracy: 0.902500
+INFO:tensorflow:accuracy: 0.901667
+I0627 18:55:56.748795 140510751565568 run_classifier.py:544] accuracy: 0.901667
+INFO:tensorflow:accuracy: 0.893333
+I0627 19:34:56.797709 139662073030400 run_classifier.py:544] accuracy: 0.893333
+INFO:tensorflow:accuracy: 0.892500
+I0627 20:13:57.973125 140169445930752 run_classifier.py:544] accuracy: 0.892500
+INFO:tensorflow:accuracy: 0.904167
+I0627 20:52:56.755581 140191734798080 run_classifier.py:544] accuracy: 0.904167
+
 # on book_review
 nohup ./src/char_segmented/scripts/run_classifier_book_review_31692.sh > char_segmented_book_review_31692.log &
 
+I0627 15:08:23.549530 139815454402304 run_classifier.py:544] accuracy: 0.792500
+INFO:tensorflow:accuracy: 0.783200
+I0627 16:08:57.264279 139990266271488 run_classifier.py:544] accuracy: 0.783200
+INFO:tensorflow:accuracy: 0.788900
+I0627 17:08:54.024188 140303199041280 run_classifier.py:544] accuracy: 0.788900
+INFO:tensorflow:accuracy: 0.781600
+I0627 18:08:45.340214 139982612621056 run_classifier.py:544] accuracy: 0.781600
+INFO:tensorflow:accuracy: 0.787400
+I0627 19:08:15.143123 140703319348992 run_classifier.py:544] accuracy: 0.787400
+INFO:tensorflow:accuracy: 0.793400
+I0627 20:09:33.201308 140260118611712 run_classifier.py:544] accuracy: 0.793400
+INFO:tensorflow:accuracy: 0.785800
+I0627 21:10:20.403388 139710741100288 run_classifier.py:544] accuracy: 0.785800
+INFO:tensorflow:accuracy: 0.780500
+I0627 22:09:58.633494 140280271128320 run_classifier.py:544] accuracy: 0.780500
+INFO:tensorflow:accuracy: 0.786600
+I0627 23:09:19.557101 140636684560128 run_classifier.py:544] accuracy: 0.786600
+INFO:tensorflow:accuracy: 0.787600
+I0628 00:09:56.246774 140312171026176 run_classifier.py:544] accuracy: 0.787600
+INFO:tensorflow:accuracy: 0.786700
+I0628 01:10:26.672925 139946796328704 run_classifier.py:544] accuracy: 0.786700
+
 # on nlpcc_dbqa
 nohup ./src/char_segmented/scripts/run_classifier_nlpcc_dbqa_31692.sh > char_segmented_nlpcc_dbqa_31692.log &
+
+grep "'weighted avg'" char_segmented_nlpcc_dbqa_31692.log
+
 
 
 
