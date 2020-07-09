@@ -4,6 +4,7 @@ import jieba
 import six
 
 from data_proc.char2char_spaced_mp import drop_extra_blank
+from src import tokenization
 
 
 def printable_text(text):
@@ -64,3 +65,16 @@ def tokenize_single_sent(sent, tokenizer=None):
     line_seg = tokenizer.tokenize(sent)
 
     return line_seg
+
+
+if __name__ == "__main__":
+    bpe_tokenizer = tokenization.FullTokenizer(
+        vocab_file="data_proc/tokenizers/sentencepiece/char_spaced-21128-clean.vocab",
+        do_lower_case=True,
+        spm_model_file="data_proc/tokenizers/sentencepiece/char_spaced-21128-clean.model"
+    )
+    sent = "不是电脑高手千万别买，没有windows系统，而且主板和bios有很多限制"
+    line_seg = tokenize_single_sent(sent, tokenizer=bpe_tokenizer)
+    line_seg = ["[CLS]"] + line_seg + ["[SEP]"]
+    print(line_seg)
+    print(" ".join(line_seg))
