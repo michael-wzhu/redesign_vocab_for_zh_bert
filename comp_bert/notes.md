@@ -23,3 +23,10 @@ nohup ./data_proc/char2comp_spaced_mp.sh > logs/preproc_corpus_char2comp_spaced_
 
 
 ```
+
+## build vocab
+
+```bash
+nohup python3 data_proc/build_spm.py > logs/build_vocab.log &
+
+```
