@@ -10,7 +10,7 @@ __pycache__/
 
 # *.tsv
 # *.raw
-# *.txt
+*.txt
 # *.jsonl
 # datasets/*
 tmp/*
