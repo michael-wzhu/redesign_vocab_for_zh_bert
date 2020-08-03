@@ -16,10 +16,10 @@ python data_proc/proc_comps/proc_and_remap.py
 ```bash
 
 # comp segmented
-nohup ./data_proc/char2comp_segmented_mp.sh > preproc_corpus_char2comp_segmented_mp.log &
+nohup ./data_proc/char2comp_segmented_mp.sh > logs/preproc_corpus_char2comp_segmented_mp.log &
 
 # comp spaced
-nohup ./data_proc/char2comp_spaced_mp.sh > char2comp_spaced_mp.log &
+nohup ./data_proc/char2comp_spaced_mp.sh > logs/preproc_corpus_char2comp_spaced_mp.log &
 
 
 ```
