@@ -79,7 +79,6 @@ def contain_chinese_char(text, tokenizer):
 
 
 def char2comp_single_sent(sent, dict_char2comp, sep_token="", tokenizer=None):
-    sent_new_ = ""
 
     sent = list(jieba.cut(sent))
     sent = [w.strip() for w in sent if len(w.strip()) > 0]
