@@ -150,12 +150,12 @@ def main():
 
 
 if __name__ == '__main__':
-    # main()
-    tokenizer = BertTokenizer.from_pretrained("bert-base-chinese")
-
-    dict_char2comps_dir = "data_proc/proc_comps/vocab/dict_char2comps_remapped_joined.json"
-    dict_char2comps = json.load(
-        # open(dict_char2comp_dir, "r", encoding="utf-8")
-        open(dict_char2comps_dir, "r", encoding="utf-8")
-    )
-    print(char2comp_single_sent("新冠病毒在全世界蔓延！", dict_char2comps, tokenizer=tokenizer))
+    main()
+    # tokenizer = BertTokenizer.from_pretrained("bert-base-chinese")
+    #
+    # dict_char2comps_dir = "data_proc/proc_comps/vocab/dict_char2comps_remapped_joined.json"
+    # dict_char2comps = json.load(
+    #     open(dict_char2comp_dir, "r", encoding="utf-8")
+        # open(dict_char2comps_dir, "r", encoding="utf-8")
+    # )
+    # print(char2comp_single_sent("新冠病毒在全世界蔓延！", dict_char2comps, tokenizer=tokenizer))
