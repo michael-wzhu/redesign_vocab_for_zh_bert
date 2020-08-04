@@ -67,4 +67,6 @@ nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_1_55.sh > lo
 #   params = 128 * 1321 + 512 * 128 + 128 ^ 2 * 12 = 431, 232
 
 
+
+
 ```
