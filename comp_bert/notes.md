@@ -22,6 +22,9 @@ nohup ./data_proc/char2comp_segmented_mp.sh > logs/preproc_corpus_char2comp_segm
 nohup ./data_proc/char2comp_spaced_mp.sh > logs/preproc_corpus_char2comp_spaced_mp.log &
 
 
+# merge files
+python3 data_proc/merge_file_utils.py
+
 ```
 
 ## build vocab
