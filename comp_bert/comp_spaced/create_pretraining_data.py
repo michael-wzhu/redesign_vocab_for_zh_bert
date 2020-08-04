@@ -35,7 +35,7 @@ import sys
 
 sys.path.append("./")
 from comp_bert.comp_spaced.text_utils import printable_text, tokenize_single_sent
-from src import tokenization
+from comp_bert import tokenization
 
 flags = tf.flags
 
