@@ -53,9 +53,9 @@ def contain_chinese_char(text, tokenizer):
 
 def tokenize_single_sent(sent, tokenizer=None):
     sent = sent.strip()
-    print(sent)
+    # print(sent)
     line_seg = tokenizer.tokenize(sent)
-    print(line_seg)
+    # print(line_seg)
 
     return line_seg
 
