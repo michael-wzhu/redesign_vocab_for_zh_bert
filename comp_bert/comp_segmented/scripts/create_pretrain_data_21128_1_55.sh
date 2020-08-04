@@ -16,7 +16,6 @@ VOCAB_SIZE=21128
 NUM_PROC=55
 
 
-
 for i in `seq 1 $((NUM_PROC))`; do
   python3 comp_bert/comp_segmented/create_pretraining_data.py \
     --input_file=$STORAGE_BUCKET/data/corpus/${PREFIX}_lower/zhwiki-latest-pages-articles_${i}_${PREFIX}_lower.txt \
