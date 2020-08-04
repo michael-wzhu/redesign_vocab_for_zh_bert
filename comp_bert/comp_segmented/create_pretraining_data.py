@@ -363,7 +363,7 @@ def create_instances_from_document(
     while i < len(document):
         segment = document[i]
         current_chunk.append(segment)
-        current_length += len(segment[0])
+        current_length += len(segment)
         if i == len(document) - 1 or current_length >= target_seq_length:
             if current_chunk:
                 # `a_end` is how many segments from `current_chunk` go into the `A`
@@ -374,7 +374,7 @@ def create_instances_from_document(
 
                 tokens_a = []
                 for j in range(a_end):
-                    tokens_a.extend(current_chunk[j][0])
+                    tokens_a.extend(current_chunk[j])
 
                 tokens_b = []
                 # Random next
@@ -396,7 +396,7 @@ def create_instances_from_document(
                     random_document = all_documents[random_document_index]
                     random_start = rng.randint(0, len(random_document) - 1)
                     for j in range(random_start, len(random_document)):
-                        tokens_b.extend(random_document[j][0])
+                        tokens_b.extend(random_document[j])
                         if len(tokens_b) >= target_b_length:
                             break
                     # We didn't actually use these segments so we "put them back" so
@@ -406,14 +406,14 @@ def create_instances_from_document(
                 elif not FLAGS.random_next_sentence and rng.random() < 0.5:
                     is_random_next = True
                     for j in range(a_end, len(current_chunk)):
-                        tokens_b.extend(current_chunk[j][0])
+                        tokens_b.extend(current_chunk[j])
                     # Note(mingdachen): in this case, we just swap tokens_a and tokens_b
                     tokens_a, tokens_b = tokens_b, tokens_a
                 # Actual next
                 else:
                     is_random_next = False
                     for j in range(a_end, len(current_chunk)):
-                        tokens_b.extend(current_chunk[j][0])
+                        tokens_b.extend(current_chunk[j])
                 truncate_seq_pair(tokens_a, tokens_b, max_num_tokens, rng)
 
                 assert len(tokens_a) >= 1
