@@ -57,7 +57,10 @@ def tokenize_single_sent(sent, tokenizer=None):
     return line_seg
 
 
-def char2comp_single_sent(sent, dict_char2comp, sep_token="", tokenizer=None):
+def char2comp_single_sent(sent,
+                          dict_char2comp,
+                          sep_token="",
+                          tokenizer=None):
 
     sent = list(jieba.cut(sent))
     sent = [w.strip() for w in sent if len(w.strip()) > 0]
@@ -65,7 +68,7 @@ def char2comp_single_sent(sent, dict_char2comp, sep_token="", tokenizer=None)
     sent_new = []
     for seg in sent:
 
-        if re.search("[\u4e00-\u9fa5]", seg):
+        if contain_chinese_char(seg, tokenizer):
 
             seg_new = ""
             for char in seg:

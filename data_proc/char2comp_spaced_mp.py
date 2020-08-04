@@ -78,7 +78,9 @@ def contain_chinese_char(text, tokenizer):
     return is_chinese_char
 
 
-def char2comp_single_sent(sent, dict_char2comp, tokenizer=None):
+def char2comp_single_sent(sent,
+                          dict_char2comp,
+                          tokenizer=None):
     sent_new_ = []
 
     sent = tokenizer.basic_tokenizer.tokenize(sent)
@@ -94,7 +96,6 @@ def char2comp_single_sent(sent, dict_char2comp, tokenizer=None):
         else:
             sent_new_.append(char_)
 
-    # drop redundent blank
     sent_new_ = " ".join(sent_new_)
 
     return sent_new_
