@@ -14,10 +14,10 @@ PREFIX=subchar_segmented
 VOCAB_SIZE=1321
 
 # NUM_PROC=218
-NUM_PROC=130
+NUM_PROC=218
 
 
-for i in `seq 56 $((NUM_PROC))`; do
+for i in `seq 131 $((NUM_PROC))`; do
   python3 comp_bert/comp_segmented/create_pretraining_data.py \
     --input_file=$STORAGE_BUCKET/data/corpus/${PREFIX}_lower/zhwiki-latest-pages-articles_${i}_${PREFIX}_lower.txt \
     --output_file=${STORAGE_BUCKET}/experiments/comp_bert/pretrain_tfrecords/${PREFIX}_${VOCAB_SIZE}/zhwiki_train_examples_${i}_%s.tfrecord \
