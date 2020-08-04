@@ -60,6 +60,9 @@ nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_1_55.sh > lo
 # vocab=21128
 #   params = 128 * 21128 + 512 * 128 + 128 ^ 2 * 12 = 2, 966, 528
 
+
+
+
 # vocab=5282
 #   params = 128 * 5282 + 512 * 128 + 128 ^ 2 * 12 = 938, 240
 
