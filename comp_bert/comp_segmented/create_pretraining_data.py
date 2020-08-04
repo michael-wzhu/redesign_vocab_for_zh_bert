@@ -448,6 +448,11 @@ def create_instances_from_document(
                     masked_lm_positions=masked_lm_positions,
                     masked_lm_labels=masked_lm_labels)
                 instances.append(instance)
+
+                if len(instances) % 100 == 0:
+                    print(instance.__str__())
+
+
             current_chunk = []
             current_length = 0
         i += 1
