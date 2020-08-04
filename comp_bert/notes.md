@@ -42,6 +42,8 @@ nohup python3 data_proc/build_spm.py > logs/build_vocab.log &
 # vocab=21128
 nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_1_55.sh > logs/create_pretrain_data_21128_1_55.log &
 
+nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_131_218.sh > logs/create_pretrain_data_21128_131_218.log &
+
 # vocab=5282
 
 
