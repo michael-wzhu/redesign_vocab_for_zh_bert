@@ -211,7 +211,8 @@ def write_instance_to_example_files(instances,
 
         total_written += 1
 
-        if inst_index < 2:
+        if inst_index < 5:
+            print(instance.tokens)
             print(instance.__str__())
 
         # if inst_index < 2:
