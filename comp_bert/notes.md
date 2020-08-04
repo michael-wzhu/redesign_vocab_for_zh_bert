@@ -30,3 +30,15 @@ nohup ./data_proc/char2comp_spaced_mp.sh > logs/preproc_corpus_char2comp_spaced_
 nohup python3 data_proc/build_spm.py > logs/build_vocab.log &
 
 ```
+
+
+## create pretraining data 
+
+```bash
+
+# vocab=21128
+nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_1_55.sh > logs/create_pretrain_data_21128_1_55.log &
+
+
+
+```
