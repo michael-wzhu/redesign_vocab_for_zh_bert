@@ -211,6 +211,9 @@ def write_instance_to_example_files(instances,
 
         total_written += 1
 
+        if inst_index < 2:
+            print(instance.__str__())
+
         # if inst_index < 2:
         #     tf.logging.info("*** Example ***")
         #     tf.logging.info("tokens: %s" % " ".join(
@@ -449,8 +452,8 @@ def create_instances_from_document(
                     masked_lm_labels=masked_lm_labels)
                 instances.append(instance)
 
-                if len(instances) % 100 == 0:
-                    print(instance.__str__())
+                # if len(instances) % 100 == 0:
+                #     print(instance.__str__())
 
 
             current_chunk = []
