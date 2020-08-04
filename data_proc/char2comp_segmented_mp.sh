@@ -3,7 +3,7 @@
 export STORAGE_BUCKET=gs://sbt0
 
 ### multi-processing version
-NUM_PROC=218
+NUM_PROC=100
 for i in `seq 1 $((NUM_PROC))`; do
   python3 data_proc/char2comp_segmented_mp.py \
     ${STORAGE_BUCKET}/data/corpus/splited/zhwiki-latest-pages-articles_${i}.txt \
