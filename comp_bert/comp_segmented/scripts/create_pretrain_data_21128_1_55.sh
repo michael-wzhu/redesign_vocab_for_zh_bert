@@ -5,6 +5,7 @@
 pip3 install jieba_fast
 pip3 install tokenizers
 pip3 install boto3
+pip3 install tensorflow_hub
 
 export STORAGE_BUCKET=gs://sbt0
 
