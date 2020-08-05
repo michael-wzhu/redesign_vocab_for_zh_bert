@@ -27,8 +27,8 @@ python3 src/run_pretraining.py \
     --max_seq_length=512 \
     --max_predictions_per_seq=51 \
     --optimizer="lamb" \
-    --learning_rate=4e-4 \
-    --num_train_steps=12000 \
-    --num_warmup_steps=3125 \
+    --learning_rate=2e-4 \
+    --num_train_steps=20000 \
+    --num_warmup_steps=2125 \
     --save_checkpoints_steps=3000
 
