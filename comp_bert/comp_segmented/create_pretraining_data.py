@@ -24,6 +24,7 @@ import random
 
 import numpy as np
 import six
+import tqdm
 from six.moves import range
 from six.moves import zip
 import tensorflow.compat.v1 as tf
@@ -234,8 +235,8 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
     # that the "next sentence prediction" task doesn't span between documents.
     for input_file in input_files:
         with tf.gfile.GFile(input_file, FLAGS.input_file_mode) as reader:
-            while True:
-                line = reader.readline()
+
+            for line in tqdm.tqdm(reader):
                 if not FLAGS.spm_model_file:
                     line = tokenization.convert_to_unicode(line)
 
