@@ -243,7 +243,7 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
                     break
                 if FLAGS.spm_model_file:
                     line = tokenization.preprocess_text(line, lower=FLAGS.do_lower_case)
-                    print(line)
+                    # print(line)
                 else:
                     line = line.strip()
 
@@ -251,6 +251,7 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
                 if not line:
                     all_documents.append([])
                 tokens = tokenizer.tokenize(line)
+                print(line)
                 if tokens:
                     all_documents[-1].append(tokens)
 
