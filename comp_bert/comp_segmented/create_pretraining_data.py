@@ -191,8 +191,8 @@ def write_instance_to_example_files(instances, tokenizer, max_seq_length,
         total_written += 1
 
         if inst_index < 20:
-            tf.logging.info("*** Example ***")
-            tf.logging.info("tokens: %s" % " ".join(
+            print("*** Example ***")
+            print("tokens: %s" % " ".join(
                 [tokenization.printable_text(x) for x in instance.tokens]))
 
             for feature_name in features.keys():
@@ -202,7 +202,7 @@ def write_instance_to_example_files(instances, tokenizer, max_seq_length,
                     values = feature.int64_list.value
                 elif feature.float_list.value:
                     values = feature.float_list.value
-                tf.logging.info(
+                print(
                     "%s: %s" % (feature_name, " ".join([str(x) for x in values])))
 
     for writer in writers:
