@@ -223,7 +223,7 @@ def create_float_feature(values):
 
 def create_training_instances(input_files, tokenizer, max_seq_length,
                               dupe_factor, short_seq_prob, masked_lm_prob,
-                              max_predictions_per_seq, rng):
+                              max_predictions_per_seq, output_file, rng):
     """Create `TrainingInstance`s from raw text."""
     all_documents = [[]]
 
@@ -261,16 +261,26 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
     rng.shuffle(all_documents)
 
     vocab_words = list(tokenizer.vocab.keys())
-    instances = []
-    for _ in range(dupe_factor):
+
+    for i in range(dupe_factor):
+        instances = []
         for document_index in tqdm.tqdm(range(len(all_documents))):
             instances.extend(
                 create_instances_from_document(
                     all_documents, document_index, max_seq_length, short_seq_prob,
                     masked_lm_prob, max_predictions_per_seq, vocab_words, rng))
 
-    rng.shuffle(instances)
-    return instances
+        tf.logging.info("number of instances: %i", len(instances))
+
+        rng.shuffle(instances)
+
+        tf.logging.info("*** Writing to output file ***")
+        output_file_i = output_file % str(i)
+        print(output_file_i)
+
+        write_instance_to_example_files(instances, tokenizer, FLAGS.max_seq_length,
+                                        FLAGS.max_predictions_per_seq, output_file_i)
+
 
 
 def create_instances_from_document(
@@ -642,20 +652,11 @@ def main(_):
         tf.logging.info("  %s", input_file)
 
     rng = random.Random(FLAGS.random_seed)
-    instances = create_training_instances(
+    create_training_instances(
         input_files, tokenizer, FLAGS.max_seq_length, FLAGS.dupe_factor,
         FLAGS.short_seq_prob, FLAGS.masked_lm_prob, FLAGS.max_predictions_per_seq,
+        FLAGS.output_file,
         rng)
-
-    tf.logging.info("number of instances: %i", len(instances))
-
-    output_files = FLAGS.output_file.split(",")
-    tf.logging.info("*** Writing to output files ***")
-    for output_file in output_files:
-        tf.logging.info("  %s", output_file)
-
-    write_instance_to_example_files(instances, tokenizer, FLAGS.max_seq_length,
-                                    FLAGS.max_predictions_per_seq, output_files)
 
 
 if __name__ == "__main__":
