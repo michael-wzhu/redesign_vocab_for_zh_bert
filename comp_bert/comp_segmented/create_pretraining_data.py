@@ -140,7 +140,7 @@ def write_instance_to_example_files(instances, tokenizer, max_seq_length,
     writer_index = 0
 
     total_written = 0
-    for (inst_index, instance) in enumerate(instances):
+    for (inst_index, instance) in tqdm.tqdm(enumerate(instances)):
         input_ids = tokenizer.convert_tokens_to_ids(instance.tokens)
         input_mask = [1] * len(input_ids)
         segment_ids = list(instance.segment_ids)
