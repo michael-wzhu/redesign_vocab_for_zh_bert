@@ -40,8 +40,9 @@ nohup python3 data_proc/build_spm.py > logs/build_vocab.log &
 ```bash
 
 # subchar_segmented, vocab=21128
-nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_1_55.sh > logs/create_pretrain_data_21128_1_55.log &
-
+nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_1_5.sh > logs/create_pretrain_data_21128_1_5.log &
+nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_6_55.sh > logs/create_pretrain_data_21128_6_55.log &
+nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_56_130.sh > logs/create_pretrain_data_21128_56_130.log &
 nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_131_180.sh > logs/create_pretrain_data_21128_131_180.log &
 nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_21128_181_218.sh > logs/create_pretrain_data_21128_181_218.log &
 
