@@ -238,11 +238,12 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
                 line = reader.readline()
                 if not FLAGS.spm_model_file:
                     line = tokenization.convert_to_unicode(line)
-                    print(line)
+
                 if not line:
                     break
                 if FLAGS.spm_model_file:
                     line = tokenization.preprocess_text(line, lower=FLAGS.do_lower_case)
+                    print(line)
                 else:
                     line = line.strip()
 
