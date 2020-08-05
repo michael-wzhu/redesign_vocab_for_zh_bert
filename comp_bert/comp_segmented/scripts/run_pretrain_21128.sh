@@ -5,10 +5,11 @@
 ### run pretrain
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.240.1.2
+
+TPU_IP=10.25.224.210
 TPU_NAME=grpc://${TPU_IP}:8470
 
-PREFIX=char_segmented
+PREFIX=subchar_segmented
 VOCAB_SIZE=21128
 
 python3 src/run_pretraining.py \
@@ -17,7 +18,7 @@ python3 src/run_pretraining.py \
     --albert_config_file=./comp_bert/albert_configs/config_${VOCAB_SIZE}.json \
     --do_train \
     --do_eval \
-    --dev_input_file=${STORAGE_BUCKET}/experiments/comp_bert/pretrain_tfrecords/${PREFIX}_${VOCAB_SIZE}/zhwiki_train_examples_110_*.tfrecord \
+    --dev_input_file=${STORAGE_BUCKET}/experiments/comp_bert/pretrain_tfrecords/${PREFIX}_${VOCAB_SIZE}/zhwiki_train_examples_100_*.tfrecord \
     --use_tpu \
     --num_tpu_cores=8 \
     --tpu_name=${TPU_NAME} \
