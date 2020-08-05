@@ -28,6 +28,9 @@ from six.moves import range
 from six.moves import zip
 import tensorflow.compat.v1 as tf
 
+import sys
+sys.path.append("./")
+
 from comp_bert import tokenization
 
 flags = tf.flags
