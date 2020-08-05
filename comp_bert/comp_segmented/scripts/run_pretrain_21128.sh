@@ -29,6 +29,6 @@ python3 src/run_pretraining.py \
     --optimizer="lamb" \
     --learning_rate=2e-4 \
     --num_train_steps=20000 \
-    --num_warmup_steps=2125 \
+    --num_warmup_steps=3125 \
     --save_checkpoints_steps=3000
 
