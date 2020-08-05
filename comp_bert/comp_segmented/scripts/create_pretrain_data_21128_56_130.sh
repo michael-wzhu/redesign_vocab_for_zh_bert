@@ -14,7 +14,7 @@ PREFIX=subchar_segmented
 VOCAB_SIZE=21128
 
 # NUM_PROC=218
-NUM_PROC=62
+NUM_PROC=130
 
 
 for i in `seq 56 $((NUM_PROC))`; do
@@ -26,7 +26,7 @@ for i in `seq 56 $((NUM_PROC))`; do
     --max_seq_length=512 \
     --max_predictions_per_seq=51 \
     --masked_lm_prob=0.1 \
-    --dupe_factor=10 \
+    --dupe_factor=2 \
     --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
     --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model \
   $@ &
