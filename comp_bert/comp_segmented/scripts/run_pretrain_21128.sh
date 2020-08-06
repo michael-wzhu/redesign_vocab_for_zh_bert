@@ -2,11 +2,9 @@
 
 ### run pretrain
 
-### run pretrain
-
 STORAGE_BUCKET=gs://sbt0
 
-TPU_IP=10.25.224.210
+TPU_IP=10.200.155.210
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=subchar_segmented
