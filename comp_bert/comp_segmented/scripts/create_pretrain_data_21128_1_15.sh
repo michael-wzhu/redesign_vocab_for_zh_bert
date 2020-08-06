@@ -31,3 +31,5 @@ for i in `seq 1 $((NUM_PROC))`; do
     --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model \
   $@ &
 done
+
+# python comp_bert/comp_segmented/create_pretraining_data.py --input_file=datasets/zh_sample/wiki.valid.raw --output_file=experiments/zh_sample/tf_records/zhwiki_examples_%s.tfrecord --do_lower_case=True --do_whole_word_mask=True --max_seq_length=512 --max_predictions_per_seq=51 --masked_lm_prob=0.1 --dupe_factor=10 --vocab_file data_proc/tokenizers/sentencepiece/subchar_segmented_lower-21128-clean.vocab --spm_model_file data_proc/tokenizers/sentencepiece/subchar_segmented_lower-21128-clean.model
