@@ -27,8 +27,8 @@ python3 comp_bert/run_pretraining.py \
     --max_seq_length=512 \
     --max_predictions_per_seq=51 \
     --optimizer="lamb" \
-    --learning_rate=2e-4 \
-    --num_train_steps=20000 \
+    --learning_rate=4e-4 \
+    --num_train_steps=30000 \
     --num_warmup_steps=3125 \
     --save_checkpoints_steps=3000
 
