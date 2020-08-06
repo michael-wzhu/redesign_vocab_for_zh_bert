@@ -27,10 +27,10 @@ from tensorflow.contrib import cluster_resolver as contrib_cluster_resolver
 from tensorflow.contrib import data as contrib_data
 from tensorflow.contrib import tpu as contrib_tpu
 
-import sys
-sys.path.append("./")
 
-from comp_bert import modeling, optimization
+from comp_bert import modeling
+from comp_bert import optimization
+
 
 
 flags = tf.flags
