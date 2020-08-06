@@ -12,7 +12,7 @@ TPU_NAME=grpc://${TPU_IP}:8470
 PREFIX=subchar_segmented
 VOCAB_SIZE=21128
 
-python3 src/run_pretraining.py \
+python3 comp_bert/run_pretraining.py \
     --input_file=${STORAGE_BUCKET}/experiments/comp_bert/pretrain_tfrecords/${PREFIX}_${VOCAB_SIZE}/zhwiki_train_examples_*_*.tfrecord \
     --output_dir=${STORAGE_BUCKET}/experiments/comp_bert/pretraining/${PREFIX}_${VOCAB_SIZE}/ \
     --albert_config_file=./comp_bert/albert_configs/config_${VOCAB_SIZE}.json \
@@ -31,4 +31,7 @@ python3 src/run_pretraining.py \
     --num_train_steps=20000 \
     --num_warmup_steps=3125 \
     --save_checkpoints_steps=3000
+
+
+# python comp_bert/run_pretraining.py --input_file=experiments/zh_sample/tf_records/zhwiki_examples_*.tfrecord --output_dir=experiments/zh_sample/pretraining/${PREFIX}_${VOCAB_SIZE}/ --albert_config_file=./comp_bert/albert_configs/config_${VOCAB_SIZE}.json --do_train --do_eval --dev_input_file=experiments/zh_sample/tf_records/zhwiki_examples_9.tfrecord --train_batch_size=2 --eval_batch_size=2 --max_seq_length=128 --max_predictions_per_seq=13 --optimizer="lamb" --learning_rate=2e-4 --num_train_steps=10 --num_warmup_steps=2 --save_checkpoints_steps=5
 
