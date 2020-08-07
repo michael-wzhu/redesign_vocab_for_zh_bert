@@ -30,6 +30,9 @@ for i in `seq 118 $((NUM_PROC))`; do
     --dupe_factor=8 \
     --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
     --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model
+  $@ &
+done
+
 
 NUM_PROC=130
 for i in `seq 130 $((NUM_PROC))`; do
@@ -44,7 +47,8 @@ for i in `seq 130 $((NUM_PROC))`; do
     --dupe_factor=8 \
     --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
     --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model
-
+  $@ &
+done
 
 NUM_PROC=92
 for i in `seq 91 $((NUM_PROC))`; do
@@ -59,7 +63,8 @@ for i in `seq 91 $((NUM_PROC))`; do
     --dupe_factor=8 \
     --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
     --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model
-
+  $@ &
+done
 
 NUM_PROC=98
 for i in `seq 98 $((NUM_PROC))`; do
@@ -74,3 +79,6 @@ for i in `seq 98 $((NUM_PROC))`; do
     --dupe_factor=8 \
     --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
     --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model
+
+  $@ &
+done
