@@ -16,7 +16,7 @@ VOCAB_SIZE=21128
 # NUM_PROC=218
 
 
-NUM_PROC=130
+NUM_PROC=80
 
 for i in `seq 56 $((NUM_PROC))`; do
   python3 comp_bert/comp_segmented/create_pretraining_data.py \
