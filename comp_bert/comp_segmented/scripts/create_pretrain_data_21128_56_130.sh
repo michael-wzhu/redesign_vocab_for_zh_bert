@@ -31,7 +31,7 @@ for i in `seq 56 $((NUM_PROC))`; do
     --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
     --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model \
   $@ &
-done
+
 
 
 NUM_PROC=89
