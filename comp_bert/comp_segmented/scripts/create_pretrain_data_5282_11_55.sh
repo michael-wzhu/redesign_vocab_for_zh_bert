@@ -26,8 +26,8 @@ for i in `seq 11 $((NUM_PROC))`; do
     --max_seq_length=512 \
     --max_predictions_per_seq=51 \
     --masked_lm_prob=0.1 \
-    --dupe_factor=1 \
+    --dupe_factor=10 \
     --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
-    --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model \
-  $@ &
-done
+    --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model
+#   $@ &
+# done
