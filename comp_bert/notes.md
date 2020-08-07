@@ -69,15 +69,15 @@ nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_1321_181_218.sh > 
 ```bash
 
 # subchar_segmented, vocab=21128
-#   params = 128 * 21128 + 512 * 128 + 128 ^ 2 * 12 = 2, 966, 528
+#   params = 128 * 21128 + 512 * 128 + 256 ^ 2 * 12 = 3556352
 
 nohup ./comp_bert/comp_segmented/scripts/run_pretrain_21128.sh > subchar_segmented_pretrain_21128.log &
 
 # vocab=5282
-#   params = 128 * 5282 + 512 * 128 + 128 ^ 2 * 12 = 938, 240
+#   params = 128 * 5282 + 512 * 128 + 256 ^ 2 * 12 = 1528064
 
 # vocab=1321
-#   params = 128 * 1321 + 512 * 128 + 128 ^ 2 * 12 = 431, 232
+#   params = 128 * 1321 + 512 * 128 + 128 ^ 2 * 12 = 1021056
 
 
 
