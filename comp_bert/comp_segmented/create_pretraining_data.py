@@ -274,7 +274,7 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
         rng.shuffle(instances)
 
         tf.logging.info("*** Writing to output file ***")
-        output_file_i = output_file % str(i)
+        output_file_i = output_file % str(i + 2)
         print(output_file_i)
 
         write_instance_to_example_files(instances, tokenizer, FLAGS.max_seq_length,
