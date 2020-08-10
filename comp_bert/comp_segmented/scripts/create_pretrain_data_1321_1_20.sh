@@ -14,7 +14,7 @@ PREFIX=subchar_segmented
 VOCAB_SIZE=1321
 
 # NUM_PROC=218
-NUM_PROC=10
+NUM_PROC=20
 
 
 for i in `seq 1 $((NUM_PROC))`; do
