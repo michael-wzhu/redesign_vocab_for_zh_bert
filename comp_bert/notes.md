@@ -56,6 +56,7 @@ nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_5282_131_180.sh > 
 nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_5282_181_218.sh > logs/create_pretrain_data_5282_181_218.log &
 
 # subchar_segmented, vocab=1321
+nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_1321_1_10.sh > logs/create_pretrain_data_1321_1_10.log &
 nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_1321_1_55.sh > logs/create_pretrain_data_1321_1_55.log &
 nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_1321_56_130.sh > logs/create_pretrain_data_1321_56_130.log &
 nohup ./comp_bert/comp_segmented/scripts/create_pretrain_data_1321_131_180.sh > logs/create_pretrain_data_1321_131_180.log &
@@ -77,6 +78,7 @@ nohup ./comp_bert/comp_segmented/scripts/run_pretrain_21128.sh > logs/subchar_se
 
 # vocab=5282
 #   params = 128 * 5282 + 512 * 128 + 256 ^ 2 * 12 = 1528064
+nohup ./comp_bert/comp_segmented/scripts/run_pretrain_5282.sh > logs/subchar_segmented_pretrain_5282.log &
 
 # vocab=1321
 #   params = 128 * 1321 + 512 * 128 + 128 ^ 2 * 12 = 1021056
