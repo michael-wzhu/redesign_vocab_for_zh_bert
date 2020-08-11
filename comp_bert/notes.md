@@ -82,6 +82,7 @@ nohup ./comp_bert/comp_segmented/scripts/run_pretrain_5282.sh > logs/subchar_seg
 
 # vocab=1321
 #   params = 128 * 1321 + 512 * 128 + 128 ^ 2 * 12 = 1021056
+nohup ./comp_bert/comp_segmented/scripts/run_pretrain_1321.sh > logs/subchar_segmented_pretrain_1321.log &
 
 
 
