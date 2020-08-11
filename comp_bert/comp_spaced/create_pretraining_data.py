@@ -21,12 +21,18 @@ from __future__ import division
 from __future__ import print_function
 import collections
 import random
-import tokenization
+
 import numpy as np
 import six
+import tqdm
 from six.moves import range
 from six.moves import zip
 import tensorflow.compat.v1 as tf
+
+import sys
+sys.path.append("./")
+
+from comp_bert import tokenization
 
 flags = tf.flags
 
@@ -125,16 +131,15 @@ class TrainingInstance(object):
 
 
 def write_instance_to_example_files(instances, tokenizer, max_seq_length,
-                                    max_predictions_per_seq, output_files):
+                                    max_predictions_per_seq, output_file):
     """Create TF example files from `TrainingInstance`s."""
     writers = []
-    for output_file in output_files:
-        writers.append(tf.python_io.TFRecordWriter(output_file))
+    writers.append(tf.python_io.TFRecordWriter(output_file))
 
     writer_index = 0
 
     total_written = 0
-    for (inst_index, instance) in enumerate(instances):
+    for (inst_index, instance) in tqdm.tqdm(enumerate(instances)):
         input_ids = tokenizer.convert_tokens_to_ids(instance.tokens)
         input_mask = [1] * len(input_ids)
         segment_ids = list(instance.segment_ids)
@@ -185,8 +190,8 @@ def write_instance_to_example_files(instances, tokenizer, max_seq_length,
         total_written += 1
 
         if inst_index < 20:
-            tf.logging.info("*** Example ***")
-            tf.logging.info("tokens: %s" % " ".join(
+            print("*** Example ***")
+            print("tokens: %s" % " ".join(
                 [tokenization.printable_text(x) for x in instance.tokens]))
 
             for feature_name in features.keys():
@@ -196,7 +201,7 @@ def write_instance_to_example_files(instances, tokenizer, max_seq_length,
                     values = feature.int64_list.value
                 elif feature.float_list.value:
                     values = feature.float_list.value
-                tf.logging.info(
+                print(
                     "%s: %s" % (feature_name, " ".join([str(x) for x in values])))
 
     for writer in writers:
@@ -217,7 +222,7 @@ def create_float_feature(values):
 
 def create_training_instances(input_files, tokenizer, max_seq_length,
                               dupe_factor, short_seq_prob, masked_lm_prob,
-                              max_predictions_per_seq, rng):
+                              max_predictions_per_seq, output_file, rng):
     """Create `TrainingInstance`s from raw text."""
     all_documents = [[]]
 
@@ -229,14 +234,16 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
     # that the "next sentence prediction" task doesn't span between documents.
     for input_file in input_files:
         with tf.gfile.GFile(input_file, FLAGS.input_file_mode) as reader:
-            while True:
-                line = reader.readline()
+
+            for line in tqdm.tqdm(reader):
                 if not FLAGS.spm_model_file:
                     line = tokenization.convert_to_unicode(line)
+
                 if not line:
                     break
                 if FLAGS.spm_model_file:
                     line = tokenization.preprocess_text(line, lower=FLAGS.do_lower_case)
+                    # print(line)
                 else:
                     line = line.strip()
 
@@ -244,6 +251,7 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
                 if not line:
                     all_documents.append([])
                 tokens = tokenizer.tokenize(line)
+                # print(tokens)
                 if tokens:
                     all_documents[-1].append(tokens)
 
@@ -252,16 +260,26 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
     rng.shuffle(all_documents)
 
     vocab_words = list(tokenizer.vocab.keys())
-    instances = []
-    for _ in range(dupe_factor):
-        for document_index in range(len(all_documents)):
+
+    for i in range(dupe_factor):
+        instances = []
+        for document_index in tqdm.tqdm(range(len(all_documents))):
             instances.extend(
                 create_instances_from_document(
                     all_documents, document_index, max_seq_length, short_seq_prob,
                     masked_lm_prob, max_predictions_per_seq, vocab_words, rng))
 
-    rng.shuffle(instances)
-    return instances
+        tf.logging.info("number of instances: %i", len(instances))
+
+        rng.shuffle(instances)
+
+        tf.logging.info("*** Writing to output file ***")
+        output_file_i = output_file % str(i + 2)
+        print(output_file_i)
+
+        write_instance_to_example_files(instances, tokenizer, FLAGS.max_seq_length,
+                                        FLAGS.max_predictions_per_seq, output_file_i)
+
 
 
 def create_instances_from_document(
@@ -633,20 +651,11 @@ def main(_):
         tf.logging.info("  %s", input_file)
 
     rng = random.Random(FLAGS.random_seed)
-    instances = create_training_instances(
+    create_training_instances(
         input_files, tokenizer, FLAGS.max_seq_length, FLAGS.dupe_factor,
         FLAGS.short_seq_prob, FLAGS.masked_lm_prob, FLAGS.max_predictions_per_seq,
+        FLAGS.output_file,
         rng)
-
-    tf.logging.info("number of instances: %i", len(instances))
-
-    output_files = FLAGS.output_file.split(",")
-    tf.logging.info("*** Writing to output files ***")
-    for output_file in output_files:
-        tf.logging.info("  %s", output_file)
-
-    write_instance_to_example_files(instances, tokenizer, FLAGS.max_seq_length,
-                                    FLAGS.max_predictions_per_seq, output_files)
 
 
 if __name__ == "__main__":
