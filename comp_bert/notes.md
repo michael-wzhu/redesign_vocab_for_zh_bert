@@ -82,13 +82,30 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_21128_161_218.sh > lo
 
 nohup ./comp_bert/comp_segmented/scripts/run_pretrain_21128.sh > logs/subchar_segmented_pretrain_21128.log &
 
-# vocab=5282
+# subchar_segmented, vocab=5282
 #   params = 128 * 5282 + 512 * 128 + 256 ^ 2 * 12 = 1528064
 nohup ./comp_bert/comp_segmented/scripts/run_pretrain_5282.sh > logs/subchar_segmented_pretrain_5282.log &
 
-# vocab=1321
+# subchar_segmented, vocab=1321
 #   params = 128 * 1321 + 512 * 128 + 128 ^ 2 * 12 = 1021056
 nohup ./comp_bert/comp_segmented/scripts/run_pretrain_1321.sh > logs/subchar_segmented_pretrain_1321.log &
+
+
+
+```
+
+
+## finetune
+
+
+### on chn
+
+```bash
+
+# subchar_segmented, vocab=21128
+
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_chn_21128.sh > logs/subchar_segmented_run_classifier_chn_21128.log_to_commit &
+
 
 
 
