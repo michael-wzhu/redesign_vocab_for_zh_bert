@@ -50,7 +50,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --train_step=600 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
-      --num_tpu_cores=1 \
+      --num_tpu_cores=8 \
       --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
     --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model
 
