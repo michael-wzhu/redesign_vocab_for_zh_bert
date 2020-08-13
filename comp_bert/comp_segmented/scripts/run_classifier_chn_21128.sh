@@ -28,7 +28,7 @@ pip3 install sklearn
 # run task
 
 echo "Start running..."
-RUN_TIMES=11
+RUN_TIMES=5
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
     python3 comp_bert/comp_segmented/run_classifier.py \
@@ -49,12 +49,12 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --learning_rate=2e-5 \
       --warmup_step=250 \
       --save_checkpoints_steps=300 \
-      --train_step=600 \
+      --train_step=6000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
       --num_tpu_cores=8 \
-      --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
-      --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model \
-      --dict_char2comp_dir data_proc/proc_comps/vocab/dict_char2comps_remapped_joined.json
+      --vocab_file=data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
+      --spm_model_file=data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model \
+      --dict_char2comp_dir=data_proc/proc_comps/vocab/dict_char2comps_remapped_joined.json
 
 done
