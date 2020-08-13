@@ -46,7 +46,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --optimizer=adamw \
       --train_batch_size=32 \
       --eval_batch_size=32 \
-      --learning_rate=1.5e-5 \
+      --learning_rate=2e-5 \
       --warmup_step=250 \
       --save_checkpoints_steps=300 \
       --train_step=6000 \
