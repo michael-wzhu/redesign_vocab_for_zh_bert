@@ -54,6 +54,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --tpu_name=${TPU_NAME} \
       --num_tpu_cores=8 \
       --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
-    --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model
+      --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model \
+      --dict_char2comp_dir data_proc/proc_comps/vocab/dict_char2comps_remapped_joined.json
 
 done
