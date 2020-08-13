@@ -1,32 +1,23 @@
 Requirement already satisfied: tensorflow_hub in /usr/local/lib/python3.5/dist-packages (0.8.0)
-Requirement already satisfied: six>=1.12.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow_hub) (1.14.0)
 Requirement already satisfied: protobuf>=3.8.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow_hub) (3.11.3)
 Requirement already satisfied: numpy>=1.12.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow_hub) (1.18.1)
+Requirement already satisfied: six>=1.12.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow_hub) (1.14.0)
 Requirement already satisfied: setuptools in /usr/local/lib/python3.5/dist-packages (from protobuf>=3.8.0->tensorflow_hub) (45.2.0)
 WARNING: You are using pip version 20.0.2; however, version 20.2.2 is available.
 You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
 Requirement already satisfied: sentencepiece in /usr/local/lib/python3.5/dist-packages (0.1.91)
 WARNING: You are using pip version 20.0.2; however, version 20.2.2 is available.
 You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
-Collecting jieba
-  Downloading jieba-0.42.1.tar.gz (19.2 MB)
-Building wheels for collected packages: jieba
-  Building wheel for jieba (setup.py): started
-  Building wheel for jieba (setup.py): finished with status 'done'
-  Created wheel for jieba: filename=jieba-0.42.1-py3-none-any.whl size=19314478 sha256=3b5ae36a3942f37bdbf457ec1348bfa3ea8f22b2bc938283505622ac2f4feafc
-  Stored in directory: /root/.cache/pip/wheels/78/3c/07/246e0112cd2dfc34572d853ceddf127653b9493fe78d17ebc1
-Successfully built jieba
-Installing collected packages: jieba
-Successfully installed jieba-0.42.1
+Requirement already satisfied: jieba in /usr/local/lib/python3.5/dist-packages (0.42.1)
 WARNING: You are using pip version 20.0.2; however, version 20.2.2 is available.
 You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
 Requirement already satisfied: tokenizers in /usr/local/lib/python3.5/dist-packages (0.8.1)
 WARNING: You are using pip version 20.0.2; however, version 20.2.2 is available.
 You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
 Requirement already satisfied: boto3 in /usr/local/lib/python3.5/dist-packages (1.14.40)
-Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in /usr/local/lib/python3.5/dist-packages (from boto3) (0.10.0)
 Requirement already satisfied: s3transfer<0.4.0,>=0.3.0 in /usr/local/lib/python3.5/dist-packages (from boto3) (0.3.3)
 Requirement already satisfied: botocore<1.18.0,>=1.17.40 in /usr/local/lib/python3.5/dist-packages (from boto3) (1.17.40)
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in /usr/local/lib/python3.5/dist-packages (from boto3) (0.10.0)
 Requirement already satisfied: docutils<0.16,>=0.10 in /usr/local/lib/python3.5/dist-packages (from botocore<1.18.0,>=1.17.40->boto3) (0.15.2)
 Requirement already satisfied: urllib3<1.26,>=1.20; python_version != "3.4" in /usr/local/lib/python3.5/dist-packages (from botocore<1.18.0,>=1.17.40->boto3) (1.25.8)
 Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /usr/local/lib/python3.5/dist-packages (from botocore<1.18.0,>=1.17.40->boto3) (2.8.1)
@@ -36,111 +27,95 @@ You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade
 Requirement already satisfied: jieba_fast in /usr/local/lib/python3.5/dist-packages (0.53)
 WARNING: You are using pip version 20.0.2; however, version 20.2.2 is available.
 You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
-Collecting sklearn
-  Downloading sklearn-0.0.tar.gz (1.1 kB)
-Collecting scikit-learn
-  Downloading scikit_learn-0.22.2.post1-cp35-cp35m-manylinux1_x86_64.whl (7.0 MB)
-Collecting scipy>=0.17.0
-  Downloading scipy-1.4.1-cp35-cp35m-manylinux1_x86_64.whl (26.0 MB)
+Requirement already satisfied: sklearn in /usr/local/lib/python3.5/dist-packages (0.0)
+Requirement already satisfied: scikit-learn in /usr/local/lib/python3.5/dist-packages (from sklearn) (0.22.2.post1)
+Requirement already satisfied: joblib>=0.11 in /usr/local/lib/python3.5/dist-packages (from scikit-learn->sklearn) (0.14.1)
 Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from scikit-learn->sklearn) (1.18.1)
-Collecting joblib>=0.11
-  Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)
-Building wheels for collected packages: sklearn
-  Building wheel for sklearn (setup.py): started
-  Building wheel for sklearn (setup.py): finished with status 'done'
-  Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1315 sha256=53cfb266765562dcd4ba8be2970922a1339bba2eb00ea22011a963bf2c3d5b3b
-  Stored in directory: /root/.cache/pip/wheels/9e/ec/a6/33cdb5605b0b150074213e154792654a1006e6e6807dc7ca6f
-Successfully built sklearn
-Installing collected packages: scipy, joblib, scikit-learn, sklearn
-Successfully installed joblib-0.14.1 scikit-learn-0.22.2.post1 scipy-1.4.1 sklearn-0.0
+Requirement already satisfied: scipy>=0.17.0 in /usr/local/lib/python3.5/dist-packages (from scikit-learn->sklearn) (1.4.1)
 WARNING: You are using pip version 20.0.2; however, version 20.2.2 is available.
 You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
 Start running...
 Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
+  File "comp_bert/comp_segmented/run_classifier.py", line 546, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "comp_bert/comp_segmented/run_classifier.py", line 218, in main
+    open(FLAGS.dict_char2comp_dir, "r", encoding="utf-8")
+TypeError: invalid file: None
 Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
+  File "comp_bert/comp_segmented/run_classifier.py", line 546, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "comp_bert/comp_segmented/run_classifier.py", line 218, in main
+    open(FLAGS.dict_char2comp_dir, "r", encoding="utf-8")
+TypeError: invalid file: None
 Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
+  File "comp_bert/comp_segmented/run_classifier.py", line 546, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "comp_bert/comp_segmented/run_classifier.py", line 218, in main
+    open(FLAGS.dict_char2comp_dir, "r", encoding="utf-8")
+TypeError: invalid file: None
 Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
+  File "comp_bert/comp_segmented/run_classifier.py", line 546, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "comp_bert/comp_segmented/run_classifier.py", line 218, in main
+    open(FLAGS.dict_char2comp_dir, "r", encoding="utf-8")
+TypeError: invalid file: None
 Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
+  File "comp_bert/comp_segmented/run_classifier.py", line 546, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "comp_bert/comp_segmented/run_classifier.py", line 218, in main
+    open(FLAGS.dict_char2comp_dir, "r", encoding="utf-8")
+TypeError: invalid file: None
 Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
+  File "comp_bert/comp_segmented/run_classifier.py", line 546, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "comp_bert/comp_segmented/run_classifier.py", line 218, in main
+    open(FLAGS.dict_char2comp_dir, "r", encoding="utf-8")
+TypeError: invalid file: None
 Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
-Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
-Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
-Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
-Traceback (most recent call last):
-  File "comp_bert/comp_segmented/run_classifier.py", line 36, in <module>
-    from comp_bert.comp_segmented import classifier_utils
-  File "./comp_bert/comp_segmented/classifier_utils.py", line 33, in <module>
-    from comp_bert import optimization
-  File "./comp_bert/optimization.py", line 22, in <module>
-    import lamb_optimizer
-ImportError: No module named 'lamb_optimizer'
+  File "comp_bert/comp_segmented/run_classifier.py", line 546, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.5/dist-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "comp_bert/comp_segmented/run_classifier.py", line 218, in main
+    open(FLAGS.dict_char2comp_dir, "r", encoding="utf-8")
+TypeError: invalid file: None
