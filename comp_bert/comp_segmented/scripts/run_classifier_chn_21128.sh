@@ -28,7 +28,7 @@ pip3 install sklearn
 # run task
 
 echo "Start running..."
-RUN_TIMES=11
+RUN_TIMES=5
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
     python3 comp_bert/comp_segmented/run_classifier.py \
