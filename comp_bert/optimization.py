@@ -19,11 +19,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 import re
-import lamb_optimizer
+
 import six
 from six.moves import zip
 import tensorflow.compat.v1 as tf
 from tensorflow.contrib import tpu as contrib_tpu
+
+from comp_bert import lamb_optimizer
 
 
 def create_optimizer(loss, init_lr, num_train_steps, num_warmup_steps, use_tpu,

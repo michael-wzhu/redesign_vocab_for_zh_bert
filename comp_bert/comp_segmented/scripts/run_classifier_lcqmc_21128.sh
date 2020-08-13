@@ -12,8 +12,8 @@ TPU_NAME=grpc://${TPU_IP}:8470
 PREFIX=subchar_segmented
 VOCAB_SIZE=21128
 
-TASK_NAME=chn
-DATA_DIR=datasets/ChnSentiCorp
+TASK_NAME=lcqmc
+DATA_DIR=datasets/LCQMC
 
 DATE=0813
 
