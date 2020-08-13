@@ -16,7 +16,7 @@ experiments/*
 tmp/*
 *.zip
 *.rar
-logs/*
+# logs/*
 *.log
 
 
