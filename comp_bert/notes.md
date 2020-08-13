@@ -125,3 +125,18 @@ nohup ./comp_bert/comp_segmented/scripts/run_classifier_lcqmc_21128.sh > logs/su
 
 
 ```
+
+
+
+### on xnli
+
+```bash
+
+# subchar_segmented, vocab=21128
+
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_xnli_21128.sh > logs/subchar_segmented_run_classifier_xnli_21128.log_to_commit &
+
+
+
+
+```
