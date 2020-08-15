@@ -69,6 +69,8 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_21128_61_110.sh > log
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_21128_111_160.sh > logs/comp_spaced_create_pretrain_data_21128_111_160.log &
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_21128_161_218.sh > logs/comp_spaced_create_pretrain_data_21128_161_218.log &
 
+# subchar_spaced, vocab=5282
+nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_5282_1_25.sh > logs/comp_spaced_create_pretrain_data_5282_1_25.log &
 
 ```
 
