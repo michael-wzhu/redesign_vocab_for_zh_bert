@@ -167,6 +167,6 @@ grep "accuracy: " logs/subchar_segmented_run_classifier_xnli_5282.log_to_commit
 
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_xnli_1321.sh > logs/subchar_segmented_run_classifier_xnli_1321.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_xnli_1321.log_to_commit
-
+ 
 
 ```
