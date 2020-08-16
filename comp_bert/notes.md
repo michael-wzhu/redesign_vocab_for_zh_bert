@@ -118,6 +118,10 @@ grep "accuracy: " logs/subchar_segmented_run_classifier_chn_21128.log_to_commit
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_chn_5282.sh > logs/subchar_segmented_run_classifier_chn_5282.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_chn_5282.log_to_commit
 
+# subchar_segmented, vocab=1321
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_chn_1321.sh > logs/subchar_segmented_run_classifier_chn_1321.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_chn_1321.log_to_commit
+
 
 ```
 
