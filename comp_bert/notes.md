@@ -112,7 +112,7 @@ nohup ./comp_bert/comp_segmented/scripts/run_pretrain_1321.sh > logs/subchar_seg
 # subchar_segmented, vocab=21128
 
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_chn_21128.sh > logs/subchar_segmented_run_classifier_chn_21128.log_to_commit &
-
+grep "accuracy: " logs/subchar_segmented_run_classifier_chn_21128.log_to_commit
 
 
 
@@ -127,8 +127,7 @@ nohup ./comp_bert/comp_segmented/scripts/run_classifier_chn_21128.sh > logs/subc
 # subchar_segmented, vocab=21128
 
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_lcqmc_21128.sh > logs/subchar_segmented_run_classifier_lcqmc_21128.log_to_commit &
-
-
+grep "accuracy: " logs/subchar_segmented_run_classifier_lcqmc_21128.log_to_commit
 
 
 ```
@@ -142,6 +141,7 @@ nohup ./comp_bert/comp_segmented/scripts/run_classifier_lcqmc_21128.sh > logs/su
 # subchar_segmented, vocab=21128
 
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_xnli_21128.sh > logs/subchar_segmented_run_classifier_xnli_21128.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_xnli_21128.log_to_commit
 
 
 
