@@ -114,6 +114,9 @@ nohup ./comp_bert/comp_segmented/scripts/run_pretrain_1321.sh > logs/subchar_seg
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_chn_21128.sh > logs/subchar_segmented_run_classifier_chn_21128.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_chn_21128.log_to_commit
 
+# subchar_segmented, vocab=5282
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_chn_5282.sh > logs/subchar_segmented_run_classifier_chn_5282.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_chn_5282.log_to_commit
 
 
 ```
