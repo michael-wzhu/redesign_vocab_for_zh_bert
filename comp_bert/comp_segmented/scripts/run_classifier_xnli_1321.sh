@@ -6,14 +6,14 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.175.180.170
+TPU_IP=10.84.183.42
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=subchar_segmented
 VOCAB_SIZE=1321
 
-TASK_NAME=lcqmc
-DATA_DIR=datasets/LCQMC
+TASK_NAME=xnli
+DATA_DIR=datasets/XNLI
 
 DATE=0813
 
@@ -47,9 +47,9 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --train_batch_size=256 \
       --eval_batch_size=32 \
       --learning_rate=2e-5 \
-      --warmup_step=700 \
-      --save_checkpoints_steps=1000 \
-      --train_step=15000 \
+      --warmup_step=1000 \
+      --save_checkpoints_steps=1500 \
+      --train_step=30000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
       --num_tpu_cores=8 \
