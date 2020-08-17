@@ -104,6 +104,10 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_5282_61_110.sh > logs
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_5282_111_165.sh > logs/comp_spaced_create_pretrain_data_5282_111_165.log &
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_5282_166_218.sh > logs/comp_spaced_create_pretrain_data_5282_166_218.log &
 
+# subchar_spaced, vocab=1321
+nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_1_25.sh > logs/comp_spaced_create_pretrain_data_1321_1_25.log &
+
+
 ```
 
 
