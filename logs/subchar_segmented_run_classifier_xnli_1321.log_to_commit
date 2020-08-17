@@ -16141,3 +16141,137 @@ INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
 I0817 12:42:05.639786 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
 I0817 12:42:05.640154 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (1, 842)
+I0817 12:42:33.404808 140494737782528 tpu_estimator.py:279] Outfeed finished for iteration (1, 842)
+INFO:tensorflow:Saving checkpoints for 2000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+I0817 12:42:38.498697 140497243477760 basic_session_run_hooks.py:606] Saving checkpoints for 2000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-2000 is not in all_model_checkpoint_paths. Manually adding it.
+I0817 12:42:45.536940 140497243477760 checkpoint_management.py:95] gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-2000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 1.1065395, step = 2000 (44.258 sec)
+I0817 12:42:49.895023 140497243477760 basic_session_run_hooks.py:260] loss = 1.1065395, step = 2000 (44.258 sec)
+INFO:tensorflow:global_step/sec: 22.5944
+I0817 12:42:49.897265 140497243477760 tpu_estimator.py:2307] global_step/sec: 22.5944
+INFO:tensorflow:examples/sec: 5784.18
+I0817 12:42:49.898683 140497243477760 tpu_estimator.py:2308] examples/sec: 5784.18
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:42:49.900701 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:42:49.901068 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 1.0409054, step = 3000 (32.389 sec)
+I0817 12:43:22.283770 140497243477760 basic_session_run_hooks.py:260] loss = 1.0409054, step = 3000 (32.389 sec)
+INFO:tensorflow:global_step/sec: 30.8758
+I0817 12:43:22.285081 140497243477760 tpu_estimator.py:2307] global_step/sec: 30.8758
+INFO:tensorflow:examples/sec: 7904.2
+I0817 12:43:22.285296 140497243477760 tpu_estimator.py:2308] examples/sec: 7904.2
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:43:23.425124 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:43:23.425677 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (3, 305)
+I0817 12:43:33.405754 140494737782528 tpu_estimator.py:279] Outfeed finished for iteration (3, 305)
+INFO:tensorflow:Saving checkpoints for 4000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+I0817 12:43:55.805756 140497243477760 basic_session_run_hooks.py:606] Saving checkpoints for 4000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-4000 is not in all_model_checkpoint_paths. Manually adding it.
+I0817 12:44:02.399701 140497243477760 checkpoint_management.py:95] gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-4000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 0.95674866, step = 4000 (44.507 sec)
+I0817 12:44:06.790963 140497243477760 basic_session_run_hooks.py:260] loss = 0.95674866, step = 4000 (44.507 sec)
+INFO:tensorflow:global_step/sec: 22.4649
+I0817 12:44:06.799225 140497243477760 tpu_estimator.py:2307] global_step/sec: 22.4649
+INFO:tensorflow:examples/sec: 5751.01
+I0817 12:44:06.799741 140497243477760 tpu_estimator.py:2308] examples/sec: 5751.01
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:44:06.801533 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:44:06.801852 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (4, 821)
+I0817 12:44:33.415465 140494737782528 tpu_estimator.py:279] Outfeed finished for iteration (4, 821)
+INFO:tensorflow:loss = 0.9982283, step = 5000 (32.396 sec)
+I0817 12:44:39.186920 140497243477760 basic_session_run_hooks.py:260] loss = 0.9982283, step = 5000 (32.396 sec)
+INFO:tensorflow:global_step/sec: 30.8742
+I0817 12:44:39.188535 140497243477760 tpu_estimator.py:2307] global_step/sec: 30.8742
+INFO:tensorflow:examples/sec: 7903.79
+I0817 12:44:39.188770 140497243477760 tpu_estimator.py:2308] examples/sec: 7903.79
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:44:39.189817 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:44:39.190021 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 6000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+I0817 12:45:11.569976 140497243477760 basic_session_run_hooks.py:606] Saving checkpoints for 6000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-6000 is not in all_model_checkpoint_paths. Manually adding it.
+I0817 12:45:18.525023 140497243477760 checkpoint_management.py:95] gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-6000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 1.0791489, step = 6000 (44.716 sec)
+I0817 12:45:23.903277 140497243477760 basic_session_run_hooks.py:260] loss = 1.0791489, step = 6000 (44.716 sec)
+INFO:tensorflow:global_step/sec: 22.3628
+I0817 12:45:23.905745 140497243477760 tpu_estimator.py:2307] global_step/sec: 22.3628
+INFO:tensorflow:examples/sec: 5724.88
+I0817 12:45:23.906095 140497243477760 tpu_estimator.py:2308] examples/sec: 5724.88
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:45:23.907799 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:45:23.908285 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (6, 290)
+I0817 12:45:33.418739 140494737782528 tpu_estimator.py:279] Outfeed finished for iteration (6, 290)
+INFO:tensorflow:loss = 0.9921079, step = 7000 (32.402 sec)
+I0817 12:45:56.304917 140497243477760 basic_session_run_hooks.py:260] loss = 0.9921079, step = 7000 (32.402 sec)
+INFO:tensorflow:global_step/sec: 30.8628
+I0817 12:45:56.307147 140497243477760 tpu_estimator.py:2307] global_step/sec: 30.8628
+INFO:tensorflow:examples/sec: 7900.88
+I0817 12:45:56.307456 140497243477760 tpu_estimator.py:2308] examples/sec: 7900.88
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:45:56.309129 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:45:56.309429 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Saving checkpoints for 8000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+I0817 12:46:28.700316 140497243477760 basic_session_run_hooks.py:606] Saving checkpoints for 8000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-8000 is not in all_model_checkpoint_paths. Manually adding it.
+I0817 12:46:35.402593 140497243477760 checkpoint_management.py:95] gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-8000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 1.0810591, step = 8000 (43.570 sec)
+I0817 12:46:39.874998 140497243477760 basic_session_run_hooks.py:260] loss = 1.0810591, step = 8000 (43.570 sec)
+INFO:tensorflow:global_step/sec: 22.9517
+I0817 12:46:39.876897 140497243477760 tpu_estimator.py:2307] global_step/sec: 22.9517
+INFO:tensorflow:examples/sec: 5875.63
+I0817 12:46:39.877178 140497243477760 tpu_estimator.py:2308] examples/sec: 5875.63
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:46:39.878908 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:46:39.879235 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (8, 0)
+I0817 12:46:40.038057 140494737782528 tpu_estimator.py:279] Outfeed finished for iteration (8, 0)
+INFO:tensorflow:loss = 0.77188057, step = 9000 (32.396 sec)
+I0817 12:47:12.270691 140497243477760 basic_session_run_hooks.py:260] loss = 0.77188057, step = 9000 (32.396 sec)
+INFO:tensorflow:global_step/sec: 30.8683
+I0817 12:47:12.272686 140497243477760 tpu_estimator.py:2307] global_step/sec: 30.8683
+INFO:tensorflow:examples/sec: 7902.28
+I0817 12:47:12.273020 140497243477760 tpu_estimator.py:2308] examples/sec: 7902.28
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:47:12.275029 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:47:12.275392 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (9, 856)
+I0817 12:47:40.038869 140494737782528 tpu_estimator.py:279] Outfeed finished for iteration (9, 856)
+INFO:tensorflow:Saving checkpoints for 10000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+I0817 12:47:44.680442 140497243477760 basic_session_run_hooks.py:606] Saving checkpoints for 10000 into gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt.
+INFO:tensorflow:gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-10000 is not in all_model_checkpoint_paths. Manually adding it.
+I0817 12:47:51.563761 140497243477760 checkpoint_management.py:95] gs://sbt0/experiments/comp_bert/finetune/xnli/subchar_segmented_1321_length_128_512_time_0813_run_3/model.ckpt-10000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:loss = 1.0759249, step = 10000 (45.926 sec)
+I0817 12:47:58.196559 140497243477760 basic_session_run_hooks.py:260] loss = 1.0759249, step = 10000 (45.926 sec)
+INFO:tensorflow:global_step/sec: 21.7737
+I0817 12:47:58.199889 140497243477760 tpu_estimator.py:2307] global_step/sec: 21.7737
+INFO:tensorflow:examples/sec: 5574.07
+I0817 12:47:58.200835 140497243477760 tpu_estimator.py:2308] examples/sec: 5574.07
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:47:58.203602 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:47:58.204294 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.92456794, step = 11000 (32.396 sec)
+I0817 12:48:30.592446 140497243477760 basic_session_run_hooks.py:260] loss = 0.92456794, step = 11000 (32.396 sec)
+INFO:tensorflow:global_step/sec: 30.8692
+I0817 12:48:30.594361 140497243477760 tpu_estimator.py:2307] global_step/sec: 30.8692
+INFO:tensorflow:examples/sec: 7902.51
+I0817 12:48:30.595119 140497243477760 tpu_estimator.py:2308] examples/sec: 7902.51
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0817 12:48:30.597386 140497243477760 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0817 12:48:30.597731 140497243477760 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (11, 289)
+I0817 12:48:40.063262 140494737782528 tpu_estimator.py:279] Outfeed finished for iteration (11, 289)
