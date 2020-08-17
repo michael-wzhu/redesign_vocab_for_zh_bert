@@ -272,16 +272,16 @@ def main(_):
         if not cached_dir:
             cached_dir = FLAGS.output_dir
         train_file = os.path.join(cached_dir, task_name + "_train.tf_record")
-        # if not tf.gfile.Exists(train_file):
-        classifier_utils.file_based_convert_examples_to_features(
-            train_examples,
-            label_list,
-            FLAGS.max_seq_length,
-            bpe_tokenizer,
-            train_file,
-            task_name,
-            dict_char2comp=dict_char2comp
-        )
+        if not tf.gfile.Exists(train_file):
+            classifier_utils.file_based_convert_examples_to_features(
+                train_examples,
+                label_list,
+                FLAGS.max_seq_length,
+                bpe_tokenizer,
+                train_file,
+                task_name,
+                dict_char2comp=dict_char2comp
+            )
         tf.logging.info("***** Running training *****")
         tf.logging.info("  Num examples = %d", len(train_examples))
         tf.logging.info("  Batch size = %d", FLAGS.train_batch_size)
