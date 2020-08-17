@@ -194,6 +194,11 @@ I0816 02:35:16.322833 140063805449984 run_classifier.py:535] accuracy: 0.818333
 INFO:tensorflow:accuracy: 0.815000
 I0816 03:14:16.310876 140641165555456 run_classifier.py:535] accuracy: 0.815000
 
+
+# subchar_spaced, vocab=21128
+nohup ./comp_bert/comp_spaced/scripts/run_classifier_chn_21128.sh > logs/subchar_spaced_run_classifier_chn_21128.log_to_commit &
+
+
 ```
 
 
