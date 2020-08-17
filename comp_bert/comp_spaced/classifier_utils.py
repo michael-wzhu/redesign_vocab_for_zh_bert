@@ -82,7 +82,6 @@ def convert_single_example(ex_index,
     tokens_a = char2comp_single_sent(
         example.text_a,
         dict_char2comp=dict_char2comp,
-        sep_token="",
         tokenizer=tokenizer
 
     )
@@ -92,7 +91,6 @@ def convert_single_example(ex_index,
         tokens_b = char2comp_single_sent(
             example.text_b,
             dict_char2comp=dict_char2comp,
-            sep_token="",
             tokenizer=tokenizer
         )
 
