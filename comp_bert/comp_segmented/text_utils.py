@@ -61,7 +61,7 @@ def tokenize_single_sent(sent, tokenizer=None):
 
 
 def char2comp_single_sent(sent,
-                          dict_char2comp,
+                          dict_char2comp=None,
                           sep_token="",
                           tokenizer=None):
 
