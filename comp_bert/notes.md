@@ -287,7 +287,7 @@ grep "accuracy: " logs/subchar_segmented_run_classifier_xnli_1321.log_to_commit 
 
 # subchar_spaced, vocab=21128
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_xnli_21128.sh > logs/subchar_spaced_run_classifier_xnli_21128.log_to_commit &
-grep "accuracy: " logs/subchar_spaced_run_classifier_xnli_21128.log_to_commit
+grep "accuracy: " logs/subchar_spaced_run_classifier_xnli_21128.log_to_commit (xxx)
 
 
 
