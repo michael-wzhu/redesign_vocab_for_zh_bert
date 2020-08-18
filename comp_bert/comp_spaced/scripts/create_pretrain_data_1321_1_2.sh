@@ -28,7 +28,7 @@ for i in `seq 1 $((NUM_PROC))`; do
     --masked_lm_prob=0.1 \
     --dupe_factor=10 \
     --vocab_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.vocab \
-    --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model
+    --spm_model_file data_proc/tokenizers/sentencepiece/${PREFIX}_lower-${VOCAB_SIZE}-clean.model \
   $@ &
 done
 
