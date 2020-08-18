@@ -253,6 +253,18 @@ I0816 06:56:44.459246 140255385433856 run_classifier.py:535] accuracy: 0.745280
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_lcqmc_21128.sh > logs/subchar_spaced_run_classifier_lcqmc_21128.log_to_commit &
 grep "accuracy: " logs/subchar_spaced_run_classifier_lcqmc_21128.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.770480
+I0817 15:27:56.081325 140222761281280 run_classifier.py:535] accuracy: 0.770480
+INFO:tensorflow:accuracy: 0.764720
+I0817 15:57:27.731256 139720781915904 run_classifier.py:535] accuracy: 0.764720
+INFO:tensorflow:accuracy: 0.770960
+I0817 16:29:13.251104 140426667714304 run_classifier.py:535] accuracy: 0.770960
+INFO:tensorflow:accuracy: 0.757840
+I0817 17:00:45.515532 140218523662080 run_classifier.py:535] accuracy: 0.757840
+INFO:tensorflow:accuracy: 0.765280
+I0817 17:30:24.109249 140695221286656 run_classifier.py:535] accuracy: 0.765280
+
+
 ```
 
 
@@ -277,18 +289,48 @@ I0813 08:06:17.681382 140012420654848 run_classifier.py:535] accuracy: 0.546108
 
 # subchar_segmented, vocab=5282
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_xnli_5282.sh > logs/subchar_segmented_run_classifier_xnli_5282.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_xnli_5282.log_to_commit (xxx)
+grep "accuracy: " logs/subchar_segmented_run_classifier_xnli_5282.log_to_commit (done)
+
+INFO:tensorflow:accuracy: 0.555489
+I0817 14:28:06.702242 140355311015680 run_classifier.py:535] accuracy: 0.555489
+INFO:tensorflow:accuracy: 0.548503
+I0817 15:12:18.630607 139958656132864 run_classifier.py:535] accuracy: 0.548503
+INFO:tensorflow:accuracy: 0.556287
+I0817 15:57:10.870271 140448366397184 run_classifier.py:535] accuracy: 0.556287
+INFO:tensorflow:accuracy: 0.566667
+I0817 16:45:36.266384 140682197907200 run_classifier.py:535] accuracy: 0.566667
+INFO:tensorflow:accuracy: 0.564271
+I0817 17:31:51.893543 139713861822208 run_classifier.py:535] accuracy: 0.564271
 
 # subchar_segmented, vocab=1321
 
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_xnli_1321.sh > logs/subchar_segmented_run_classifier_xnli_1321.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_xnli_1321.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.523752
+I0817 14:32:40.793073 139827565266688 run_classifier.py:535] accuracy: 0.523752
+INFO:tensorflow:accuracy: 0.535529
+I0817 15:16:07.449097 139664568362752 run_classifier.py:535] accuracy: 0.535529
+INFO:tensorflow:accuracy: 0.513373
+I0817 16:02:42.353504 140649203902208 run_classifier.py:535] accuracy: 0.513373
+INFO:tensorflow:accuracy: 0.519361
+I0817 16:48:13.826911 139625524750080 run_classifier.py:535] accuracy: 0.519361
+INFO:tensorflow:accuracy: 0.532735
+I0817 17:35:31.457537 139817767814912 run_classifier.py:535] accuracy: 0.532735
 
 # subchar_spaced, vocab=21128
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_xnli_21128.sh > logs/subchar_spaced_run_classifier_xnli_21128.log_to_commit &
-grep "accuracy: " logs/subchar_spaced_run_classifier_xnli_21128.log_to_commit
+grep "accuracy: " logs/subchar_spaced_run_classifier_xnli_21128.log_to_commit (xxx)
 
-
+INFO:tensorflow:accuracy: 0.561876
+I0817 15:42:30.081303 140610626606848 run_classifier.py:535] accuracy: 0.561876
+INFO:tensorflow:accuracy: 0.561477
+I0817 16:24:50.796932 140345807431424 run_classifier.py:535] accuracy: 0.561477
+INFO:tensorflow:accuracy: 0.571257
+I0817 17:10:30.171856 140056315913984 run_classifier.py:535] accuracy: 0.571257
+INFO:tensorflow:accuracy: 0.554691
+I0817 17:52:13.622805 139968717219584 run_classifier.py:535] accuracy: 0.554691
+INFO:tensorflow:accuracy: 0.567066
+I0817 18:33:36.321908 140649326024448 run_classifier.py:535] accuracy: 0.567066
 
 ```
