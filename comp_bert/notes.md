@@ -108,6 +108,7 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_5282_166_218.sh > log
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_1_2.sh > logs/comp_spaced_create_pretrain_data_1321_1_2.log &
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_3_25.sh > logs/comp_spaced_create_pretrain_data_1321_3_25.log &
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_26_60.sh > logs/comp_spaced_create_pretrain_data_1321_26_60.log &
+nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_61_105.sh > logs/comp_spaced_create_pretrain_data_1321_61_105.log &
 
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_41_85.sh > logs/comp_spaced_create_pretrain_data_1321_41_85.log &
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_86_130.sh > logs/comp_spaced_create_pretrain_data_1321_86_130.log &
