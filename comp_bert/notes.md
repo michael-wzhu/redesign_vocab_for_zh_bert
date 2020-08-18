@@ -199,6 +199,10 @@ I0816 03:14:16.310876 140641165555456 run_classifier.py:535] accuracy: 0.815000
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_chn_21128.sh > logs/subchar_spaced_run_classifier_chn_21128.log_to_commit &
 grep "accuracy: " logs/subchar_spaced_run_classifier_chn_21128.log_to_commit (xxx)
 
+# subchar_spaced, vocab=5282
+nohup ./comp_bert/comp_spaced/scripts/run_classifier_chn_5282.sh > logs/subchar_spaced_run_classifier_chn_5282.log_to_commit &
+grep "accuracy: " logs/subchar_spaced_run_classifier_chn_5282.log_to_commit (xxx)
+
 ```
 
 
@@ -251,7 +255,7 @@ I0816 06:56:44.459246 140255385433856 run_classifier.py:535] accuracy: 0.745280
 
 # subchar_spaced, vocab=21128
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_lcqmc_21128.sh > logs/subchar_spaced_run_classifier_lcqmc_21128.log_to_commit &
-grep "accuracy: " logs/subchar_spaced_run_classifier_lcqmc_21128.log_to_commit (xxx)
+grep "accuracy: " logs/subchar_spaced_run_classifier_lcqmc_21128.log_to_commit (done)
 
 INFO:tensorflow:accuracy: 0.770480
 I0817 15:27:56.081325 140222761281280 run_classifier.py:535] accuracy: 0.770480
@@ -263,6 +267,11 @@ INFO:tensorflow:accuracy: 0.757840
 I0817 17:00:45.515532 140218523662080 run_classifier.py:535] accuracy: 0.757840
 INFO:tensorflow:accuracy: 0.765280
 I0817 17:30:24.109249 140695221286656 run_classifier.py:535] accuracy: 0.765280
+
+# subchar_spaced, vocab=5282
+nohup ./comp_bert/comp_spaced/scripts/run_classifier_lcqmc_5282.sh > logs/subchar_spaced_run_classifier_lcqmc_5282.log_to_commit &
+grep "accuracy: " logs/subchar_spaced_run_classifier_lcqmc_5282.log_to_commit (xxx)
+
 
 
 ```
@@ -332,5 +341,13 @@ INFO:tensorflow:accuracy: 0.554691
 I0817 17:52:13.622805 139968717219584 run_classifier.py:535] accuracy: 0.554691
 INFO:tensorflow:accuracy: 0.567066
 I0817 18:33:36.321908 140649326024448 run_classifier.py:535] accuracy: 0.567066
+
+
+# subchar_spaced, vocab=5282
+nohup ./comp_bert/comp_spaced/scripts/run_classifier_xnli_5282.sh > logs/subchar_spaced_run_classifier_xnli_5282.log_to_commit &
+grep "accuracy: " logs/subchar_spaced_run_classifier_xnli_5282.log_to_commit (xxx)
+
+
+
 
 ```
