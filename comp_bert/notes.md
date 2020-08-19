@@ -57,7 +57,12 @@ nohup python3 data_proc/merge_file_utils.py > logs/merge_files.log &
 ## build vocab
 
 ```bash
+
+# comp build vocab
 nohup python3 data_proc/build_spm.py > logs/build_vocab.log &
+
+# char build vocab
+nohup python3 data_proc/build_vocab_spm.py > logs/build_vocab_spm.log &
 
 ```
 
