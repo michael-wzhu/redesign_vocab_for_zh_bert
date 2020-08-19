@@ -483,14 +483,58 @@ grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_c
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_21128.sh > logs/subchar_segmented_run_classifier_book_review_21128.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_21128.log_to_commit  (xxx)
 
+INFO:tensorflow:accuracy: 0.778700
+I0819 08:36:25.765766 139795317909248 run_classifier.py:535] accuracy: 0.778700
+INFO:tensorflow:accuracy: 0.774700
+I0819 09:07:37.368498 140198866642688 run_classifier.py:535] accuracy: 0.774700
+INFO:tensorflow:accuracy: 0.773900
+I0819 09:46:38.628833 140583309432576 run_classifier.py:535] accuracy: 0.773900
+INFO:tensorflow:accuracy: 0.776900
+I0819 10:25:36.668711 140449618532096 run_classifier.py:535] accuracy: 0.776900
+INFO:tensorflow:accuracy: 0.776100
+I0819 11:04:35.416110 140345984382720 run_classifier.py:535] accuracy: 0.776100
+INFO:tensorflow:accuracy: 0.776800
+I0819 11:43:35.497005 140140729997056 run_classifier.py:535] accuracy: 0.776800
+INFO:tensorflow:accuracy: 0.776600
+I0819 12:22:35.543556 139816330237696 run_classifier.py:535] accuracy: 0.776600
+INFO:tensorflow:accuracy: 0.777400
+I0819 13:01:34.587368 139992739190528 run_classifier.py:535] accuracy: 0.777400
+
 # subchar_segmented, vocab=5282
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_5282.sh > logs/subchar_segmented_run_classifier_book_review_5282.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_5282.log_to_commit   (xxx)
+
+INFO:tensorflow:accuracy: 0.753100
+I0819 08:38:16.370702 140636674483968 run_classifier.py:535] accuracy: 0.753100
+INFO:tensorflow:accuracy: 0.766600
+I0819 09:08:54.722966 140667222243072 run_classifier.py:535] accuracy: 0.766600
+INFO:tensorflow:accuracy: 0.768900
+I0819 09:47:54.945497 140177811412736 run_classifier.py:535] accuracy: 0.768900
+INFO:tensorflow:accuracy: 0.768700
+I0819 10:26:53.704057 139964209186560 run_classifier.py:535] accuracy: 0.768700
+INFO:tensorflow:accuracy: 0.771200
+I0819 11:05:53.742986 139953644545792 run_classifier.py:535] accuracy: 0.771200
+INFO:tensorflow:accuracy: 0.765500
+I0819 11:44:53.641887 139771301263104 run_classifier.py:535] accuracy: 0.765500
+INFO:tensorflow:accuracy: 0.774400
+I0819 12:23:53.233848 139861045585664 run_classifier.py:535] accuracy: 0.774400
+INFO:tensorflow:accuracy: 0.765200
+I0819 13:02:53.913831 139664180242176 run_classifier.py:535] accuracy: 0.765200
 
 # subchar_segmented, vocab=1321
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_1321.sh > logs/subchar_segmented_run_classifier_book_review_1321.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_1321.log_to_commit   (xxx)
 
+INFO:tensorflow:accuracy: 0.756700
+I0819 09:12:25.273187 140329132451584 run_classifier.py:535] accuracy: 0.756700
+INFO:tensorflow:accuracy: 0.755200
+I0819 10:08:41.018355 140369005037312 run_classifier.py:535] accuracy: 0.755200
+INFO:tensorflow:accuracy: 0.759600
+I0819 11:03:21.991717 140256343176960 run_classifier.py:535] accuracy: 0.759600
+INFO:tensorflow:accuracy: 0.764800
+I0819 11:55:25.119588 140569750353664 run_classifier.py:535] accuracy: 0.764800
+INFO:tensorflow:accuracy: 0.760000
+I0819 12:47:45.281965 139980965754624 run_classifier.py:535] accuracy: 0.760000
 
 ```
 
