@@ -456,15 +456,15 @@ I0818 05:14:57.125636 140383648057088 run_classifier.py:535] accuracy: 0.573253
 
 # subchar_segmented, vocab=21128
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_21128.sh > logs/subchar_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit
+grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit   (xxx)
 
 # subchar_segmented, vocab=5282
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/subchar_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit
+grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit  (xxx)
 
 # subchar_segmented, vocab=1321
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_1321.sh > logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit
+grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit   (xxx)
 
 
 ```
@@ -476,15 +476,15 @@ grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_c
 
 # subchar_segmented, vocab=21128
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_21128.sh > logs/subchar_segmented_run_classifier_book_review_21128.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_21128.log_to_commit
+grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_21128.log_to_commit  (xxx)
 
 # subchar_segmented, vocab=5282
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_5282.sh > logs/subchar_segmented_run_classifier_book_review_5282.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_5282.log_to_commit
+grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_5282.log_to_commit   (xxx)
 
 # subchar_segmented, vocab=1321
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_1321.sh > logs/subchar_segmented_run_classifier_book_review_1321.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_1321.log_to_commit
+grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_1321.log_to_commit   (xxx)
 
 
 ```
