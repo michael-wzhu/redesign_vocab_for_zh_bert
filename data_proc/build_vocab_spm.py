@@ -12,12 +12,13 @@ if __name__ == "__main__":
 
     # vocab_sizes = [10564]
     # vocab_sizes = [21128]
-    vocab_sizes = [10564, 21128, 31692]
+    # vocab_sizes = [10564, 21128, 31692]
+    vocab_sizes = [5282, ]
     prefixes = [
 
-        # "char_segmented",
-        # "char_spaced",
-        "char_no_space",
+        "char_segmented",
+        "char_spaced",
+        # "char_no_space",
     ]
 
     STORAGE_BUCKET = "gs://sbt0"
