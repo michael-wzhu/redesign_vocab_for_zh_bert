@@ -9,7 +9,7 @@ pip3 install tensorflow_hub
 
 export STORAGE_BUCKET=gs://sbt0
 
-PREFIX=subchar_segmented
+PREFIX=char_segmented
 
 VOCAB_SIZE=5282
 
