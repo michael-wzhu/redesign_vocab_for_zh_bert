@@ -145,6 +145,9 @@ nohup ./comp_bert/comp_spaced/scripts/run_pretrain_21128.sh > logs/subchar_space
 # subchar_spaced, vocab=5282
 nohup ./comp_bert/comp_spaced/scripts/run_pretrain_5282.sh > logs/subchar_spaced_pretrain_5282.log &
 
+# subchar_spaced, vocab=1321
+nohup ./comp_bert/comp_spaced/scripts/run_pretrain_1321.sh > logs/subchar_spaced_pretrain_1321.log &
+
 ```
 
 
