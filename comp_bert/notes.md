@@ -450,6 +450,28 @@ I0818 05:14:57.125636 140383648057088 run_classifier.py:535] accuracy: 0.573253
 ```
 
 
+### on nlpcc_dbqa
+
+```bash
+
+# subchar_segmented, vocab=21128
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_21128.sh > logs/subchar_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit
+
+# subchar_segmented, vocab=5282
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/subchar_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit
+
+# subchar_segmented, vocab=1321
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_1321.sh > logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit
+
+
+```
+
+
+
+
 | model | chn | lcqmc |  xnli   |
 | :----: | :----: | :----: |  :----: |
 | comp_segmented, 21128	     |    0.8543, 0.01301       |    (0.7531, 0.005004)     |   (0.5628, 0.011163)     |   
