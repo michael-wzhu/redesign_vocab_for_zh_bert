@@ -6,7 +6,7 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.225.154.26
+TPU_IP=10.195.126.34
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=subchar_segmented
@@ -46,7 +46,7 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --optimizer=adamw \
       --train_batch_size=256 \
       --eval_batch_size=32 \
-      --learning_rate=1e-5 \
+      --learning_rate=5e-5 \
       --warmup_step=600 \
       --save_checkpoints_steps=750 \
       --train_step=15000 \
