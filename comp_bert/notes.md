@@ -470,6 +470,25 @@ grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_c
 ```
 
 
+### on book_review
+
+```bash
+
+# subchar_segmented, vocab=21128
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_21128.sh > logs/subchar_segmented_run_classifier_book_review_21128.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_21128.log_to_commit
+
+# subchar_segmented, vocab=5282
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_5282.sh > logs/subchar_segmented_run_classifier_book_review_5282.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_5282.log_to_commit
+
+# subchar_segmented, vocab=1321
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_1321.sh > logs/subchar_segmented_run_classifier_book_review_1321.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_1321.log_to_commit
+
+
+```
+
 
 
 | model | chn | lcqmc |  xnli   |
