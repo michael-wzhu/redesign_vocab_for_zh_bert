@@ -274,6 +274,13 @@ I0818 07:38:02.634936 139863310726912 run_classifier.py:535] accuracy: 0.847500
 
 (0.8479998999999999, 0.009510221989522621)
 
+
+# subchar_spaced, vocab=1321
+nohup ./comp_bert/comp_spaced/scripts/run_classifier_chn_1321.sh > logs/subchar_spaced_run_classifier_chn_1321.log_to_commit &
+grep "accuracy: " logs/subchar_spaced_run_classifier_chn_1321.log_to_commit (xxx)
+
+
+
 ```
 
 
