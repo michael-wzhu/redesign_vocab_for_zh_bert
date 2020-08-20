@@ -209,3 +209,19 @@ INFO:tensorflow:Writing example 54000 of 99988
 I0820 12:33:58.822204 139820280452864 classifier_utils.py:214] Writing example 54000 of 99988
 INFO:tensorflow:Writing example 57000 of 99988
 I0820 12:34:03.073980 139820280452864 classifier_utils.py:214] Writing example 57000 of 99988
+INFO:tensorflow:Writing example 60000 of 99988
+I0820 12:34:08.111449 139820280452864 classifier_utils.py:214] Writing example 60000 of 99988
+INFO:tensorflow:Writing example 63000 of 99988
+I0820 12:34:16.835139 139820280452864 classifier_utils.py:214] Writing example 63000 of 99988
+INFO:tensorflow:Writing example 66000 of 99988
+I0820 12:34:24.084263 139820280452864 classifier_utils.py:214] Writing example 66000 of 99988
+INFO:tensorflow:Writing example 69000 of 99988
+I0820 12:34:31.254026 139820280452864 classifier_utils.py:214] Writing example 69000 of 99988
+INFO:tensorflow:Writing example 72000 of 99988
+I0820 12:34:37.295798 139820280452864 classifier_utils.py:214] Writing example 72000 of 99988
+INFO:tensorflow:Writing example 75000 of 99988
+I0820 12:34:42.347830 139820280452864 classifier_utils.py:214] Writing example 75000 of 99988
+INFO:tensorflow:Writing example 78000 of 99988
+I0820 12:34:46.610453 139820280452864 classifier_utils.py:214] Writing example 78000 of 99988
+INFO:tensorflow:Writing example 81000 of 99988
+I0820 12:34:51.049115 139820280452864 classifier_utils.py:214] Writing example 81000 of 99988

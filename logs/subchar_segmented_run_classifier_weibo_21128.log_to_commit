@@ -1458,3 +1458,266 @@ INFO:tensorflow:Finished evaluation at 2020-08-20-12:34:06
 I0820 12:34:06.333439 140079076329216 evaluation.py:275] Finished evaluation at 2020-08-20-12:34:06
 INFO:tensorflow:Saving dict for global step 3600: eval_accuracy = 0.9708, eval_loss = 0.1162479, global_step = 3600, loss = 0.12702206
 I0820 12:34:06.333799 140079076329216 estimator.py:2049] Saving dict for global step 3600: eval_accuracy = 0.9708, eval_loss = 0.1162479, global_step = 3600, loss = 0.12702206
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 3600: gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-3600
+I0820 12:34:06.995297 140079076329216 estimator.py:2109] Saving 'checkpoint_path' summary for global step 3600: gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-3600
+INFO:tensorflow:evaluation_loop marked as finished
+I0820 12:34:07.879956 140079076329216 error_handling.py:101] evaluation_loop marked as finished
+INFO:tensorflow:***** Eval results *****
+I0820 12:34:07.880338 140079076329216 run_classifier.py:432] ***** Eval results *****
+INFO:tensorflow:  eval_accuracy = 0.9708
+I0820 12:34:07.880475 140079076329216 run_classifier.py:434]   eval_accuracy = 0.9708
+INFO:tensorflow:  eval_loss = 0.1162479
+I0820 12:34:07.880619 140079076329216 run_classifier.py:434]   eval_loss = 0.1162479
+INFO:tensorflow:  global_step = 3600
+I0820 12:34:07.880759 140079076329216 run_classifier.py:434]   global_step = 3600
+INFO:tensorflow:  loss = 0.12702206
+I0820 12:34:07.880878 140079076329216 run_classifier.py:434]   loss = 0.12702206
+INFO:tensorflow:removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-3600.meta
+I0820 12:34:08.208997 140079076329216 run_classifier.py:374] removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-3600.meta
+INFO:tensorflow:removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-3600.data-00000-of-00001
+I0820 12:34:08.382058 140079076329216 run_classifier.py:374] removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-3600.data-00000-of-00001
+INFO:tensorflow:removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-3600.index
+I0820 12:34:08.556559 140079076329216 run_classifier.py:374] removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-3600.index
+INFO:tensorflow:Calling model_fn.
+I0820 12:34:09.915957 140079076329216 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:*** Features ***
+I0820 12:34:10.214735 140079076329216 classifier_utils.py:397] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (4, 512)
+I0820 12:34:10.215074 140079076329216 classifier_utils.py:399]   name = input_ids, shape = (4, 512)
+INFO:tensorflow:  name = input_mask, shape = (4, 512)
+I0820 12:34:10.215228 140079076329216 classifier_utils.py:399]   name = input_mask, shape = (4, 512)
+INFO:tensorflow:  name = is_real_example, shape = (4,)
+I0820 12:34:10.215339 140079076329216 classifier_utils.py:399]   name = is_real_example, shape = (4,)
+INFO:tensorflow:  name = label_ids, shape = (4,)
+I0820 12:34:10.215440 140079076329216 classifier_utils.py:399]   name = label_ids, shape = (4,)
+INFO:tensorflow:  name = segment_ids, shape = (4, 512)
+I0820 12:34:10.215543 140079076329216 classifier_utils.py:399]   name = segment_ids, shape = (4, 512)
+INFO:tensorflow:creating model from albert_config
+I0820 12:34:10.217171 140079076329216 fine_tuning_utils.py:68] creating model from albert_config
+INFO:tensorflow:name bert/embeddings/word_embeddings match to bert/embeddings/word_embeddings
+I0820 12:34:13.428078 140079076329216 modeling.py:388] name bert/embeddings/word_embeddings match to bert/embeddings/word_embeddings
+INFO:tensorflow:name bert/embeddings/token_type_embeddings match to bert/embeddings/token_type_embeddings
+I0820 12:34:13.436528 140079076329216 modeling.py:388] name bert/embeddings/token_type_embeddings match to bert/embeddings/token_type_embeddings
+INFO:tensorflow:name bert/embeddings/position_embeddings match to bert/embeddings/position_embeddings
+I0820 12:34:13.436663 140079076329216 modeling.py:388] name bert/embeddings/position_embeddings match to bert/embeddings/position_embeddings
+INFO:tensorflow:name bert/embeddings/LayerNorm/beta match to bert/embeddings/LayerNorm/beta
+I0820 12:34:13.436762 140079076329216 modeling.py:388] name bert/embeddings/LayerNorm/beta match to bert/embeddings/LayerNorm/beta
+INFO:tensorflow:name bert/embeddings/LayerNorm/gamma match to bert/embeddings/LayerNorm/gamma
+I0820 12:34:13.436859 140079076329216 modeling.py:388] name bert/embeddings/LayerNorm/gamma match to bert/embeddings/LayerNorm/gamma
+INFO:tensorflow:name bert/encoder/embedding_hidden_mapping_in/kernel match to bert/encoder/embedding_hidden_mapping_in/kernel
+I0820 12:34:13.436953 140079076329216 modeling.py:388] name bert/encoder/embedding_hidden_mapping_in/kernel match to bert/encoder/embedding_hidden_mapping_in/kernel
+INFO:tensorflow:name bert/encoder/embedding_hidden_mapping_in/bias match to bert/encoder/embedding_hidden_mapping_in/bias
+I0820 12:34:13.437051 140079076329216 modeling.py:388] name bert/encoder/embedding_hidden_mapping_in/bias match to bert/encoder/embedding_hidden_mapping_in/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel
+I0820 12:34:13.437148 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias
+I0820 12:34:13.437262 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel
+I0820 12:34:13.437361 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias
+I0820 12:34:13.437452 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel
+I0820 12:34:13.437570 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias
+I0820 12:34:13.437663 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel
+I0820 12:34:13.437753 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias
+I0820 12:34:13.437845 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta
+I0820 12:34:13.437943 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma
+I0820 12:34:13.438040 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel
+I0820 12:34:13.438136 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias
+I0820 12:34:13.438247 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel
+I0820 12:34:13.438356 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias
+I0820 12:34:13.438455 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta
+I0820 12:34:13.438546 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma
+I0820 12:34:13.438654 140079076329216 modeling.py:388] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma
+INFO:tensorflow:name bert/pooler/dense/kernel match to bert/pooler/dense/kernel
+I0820 12:34:13.438757 140079076329216 modeling.py:388] name bert/pooler/dense/kernel match to bert/pooler/dense/kernel
+INFO:tensorflow:name bert/pooler/dense/bias match to bert/pooler/dense/bias
+I0820 12:34:13.438857 140079076329216 modeling.py:388] name bert/pooler/dense/bias match to bert/pooler/dense/bias
+INFO:tensorflow:name output_weights does not get matched
+I0820 12:34:13.438987 140079076329216 modeling.py:386] name output_weights does not get matched
+INFO:tensorflow:name output_bias does not get matched
+I0820 12:34:13.439127 140079076329216 modeling.py:386] name output_bias does not get matched
+INFO:tensorflow:**** Trainable Variables ****
+I0820 12:34:13.439264 140079076329216 classifier_utils.py:443] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (21128, 128), *INIT_FROM_CKPT*
+I0820 12:34:13.439367 140079076329216 classifier_utils.py:449]   name = bert/embeddings/word_embeddings:0, shape = (21128, 128), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 128), *INIT_FROM_CKPT*
+I0820 12:34:13.439538 140079076329216 classifier_utils.py:449]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 128), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 128), *INIT_FROM_CKPT*
+I0820 12:34:13.439668 140079076329216 classifier_utils.py:449]   name = bert/embeddings/position_embeddings:0, shape = (512, 128), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (128,), *INIT_FROM_CKPT*
+I0820 12:34:13.439796 140079076329216 classifier_utils.py:449]   name = bert/embeddings/LayerNorm/beta:0, shape = (128,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (128,), *INIT_FROM_CKPT*
+I0820 12:34:13.439912 140079076329216 classifier_utils.py:449]   name = bert/embeddings/LayerNorm/gamma:0, shape = (128,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 256), *INIT_FROM_CKPT*
+I0820 12:34:13.440024 140079076329216 classifier_utils.py:449]   name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 256), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.440181 140079076329216 classifier_utils.py:449]   name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+I0820 12:34:13.440322 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.440454 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+I0820 12:34:13.440573 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.440706 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+I0820 12:34:13.440827 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.440953 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+I0820 12:34:13.441074 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.441223 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.441349 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.441473 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (256, 1024), *INIT_FROM_CKPT*
+I0820 12:34:13.441622 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (256, 1024), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (1024,), *INIT_FROM_CKPT*
+I0820 12:34:13.441755 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (1024,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (1024, 256), *INIT_FROM_CKPT*
+I0820 12:34:13.441882 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (1024, 256), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.442006 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.442110 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.442225 140079076329216 classifier_utils.py:449]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+I0820 12:34:13.442341 140079076329216 classifier_utils.py:449]   name = bert/pooler/dense/kernel:0, shape = (256, 256), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (256,), *INIT_FROM_CKPT*
+I0820 12:34:13.442465 140079076329216 classifier_utils.py:449]   name = bert/pooler/dense/bias:0, shape = (256,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = output_weights:0, shape = (2, 256)
+I0820 12:34:13.442581 140079076329216 classifier_utils.py:449]   name = output_weights:0, shape = (2, 256)
+INFO:tensorflow:  name = output_bias:0, shape = (2,)
+I0820 12:34:13.442702 140079076329216 classifier_utils.py:449]   name = output_bias:0, shape = (2,)
+INFO:tensorflow:Done calling model_fn.
+I0820 12:34:15.391657 140079076329216 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2020-08-20T12:34:15Z
+I0820 12:34:15.441382 140079076329216 evaluation.py:255] Starting evaluation at 2020-08-20T12:34:15Z
+INFO:tensorflow:TPU job name worker
+I0820 12:34:15.441728 140079076329216 tpu_estimator.py:506] TPU job name worker
+INFO:tensorflow:Graph was finalized.
+I0820 12:34:15.866192 140079076329216 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000
+I0820 12:34:16.042935 140079076329216 saver.py:1284] Restoring parameters from gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000
+INFO:tensorflow:Running local_init_op.
+I0820 12:34:18.643882 140079076329216 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0820 12:34:18.704140 140079076329216 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Init TPU system
+I0820 12:34:18.848004 140079076329216 tpu_estimator.py:567] Init TPU system
+INFO:tensorflow:Initialized TPU in 29 seconds
+I0820 12:34:48.075502 140079076329216 tpu_estimator.py:576] Initialized TPU in 29 seconds
+INFO:tensorflow:Starting infeed thread controller.
+I0820 12:34:48.076440 140076658976512 tpu_estimator.py:521] Starting infeed thread controller.
+INFO:tensorflow:Starting outfeed thread controller.
+I0820 12:34:48.076896 140076650583808 tpu_estimator.py:540] Starting outfeed thread controller.
+INFO:tensorflow:Initialized dataset iterators in 0 seconds
+I0820 12:34:48.167269 140079076329216 util.py:98] Initialized dataset iterators in 0 seconds
+INFO:tensorflow:Enqueue next (313) batch(es) of data to infeed.
+I0820 12:34:48.226065 140079076329216 tpu_estimator.py:600] Enqueue next (313) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (313) batch(es) of data from outfeed.
+I0820 12:34:48.226452 140079076329216 tpu_estimator.py:604] Dequeue next (313) batch(es) of data from outfeed.
+I0820 12:34:48.237516 140076642191104 transport.py:157] Attempting refresh to obtain initial access_token
+W0820 12:34:48.278293 140076642191104 http.py:118] Invalid JSON content from response: b'{\n  "error": {\n    "code": 403,\n    "message": "Permission denied on resource project None.",\n    "status": "PERMISSION_DENIED",\n    "details": [\n      {\n        "@type": "type.googleapis.com/google.rpc.Help",\n        "links": [\n          {\n            "description": "Google developer console API key",\n            "url": "https://console.developers.google.com/project/None/apiui/credential"\n          }\n        ]\n      }\n    ]\n  }\n}\n'
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 476, in _fetch_cloud_tpu_metadata
+    return request.execute()
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/http.py", line 856, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.50.88.98:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/project/None/apiui/credential'}], '@type': 'type.googleapis.com/google.rpc.Help'}]">
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/tpu/preempted_hook.py", line 87, in run
+    response = self._cluster._fetch_cloud_tpu_metadata()  # pylint: disable=protected-access
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 480, in _fetch_cloud_tpu_metadata
+    "constructor. Exception: %s" % (self._tpu, e))
+ValueError: Could not lookup TPU metadata from name 'b'10.50.88.98:8470''. Please doublecheck the tpu argument in the TPUClusterResolver constructor. Exception: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/None/nodes/10.50.88.98:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/project/None/apiui/credential'}], '@type': 'type.googleapis.com/google.rpc.Help'}]">
+
+INFO:tensorflow:Outfeed finished for iteration (0, 0)
+I0820 12:34:50.378820 140076650583808 tpu_estimator.py:279] Outfeed finished for iteration (0, 0)
+INFO:tensorflow:Evaluation [313/313]
+I0820 12:34:51.181369 140079076329216 evaluation.py:167] Evaluation [313/313]
+INFO:tensorflow:Stop infeed thread controller
+I0820 12:34:51.181762 140079076329216 tpu_estimator.py:608] Stop infeed thread controller
+INFO:tensorflow:Shutting down InfeedController thread.
+I0820 12:34:51.181887 140079076329216 tpu_estimator.py:434] Shutting down InfeedController thread.
+INFO:tensorflow:InfeedController received shutdown signal, stopping.
+I0820 12:34:51.182083 140076658976512 tpu_estimator.py:429] InfeedController received shutdown signal, stopping.
+INFO:tensorflow:Infeed thread finished, shutting down.
+I0820 12:34:51.182196 140076658976512 tpu_estimator.py:537] Infeed thread finished, shutting down.
+INFO:tensorflow:infeed marked as finished
+I0820 12:34:51.182389 140079076329216 error_handling.py:101] infeed marked as finished
+INFO:tensorflow:Stop output thread controller
+I0820 12:34:51.182510 140079076329216 tpu_estimator.py:612] Stop output thread controller
+INFO:tensorflow:Shutting down OutfeedController thread.
+I0820 12:34:51.182616 140079076329216 tpu_estimator.py:434] Shutting down OutfeedController thread.
+INFO:tensorflow:OutfeedController received shutdown signal, stopping.
+I0820 12:34:51.194946 140076650583808 tpu_estimator.py:429] OutfeedController received shutdown signal, stopping.
+INFO:tensorflow:Outfeed thread finished, shutting down.
+I0820 12:34:51.195264 140076650583808 tpu_estimator.py:551] Outfeed thread finished, shutting down.
+INFO:tensorflow:outfeed marked as finished
+I0820 12:34:51.195462 140079076329216 error_handling.py:101] outfeed marked as finished
+INFO:tensorflow:Shutdown TPU system.
+I0820 12:34:51.195598 140079076329216 tpu_estimator.py:616] Shutdown TPU system.
+INFO:tensorflow:Finished evaluation at 2020-08-20-12:34:51
+I0820 12:34:51.390249 140079076329216 evaluation.py:275] Finished evaluation at 2020-08-20-12:34:51
+INFO:tensorflow:Saving dict for global step 4000: eval_accuracy = 0.9697, eval_loss = 0.11732177, global_step = 4000, loss = 0.12443102
+I0820 12:34:51.390607 140079076329216 estimator.py:2049] Saving dict for global step 4000: eval_accuracy = 0.9697, eval_loss = 0.11732177, global_step = 4000, loss = 0.12443102
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 4000: gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000
+I0820 12:34:52.045745 140079076329216 estimator.py:2109] Saving 'checkpoint_path' summary for global step 4000: gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000
+INFO:tensorflow:evaluation_loop marked as finished
+I0820 12:34:52.708223 140079076329216 error_handling.py:101] evaluation_loop marked as finished
+INFO:tensorflow:***** Eval results *****
+I0820 12:34:52.708600 140079076329216 run_classifier.py:432] ***** Eval results *****
+INFO:tensorflow:  eval_accuracy = 0.9697
+I0820 12:34:52.708732 140079076329216 run_classifier.py:434]   eval_accuracy = 0.9697
+INFO:tensorflow:  eval_loss = 0.11732177
+I0820 12:34:52.708873 140079076329216 run_classifier.py:434]   eval_loss = 0.11732177
+INFO:tensorflow:  global_step = 4000
+I0820 12:34:52.709008 140079076329216 run_classifier.py:434]   global_step = 4000
+INFO:tensorflow:  loss = 0.12443102
+I0820 12:34:52.709123 140079076329216 run_classifier.py:434]   loss = 0.12443102
+INFO:tensorflow:removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000.meta
+I0820 12:34:53.021316 140079076329216 run_classifier.py:374] removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000.meta
+INFO:tensorflow:removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000.data-00000-of-00001
+I0820 12:34:53.175569 140079076329216 run_classifier.py:374] removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000.data-00000-of-00001
+INFO:tensorflow:removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000.index
+I0820 12:34:53.333229 140079076329216 run_classifier.py:374] removing gs://sbt0/experiments/comp_bert/finetune/weibo/subchar_segmented_21128_length_128_512_time_0813_run_1/model.ckpt-4000.index
+INFO:tensorflow:Calling model_fn.
+I0820 12:34:54.633388 140079076329216 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:*** Features ***
+I0820 12:34:54.764832 140079076329216 classifier_utils.py:397] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (4, 512)
+I0820 12:34:54.765154 140079076329216 classifier_utils.py:399]   name = input_ids, shape = (4, 512)
+INFO:tensorflow:  name = input_mask, shape = (4, 512)
+I0820 12:34:54.765286 140079076329216 classifier_utils.py:399]   name = input_mask, shape = (4, 512)
+INFO:tensorflow:  name = is_real_example, shape = (4,)
+I0820 12:34:54.765392 140079076329216 classifier_utils.py:399]   name = is_real_example, shape = (4,)
+INFO:tensorflow:  name = label_ids, shape = (4,)
+I0820 12:34:54.765508 140079076329216 classifier_utils.py:399]   name = label_ids, shape = (4,)
+INFO:tensorflow:  name = segment_ids, shape = (4, 512)
+I0820 12:34:54.765612 140079076329216 classifier_utils.py:399]   name = segment_ids, shape = (4, 512)
+INFO:tensorflow:creating model from albert_config
+I0820 12:34:54.766865 140079076329216 fine_tuning_utils.py:68] creating model from albert_config
