@@ -631,6 +631,23 @@ I0819 12:47:45.281965 139980965754624 run_classifier.py:535] accuracy: 0.760000
 ```
 
 
+### on shopping
+
+```bash
+
+# subchar_segmented, vocab=21128
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_21128.sh > logs/subchar_segmented_run_classifier_shopping_21128.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_21128.log_to_commit  (xxx)
+
+# subchar_segmented, vocab=5282
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_5282.sh > logs/subchar_segmented_run_classifier_shopping_5282.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_5282.log_to_commit  (xxx)
+
+# subchar_segmented, vocab=1321
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_1321.sh > logs/subchar_segmented_run_classifier_shopping_1321.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_1321.log_to_commit  (xxx)
+
+```
 
 | model | chn | lcqmc |  xnli   |
 | :----: | :----: | :----: |  :----: |
