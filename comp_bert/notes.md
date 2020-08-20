@@ -119,6 +119,9 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_151_185.sh > log
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_186_218.sh > logs/comp_spaced_create_pretrain_data_1321_186_218.log &
 
 
+# char_segmented, vocab=5282
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_1_25.sh > char_segmented_create_pretrain_data_5282_1_25.log &
+
 ```
 
 
