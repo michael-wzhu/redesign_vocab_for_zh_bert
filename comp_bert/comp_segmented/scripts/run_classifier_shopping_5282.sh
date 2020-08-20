@@ -6,11 +6,11 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.195.126.34
+TPU_IP=10.50.88.98
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=subchar_segmented
-VOCAB_SIZE=21128
+VOCAB_SIZE=5282
 
 TASK_NAME=shopping
 DATA_DIR=datasets/shopping
