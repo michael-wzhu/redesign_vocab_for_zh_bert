@@ -121,6 +121,7 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_186_218.sh > log
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_1_25.sh > char_segmented_create_pretrain_data_5282_1_25.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_26_65.sh > char_segmented_create_pretrain_data_5282_26_65.log &
 
 ```
 
@@ -566,6 +567,56 @@ nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_1321.sh > log
 grep "macro avg" logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit   (xxx)
 
 
+{'0': {'recall': 0.9702024375129106, 'f1-score': 0.9639858637299485, 'precision': 0.9578484481549933, 'support': 77
+456}, 'macro avg': {'recall': 0.579831610913318, 'f1-score': 0.5899387494882112, 'precision': 0.6043705077516284, '
+support': 81536}, '1': {'recall': 0.18946078431372548, 'f1-score': 0.21589163524647395, 'precision': 0.250892567348
+26354, 'support': 4080}, 'accuracy': 0.9311347135007849, 'weighted avg': {'recall': 0.9311347135007849, 'f1-score':
+ 0.926551792249712, 'precision': 0.9224729085934321, 'support': 81536}}
+  "macro avg": {
+  "macro avg": {
+{'0': {'f1-score': 0.9688473520249222, 'support': 77456, 'recall': 0.9837197892997315, 'precision': 0.9544179171781
+446}, 'macro avg': {'f1-score': 0.560694862453139, 'support': 81536, 'recall': 0.5459040122969245, 'precision': 0.6
+067624250990605}, 'weighted avg': {'f1-score': 0.9280000659806503, 'support': 81536, 'recall': 0.9399038461538461, 
+'precision': 0.919625079470073}, '1': {'f1-score': 0.15254237288135594, 'support': 4080, 'recall': 0.10808823529411
+765, 'precision': 0.2591069330199765}, 'accuracy': 0.9399038461538461}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.940946330455259, '1': {'recall': 0.15416666666666667, 'f1-score': 0.2071463856413634, 'precision': 0
+.3156046161565479, 'support': 4080}, '0': {'recall': 0.9823900020656889, 'f1-score': 0.9693310148472284, 'precision
+': 0.9566146612524044, 'support': 77456}, 'macro avg': {'recall': 0.5682783343661778, 'f1-score': 0.588238700244295
+9, 'precision': 0.6361096387044761, 'support': 81536}, 'weighted avg': {'recall': 0.940946330455259, 'f1-score': 0.
+9311918703324138, 'precision': 0.9245390016175058, 'support': 81536}}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.9370830062794349, '1': {'support': 4080, 'precision': 0.2765957446808511, 'f1-score': 0.202177293934
+68117, 'recall': 0.15931372549019607}, 'macro avg': {'support': 81536, 'precision': 0.616640003525231, 'f1-score': 
+0.5847137283631348, 'recall': 0.5686828904253294}, '0': {'support': 77456, 'precision': 0.9566842623696108, 'f1-sco
+re': 0.9672501627915885, 'recall': 0.9780520553604627}, 'weighted avg': {'support': 81536, 'precision': 0.922653145
+41305, 'f1-score': 0.9289664929410171, 'recall': 0.9370830062794349}}
+  "macro avg": {
+  "macro avg": {
+{'weighted avg': {'support': 81536, 'f1-score': 0.9302408517129267, 'recall': 0.9422218406593407, 'precision': 0.92
+26713118069126}, 'accuracy': 0.9422218406593407, '1': {'support': 4080, 'f1-score': 0.17423312883435582, 'recall': 
+0.12181372549019608, 'precision': 0.3058461538461538}, 'macro avg': {'support': 81536, 'f1-score': 0.57214836905220
+3, 'recall': 0.5536253093470398, 'precision': 0.6305043861295692}, '0': {'support': 77456, 'f1-score': 0.9700636092
+700502, 'recall': 0.9854368932038835, 'precision': 0.9551626184129844}}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.9353537087912088, '1': {'support': 4080, 'f1-score': 0.18468677494199537, 'recall': 0.14632352941176
+47, 'precision': 0.25031446540880503}, 'weighted avg': {'support': 81536, 'f1-score': 0.9272290371425953, 'recall':
+ 0.9353537087912088, 'precision': 0.9206837549367639}, 'macro avg': {'support': 81536, 'f1-score': 0.57551463779825
+01, 'recall': 0.5616197279366197, 'precision': 0.6031549838383111}, '0': {'support': 77456, 'f1-score': 0.966342500
+6545047, 'recall': 0.9769159264614748, 'precision': 0.9559955022678173}}
+  "macro avg": {
+  "macro avg": {
+{'macro avg': {'support': 81536, 'f1-score': 0.5868775373026048, 'recall': 0.5735446006537298, 'precision': 0.6093451485711963}, '1': {'support': 4080, 'f1-score': 0.20808736717827625, 'recall': 0.17279411764705882, 'precision': 0.26149851632047477}, '0': {'support': 77456, 'f1-score': 0.9656677074269334, 'recall': 0.9742950836604007, 'precision': 0.9571917808219178}, 'weighted avg': {'support': 81536, 'f1-score': 0.9277589580620574, 'recall': 0.934188579277865, 'precision': 0.9223798140935292}, 'accuracy': 0.934188579277865}
+  "macro avg": {
+  "macro avg": {
+{'1': {'precision': 0.2582972582972583, 'f1-score': 0.17437895762299072, 'recall': 0.13161764705882353, 'support': 4080}, 'accuracy': 0.937634909733124, 'weighted avg': {'precision': 0.9205268558105852, 'f1-score': 0.9279016488804708, 'recall': 0.937634909733124, 'support': 81536}, '0': {'precision': 0.9554098443183106, 'f1-score': 0.967593507230121, 'recall': 0.9800919231563726, 'support': 77456}, 'macro avg': {'precision': 0.6068535513077844, 'f1-score': 0.5709862324265559, 'recall': 0.5558547851075981, 'support': 81536}}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.9372056514913658, 'macro avg': {'f1-score': 0.5770636002878589, 'recall': 0.5615496312137745, 'support': 81536, 'precision': 0.6106593772699717}, '1': {'f1-score': 0.18678526048284622, 'recall': 0.14411764705882352, 'support': 4080, 'precision': 0.26534296028880866}, 'weighted avg': {'f1-score': 0.9282834720197638, 'recall': 0.9372056514913658, 'support': 81536, 'precision': 0.9214170476537263}, '0': {'f1-score': 0.9673419400928714, 'recall'
+
 
 ```
 
@@ -642,17 +693,94 @@ I0819 12:47:45.281965 139980965754624 run_classifier.py:535] accuracy: 0.760000
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_21128.sh > logs/subchar_segmented_run_classifier_shopping_21128.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_21128.log_to_commit  (xxx)
 
+INFO:tensorflow:accuracy: 0.912400
+I0820 02:25:04.618901 139912098735872 run_classifier.py:535] accuracy: 0.912400
+INFO:tensorflow:accuracy: 0.920200
+I0820 02:55:39.715814 139944333858560 run_classifier.py:535] accuracy: 0.920200
+INFO:tensorflow:accuracy: 0.916600
+I0820 03:34:40.341461 139994722330368 run_classifier.py:535] accuracy: 0.916600
+INFO:tensorflow:accuracy: 0.915000
+I0820 04:13:39.466413 139753653319424 run_classifier.py:535] accuracy: 0.915000
+INFO:tensorflow:accuracy: 0.919700
+I0820 04:52:39.422994 140609540830976 run_classifier.py:535] accuracy: 0.919700
+INFO:tensorflow:accuracy: 0.920900
+I0820 05:31:39.778007 139788722042624 run_classifier.py:535] accuracy: 0.920900
+INFO:tensorflow:accuracy: 0.923600
+I0820 06:10:39.579704 139736687716096 run_classifier.py:535] accuracy: 0.923600
+INFO:tensorflow:accuracy: 0.921700
+I0820 06:49:40.086746 140669703493376 run_classifier.py:535] accuracy: 0.921700
+INFO:tensorflow:accuracy: 0.919100
+I0820 07:25:03.448951 140718598129408 run_classifier.py:535] accuracy: 0.919100
+INFO:tensorflow:accuracy: 0.921600
+I0820 07:43:21.772058 140045312673536 run_classifier.py:535] accuracy: 0.921600
+
 # subchar_segmented, vocab=5282
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_5282.sh > logs/subchar_segmented_run_classifier_shopping_5282.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_5282.log_to_commit  (xxx)
+
+INFO:tensorflow:accuracy: 0.917700
+I0820 02:27:40.572716 139982704883456 run_classifier.py:535] accuracy: 0.917700
+INFO:tensorflow:accuracy: 0.916400
+I0820 02:58:25.310672 139915007043328 run_classifier.py:535] accuracy: 0.916400
+INFO:tensorflow:accuracy: 0.918900
+I0820 03:37:24.647228 140226429212416 run_classifier.py:535] accuracy: 0.918900
+INFO:tensorflow:accuracy: 0.923900
+I0820 04:16:25.529235 139857863997184 run_classifier.py:535] accuracy: 0.923900
+INFO:tensorflow:accuracy: 0.921900
+I0820 04:55:25.154970 139890384185088 run_classifier.py:535] accuracy: 0.921900
+INFO:tensorflow:accuracy: 0.914200
+I0820 05:34:25.014908 140564389734144 run_classifier.py:535] accuracy: 0.914200
+INFO:tensorflow:accuracy: 0.913900
+I0820 06:13:25.333926 139735674771200 run_classifier.py:535] accuracy: 0.913900
+INFO:tensorflow:accuracy: 0.913400
+I0820 06:41:50.097838 140133308872448 run_classifier.py:535] accuracy: 0.913400
+INFO:tensorflow:accuracy: 0.913500
+I0820 07:03:31.192242 140264988735232 run_classifier.py:535] accuracy: 0.913500
+INFO:tensorflow:accuracy: 0.911800
+I0820 07:42:31.132653 140202982975232 run_classifier.py:535] accuracy: 0.911800
 
 # subchar_segmented, vocab=1321
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_1321.sh > logs/subchar_segmented_run_classifier_shopping_1321.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_1321.log_to_commit  (xxx)
 
-
+INFO:tensorflow:accuracy: 0.905700
+I0820 02:27:50.024807 140027375015680 run_classifier.py:535] accuracy: 0.905700
+INFO:tensorflow:accuracy: 0.895800
+I0820 02:59:15.238819 140376563144448 run_classifier.py:535] accuracy: 0.895800
+INFO:tensorflow:accuracy: 0.909600
+I0820 03:21:04.851376 139712233502464 run_classifier.py:535] accuracy: 0.909600
+INFO:tensorflow:accuracy: 0.904600
+I0820 03:49:14.066069 139816383538944 run_classifier.py:535] accuracy: 0.904600
+INFO:tensorflow:accuracy: 0.906400
+I0820 04:28:14.235481 140555484997376 run_classifier.py:535] accuracy: 0.906400
+INFO:tensorflow:accuracy: 0.905000
+I0820 05:07:14.614424 139900158891776 run_classifier.py:535] accuracy: 0.905000
+INFO:tensorflow:accuracy: 0.903600
+I0820 05:46:15.259264 140560931505920 run_classifier.py:535] accuracy: 0.903600
+INFO:tensorflow:accuracy: 0.899400
+I0820 06:25:14.639013 140257157019392 run_classifier.py:535] accuracy: 0.899400
+INFO:tensorflow:accuracy: 0.897800
+I0820 07:04:16.198919 140100947990272 run_classifier.py:535] accuracy: 0.897800
+INFO:tensorflow:accuracy: 0.912000
+I0820 07:43:14.841886 140377604491008 run_classifier.py:535] accuracy: 0.912000
 
 ```
+
+
+
+
+### on weibo
+
+```bash
+
+# subchar_segmented, vocab=21128
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_weibo_21128.sh > logs/subchar_segmented_run_classifier_weibo_21128.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_weibo_21128.log_to_commit  (xxx)
+
+
+
+
+
 
 | model | chn | lcqmc |  xnli   |
 | :----: | :----: | :----: |  :----: |
