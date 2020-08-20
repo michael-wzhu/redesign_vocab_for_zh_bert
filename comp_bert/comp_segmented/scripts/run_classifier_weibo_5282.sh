@@ -6,11 +6,11 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.50.88.98
+TPU_IP=10.8.22.186
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=subchar_segmented
-VOCAB_SIZE=21128
+VOCAB_SIZE=5282
 
 TASK_NAME=weibo
 DATA_DIR=datasets/weibo
