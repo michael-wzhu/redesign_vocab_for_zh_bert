@@ -647,6 +647,8 @@ grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_5282.log_to_com
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_1321.sh > logs/subchar_segmented_run_classifier_shopping_1321.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_1321.log_to_commit  (xxx)
 
+
+
 ```
 
 | model | chn | lcqmc |  xnli   |
