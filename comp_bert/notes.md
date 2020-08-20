@@ -145,6 +145,9 @@ nohup ./comp_bert/comp_spaced/scripts/run_pretrain_21128.sh > logs/subchar_space
 # subchar_spaced, vocab=5282
 nohup ./comp_bert/comp_spaced/scripts/run_pretrain_5282.sh > logs/subchar_spaced_pretrain_5282.log &
 
+# subchar_spaced, vocab=1321
+nohup ./comp_bert/comp_spaced/scripts/run_pretrain_1321.sh > logs/subchar_spaced_pretrain_1321.log &
+
 ```
 
 
@@ -461,15 +464,104 @@ I0818 05:14:57.125636 140383648057088 run_classifier.py:535] accuracy: 0.573253
 
 # subchar_segmented, vocab=21128
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_21128.sh > logs/subchar_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit   (xxx)
+grep "macro avg" logs/subchar_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit   (xxx)
+
+{'0': {'precision': 0.9560297321542996, 'support': 77456, 'f1-score': 0.9595590599796766, 'recall': 0.9631145424499
+07}, 'accuracy': 0.9228806907378336, 'weighted avg': {'precision': 0.9174535516126049, 'support': 81536, 'f1-score'
+: 0.920105396255258, 'recall': 0.9228806907378336}, 'macro avg': {'precision': 0.5705704850161116, 'support': 81536
+, 'f1-score': 0.5653318632352904, 'recall': 0.5610915849504436}, '1': {'precision': 0.18511123787792355, 'support':
+ 4080, 'f1-score': 0.17110466649090428, 'recall': 0.15906862745098038}}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.9250269819466248, 'macro avg': {'recall': 0.539118603958832, 'f1-score': 0.5445810064739607, 'suppor
+t': 81536, 'precision': 0.5536225411426025}, 'weighted avg': {'recall': 0.9250269819466248, 'f1-score': 0.919171453
+6685476, 'support': 81536, 'precision': 0.9137675424434607}, '1': {'recall': 0.11029411764705882, 'f1-score': 0.128
+33309567945245, 'support': 4080, 'precision': 0.15342652574156154}, '0': {'recall': 0.9679430902706052, 'f1-score':
+ 0.960828917268469, 'support': 77456, 'precision': 0.9538185565436433}}
+  "macro avg": {
+  "macro avg": {
+{'weighted avg': {'f1-score': 0.9102833822427759, 'recall': 0.9059433869701727, 'precision': 0.914831202088968, 'su
+pport': 81536}, '0': {'f1-score': 0.950209381593897, 'recall': 0.9447686428423879, 'precision': 0.9557131476184879,
+ 'support': 77456}, 'accuracy': 0.9059433869701727, '1': {'f1-score': 0.15231568475737817, 'recall': 0.168872549019
+60785, 'precision': 0.13871552244815785, 'support': 4080}, 'macro avg': {'f1-score': 0.5512625331756376, 'recall': 
+0.5568205959309979, 'precision': 0.5472143350333228, 'support': 81536}}
+  "macro avg": {
+  "macro avg": {
+{'0': {'precision': 0.9555312983249515, 'recall': 0.9493260689940095, 'support': 77456, 'f1-score': 0.9524185766373
+722}, '1': {'precision': 0.143574078114772, 'recall': 0.16127450980392158, 'support': 4080, 'f1-score': 0.151910423
+64077112}, 'accuracy': 0.9098925627943485, 'weighted avg': {'precision': 0.9149015708615301, 'recall': 0.9098925627
+943485, 'support': 81536, 'f1-score': 0.9123617518700777}, 'macro avg': {'precision': 0.5495526882198618, 'recall':
+ 0.5553002893989656, 'support': 81536, 'f1-score': 0.5521645001390716}}
+  "macro avg": {
+  "macro avg": {
+{'1': {'f1-score': 0.16763814408953134, 'recall': 0.17622549019607844, 'precision': 0.15984882169853268, 'support':
+ 4080}, '0': {'f1-score': 0.9537846129946795, 'recall': 0.9512110101218757, 'precision': 0.9563721799631351, 'suppo
+rt': 77456}, 'weighted avg': {'f1-score': 0.9144464360773301, 'recall': 0.9124313186813187, 'precision': 0.91651475
+13215585, 'support': 81536}, 'macro avg': {'f1-score': 0.5607113785421054, 'recall': 0.563718250158977, 'precision'
+: 0.5581105008308339, 'support': 81536}, 'accuracy': 0.9124313186813187}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.9172758045525903, '1': {'recall': 0.11372549019607843, 'precision': 0.12913999443362092, 'f1-score':
+ 0.12094356835657499, 'support': 4080}, 'macro avg': {'recall': 0.5366641807518298, 'precision': 0.5413735587938604
+, 'f1-score': 0.538769585322439, 'support': 81536}, '0': {'recall': 0.959602871307581, 'precision': 0.9536071231540
+998, 'f1-score': 0.956595602288303, 'support': 77456}, 'weighted avg': {'recall': 0.9172758045525903, 'precision': 
+0.9123514092954416, 'f1-score': 0.91478020420106, 'support': 81536}}
+  "macro avg": {
+  "macro avg": {
+{'1': {'f1-score': 0.17438364401683704, 'recall': 0.17769607843137256, 'support': 4080, 'precision': 0.171192443919
+71664}, 'weighted avg': {'f1-score': 0.9165466466084283, 'recall': 0.9158040620094191, 'support': 81536, 'precision
+': 0.9172971190307241}, '0': {'f1-score': 0.9556401325949716, 'recall': 0.9546839495971907, 'support': 77456, 'prec
+ision': 0.9565982328818514}, 'macro avg': {'f1-score': 0.5650118883059043, 'recall': 0.5661900140142816, 'support':
+ 81536, 'precision': 0.563895338400784}, 'accuracy': 0.9158040620094191}
+  "macro avg": {
+  "macro avg": {
+{'weighted avg': {'support': 81536, 'f1-score': 0.9194785707280703, 'precision': 0.9178969214603176, 'recall': 0.92
+11023351648352}, '1': {'support': 4080, 'f1-score': 0.17747091164812684, 'precision': 0.1855118952151831, 'recall':
+ 0.17009803921568628}, 'macro avg': {'support': 81536, 'f1-score': 0.5680173928164177, 'precision': 0.5709936235507
+755, 'recall': 0.5653797880441166}, '0': {'support': 77456, 'f1-score': 0.9585638739847085, 'precision': 0.95647535
+1886368, 'recall': 0.960661536872547}, 'accuracy': 0.9211023351648352}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.9231137166405023, 'weighted avg': {'support': 81536, 'f1-score': 0.9196308036658545, 'precision': 0.
+9163308019408164, 'recall': 0.9231137166405023}, 'macro avg': {'support': 81536, 'f1-score': 0.5591763291556254, 'p
+recision': 0.56534127513957, 'recall': 0.554480798206496}, '1': {'support': 4080, 'f1-score': 0.15863642464098782, 
+'precision': 0.17531889646989024, 'recall': 0.1448529411764706}, '0': {'support': 77456, 'f1-score': 0.959716233670
+263, 'precision': 0.9553636538092497, 'recall': 0.9641086552365213}}
 
 # subchar_segmented, vocab=5282
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/subchar_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit  (xxx)
+grep "macro avg" logs/subchar_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit  (xxx)
+
+{'1': {'support': 4080, 'precision': 0.2077028885832187, 'f1-score': 0.19572261827608556, 'recall': 0.18504901960784315}, '0': {'support': 77456, 'precision': 0.9573176210831696, 'f1-score': 0.9600597333882606, 'recall': 0.9628175996694898}, 'macro avg': {'support': 81536, 'precision': 0.5825102548331942, 'f1-score': 0.5778911758321731, 'recall': 0.5739333096386665}, 'accuracy': 0.9238986459968603, 'weighted avg': {'support': 81536, 'precision': 0.9198074647276973, 'f1-score': 0.9218128801006615, 'recall': 0.9238986459968603}}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.9129586930926217, 'macro avg': {'recall': 0.5780431698603837, 'f1-score': 0.5727065298044567, 'precision': 0.5683357341765309, 'support': 81536}, 'weighted avg': {'recall': 0.9129586930926217, 'f1-score': 0.9158440486465572, 'precision': 0.9188535217819074, 'support': 81536}, '0': {'recall': 0.950203986779591, 'f1-score': 0.954003694222107, 'precision': 0.9578339124663257, 'support': 77456}, '1': {'recall': 0.20588235294117646, 'f1-score': 0.19140936538680645, 'precision': 0.17883755588673622, 'support': 4080}}
+  "macro avg": {
+  "macro avg": {
+{'1': {'precision': 0.18651488616462347, 'f1-score': 0.19703977798334876, 'support': 4080, 'recall': 0.2088235294117647}, '0': {'precision': 0.9580604926722794, 'f1-score': 0.9550328964409678, 'support': 77456, 'recall': 0.9520243751291055}, 'macro avg': {'precision': 0.5722876894184514, 'f1-score': 0.5760363372121583, 'support': 81536, 'recall': 0.5804239522704351}, 'accuracy': 0.9148351648351648, 'weighted avg': {'precision': 0.9194529319070808, 'f1-score': 0.9171034919655571, 'support': 81536, 'recall': 0.9148351648351648}}
+  "macro avg": {
+  "macro avg": {
+{'0': {'precision': 0.9577666520426333, 'support': 77456, 'recall': 0.9582859946292088, 'f1-score': 0.9580262529524891}, '1': {'precision': 0.199851411589896, 'support': 4080, 'recall': 0.19779411764705881, 'f1-score': 0.19881744271988172}, 'accuracy': 0.9202315541601256, 'weighted avg': {'precision': 0.9198411445239033, 'support': 81536, 'recall': 0.9202315541601256, 'f1-score': 0.9200360161767209}, 'macro avg': {'precision': 0.5788090318162646, 'support': 81536, 'recall': 0.5780400561381338, 'f1-score': 0.5784218478361854}}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.9251128335949764, 'macro avg': {'recall': 0.5566939459113536, 'f1-score': 0.5626384782322722, 'precision': 0.5708781307048031, 'support': 81536}, '1': {'recall': 0.14730392156862746, 'f1-score': 0.16447728516694032, 'precision': 0.18618339529120198, 'support': 4080}, 'weighted avg': {'recall': 0.9251128335949764, 'f1-score': 0.9209522991501708, 'precision': 0.9170731967579377, 'support': 81536}, '0': {'recall': 0.9660839702540798, 'f1-score': 0.960799671297604, 'precision': 0.9555728661184042, 'support': 77456}}
+  "macro avg": {
+  "macro avg": {
+{'0': {'support': 77456, 'f1-score': 0.9571608486453321, 'recall': 0.9566850857260897, 'precision': 0.9576370849972214}, 'accuracy': 0.9186494309262166, 'weighted avg': {'support': 81536, 'f1-score': 0.919009438108974, 'recall': 0.9186494309262166, 'precision': 0.9193715982015276}, 'macro avg': {'support': 81536, 'f1-score': 0.5759459700310551, 'recall': 0.5766268565885351, 'precision': 0.5752823385053464}, '1': {'support': 4080, 'f1-score': 0.19473109141677794, 'recall': 0.1965686274509804, 'precision': 0.19292759201347126}}
+  "macro avg": {
+  "macro avg": {
+{'weighted avg': {'support': 81536, 'f1-score': 0.9164665041318528, 'recall': 0.9127869897959183, 'precision': 0.9203625449068326}, '0': {'support': 77456, 'f1-score': 0.9538573347435905, 'recall': 0.9489129312125594, 'precision': 0.9588535347605442}, '1': {'support': 4080, 'f1-score': 0.20662724534196142, 'recall': 0.2269607843137255, 'precision': 0.1896375179193119}, 'accuracy': 0.9127869897959183, 'macro avg': {'support': 81536, 'f1-score': 0.5802422900427759, 'recall': 0.5879368577631424, 'precision': 0.5742455263399281}}
+  "macro avg": {
+  "macro avg": {
+{'1': {'precision': 0.22994512673112097, 'recall': 0.21568627450980393, 'support': 4080, 'f1-score': 0.22258758062476286}, 'macro avg': {'precision': 0.594382927673427, 'recall': 0.5888194334746912, 'support': 81536, 'f1-score': 0.5914858439327211}, 'accuracy': 0.9246099882260597, '0': {'precision': 0.9588207286157331, 'recall': 0.9619525924395786, 'support': 77456, 'f1-score': 0.9603841072406792}, 'weighted avg': {'precision': 0.9223483427286499, 'recall': 0.9246099882260597, 'support': 81536, 'f1-score': 0.9234653250022454}}
+  "macro avg": {
+  "macro avg": {
+{'weighted avg': {'f1-score': 0.9204940292822316, 'support': 81536, 'recall': 0.9229910714285714, 'precision': 0.918100737968003}, 'accuracy': 0.9229910714285714, '0': {'f1-score': 0.9596031730713556, 'support': 77456, 'recall': 0.9628305102251601, 'precision': 0.9563973992331072}, 'macro avg': {'f1-score': 0.5688184735627756, 'support': 81536, 'recall': 0.5647485884459134, 'precision': 0.5737311525527716}, '1': {'f1-score': 0.17803377405419557, 'support': 4080, 'recall': 0.16666666666666666, 'precision': 0.19106490587243607}}
 
 # subchar_segmented, vocab=1321
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_nlpcc_dbqa_1321.sh > logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit &
-grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit   (xxx)
+grep "macro avg" logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit   (xxx)
+
 
 
 ```
@@ -483,18 +575,81 @@ grep "accuracy: " logs/subchar_segmented_run_classifier_nlpcc_dbqa_1321.log_to_c
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_21128.sh > logs/subchar_segmented_run_classifier_book_review_21128.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_21128.log_to_commit  (xxx)
 
+INFO:tensorflow:accuracy: 0.778700
+I0819 08:36:25.765766 139795317909248 run_classifier.py:535] accuracy: 0.778700
+INFO:tensorflow:accuracy: 0.774700
+I0819 09:07:37.368498 140198866642688 run_classifier.py:535] accuracy: 0.774700
+INFO:tensorflow:accuracy: 0.773900
+I0819 09:46:38.628833 140583309432576 run_classifier.py:535] accuracy: 0.773900
+INFO:tensorflow:accuracy: 0.776900
+I0819 10:25:36.668711 140449618532096 run_classifier.py:535] accuracy: 0.776900
+INFO:tensorflow:accuracy: 0.776100
+I0819 11:04:35.416110 140345984382720 run_classifier.py:535] accuracy: 0.776100
+INFO:tensorflow:accuracy: 0.776800
+I0819 11:43:35.497005 140140729997056 run_classifier.py:535] accuracy: 0.776800
+INFO:tensorflow:accuracy: 0.776600
+I0819 12:22:35.543556 139816330237696 run_classifier.py:535] accuracy: 0.776600
+INFO:tensorflow:accuracy: 0.777400
+I0819 13:01:34.587368 139992739190528 run_classifier.py:535] accuracy: 0.777400
+
 # subchar_segmented, vocab=5282
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_5282.sh > logs/subchar_segmented_run_classifier_book_review_5282.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_5282.log_to_commit   (xxx)
+
+INFO:tensorflow:accuracy: 0.753100
+I0819 08:38:16.370702 140636674483968 run_classifier.py:535] accuracy: 0.753100
+INFO:tensorflow:accuracy: 0.766600
+I0819 09:08:54.722966 140667222243072 run_classifier.py:535] accuracy: 0.766600
+INFO:tensorflow:accuracy: 0.768900
+I0819 09:47:54.945497 140177811412736 run_classifier.py:535] accuracy: 0.768900
+INFO:tensorflow:accuracy: 0.768700
+I0819 10:26:53.704057 139964209186560 run_classifier.py:535] accuracy: 0.768700
+INFO:tensorflow:accuracy: 0.771200
+I0819 11:05:53.742986 139953644545792 run_classifier.py:535] accuracy: 0.771200
+INFO:tensorflow:accuracy: 0.765500
+I0819 11:44:53.641887 139771301263104 run_classifier.py:535] accuracy: 0.765500
+INFO:tensorflow:accuracy: 0.774400
+I0819 12:23:53.233848 139861045585664 run_classifier.py:535] accuracy: 0.774400
+INFO:tensorflow:accuracy: 0.765200
+I0819 13:02:53.913831 139664180242176 run_classifier.py:535] accuracy: 0.765200
 
 # subchar_segmented, vocab=1321
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_book_review_1321.sh > logs/subchar_segmented_run_classifier_book_review_1321.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_book_review_1321.log_to_commit   (xxx)
 
+INFO:tensorflow:accuracy: 0.756700
+I0819 09:12:25.273187 140329132451584 run_classifier.py:535] accuracy: 0.756700
+INFO:tensorflow:accuracy: 0.755200
+I0819 10:08:41.018355 140369005037312 run_classifier.py:535] accuracy: 0.755200
+INFO:tensorflow:accuracy: 0.759600
+I0819 11:03:21.991717 140256343176960 run_classifier.py:535] accuracy: 0.759600
+INFO:tensorflow:accuracy: 0.764800
+I0819 11:55:25.119588 140569750353664 run_classifier.py:535] accuracy: 0.764800
+INFO:tensorflow:accuracy: 0.760000
+I0819 12:47:45.281965 139980965754624 run_classifier.py:535] accuracy: 0.760000
 
 ```
 
 
+### on shopping
+
+```bash
+
+# subchar_segmented, vocab=21128
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_21128.sh > logs/subchar_segmented_run_classifier_shopping_21128.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_21128.log_to_commit  (xxx)
+
+# subchar_segmented, vocab=5282
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_5282.sh > logs/subchar_segmented_run_classifier_shopping_5282.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_5282.log_to_commit  (xxx)
+
+# subchar_segmented, vocab=1321
+nohup ./comp_bert/comp_segmented/scripts/run_classifier_shopping_1321.sh > logs/subchar_segmented_run_classifier_shopping_1321.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_shopping_1321.log_to_commit  (xxx)
+
+
+
+```
 
 | model | chn | lcqmc |  xnli   |
 | :----: | :----: | :----: |  :----: |
