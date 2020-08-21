@@ -883,8 +883,6 @@ nohup ./comp_bert/comp_spaced/scripts/run_classifier_law_qa_21128.sh > logs/subc
 grep "accuracy: " logs/subchar_spaced_run_classifier_law_qa_21128.log_to_commit  (xxx)
 
 
-
-
 # subchar_spaced, vocab=5282
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_law_qa_5282.sh > logs/subchar_spaced_run_classifier_law_qa_5282.log_to_commit &
 grep "accuracy: " logs/subchar_spaced_run_classifier_law_qa_5282.log_to_commit  (xxx)
