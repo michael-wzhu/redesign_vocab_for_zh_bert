@@ -123,6 +123,7 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_186_218.sh > log
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_1_25.sh > char_segmented_create_pretrain_data_5282_1_25.log &
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_26_65.sh > char_segmented_create_pretrain_data_5282_26_65.log &
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_66_120.sh > char_segmented_create_pretrain_data_5282_66_120.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_121_170.sh > char_segmented_create_pretrain_data_5282_121_170.log &
 
 ```
 
@@ -491,7 +492,10 @@ I0818 05:14:57.125636 140383648057088 run_classifier.py:535] accuracy: 0.573253
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_xnli_1321.sh > logs/subchar_spaced_run_classifier_xnli_1321.log_to_commit &
 grep "accuracy: " logs/subchar_spaced_run_classifier_xnli_1321.log_to_commit (xxx)
 
-
+INFO:tensorflow:accuracy: 0.554691
+I0821 02:51:44.661673 139870592382720 run_classifier.py:535] accuracy: 0.554691
+INFO:tensorflow:accuracy: 0.556088
+I0821 03:30:41.917270 139772805216000 run_classifier.py:535] accuracy: 0.556088
 
 ```
 
@@ -876,6 +880,7 @@ I0820 18:34:27.687292 140652904675072 run_classifier.py:535] accuracy: 0.964100
 # subchar_spaced, vocab=21128
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_law_qa_21128.sh > logs/subchar_spaced_run_classifier_law_qa_21128.log_to_commit &
 grep "accuracy: " logs/subchar_spaced_run_classifier_law_qa_21128.log_to_commit  (xxx)
+
 
 
 
