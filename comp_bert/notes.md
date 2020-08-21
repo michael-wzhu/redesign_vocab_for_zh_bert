@@ -658,6 +658,19 @@ re': 0.9672501627915885, 'recall': 0.9780520553604627}, 'weighted avg': {'suppor
 {'accuracy': 0.9372056514913658, 'macro avg': {'f1-score': 0.5770636002878589, 'recall': 0.5615496312137745, 'support': 81536, 'precision': 0.6106593772699717}, '1': {'f1-score': 0.18678526048284622, 'recall': 0.14411764705882352, 'support': 4080, 'precision': 0.26534296028880866}, 'weighted avg': {'f1-score': 0.9282834720197638, 'recall': 0.9372056514913658, 'support': 81536, 'precision': 0.9214170476537263}, '0': {'f1-score': 0.9673419400928714, 'recall'
 
 
+
+
+# subchar_spaced, vocab=21128
+nohup ./comp_bert/comp_spaced/scripts/run_classifier_nlpcc_dbqa_21128.sh > logs/subchar_spaced_run_classifier_nlpcc_dbqa_21128.log_to_commit &
+grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_21128.log_to_commit   (xxx)
+
+
+# subchar_spaced, vocab=5282
+nohup ./comp_bert/comp_spaced/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/subchar_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit &
+grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit   (xxx)
+
+
+
 ```
 
 
