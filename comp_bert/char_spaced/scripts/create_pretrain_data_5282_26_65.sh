@@ -14,7 +14,7 @@ PREFIX=char_spaced
 VOCAB_SIZE=5282
 
 # NUM_PROC=218
-NUM_PROC=40
+NUM_PROC=65
 
 
 for i in `seq 26 $((NUM_PROC))`; do

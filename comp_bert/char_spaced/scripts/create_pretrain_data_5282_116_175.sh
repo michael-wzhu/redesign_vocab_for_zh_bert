@@ -14,10 +14,10 @@ PREFIX=char_spaced
 VOCAB_SIZE=5282
 
 # NUM_PROC=218
-NUM_PROC=165
+NUM_PROC=175
 
 
-for i in `seq 111 $((NUM_PROC))`; do
+for i in `seq 116 $((NUM_PROC))`; do
   python3 comp_bert/char_spaced/create_pretraining_data.py \
     --input_file=$STORAGE_BUCKET/data/corpus/${PREFIX}_lower/zhwiki-latest-pages-articles_${i}_${PREFIX}_lower.txt \
     --output_file=${STORAGE_BUCKET}/experiments/comp_bert/pretrain_tfrecords/${PREFIX}_${VOCAB_SIZE}/zhwiki_train_examples_${i}_%s.tfrecord \
