@@ -31,7 +31,7 @@ echo "Start running..."
 RUN_TIMES=10
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
-    python3 comp_bert/comp_segmented/run_classifier.py \
+    python3 comp_bert/comp_spaced/run_classifier.py \
       --task_name=${TASK_NAME} \
       --data_dir=${DATA_DIR} \
       --output_dir=${STORAGE_BUCKET}/experiments/comp_bert/finetune/${TASK_NAME}/${PREFIX}_${VOCAB_SIZE}_length_128_512_time_${DATE}_run_${run_idx}/ \
