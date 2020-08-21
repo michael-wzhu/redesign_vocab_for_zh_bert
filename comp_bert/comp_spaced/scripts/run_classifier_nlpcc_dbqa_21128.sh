@@ -6,14 +6,14 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.225.154.26
+TPU_IP=10.195.126.34
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=subchar_spaced
-VOCAB_SIZE=1321
+VOCAB_SIZE=21128
 
-TASK_NAME=xnli
-DATA_DIR=datasets/XNLI
+TASK_NAME=nlpcc_dbqa
+DATA_DIR=datasets/nlpcc-dbqa
 
 DATE=0813
 
@@ -28,7 +28,7 @@ pip3 install sklearn
 # run task
 
 echo "Start running..."
-RUN_TIMES=5
+RUN_TIMES=10
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
     python3 comp_bert/comp_spaced/run_classifier.py \
@@ -46,10 +46,10 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --optimizer=adamw \
       --train_batch_size=256 \
       --eval_batch_size=32 \
-      --learning_rate=2e-5 \
-      --warmup_step=1000 \
-      --save_checkpoints_steps=1500 \
-      --train_step=30000 \
+      --learning_rate=5e-5 \
+      --warmup_step=600 \
+      --save_checkpoints_steps=750 \
+      --train_step=15000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
       --num_tpu_cores=8 \
