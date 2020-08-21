@@ -122,6 +122,7 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_186_218.sh > log
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_1_25.sh > char_segmented_create_pretrain_data_5282_1_25.log &
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_26_65.sh > char_segmented_create_pretrain_data_5282_26_65.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_66_120.sh > char_segmented_create_pretrain_data_5282_66_120.log &
 
 ```
 
@@ -484,6 +485,13 @@ INFO:tensorflow:accuracy: 0.573253
 I0818 05:14:57.125636 140383648057088 run_classifier.py:535] accuracy: 0.573253
 
 (0.565948, 0.005889324579270546)
+
+
+# subchar_spaced, vocab=1321
+nohup ./comp_bert/comp_spaced/scripts/run_classifier_xnli_1321.sh > logs/subchar_spaced_run_classifier_xnli_1321.log_to_commit &
+grep "accuracy: " logs/subchar_spaced_run_classifier_xnli_1321.log_to_commit (xxx)
+
+
 
 ```
 
