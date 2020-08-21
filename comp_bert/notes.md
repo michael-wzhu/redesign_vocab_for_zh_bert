@@ -126,6 +126,11 @@ nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_66_120.sh > c
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_121_170.sh > char_segmented_create_pretrain_data_5282_121_170.log &
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_171_218.sh > char_segmented_create_pretrain_data_5282_171_218.log &
 
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_5282_1_25.sh > char_spaced_create_pretrain_data_5282_1_25.log &
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_5282_26_65.sh > char_spaced_create_pretrain_data_5282_26_65.log &
+
 ```
 
 
