@@ -171,6 +171,8 @@ nohup ./comp_bert/char_segmented/scripts/run_pretrain_5282.sh > logs/char_segmen
 # char_spaced, vocab=5282
 nohup ./comp_bert/char_spaced/scripts/run_pretrain_5282.sh > logs/char_spaced_pretrain_5282.log & (xxx)
 
+
+
 ```
 
 
