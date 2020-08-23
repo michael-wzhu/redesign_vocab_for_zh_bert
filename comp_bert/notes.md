@@ -169,7 +169,7 @@ nohup ./comp_bert/char_segmented/scripts/run_pretrain_5282.sh > logs/char_segmen
 
 
 # char_spaced, vocab=5282
-nohup ./comp_bert/char_spaced/scripts/run_pretrain_5282.sh > logs/char_spaced_pretrain_5282.log &
+nohup ./comp_bert/char_spaced/scripts/run_pretrain_5282.sh > logs/char_spaced_pretrain_5282.log & (xxx)
 
 ```
 
@@ -713,7 +713,6 @@ grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_21128.log_to_comm
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/subchar_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit &
 grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit   (xxx)
 
-grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit
 
 "macro avg": {
   "macro avg": {
@@ -730,6 +729,11 @@ grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commi
   "macro avg": {
   "macro avg": {
 {'1': {'f1-score': 0.18318113670437508, 'precision': 0.20632483880871968, 'recall': 0.16470588235294117, 'support': 4080}, 'accuracy': 0.9264987244897959, '0': {'f1-score': 0.9615179632067294, 'precision': 0.9564634193078604, 'recall': 0.966626213592233, 'support': 77456}, 'macro avg': {'f1-score': 0.5723495499555522, 'precision': 0.58139412905829, 'recall': 0.5656660479725871, 'support': 81536}, 'weighted avg': {'f1-score': 0.922570574910399, 'precision': 0.9189270499932448, 'recall': 0.9264987244897959, 'support': 81536}}
+
+
+# subchar_spaced, vocab=1321
+nohup ./comp_bert/comp_spaced/scripts/run_classifier_nlpcc_dbqa_1321.sh > logs/subchar_spaced_run_classifier_nlpcc_dbqa_1321.log_to_commit &
+grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_1321.log_to_commit   (xxx)
 
 ```
 
