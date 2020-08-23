@@ -152,6 +152,11 @@ nohup ./comp_bert/comp_spaced/scripts/run_pretrain_5282.sh > logs/subchar_spaced
 # subchar_spaced, vocab=1321
 nohup ./comp_bert/comp_spaced/scripts/run_pretrain_1321.sh > logs/subchar_spaced_pretrain_1321.log &
 
+# char_segmented, vocab=5282
+#   params = 128 * 5282 + 512 * 128 + 256 ^ 2 * 12 = 1528064
+nohup ./comp_bert/comp_segmented/scripts/run_pretrain_5282.sh > logs/subchar_segmented_pretrain_5282.log &
+
+
 ```
 
 
