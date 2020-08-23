@@ -163,6 +163,14 @@ nohup ./comp_bert/comp_spaced/scripts/run_pretrain_5282.sh > logs/subchar_spaced
 # subchar_spaced, vocab=1321
 nohup ./comp_bert/comp_spaced/scripts/run_pretrain_1321.sh > logs/subchar_spaced_pretrain_1321.log &
 
+
+# char_segmented, vocab=5282
+nohup ./comp_bert/char_segmented/scripts/run_pretrain_5282.sh > logs/char_segmented_pretrain_5282.log &
+
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/run_pretrain_5282.sh > logs/char_spaced_pretrain_5282.log &
+
 ```
 
 
@@ -511,7 +519,6 @@ I0821 03:30:41.917270 139772805216000 run_classifier.py:535] accuracy: 0.556088
 
 ### on nlpcc_dbqa
 
-
 ```bash
 
 # subchar_segmented, vocab=21128
@@ -672,12 +679,57 @@ re': 0.9672501627915885, 'recall': 0.9780520553604627}, 'weighted avg': {'suppor
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_nlpcc_dbqa_21128.sh > logs/subchar_spaced_run_classifier_nlpcc_dbqa_21128.log_to_commit &
 grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_21128.log_to_commit   (xxx)
 
+grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_21128.log_to_commit
+
+"macro avg": {
+  "macro avg": {
+{'macro avg': {'precision': 0.5719765930171501, 'support': 81536, 'recall': 0.5648835417248907, 'f1-score': 0.5681620704476648}, '0': {'precision': 0.9564190143557872, 'support': 77456, 'recall': 0.9616298285478208, 'f1-score': 0.9590173432732049}, '1': {'precision': 0.18753417167851286, 'support': 4080, 'recall': 0.1681372549019608, 'f1-score': 0.17730679762212456}, 'accuracy': 0.9219240580847724, 'weighted avg': {'precision': 0.9179445962076898, 'support': 81536, 'recall': 0.9219240580847724, 'f1-score': 0.919901136612878}}
+  "macro avg": {
+  "macro avg": {
+{'macro avg': {'recall': 0.5621518453487572, 'f1-score': 0.560580568764036, 'support': 81536, 'precision': 0.5591269752930523}, 'weighted avg': {'recall': 0.9143077904238619, 'f1-score': 0.9153763942921803, 'support': 81536, 'precision': 0.9164602833666295}, 'accuracy': 0.9143077904238619, '1': {'recall': 0.17083333333333334, 'f1-score': 0.1663286004056795, 'support': 4080, 'precision': 0.16205533596837945}, '0': {'recall': 0.953470357364181, 'f1-score': 0.9548325371223925, 'support': 77456, 'precision': 0.9561986146177252}}
+  "macro avg": {
+  "macro avg": {
+{'0': {'f1-score': 0.9580871503772479, 'recall': 0.9598869035323281, 'precision': 0.9562941335356991, 'support': 77456}, '1': {'f1-score': 0.17333841657135593, 'recall': 0.16715686274509803, 'precision': 0.17999472156241753, 'support': 4080}, 'weighted avg': {'f1-score': 0.9188189150710269, 'recall': 0.9202192896389325, 'precision': 0.917448695927146, 'support': 81536}, 'accuracy': 0.9202192896389325, 'macro avg': {'f1-score': 0.5657127834743019, 'recall': 0.5635218831387131, 'precision': 0.5681444275490584, 'support': 81536}}
+  "macro avg": {
+  "macro avg": {
+{'0': {'support': 77456, 'precision': 0.954657410125193, 'recall': 0.9657870274736625, 'f1-score': 0.9601899688733434}, '1': {'support': 4080, 'precision': 0.16587976078061065, 'recall': 0.12916666666666668, 'f1-score': 0.14523907950943918}, 'accuracy': 0.9239231750392465, 'weighted avg': {'support': 81536, 'precision': 0.9151875709213335, 'recall': 0.9239231750392465, 'f1-score': 0.9194104404612955}, 'macro avg': {'support': 81536, 'precision': 0.5602685854529018, 'recall': 0.5474768470701646, 'f1-score': 0.5527145241913913}}
+  "macro avg": {
+  "macro avg": {
+{'1': {'support': 4080, 'f1-score': 0.12639894667544435, 'recall': 0.11764705882352941, 'precision': 0.13655761024182078}, 'weighted avg': {'support': 81536, 'f1-score': 0.915745970178866, 'recall': 0.9186249018838305, 'precision': 0.9129614520462516}, 'macro avg': {'support': 81536, 'f1-score': 0.5418619121550392, 'recall': 0.5392317611820601, 'precision': 0.5452080933894534}, 'accuracy': 0.9186249018838305, '0': {'support': 77456, 'f1-score': 0.957324877634634, 'recall': 0.9608164635405908, 'precision': 0.9538585765370862}}
+  "macro avg": {
+  "macro avg": {
+{'macro avg': {'precision': 0.5694780184348956, 'support': 81536, 'recall': 0.5642444692192101, 'f1-score': 0.5667102270112121}, 'weighted avg': {'precision': 0.9176446226356735, 'support': 81536, 'recall': 0.9207098704866562, 'f1-score': 0.9191583991662508}, 'accuracy': 0.9207098704866562, '0': {'precision': 0.9563635428586122, 'support': 77456, 'recall': 0.9603516835364594, 'f1-score': 0.958353464102812}, '1': {'precision': 0.18259249401117914, 'support': 4080, 'recall': 0.1681372549019608, 'f1-score': 0.17506698991961211}}
+  "macro avg": {
+  "macro avg": {
+{'accuracy': 0.9256524725274725, 'weighted avg': {'f1-score': 0.9202857321204371, 'recall': 0.9256524725274725, 'precision': 0.9153443660881854, 'support': 81536}, 'macro avg': {'f1-score': 0.5529443663493183, 'recall': 0.5467617288601043, 'precision': 0.5625609621287, 'support': 81536}, '0': {'f1-score': 0.9611370396963792, 'recall': 0.9677881636025615, 'precision': 0.9545767114914425, 'support': 77456}, '1': {'f1-score': 0.14475169300225732, 'recall': 0.12573529411764706, 'precision': 0.17054521276595744, 'support': 4080}}
+  "macro avg": {
+  "macro avg": {
+{'0': {'support': 77456, 'precision': 0.95618281668879, 'recall': 0.9486030778764718, 'f1-score': 0.9523778662069502}, 'weighted avg': {'support': 81536, 'precision': 0.9159369123138882, 'recall': 0.9098802982731554, 'f1-score': 0.9128542561841824}, 'accuracy': 0.9098802982731554, 'macro avg': {'support': 81536, 'precision': 0.554039427091732, 'recall': 0.5616789899186281, 'f1-score': 0.5574517550774892}, '1': {'support': 4080, 'precision': 0.15189603749467406, 'recall': 0.1747549019607843, 'f1-score': 0.16252564394802826}}
+  "macro avg": {
+  "macro avg": {
+{'weighted avg': {'support': 81536, 'recall': 0.9225863422291993, 'precision': 0.9205144701053667, 'f1-score': 0.9215401650108556}, 'accuracy': 0.9225863422291993, '1': {'support': 4080, 'recall': 0.19877450980392156, 'precision': 0.2104307213284899, 'f1-score': 0.2044366019662213}, '0': {'support': 77456, 'recall': 0.9607131790952282, 'precision': 0.9579181792435828, 'f1-score': 0.9593136433369001}, 'macro avg': {'support': 81536, 'recall': 0.5797438444495749, 'precision': 0.5841744502860363, 'f1-score': 0.5818751226515607}}
 
 # subchar_spaced, vocab=5282
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/subchar_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit &
 grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit   (xxx)
 
+grep "macro avg" logs/subchar_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit
 
+"macro avg": {
+  "macro avg": {
+{'macro avg': {'recall': 0.5606643468170164, 'support': 81536, 'precision': 0.5958009865137326, 'f1-score': 0.5729590917274643}, 'weighted avg': {'recall': 0.9335385596546311, 'support': 81536, 'precision': 0.9198735923302171, 'f1-score': 0.926093363428061}, '0': {'recall': 0.9750051642222681, 'support': 77456, 'precision': 0.9559130665924079, 'f1-score': 0.9653647281396406}, '1': {'recall': 0.1463235294117647, 'support': 4080, 'precision': 0.23568890643505724, 'f1-score': 0.18055345531528808}, 'accuracy': 0.9335385596546311}
+  "macro avg": {
+  "macro avg": {
+{'1': {'f1-score': 0.18738216098622187, 'support': 4080, 'recall': 0.15833333333333333, 'precision': 0.2294849023090586}, '0': {'f1-score': 0.9641240387509044, 'support': 77456, 'recall': 0.9719970047510845, 'precision': 0.956377586666836}, 'weighted avg': {'f1-score': 0.9252564604875617, 'support': 81536, 'recall': 0.931281887755102, 'precision': 0.9200044244786035}, 'macro avg': {'f1-score': 0.5757530998685632, 'support': 81536, 'recall': 0.5651651690422089, 'precision': 0.5929312444879473}, 'accuracy': 0.931281887755102}
+  "macro avg": {
+  "macro avg": {
+{'weighted avg': {'support': 81536, 'recall': 0.925713795133438, 'f1-score': 0.9218297888235317, 'precision': 0.918209887194014}, '0': {'support': 77456, 'recall': 0.9661097913654204, 'f1-score': 0.961103012477604, 'precision': 0.9561478604193553}, 'macro avg': {'support': 81536, 'recall': 0.5624666603885926, 'f1-score': 0.5686788012204421, 'precision': 0.5770656808971204}, 'accuracy': 0.925713795133438, '1': {'support': 4080, 'recall': 0.1588235294117647, 'f1-score': 0.17625458996328033, 'precision': 0.19798350137488543}}
+  "macro avg": {
+  "macro avg": {
+{'0': {'precision': 0.959318924645058, 'support': 77456, 'f1-score': 0.959015387794373, 'recall': 0.9587120429663293}, 'macro avg': {'precision': 0.5923986243472323, 'support': 81536, 'f1-score': 0.5929198025584119, 'recall': 0.5934491587380666}, 'weighted avg': {'precision': 0.9225980939637607, 'support': 81536, 'f1-score': 0.9223770933535683, 'recall': 0.9221570839874411}, '1': {'precision': 0.22547832404940663, 'support': 4080, 'f1-score': 0.22682421732245095, 'recall': 0.22818627450980392}, 'accuracy': 0.9221570839874411}
+  "macro avg": {
+  "macro avg": {
+{'1': {'f1-score': 0.18318113670437508, 'precision': 0.20632483880871968, 'recall': 0.16470588235294117, 'support': 4080}, 'accuracy': 0.9264987244897959, '0': {'f1-score': 0.9615179632067294, 'precision': 0.9564634193078604, 'recall': 0.966626213592233, 'support': 77456}, 'macro avg': {'f1-score': 0.5723495499555522, 'precision': 0.58139412905829, 'recall': 0.5656660479725871, 'support': 81536}, 'weighted avg': {'f1-score': 0.922570574910399, 'precision': 0.9189270499932448, 'recall': 0.9264987244897959, 'support': 81536}}
 
 ```
 
@@ -935,6 +987,8 @@ INFO:tensorflow:accuracy: 0.854035
 I0821 09:44:43.852674 139848559060736 run_classifier.py:535] accuracy: 0.854035
 INFO:tensorflow:accuracy: 0.854310
 I0821 10:23:44.080285 139912884926208 run_classifier.py:535] accuracy: 0.854310
+
+
 
 ```
 
