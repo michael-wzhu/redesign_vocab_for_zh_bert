@@ -305,6 +305,13 @@ I0820 12:52:27.097616 139776148637440 run_classifier.py:535] accuracy: 0.817500
 INFO:tensorflow:accuracy: 0.832500
 I0820 13:27:55.167342 139880742872832 run_classifier.py:535] accuracy: 0.832500
 
+
+
+# char_segmented, vocab=5282
+nohup ./comp_bert/char_segmented/scripts/run_classifier_chn_5282.sh > logs/subchar_segmented_run_classifier_chn_5282.log_to_commit &
+grep "accuracy: " logs/subchar_segmented_run_classifier_chn_5282.log_to_commit (xxx)
+
+
 ```
 
 
