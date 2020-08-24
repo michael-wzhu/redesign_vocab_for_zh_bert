@@ -1042,6 +1042,8 @@ nohup ./comp_bert/comp_spaced/scripts/run_classifier_weibo_1321.sh > logs/subcha
 grep "accuracy: " logs/subchar_spaced_run_classifier_weibo_1321.log_to_commit  (xxx)
 
 
+
+
 ```
 
 ### law_qa
