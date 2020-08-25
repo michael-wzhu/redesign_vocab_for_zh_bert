@@ -307,10 +307,6 @@ I0820 13:27:55.167342 139880742872832 run_classifier.py:535] accuracy: 0.832500
 
 
 
-
-
-
-
 ```
 
 
@@ -1034,9 +1030,17 @@ I0824 11:33:02.769069 139702891783936 run_classifier.py:535] accuracy: 0.777100
 INFO:tensorflow:accuracy: 0.770700
 I0824 12:25:19.732561 140363246352128 run_classifier.py:535] accuracy: 0.770700
 
+(0.7769900000000001, 0.003576157155383416)
+
 # subchar_spaced, vocab=5282
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_book_review_5282.sh > logs/subchar_spaced_run_classifier_book_review_5282.log_to_commit &
 grep "accuracy: " logs/subchar_spaced_run_classifier_book_review_5282.log_to_commit  (xxx)
+
+INFO:tensorflow:accuracy: 0.773300
+I0825 01:22:29.583366 140612151469824 run_classifier.py:535] accuracy: 0.773300
+INFO:tensorflow:accuracy: 0.767100
+I0825 01:41:10.461426 140508159026944 run_classifier.py:535] accuracy: 0.767100
+
 
 
 # subchar_spaced, vocab=1321
@@ -1063,6 +1067,8 @@ INFO:tensorflow:accuracy: 0.750100
 I0824 12:23:31.680656 140619180754688 run_classifier.py:535] accuracy: 0.750100
 INFO:tensorflow:accuracy: 0.755100
 I0824 13:14:25.385532 140562818131712 run_classifier.py:535] accuracy: 0.755100
+
+(0.75514, 0.00646949)
 
 ```
 
@@ -1318,6 +1324,8 @@ I0824 07:32:17.192048 140709748565760 run_classifier.py:535] accuracy: 0.970400
 INFO:tensorflow:accuracy: 0.961900
 I0824 08:11:16.980093 139667084683008 run_classifier.py:535] accuracy: 0.961900
 
+(0.9674500000000001, 0.003512620104708165)
+
 # subchar_spaced, vocab=5282
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_weibo_5282.sh > logs/subchar_spaced_run_classifier_weibo_5282.log_to_commit &
 grep "accuracy: " logs/subchar_spaced_run_classifier_weibo_5282.log_to_commit  (xxx)
@@ -1342,6 +1350,8 @@ INFO:tensorflow:accuracy: 0.966400
 I0824 07:38:16.605597 139804722988800 run_classifier.py:535] accuracy: 0.966400
 INFO:tensorflow:accuracy: 0.964200
 I0824 08:17:13.856602 140414374565632 run_classifier.py:535] accuracy: 0.964200
+
+(0.9663299999999999, 0.0019344508264621202)
 
 # subchar_spaced, vocab=1321
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_weibo_1321.sh > logs/subchar_spaced_run_classifier_weibo_1321.log_to_commit &
@@ -1401,6 +1411,8 @@ I0824 08:52:52.570018 140086904547072 run_classifier.py:535] accuracy: 0.852107
 INFO:tensorflow:accuracy: 0.852107
 I0824 09:28:50.568727 140045284685568 run_classifier.py:535] accuracy: 0.852107
 
+(0.8505369999999999, 0.002830235149241156)
+
 # subchar_segmented, vocab=5282
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_law_qa_5282.sh > logs/subchar_segmented_run_classifier_law_qa_5282.log_to_commit &
 grep "accuracy: " logs/subchar_segmented_run_classifier_law_qa_5282.log_to_commit  (xxx)
@@ -1425,6 +1437,8 @@ INFO:tensorflow:accuracy: 0.851281
 I0824 08:47:37.570137 140543207728896 run_classifier.py:535] accuracy: 0.851281
 INFO:tensorflow:accuracy: 0.858717
 I0824 09:26:39.191721 140125269776128 run_classifier.py:535] accuracy: 0.858717
+
+(0.8553016, 0.002426668423992027)
 
 # subchar_segmented, vocab=1321
 nohup ./comp_bert/comp_segmented/scripts/run_classifier_law_qa_1321.sh > logs/subchar_segmented_run_classifier_law_qa_1321.log_to_commit &
@@ -1505,38 +1519,131 @@ I0821 10:23:44.080285 139912884926208 run_classifier.py:535] accuracy: 0.854310
 nohup ./comp_bert/char_segmented/scripts/run_classifier_chn_5282.sh > logs/char_segmented_run_classifier_chn_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_chn_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.871667
+I0825 02:00:37.235349 139719687558912 run_classifier.py:535] accuracy: 0.871667
+INFO:tensorflow:accuracy: 0.880833
+I0825 02:19:21.298739 140109103163136 run_classifier.py:535] accuracy: 0.880833
+
+(0.87625, 0.004583000000000004)
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_law_qa_5282.sh > logs/char_segmented_run_classifier_law_qa_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_law_qa_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.858166
+I0825 02:03:42.737190 139879124403968 run_classifier.py:535] accuracy: 0.858166
+INFO:tensorflow:accuracy: 0.853484
+I0825 02:23:31.543319 139740051719936 run_classifier.py:535] accuracy: 0.853484
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_lcqmc_5282.sh > logs/char_segmented_run_classifier_lcqmc_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_lcqmc_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.793600
+I0825 02:17:03.366427 139773689669376 run_classifier.py:535] accuracy: 0.793600
+INFO:tensorflow:accuracy: 0.783680
+I0825 02:42:06.030442 139805456787200 run_classifier.py:535] accuracy: 0.783680
+INFO:tensorflow:accuracy: 0.786400
+I0825 03:07:01.723360 140226122008320 run_classifier.py:535] accuracy: 0.786400
+
+(0.7878933333333333, 0.004185222680920177)
+
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/char_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit &
-grep "accuracy: " logs/char_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit (xxx)
+grep "macro avg" logs/char_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit (xxx)
+
+"macro avg": {
+  "macro avg": {
+{'1': {'f1-score': 0.29288924134284955, 'recall': 0.27156862745098037, 'precision': 0.3178427997705106, 'support': 4080}, 'macro avg': {'f1-score': 0.6292427120633968, 'recall': 0.6204336630334844, 'precision': 0.6398823223708414, 'support': 81536}, '0': {'f1-score': 0.965596182783944, 'recall': 0.9692986986159884, 'precision': 0.9619218449711723, 'support': 77456}, 'weighted avg': {'f1-score': 0.9319344343405611, 'recall': 0.9343848116169545, 'precision': 0.9296926148836197, 'support': 81536}, 'accuracy': 0.9343848116169545}
+  "macro avg": {
+  "macro avg": {
+  
+  
+  
+{'macro avg': {'recall': 0.6239601433426087, 'support': 81536, 'precision': 0.6313333238321547, 'f1-score': 0.627510595399419}, '0': {'recall': 0.9653222474695311, 'support': 77456, 'precision': 0.9623280178127855, 'f1-score': 0.9638228071645407}, 'weighted avg': {'recall': 0.9311592425431711, 'support': 81536, 'precision': 0.9292025676695121, 'f1-score': 0.9301651878552369}, '1': {'recall': 0.28259803921568627, 'support': 4080, 'precision': 0.3003386298515238, 'f1-score': 0.2911983836342973}, 'accuracy': 0.9311592425431711}
+  "macro avg": {
+  "macro avg": {
+  
+  
+  
+{'macro avg': {'f1-score': 0.6039284089881783, 'precision': 0.6311919061878404, 'support': 81536, 'recall': 0.5876061703342771}, 'accuracy': 0.9370830062794349, 'weighted avg': {'f1-score': 0.9308280042120781, 'precision': 0.9258084314466984, 'support': 81536, 'recall': 0.9370830062794349}, '0': {'f1-score': 0.9671818623813301, 'precision': 0.9585721531828557, 'support': 77456, 'recall': 0.9759476347862012}, '1': {'f1-score': 0.24067495559502664, 'precision': 0.3038116591928251, 'support': 4080, 'recall': 0.19926470588235295}}
+
+[0.6292427120633968, 0.627510595399419, 0.6039284089881783]
+(0.620227238816998, 0.011546686317612926)
 
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_book_review_5282.sh > logs/char_segmented_run_classifier_book_review_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_book_review_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.783300
+I0825 02:04:18.245216 139776369071872 run_classifier.py:535] accuracy: 0.783300
+INFO:tensorflow:accuracy: 0.787300
+I0825 02:23:08.357668 139890098325248 run_classifier.py:535] accuracy: 0.787300
+
+(0.7853, 0.002000)
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_shopping_5282.sh > logs/char_segmented_run_classifier_shopping_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_shopping_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.917700
+I0825 02:39:11.127845 139950979397376 run_classifier.py:535] accuracy: 0.917700
+INFO:tensorflow:accuracy: 0.921600
+I0825 03:31:05.272953 139809315649280 run_classifier.py:535] accuracy: 0.921600
+INFO:tensorflow:accuracy: 0.924400
+I0825 04:22:27.476329 139703760021248 run_classifier.py:535] accuracy: 0.924400
+INFO:tensorflow:accuracy: 0.925300
+I0825 05:13:50.748475 140102101989120 run_classifier.py:535] accuracy: 0.925300
+INFO:tensorflow:accuracy: 0.920900
+I0825 06:06:01.145343 139801581594368 run_classifier.py:535] accuracy: 0.920900
+INFO:tensorflow:accuracy: 0.923600
+I0825 06:57:15.075316 139636004890368 run_classifier.py:535] accuracy: 0.923600
+INFO:tensorflow:accuracy: 0.923300
+I0825 07:48:32.008706 139635989243648 run_classifier.py:535] accuracy: 0.923300
+INFO:tensorflow:accuracy: 0.922900
+I0825 08:39:38.939351 140450267887360 run_classifier.py:535] accuracy: 0.922900
+
+(0.9224625, 0.002232116428414979)
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_weibo_5282.sh > logs/char_segmented_run_classifier_weibo_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_weibo_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.884000
+I0825 02:38:41.867649 140125426329344 run_classifier.py:535] accuracy: 0.884000
+INFO:tensorflow:accuracy: 0.884000
+I0825 03:25:41.445204 139791583553280 run_classifier.py:535] accuracy: 0.884000
+INFO:tensorflow:accuracy: 0.882900
+I0825 04:13:00.078640 139910258935552 run_classifier.py:535] accuracy: 0.882900
+INFO:tensorflow:accuracy: 0.883800
+I0825 04:59:02.370945 140456418780928 run_classifier.py:535] accuracy: 0.883800
+INFO:tensorflow:accuracy: 0.883100
+I0825 05:46:42.145419 139793504081664 run_classifier.py:535] accuracy: 0.883100
+INFO:tensorflow:accuracy: 0.883400
+I0825 06:33:01.436408 140427604543232 run_classifier.py:535] accuracy: 0.883400
+INFO:tensorflow:accuracy: 0.880700
+I0825 07:18:35.484356 140296921216768 run_classifier.py:535] accuracy: 0.880700
+INFO:tensorflow:accuracy: 0.882900
+I0825 08:04:20.705508 140279174326016 run_classifier.py:535] accuracy: 0.882900
+INFO:tensorflow:accuracy: 0.882500
+I0825 08:49:58.663060 140405871785728 run_classifier.py:535] accuracy: 0.882500
+
+(0.8830333333333333, 0.0009637888196533924)
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_xnli_5282.sh > logs/char_segmented_run_classifier_xnli_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_xnli_5282.log_to_commit (xxx)
+
+INFO:tensorflow:accuracy: 0.597804
+I0825 03:12:12.360621 139982536906496 run_classifier.py:535] accuracy: 0.597804
+INFO:tensorflow:accuracy: 0.593214
+I0825 04:28:29.407170 139859645028096 run_classifier.py:535] accuracy: 0.593214
+INFO:tensorflow:accuracy: 0.585629
+I0825 05:45:58.172901 139662334514944 run_classifier.py:535] accuracy: 0.585629
+INFO:tensorflow:accuracy: 0.590818
+I0825 07:04:27.972264 139636005553920 run_classifier.py:535] accuracy: 0.590818
+INFO:tensorflow:accuracy: 0.587226
+I0825 08:21:41.454043 140142765135616 run_classifier.py:535] accuracy: 0.587226
 
 ```
