@@ -4,10 +4,10 @@
 
 STORAGE_BUCKET=gs://sbt0
 
-TPU_IP=10.225.154.26
+TPU_IP=10.132.160.186
 TPU_NAME=grpc://${TPU_IP}:8470
 
-PREFIX=char_spaced
+PREFIX=char_segmented
 VOCAB_SIZE=5282
 
 python3 comp_bert/run_pretraining.py \
