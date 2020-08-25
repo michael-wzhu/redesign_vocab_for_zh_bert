@@ -6,7 +6,7 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.175.180.170
+TPU_IP=10.186.250.74
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_segmented
@@ -28,7 +28,7 @@ pip3 install sklearn
 # run task
 
 echo "Start running..."
-RUN_TIMES=5
+RUN_TIMES=10
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
     python3 comp_bert/char_segmented/run_classifier.py \

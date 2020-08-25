@@ -6,14 +6,14 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.225.154.26
+TPU_IP=10.165.184.58
 TPU_NAME=grpc://${TPU_IP}:8470
 
-PREFIX=subchar_spaced
+PREFIX=char_segmented
 VOCAB_SIZE=5282
 
-TASK_NAME=book_review
-DATA_DIR=datasets/book_review
+TASK_NAME=weibo
+DATA_DIR=datasets/weibo
 
 DATE=0813
 
@@ -31,7 +31,7 @@ echo "Start running..."
 RUN_TIMES=10
 for run_idx in `seq 1 $((RUN_TIMES))`; do
 
-    python3 comp_bert/comp_spaced/run_classifier.py \
+    python3 comp_bert/char_segmented/run_classifier.py \
       --task_name=${TASK_NAME} \
       --data_dir=${DATA_DIR} \
       --output_dir=${STORAGE_BUCKET}/experiments/comp_bert/finetune/${TASK_NAME}/${PREFIX}_${VOCAB_SIZE}_length_128_512_time_${DATE}_run_${run_idx}/ \
@@ -44,12 +44,12 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --max_seq_length=512 \
       --max_num_chars=128 \
       --optimizer=adamw \
-      --train_batch_size=32 \
+      --train_batch_size=256 \
       --eval_batch_size=32 \
       --learning_rate=2e-5 \
-      --warmup_step=500 \
-      --save_checkpoints_steps=600 \
-      --train_step=12000 \
+      --warmup_step=300 \
+      --save_checkpoints_steps=400 \
+      --train_step=8000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
       --num_tpu_cores=8 \
