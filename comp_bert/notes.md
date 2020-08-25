@@ -1647,3 +1647,56 @@ INFO:tensorflow:accuracy: 0.587226
 I0825 08:21:41.454043 140142765135616 run_classifier.py:535] accuracy: 0.587226
 
 ```
+
+
+### char spaced
+
+```bash
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/run_classifier_chn_5282.sh > logs/char_spaced_run_classifier_chn_5282.log_to_commit &
+grep "accuracy: " logs/char_spaced_run_classifier_chn_5282.log_to_commit (xxx)
+
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/run_classifier_law_qa_5282.sh > logs/char_spaced_run_classifier_law_qa_5282.log_to_commit &
+grep "accuracy: " logs/char_spaced_run_classifier_law_qa_5282.log_to_commit (xxx)
+
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/run_classifier_lcqmc_5282.sh > logs/char_spaced_run_classifier_lcqmc_5282.log_to_commit &
+grep "accuracy: " logs/char_spaced_run_classifier_lcqmc_5282.log_to_commit (xxx)
+
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/char_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit &
+grep "macro avg" logs/char_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit (xxx)
+
+
+
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/run_classifier_book_review_5282.sh > logs/char_spaced_run_classifier_book_review_5282.log_to_commit &
+grep "accuracy: " logs/char_spaced_run_classifier_book_review_5282.log_to_commit (xxx)
+
+
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/run_classifier_shopping_5282.sh > logs/char_spaced_run_classifier_shopping_5282.log_to_commit &
+grep "accuracy: " logs/char_spaced_run_classifier_shopping_5282.log_to_commit (xxx)
+
+
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/run_classifier_weibo_5282.sh > logs/char_spaced_run_classifier_weibo_5282.log_to_commit &
+grep "accuracy: " logs/char_spaced_run_classifier_weibo_5282.log_to_commit (xxx)
+
+
+
+# char_spaced, vocab=5282
+nohup ./comp_bert/char_spaced/scripts/run_classifier_xnli_5282.sh > logs/char_spaced_run_classifier_xnli_5282.log_to_commit &
+grep "accuracy: " logs/char_spaced_run_classifier_xnli_5282.log_to_commit (xxx)
+
+
+
+```
