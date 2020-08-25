@@ -1007,6 +1007,26 @@ I0819 12:47:45.281965 139980965754624 run_classifier.py:535] accuracy: 0.760000
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_book_review_21128.sh > logs/subchar_spaced_run_classifier_book_review_21128.log_to_commit &
 grep "accuracy: " logs/subchar_spaced_run_classifier_book_review_21128.log_to_commit  (xxx)
 
+INFO:tensorflow:accuracy: 0.776800
+I0824 04:26:07.696024 139783044851456 run_classifier.py:535] accuracy: 0.776800
+INFO:tensorflow:accuracy: 0.777700
+I0824 05:20:20.578330 140582267516672 run_classifier.py:535] accuracy: 0.777700
+INFO:tensorflow:accuracy: 0.779000
+I0824 06:12:45.667360 140707224225536 run_classifier.py:535] accuracy: 0.779000
+INFO:tensorflow:accuracy: 0.776400
+I0824 07:08:08.512165 140323467228928 run_classifier.py:535] accuracy: 0.776400
+INFO:tensorflow:accuracy: 0.782200
+I0824 08:03:03.548662 139788124034816 run_classifier.py:535] accuracy: 0.782200
+INFO:tensorflow:accuracy: 0.780300
+I0824 08:56:03.921288 139939171956480 run_classifier.py:535] accuracy: 0.780300
+INFO:tensorflow:accuracy: 0.779100
+I0824 09:49:47.177220 140583759783680 run_classifier.py:535] accuracy: 0.779100
+INFO:tensorflow:accuracy: 0.770600
+I0824 10:41:41.800814 140157610534656 run_classifier.py:535] accuracy: 0.770600
+INFO:tensorflow:accuracy: 0.777100
+I0824 11:33:02.769069 139702891783936 run_classifier.py:535] accuracy: 0.777100
+INFO:tensorflow:accuracy: 0.770700
+I0824 12:25:19.732561 140363246352128 run_classifier.py:535] accuracy: 0.770700
 
 # subchar_spaced, vocab=5282
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_book_review_5282.sh > logs/subchar_spaced_run_classifier_book_review_5282.log_to_commit &
@@ -1017,7 +1037,26 @@ grep "accuracy: " logs/subchar_spaced_run_classifier_book_review_5282.log_to_com
 nohup ./comp_bert/comp_spaced/scripts/run_classifier_book_review_1321.sh > logs/subchar_spaced_run_classifier_book_review_1321.log_to_commit &
 grep "accuracy: " logs/subchar_spaced_run_classifier_book_review_1321.log_to_commit  (xxx)
 
-
+INFO:tensorflow:accuracy: 0.756500
+I0824 05:24:41.084658 140307435304704 run_classifier.py:535] accuracy: 0.756500
+INFO:tensorflow:accuracy: 0.753900
+I0824 06:17:32.548522 139792670217984 run_classifier.py:535] accuracy: 0.753900
+INFO:tensorflow:accuracy: 0.753100
+I0824 07:14:04.227120 140004215539456 run_classifier.py:535] accuracy: 0.753100
+INFO:tensorflow:accuracy: 0.739500
+I0824 08:06:17.996259 139829832328960 run_classifier.py:535] accuracy: 0.739500
+INFO:tensorflow:accuracy: 0.761700
+I0824 08:57:50.443545 140174145763072 run_classifier.py:535] accuracy: 0.761700
+INFO:tensorflow:accuracy: 0.762700
+I0824 09:50:11.701448 140473983362816 run_classifier.py:535] accuracy: 0.762700
+INFO:tensorflow:accuracy: 0.757900
+I0824 10:41:25.541016 139883746354944 run_classifier.py:535] accuracy: 0.757900
+INFO:tensorflow:accuracy: 0.760900
+I0824 11:32:26.891453 139693125285632 run_classifier.py:535] accuracy: 0.760900
+INFO:tensorflow:accuracy: 0.750100
+I0824 12:23:31.680656 140619180754688 run_classifier.py:535] accuracy: 0.750100
+INFO:tensorflow:accuracy: 0.755100
+I0824 13:14:25.385532 140562818131712 run_classifier.py:535] accuracy: 0.755100
 
 ```
 
