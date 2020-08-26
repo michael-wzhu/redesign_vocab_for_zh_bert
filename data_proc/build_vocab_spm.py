@@ -15,7 +15,7 @@ if __name__ == "__main__":
     # vocab_sizes = [10564, 21128, 31692]
     # vocab_sizes = [5282, ]
     # vocab_sizes = [21128, 1321]
-    vocab_sizes = [1785]
+    vocab_sizes = [1321]
     prefixes = [
 
         "char_segmented",
