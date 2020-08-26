@@ -119,6 +119,13 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_151_185.sh > log
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_186_218.sh > logs/comp_spaced_create_pretrain_data_1321_186_218.log &
 
 
+# char_segmented, vocab=21128
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_1_25.sh > char_segmented_create_pretrain_data_21128_1_25.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_26_65.sh > char_segmented_create_pretrain_data_21128_26_65.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_66_120.sh > char_segmented_create_pretrain_data_21128_66_120.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_121_170.sh > char_segmented_create_pretrain_data_21128_121_170.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_171_218.sh > char_segmented_create_pretrain_data_21128_171_218.log &
+
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_1_25.sh > char_segmented_create_pretrain_data_5282_1_25.log &
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_26_65.sh > char_segmented_create_pretrain_data_5282_26_65.log &
