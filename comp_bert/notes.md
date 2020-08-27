@@ -193,9 +193,9 @@ nohup ./comp_bert/comp_spaced/scripts/run_pretrain_5282.sh > logs/subchar_spaced
 # subchar_spaced, vocab=1321
 nohup ./comp_bert/comp_spaced/scripts/run_pretrain_1321.sh > logs/subchar_spaced_pretrain_1321.log &
 
+
 # char_segmented, vocab=21128
 nohup ./comp_bert/char_segmented/scripts/run_pretrain_21128.sh > logs/char_segmented_pretrain_21128.log & (xxx)
-
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_pretrain_5282.sh > logs/char_segmented_pretrain_5282.log &
