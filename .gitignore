@@ -19,7 +19,7 @@ tmp/*
 # logs/*
 *.log
 outpatients-emr/*
-one_click.py
+
 
 
 # Distribution / packaging
