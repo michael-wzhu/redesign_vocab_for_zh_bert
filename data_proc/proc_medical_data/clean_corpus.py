@@ -60,10 +60,10 @@ def char2char_segmented_file(from_file, to_file):
 if __name__ == "__main__":
     basic_tokenizer = BasicTokenizer(do_lower_case=True)
 
-    from_dir = "sbt0/experiments/ehr_diagnose/datasets/corpus.txt"
+    from_dir = "gs://sbt0/experiments/ehr_diagnose/datasets/corpus.txt"
     from_dir_local = "./corpus.txt"
 
-    to_file_spaced = "sbt0/experiments/ehr_diagnose/datasets/corpus_char_spaced_lower.txt"
+    to_file_spaced = "gs://sbt0/experiments/ehr_diagnose/datasets/corpus_char_spaced_lower.txt"
     to_file_spaced_local = "./corpus_char_spaced_lower.txt"
 
     tf.gfile.Copy(from_dir, from_dir_local, overwrite=True)
@@ -71,9 +71,9 @@ if __name__ == "__main__":
     char2char_spaced_file(from_dir_local, to_file_spaced_local, basic_tokenizer=None)
     tf.gfile.Copy(to_file_spaced_local, to_file_spaced, overwrite=True)
 
-    to_file_segmented = "sbt0/experiments/ehr_diagnose/datasets/corpus_char_segmented_lower.txt"
-    to_file_segmented_local = "sbt0/experiments/ehr_diagnose/datasets/corpus_char_segmented_lower.txt"
+    to_file_segmented = "gs://sbt0/experiments/ehr_diagnose/datasets/corpus_char_segmented_lower.txt"
+    to_file_segmented_local = "./corpus_char_segmented_lower.txt"
 
-    char2char_segmented_file(from_dir_local, to_file_spaced_local)
+    char2char_segmented_file(from_dir_local, to_file_segmented_local)
     tf.gfile.Copy(to_file_segmented_local, to_file_segmented, overwrite=True)
 
