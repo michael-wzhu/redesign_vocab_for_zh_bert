@@ -44,6 +44,7 @@ to_dir_storage = os.path.join(
     STORAGE_BUCKET,
     "experiments/ehr_diagnose/datasets/corpus.txt"
 )
+tf.gfile.Copy(out_file, to_dir_storage, overwrite=True)
 
 
 # base_dir = Path('outpatients-emr')
