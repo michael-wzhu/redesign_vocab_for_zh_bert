@@ -16,6 +16,10 @@ import os
 import tensorflow.compat.v1 as tf
 
 
+import sys
+sys.path.append("./")
+
+
 # def get_all_data(hosp, cate, all_data):
 #     for idx, row in tqdm(hosp.iterrows()):
 #         all_data[row['visit_no']] = {
@@ -39,7 +43,7 @@ STORAGE_BUCKET = "gs://sbt0"
 # tf.gfile.Copy(input_dir_storage, input_dir_local, overwrite=True)
 
 
-out_file = Path('corpus.txt')
+out_file = "./corpus.txt"
 to_dir_storage = os.path.join(
     STORAGE_BUCKET,
     "experiments/ehr_diagnose/datasets/corpus.txt"
