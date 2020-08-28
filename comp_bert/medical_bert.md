@@ -15,6 +15,6 @@ python3 data_proc/proc_medical_data/proc_emr_data.py
 
 ```bash
 
-python3 data_proc/proc_medical_data/proc_emr_data.py
+python3 data_proc/proc_medical_data/split_file_utils.py
 
 ```
