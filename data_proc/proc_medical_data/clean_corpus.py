@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
     tf.gfile.Copy(from_dir, from_dir_local, overwrite=True)
 
-    char2char_spaced_file(from_dir_local, to_file_spaced_local, basic_tokenizer=None)
+    char2char_spaced_file(from_dir_local, to_file_spaced_local, basic_tokenizer=basic_tokenizer)
     tf.gfile.Copy(to_file_spaced_local, to_file_spaced, overwrite=True)
 
     to_file_segmented = "gs://sbt0/experiments/ehr_diagnose/datasets/corpus_char_segmented_lower.txt"
