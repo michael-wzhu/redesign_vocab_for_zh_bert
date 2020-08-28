@@ -23,9 +23,9 @@ python3 data_proc/proc_medical_data/split_file_utils.py
 
 ```bash
 
-./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_1_200.sh
-./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_201_400.sh
-./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_401_600.sh
-./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_601_626.sh
+nohup ./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_1_200.sh > logs/char2char_segmented_1_200.log &
+nohup ./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_201_400.sh > logs/char2char_segmented_201_400.log &
+nohup ./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_401_600.sh > logs/char2char_segmented_401_600.log &
+nohup ./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_601_626.sh > logs/char2char_segmented_601_626.log &
 
 ```
