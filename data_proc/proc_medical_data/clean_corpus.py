@@ -20,7 +20,7 @@ def char2char_spaced_single_sent(sent,
 
 def char2char_spaced_file(from_file, to_file, basic_tokenizer=None):
     with tf.gfile.GFile(from_file, 'r') as in_f:
-        with tf.gfile.GFile(to_file, 'r') as out_f:
+        with tf.gfile.GFile(to_file, 'w') as out_f:
             for line in tqdm(in_f):
                 line = line.strip()
 
@@ -44,7 +44,7 @@ def char2char_segmented_single_sent(sent,):
 
 def char2char_segmented_file(from_file, to_file):
     with tf.gfile.GFile(from_file, 'r') as in_f:
-        with tf.gfile.GFile(to_file, 'r') as out_f:
+        with tf.gfile.GFile(to_file, 'w') as out_f:
             for line in tqdm(in_f):
                 line = line.strip()
 
