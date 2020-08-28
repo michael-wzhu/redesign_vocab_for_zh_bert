@@ -14,6 +14,7 @@ import tqdm
 
 import tensorflow.compat.v1 as tf
 
+from comp_bert.tokenization import BasicTokenizer
 
 sys.path.append("./")
 from src.chinese_utils.chinese_tranditional2simplified import traditional2simplified
@@ -61,25 +62,15 @@ def split_sent(text_, spliter="。？?"):
     return list_sents
 
 
-def char2char_single_sent(sent):
-    sent_new_ = ""
+def char2char_single_sent(sent, basic_tokenizer=None):
+    sent = basic_tokenizer.tokenize(sent)
 
-    sent = list(jieba.cut(sent))
-    sent = " ".join(sent)
-    for char_ in sent:
+    sent_new = " ".join(sent)
 
-        if re.search("[\u4e00-\u9fa5]", char_):
-            sent_new_ += " " + char_ + " "
-        else:
-            sent_new_ += char_
-
-    # drop redundent blank
-    sent_new_ = drop_extra_blank(sent_new_)
-
-    return sent_new_
+    return sent_new
 
 
-def char2comp_file(txt_file, to_file, do_lower_case=1):
+def char2comp_file(txt_file, to_file, do_lower_case=1, basic_tokenizer=None):
     # with open(to_file, "w", encoding="utf-8") as out_f:
     with tf.gfile.GFile(to_file, "w") as out_f:
         # with open(txt_file, "r", encoding="utf-8") as in_f:
@@ -92,7 +83,7 @@ def char2comp_file(txt_file, to_file, do_lower_case=1):
 
                 sents_ = split_sent(line, spliter="。？?")
                 for sent in sents_:
-                    sent = char2char_single_sent(sent)
+                    sent = char2char_single_sent(sent, basic_tokenizer=basic_tokenizer)
                     if do_lower_case:
                         sent_new_ = sent.lower()
                     else:
@@ -105,12 +96,18 @@ def char2comp_file(txt_file, to_file, do_lower_case=1):
 
 
 def main():
+    basic_tokenizer = BasicTokenizer()
+
     file_in = str(sys.argv[1])
     file_out = str(sys.argv[2])
     do_lower_case = int(sys.argv[3])
 
     print('Pre-processing {} to {}...'.format(file_in, file_out))
-    char2comp_file(file_in, file_out, do_lower_case=do_lower_case)
+    char2comp_file(
+        file_in, file_out,
+        do_lower_case=do_lower_case,
+        basic_tokenizer=basic_tokenizer
+    )
 
     print('Successfully pre-processed {} to {}...'.format(file_in, file_out))
 

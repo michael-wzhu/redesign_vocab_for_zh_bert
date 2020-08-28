@@ -61,13 +61,12 @@ def split_sent(text_, spliter="。？?"):
 
 
 def char2char_single_sent(sent):
-    sent_new_ = ""
-
     sent = list(jieba.cut(sent))
     sent = [w.strip() for w in sent if len(w.strip()) > 0]
-    sent_new_ = " ".join(sent)
 
-    return sent_new_
+    sent_new = " ".join(sent)
+
+    return sent_new
 
 
 def char2comp_file(txt_file, to_file, do_lower_case=1):
