@@ -16,26 +16,27 @@ import os
 import tensorflow.compat.v1 as tf
 
 
-def get_all_data(hosp, cate, all_data):
-    for idx, row in tqdm(hosp.iterrows()):
-        all_data[row['visit_no']] = {
-            'gender_code': row['gender_code'],
-            'birthday': row['birthday'],
-            'reg_date': row['reg_date'],
-            'Icd10Id': row['Icd10Id'],
-            'Icd10Name': row['Icd10Name'],
-            'hospital': cate
-        }
+# def get_all_data(hosp, cate, all_data):
+#     for idx, row in tqdm(hosp.iterrows()):
+#         all_data[row['visit_no']] = {
+#             'gender_code': row['gender_code'],
+#             'birthday': row['birthday'],
+#             'reg_date': row['reg_date'],
+#             'Icd10Id': row['Icd10Id'],
+#             'Icd10Name': row['Icd10Name'],
+#             'hospital': cate
+#         }
 
 
 STORAGE_BUCKET = "gs://sbt0"
-input_dir_storage = os.path.join(
-                    STORAGE_BUCKET,
-                        "experiments/ehr_diagnose/datasets/outpatients-emr.zip"
-                        )
-input_dir_local = "outpatients-emr.zip"
 
-tf.gfile.Copy(input_dir_storage, input_dir_local, overwrite=True)
+# input_dir_storage = os.path.join(
+#                     STORAGE_BUCKET,
+#                         "experiments/ehr_diagnose/datasets/outpatients-emr.zip"
+#                         )
+# input_dir_local = "outpatients-emr.zip"
+#
+# tf.gfile.Copy(input_dir_storage, input_dir_local, overwrite=True)
 
 
 out_file = Path('corpus.txt')
