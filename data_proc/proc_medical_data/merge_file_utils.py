@@ -95,6 +95,7 @@ if __name__ == "__main__":
                         i + 1)
         )
         list_files_.append(file_)
+        print(i)
 
     to_dir_ = os.path.join(
         STORAGE_BUCKET,
