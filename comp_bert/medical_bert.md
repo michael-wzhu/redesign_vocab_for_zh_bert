@@ -45,4 +45,10 @@ nohup python3 data_proc/proc_medical_data/build_vocab_spm.py > logs/build_vocab_
 6) prepare tf records
 ```bash
 nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_1_100.sh > logs/create_pretrain_data_21128_emr_1_100.log &
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_101_200.sh > logs/create_pretrain_data_21128_emr_101_200.log &
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_201_300.sh > logs/create_pretrain_data_21128_emr_201_300.log &
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_301_400.sh > logs/create_pretrain_data_21128_emr_301_400.log &
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_401_500.sh > logs/create_pretrain_data_21128_emr_401_500.log &
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_501_600.sh > logs/create_pretrain_data_21128_emr_501_600.log &
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_601_626.sh > logs/create_pretrain_data_21128_emr_601_626.log &
 ```
