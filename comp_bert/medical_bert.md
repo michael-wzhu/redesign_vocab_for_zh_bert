@@ -35,3 +35,5 @@ nohup ./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_601_626
 ```bash
 nohup python3 data_proc/proc_medical_data/merge_file_utils.py > logs/merge_files.log &
 ```
+
+5) build vocab
