@@ -86,8 +86,17 @@ if __name__ == "__main__":
         )
         list_files_.append(file_)
 
+    num_files = 218
+    for i in range(num_files):
+        file_ = os.path.join(
+            STORAGE_BUCKET,
+            "data/corpus/char_segmented_lower/zhwiki-latest-pages-articles_%d_char_segmented_lower_simplified.txt" % (
+                        i + 1)
+        )
+        list_files_.append(file_)
+
     to_dir_ = os.path.join(
         STORAGE_BUCKET,
-        "experiments/ehr_diagnose/datasets/char_segmented_lower/outpatient_char_segmented_lower_simplified.txt")
+        "experiments/ehr_diagnose/datasets/char_segmented_lower/char_segmented_lower_simplified.txt")
     txt_files2file(list_files_, to_dir_)
 
