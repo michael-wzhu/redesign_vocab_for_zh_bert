@@ -37,3 +37,7 @@ nohup python3 data_proc/proc_medical_data/merge_file_utils.py > logs/merge_files
 ```
 
 5) build vocab
+
+```bash
+nohup python3 data_proc/proc_medical_data/build_vocab_spm.py > logs/build_vocab_spm.log &
+```
