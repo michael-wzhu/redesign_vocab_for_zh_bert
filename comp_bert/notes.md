@@ -119,6 +119,13 @@ nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_151_185.sh > log
 nohup ./comp_bert/comp_spaced/scripts/create_pretrain_data_1321_186_218.sh > logs/comp_spaced_create_pretrain_data_1321_186_218.log &
 
 
+# char_segmented, vocab=21128
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_1_25.sh > char_segmented_create_pretrain_data_21128_1_25.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_26_65.sh > char_segmented_create_pretrain_data_21128_26_65.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_66_120.sh > char_segmented_create_pretrain_data_21128_66_120.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_121_170.sh > char_segmented_create_pretrain_data_21128_121_170.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_21128_171_218.sh > char_segmented_create_pretrain_data_21128_171_218.log &
+
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_1_25.sh > char_segmented_create_pretrain_data_5282_1_25.log &
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_26_65.sh > char_segmented_create_pretrain_data_5282_26_65.log &
@@ -127,12 +134,35 @@ nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_121_170.sh > 
 nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_5282_171_218.sh > char_segmented_create_pretrain_data_5282_171_218.log &
 
 
+# char_segmented, vocab=1321
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_1321_1_25.sh > char_segmented_create_pretrain_data_1321_1_25.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_1321_26_65.sh > char_segmented_create_pretrain_data_1321_26_65.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_1321_66_120.sh > char_segmented_create_pretrain_data_1321_66_120.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_1321_121_170.sh > char_segmented_create_pretrain_data_1321_121_170.log &
+nohup ./comp_bert/char_segmented/scripts/create_pretrain_data_1321_171_218.sh > char_segmented_create_pretrain_data_1321_171_218.log &
+
+
+# char_spaced, vocab=21128
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_21128_1_25.sh > char_spaced_create_pretrain_data_21128_1_25.log &
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_21128_26_65.sh > char_spaced_create_pretrain_data_21128_26_65.log &
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_21128_66_115.sh > char_spaced_create_pretrain_data_21128_66_115.log &
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_21128_116_175.sh > char_spaced_create_pretrain_data_21128_116_175.log &
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_21128_176_218.sh > char_spaced_create_pretrain_data_21128_176_218.log &
+
+
 # char_spaced, vocab=5282
 nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_5282_1_25.sh > char_spaced_create_pretrain_data_5282_1_25.log &
 nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_5282_26_65.sh > char_spaced_create_pretrain_data_5282_26_65.log &
 nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_5282_66_115.sh > char_spaced_create_pretrain_data_5282_66_115.log &
 nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_5282_116_175.sh > char_spaced_create_pretrain_data_5282_116_175.log &
 nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_5282_176_218.sh > char_spaced_create_pretrain_data_5282_176_218.log &
+
+# char_spaced, vocab=1321
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_1321_1_25.sh > char_spaced_create_pretrain_data_1321_1_25.log &
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_1321_26_65.sh > char_spaced_create_pretrain_data_1321_26_65.log &
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_1321_66_115.sh > char_spaced_create_pretrain_data_1321_66_115.log &
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_1321_116_175.sh > char_spaced_create_pretrain_data_1321_116_175.log &
+nohup ./comp_bert/char_spaced/scripts/create_pretrain_data_1321_176_218.sh > char_spaced_create_pretrain_data_1321_176_218.log &
 
 ```
 
@@ -164,13 +194,24 @@ nohup ./comp_bert/comp_spaced/scripts/run_pretrain_5282.sh > logs/subchar_spaced
 nohup ./comp_bert/comp_spaced/scripts/run_pretrain_1321.sh > logs/subchar_spaced_pretrain_1321.log &
 
 
-# char_segmented, vocab=5282
-nohup ./comp_bert/char_segmented/scripts/run_pretrain_5282.sh > logs/char_segmented_pretrain_5282.log &
+# char_segmented, vocab=21128
+nohup ./comp_bert/char_segmented/scripts/run_pretrain_21128.sh > logs/char_segmented_pretrain_21128.log & (xxx)
 
+# char_segmented, vocab=5282
+nohup ./comp_bert/char_segmented/scripts/run_pretrain_5282.sh > logs/char_segmented_pretrain_5282.log & 
+
+# char_segmented, vocab=1321
+nohup ./comp_bert/char_segmented/scripts/run_pretrain_1321.sh > logs/char_segmented_pretrain_1321.log & (xxx)
+
+
+# char_spaced, vocab=21128
+nohup ./comp_bert/char_spaced/scripts/run_pretrain_21128.sh > logs/char_spaced_pretrain_21128.log & (done)
 
 # char_spaced, vocab=5282
-nohup ./comp_bert/char_spaced/scripts/run_pretrain_5282.sh > logs/char_spaced_pretrain_5282.log & (xxx)
+nohup ./comp_bert/char_spaced/scripts/run_pretrain_5282.sh > logs/char_spaced_pretrain_5282.log & (done)
 
+# char_spaced, vocab=1321
+nohup ./comp_bert/char_spaced/scripts/run_pretrain_1321.sh > logs/char_spaced_pretrain_1321.log & (done)
 
 
 ```
@@ -1657,16 +1698,58 @@ I0825 08:21:41.454043 140142765135616 run_classifier.py:535] accuracy: 0.587226
 nohup ./comp_bert/char_spaced/scripts/run_classifier_chn_5282.sh > logs/char_spaced_run_classifier_chn_5282.log_to_commit &
 grep "accuracy: " logs/char_spaced_run_classifier_chn_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.875833
+I0825 10:14:33.573439 140186692491008 run_classifier.py:535] accuracy: 0.875833
+INFO:tensorflow:accuracy: 0.850833
+I0825 10:44:57.506156 139651468158720 run_classifier.py:535] accuracy: 0.850833
+INFO:tensorflow:accuracy: 0.880000
+I0825 11:16:29.915384 140349509478144 run_classifier.py:535] accuracy: 0.880000
+INFO:tensorflow:accuracy: 0.857500
+I0825 11:55:30.085951 140467678656256 run_classifier.py:535] accuracy: 0.857500
+INFO:tensorflow:accuracy: 0.861667
+I0825 12:34:29.538506 140085880317696 run_classifier.py:535] accuracy: 0.861667
+INFO:tensorflow:accuracy: 0.878333
+I0825 13:13:29.617632 140485960984320 run_classifier.py:535] accuracy: 0.878333
+INFO:tensorflow:accuracy: 0.870000
+I0825 13:52:29.983161 140403633612544 run_classifier.py:535] accuracy: 0.870000
+INFO:tensorflow:accuracy: 0.848333
+I0825 14:31:31.973386 140713819076352 run_classifier.py:535] accuracy: 0.848333
+INFO:tensorflow:accuracy: 0.872500
+I0825 15:10:29.713615 139745210304256 run_classifier.py:535] accuracy: 0.872500
+
+(0.8661110000000001, 0.01123543776529326)
 
 # char_spaced, vocab=5282
 nohup ./comp_bert/char_spaced/scripts/run_classifier_law_qa_5282.sh > logs/char_spaced_run_classifier_law_qa_5282.log_to_commit &
 grep "accuracy: " logs/char_spaced_run_classifier_law_qa_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.854861
+I0825 10:35:56.871708 140546171787008 run_classifier.py:535] accuracy: 0.854861
+INFO:tensorflow:accuracy: 0.854586
+I0825 11:16:46.739145 140445734926080 run_classifier.py:535] accuracy: 0.854586
+INFO:tensorflow:accuracy: 0.852382
+I0825 11:54:37.950382 140129600419584 run_classifier.py:535] accuracy: 0.852382
+INFO:tensorflow:accuracy: 0.855136
+I0825 12:26:56.873805 140471937767168 run_classifier.py:535] accuracy: 0.855136
+
+(0.85424125, 0.001090909110558719)
 
 # char_spaced, vocab=5282
 nohup ./comp_bert/char_spaced/scripts/run_classifier_lcqmc_5282.sh > logs/char_spaced_run_classifier_lcqmc_5282.log_to_commit &
 grep "accuracy: " logs/char_spaced_run_classifier_lcqmc_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.781440
+I0826 02:30:04.916332 140525468677888 run_classifier.py:535] accuracy: 0.781440
+INFO:tensorflow:accuracy: 0.773200
+I0826 02:55:29.150156 140493949363968 run_classifier.py:535] accuracy: 0.773200
+INFO:tensorflow:accuracy: 0.783600
+I0826 03:25:17.444669 139789036857088 run_classifier.py:535] accuracy: 0.783600
+INFO:tensorflow:accuracy: 0.788000
+I0826 03:52:26.015984 140104987440896 run_classifier.py:535] accuracy: 0.788000
+INFO:tensorflow:accuracy: 0.766320
+I0826 04:17:50.537730 140687999338240 run_classifier.py:535] accuracy: 0.766320
+
+(0.7785120000000001, 0.007763314755953161)
 
 # char_spaced, vocab=5282
 nohup ./comp_bert/char_spaced/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/char_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit &
@@ -1674,29 +1757,102 @@ grep "macro avg" logs/char_spaced_run_classifier_nlpcc_dbqa_5282.log_to_commit (
 
 
 
+{'0': {'recall': 0.9691954141706259, 'f1-score': 0.9667490856642457, 'precision': 0.9643150755318056, 'support': 77456}, 'accuracy': 0.9366660125588697, 'macro avg': {'recall': 0.6441565306147248, 'f1-score': 0.6509852534397438, 'precision': 0.658675975943777, 'support': 81536}, 'weighted avg': {'recall': 0.9366660125588697, 'f1-score': 0.9351479172116365, 'precision': 0.933727175062831, 'support': 81536}, '1': {'recall': 0.3191176470588235, 'f1-score': 0.335221421215242, 'precision': 0.3530368763557484, 'support': 4080}}
+  "macro avg": {
+  "macro avg": {
+  
+  
+{'accuracy': 0.9317479395604396, '0': {'recall': 0.9677752530468912, 'support': 77456, 'precision': 0.9606684694152174, 'f1-score': 0.9642087661189183}, 'weighted avg': {'recall': 0.9317479395604396, 'support': 81536, 'precision': 0.9270226861795478, 'f1-score': 0.9292963706111832}, '1': {'recall': 0.24779411764705883, 'support': 4080, 'precision': 0.28828058169375537, 'f1-score': 0.2665085013839462}, 'macro avg': {'recall': 0.607784685346975, 'support': 81536, 'precision': 0.6244745255544863, 'f1-score': 0.6153586337514323}}
+  "macro avg": {
+  "macro avg": {
+  
+  
+  
+{'weighted avg': {'precision': 0.9403521610034843, 'recall': 0.9439143445839875, 'f1-score': 0.9420207093943802, 'support': 81536}, '0': {'precision': 0.9672166878213264, 'recall': 0.9739723197686428, 'f1-score': 0.9705827484834645, 'support': 77456}, 'macro avg': {'precision': 0.6987821218140258, 'recall': 0.6736283167470665, 'f1-score': 0.6851863735854782, 'support': 81536}, '1': {'precision': 0.43034755580672507, 'recall': 0.3732843137254902, 'f1-score': 0.3997899986874918, 'support': 4080}, 'accuracy': 0.9439143445839875}
+  "macro avg": {
+  "macro avg": {
+  
+  
+  
+{'weighted avg': {'support': 81536, 'f1-score': 0.927472015211572, 'recall': 0.9290497448979592, 'precision': 0.9259610982764606}, 'macro avg': {'support': 81536, 'f1-score': 0.610300800229785, 'recall': 0.6056679617726042, 'precision': 0.615505571565405}, 'accuracy': 0.9290497448979592, '0': {'support': 77456, 'f1-score': 0.9627439994332709, 'recall': 0.9650123941334435, 'precision': 0.9604862440729366}, '1': {'support': 4080, 'f1-score': 0.2578576010262989, 'recall': 0.24632352941176472, 'precision': 0.27052489905787347}}
+  "macro avg": {
+  "macro avg": {
+  
+  
+  
+{'1': {'f1-score': 0.29656772932698183, 'recall': 0.29754901960784313, 'support': 4080, 'precision': 0.2955928901874848}, 'macro avg': {'f1-score': 0.6296926518281615, 'recall': 0.6300993910268095, 'support': 81536, 'precision': 0.6292891674587477}, 'weighted avg': {'f1-score': 0.9294789341261226, 'recall': 0.9293686224489796, 'support': 81536, 'precision': 0.9295896242024707}, 'accuracy': 0.9293686224489796, '0': {'f1-score': 0.9628175743293411, 'recall': 0.9626497624457757, 'support': 77456, 'precision': 0.9629854447300107}}
+  "macro avg": {
+  "macro avg": {
+  
+  [0.6509852534397438, 0.6153586337514323, 0.6851863735854782, 0.610300800229785, 0.6296926518281615, 0.6540865372933917]
+  
+{'accuracy': 0.9348999215070644, 'macro avg': {'recall': 0.6525144699482768, 'f1-score': 0.6540865372933917, 'support': 81536, 'precision': 0.6556996175369412}, 'weighted avg': {'recall': 0.9348999215070644, 'f1-score': 0.9345635448081261, 'support': 81536, 'precision': 0.9342318328963028}, '0': {'recall': 0.9663034497004751, 'f1-score': 0.9657548387096774, 'support': 77456, 'precision': 0.9652068503043434}, '1': {'recall': 0.33872549019607845, 'f1-score': 0.34241823587710607, 'support': 4080, 'precision': 0.34619238476953906}}
+
+
+[0.6509852534397438, 0.6153586337514323, 0.6851863735854782, 0.610300800229785, 0.6296926518281615, 0.6540865372933917]
+(0.6409350416879988, 0.025661740945204927)
+
 
 # char_spaced, vocab=5282
 nohup ./comp_bert/char_spaced/scripts/run_classifier_book_review_5282.sh > logs/char_spaced_run_classifier_book_review_5282.log_to_commit &
 grep "accuracy: " logs/char_spaced_run_classifier_book_review_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.769400
+I0826 02:40:10.897957 140358112175872 run_classifier.py:535] accuracy: 0.769400
+INFO:tensorflow:accuracy: 0.784900
+I0826 03:00:11.122016 140530634475264 run_classifier.py:535] accuracy: 0.784900
+INFO:tensorflow:accuracy: 0.777400
+I0826 03:39:08.977522 140293294286592 run_classifier.py:535] accuracy: 0.777400
+INFO:tensorflow:accuracy: 0.776600
+I0826 04:18:10.371695 140534035511040 run_classifier.py:535] accuracy: 0.776600
+INFO:tensorflow:accuracy: 0.783100
+I0826 04:57:11.407596 139789934700288 run_classifier.py:535] accuracy: 0.783100
 
+(0.77828, 0.00546823554723096)
 
 # char_spaced, vocab=5282
 nohup ./comp_bert/char_spaced/scripts/run_classifier_shopping_5282.sh > logs/char_spaced_run_classifier_shopping_5282.log_to_commit &
 grep "accuracy: " logs/char_spaced_run_classifier_shopping_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.913400
+I0825 10:56:30.050683 140209176618752 run_classifier.py:535] accuracy: 0.913400
+INFO:tensorflow:accuracy: 0.920000
+I0825 11:50:59.064877 140392547890944 run_classifier.py:535] accuracy: 0.920000
+INFO:tensorflow:accuracy: 0.915200
+I0825 12:43:11.057611 140706956273408 run_classifier.py:535] accuracy: 0.915200
 
+(0.9161999999999999, 0.0027856776554368435)
 
 # char_spaced, vocab=5282
 nohup ./comp_bert/char_spaced/scripts/run_classifier_weibo_5282.sh > logs/char_spaced_run_classifier_weibo_5282.log_to_commit &
 grep "accuracy: " logs/char_spaced_run_classifier_weibo_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.967300
+I0826 02:50:49.243530 139761418401536 run_classifier.py:535] accuracy: 0.967300
+INFO:tensorflow:accuracy: 0.966400
+I0826 03:18:44.089919 140259455153920 run_classifier.py:535] accuracy: 0.966400
+INFO:tensorflow:accuracy: 0.959500
+I0826 03:49:28.290684 139932517443328 run_classifier.py:535] accuracy: 0.959500
+INFO:tensorflow:accuracy: 0.961100
+I0826 04:28:28.399928 139694382540544 run_classifier.py:535] accuracy: 0.961100
+INFO:tensorflow:accuracy: 0.965900
+I0826 05:07:28.429215 139703956391680 run_classifier.py:535] accuracy: 0.965900
 
+(0.96404, 0.0031276828483719544)
 
 # char_spaced, vocab=5282
 nohup ./comp_bert/char_spaced/scripts/run_classifier_xnli_5282.sh > logs/char_spaced_run_classifier_xnli_5282.log_to_commit &
 grep "accuracy: " logs/char_spaced_run_classifier_xnli_5282.log_to_commit (xxx)
 
+INFO:tensorflow:accuracy: 0.587226
+I0826 03:34:03.056624 140288743036672 run_classifier.py:535] accuracy: 0.587226
+INFO:tensorflow:accuracy: 0.584431
+I0826 04:11:56.819350 139659916760832 run_classifier.py:535] accuracy: 0.584431
+INFO:tensorflow:accuracy: 0.592615
+I0826 04:49:57.825774 140251107505920 run_classifier.py:535] accuracy: 0.592615
+INFO:tensorflow:accuracy: 0.604391
+I0826 05:28:13.188903 139908120168192 run_classifier.py:535] accuracy: 0.604391
 
+(0.59216575, 0.007646666769743525)
 
 ```

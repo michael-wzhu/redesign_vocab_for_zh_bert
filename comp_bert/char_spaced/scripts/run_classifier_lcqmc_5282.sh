@@ -6,7 +6,7 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.186.250.74
+TPU_IP=10.149.151.74
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_spaced
