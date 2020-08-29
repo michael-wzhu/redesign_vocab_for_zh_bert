@@ -85,6 +85,7 @@ if __name__ == "__main__":
                     i + 1)
         )
         list_files_.append(file_)
+        print(i)
 
     num_files = 218
     for i in range(num_files):
