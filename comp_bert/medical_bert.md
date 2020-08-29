@@ -41,3 +41,8 @@ nohup python3 data_proc/proc_medical_data/merge_file_utils.py > logs/merge_files
 ```bash
 nohup python3 data_proc/proc_medical_data/build_vocab_spm.py > logs/build_vocab_spm.log &
 ```
+
+6) prepare tf records
+```bash
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_1_100.sh > logs/create_pretrain_data_21128_emr_1_100.log &
+```
