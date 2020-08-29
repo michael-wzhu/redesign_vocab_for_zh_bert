@@ -29,3 +29,9 @@ nohup ./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_401_600
 nohup ./comp_bert/char_segmented/scripts_for_medical/char2char_segmented_601_626.sh > logs/char2char_segmented_601_626.log &
 
 ```
+
+4) merge files
+
+```bash
+nohup python3 data_proc/merge_file_utils.py > logs/merge_files.log &
+```

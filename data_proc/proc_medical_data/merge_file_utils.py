@@ -77,17 +77,17 @@ if __name__ == "__main__":
     # txt_files2file(list_files_, to_dir_)
 
     list_files_ = []
-    num_files = 218
+    num_files = 626
     for i in range(num_files):
         file_ = os.path.join(
             STORAGE_BUCKET,
-            "data/corpus/subchar_segmented_lower/zhwiki-latest-pages-articles_%d_subchar_segmented_lower.txt" % (
+            "experiments/ehr_diagnose/datasets/char_segmented_lower/outpatient_%d_char_segmented_lower_simplified.txt" % (
                     i + 1)
         )
         list_files_.append(file_)
 
     to_dir_ = os.path.join(
         STORAGE_BUCKET,
-        "data/corpus/subchar_segmented_lower/zhwiki-latest-pages-articles_subchar_segmented_lower.txt")
+        "experiments/ehr_diagnose/datasets/char_segmented_lower/outpatient_char_segmented_lower_simplified.txt")
     txt_files2file(list_files_, to_dir_)
 
