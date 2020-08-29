@@ -51,4 +51,9 @@ nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_
 nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_401_500.sh > logs/create_pretrain_data_21128_emr_401_500.log &
 nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_501_600.sh > logs/create_pretrain_data_21128_emr_501_600.log &
 nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_emr_601_626.sh > logs/create_pretrain_data_21128_emr_601_626.log &
+
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_wiki_1_40.sh > logs/create_pretrain_data_21128_wiki_1_40.log & 
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_wiki_41_110.sh > logs/create_pretrain_data_21128_wiki_41_110.log & 
+nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_wiki_111_218.sh > logs/create_pretrain_data_21128_wiki_111_218.log & 
+
 ```
