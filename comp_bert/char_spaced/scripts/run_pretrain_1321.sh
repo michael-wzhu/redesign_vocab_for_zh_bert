@@ -4,11 +4,11 @@
 
 STORAGE_BUCKET=gs://sbt0
 
-TPU_IP=10.78.74.234
+TPU_IP=10.56.178.146
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_spaced
-VOCAB_SIZE=5282
+VOCAB_SIZE=1321
 
 python3 comp_bert/run_pretraining.py \
     --input_file=${STORAGE_BUCKET}/experiments/comp_bert/pretrain_tfrecords/${PREFIX}_${VOCAB_SIZE}/zhwiki_train_examples_*_*.tfrecord \

@@ -205,13 +205,13 @@ nohup ./comp_bert/char_segmented/scripts/run_pretrain_1321.sh > logs/char_segmen
 
 
 # char_spaced, vocab=21128
-nohup ./comp_bert/char_spaced/scripts/run_pretrain_21128.sh > logs/char_spaced_pretrain_21128.log & (done)
+nohup ./comp_bert/char_spaced/scripts/run_pretrain_21128.sh > logs/char_spaced_pretrain_21128.log & 
 
 # char_spaced, vocab=5282
-nohup ./comp_bert/char_spaced/scripts/run_pretrain_5282.sh > logs/char_spaced_pretrain_5282.log & (done)
+nohup ./comp_bert/char_spaced/scripts/run_pretrain_5282.sh > logs/char_spaced_pretrain_5282.log & 
 
 # char_spaced, vocab=1321
-nohup ./comp_bert/char_spaced/scripts/run_pretrain_1321.sh > logs/char_spaced_pretrain_1321.log & (done)
+nohup ./comp_bert/char_spaced/scripts/run_pretrain_1321.sh > logs/char_spaced_pretrain_1321.log & 
 
 
 ```
