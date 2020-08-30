@@ -18,6 +18,8 @@ tmp/*
 *.rar
 # logs/*
 *.log
+outpatients-emr/*
+
 
 
 # Distribution / packaging
