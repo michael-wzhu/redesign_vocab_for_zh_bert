@@ -62,6 +62,6 @@ nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_
 
 ```bash
 
-
+nohup ./comp_bert/char_segmented/scripts_for_medical/run_pretrain_21128.sh > medical_run_pretrain_21128.log &
 
 ```
