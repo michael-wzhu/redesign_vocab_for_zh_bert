@@ -57,3 +57,11 @@ nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_
 nohup ./comp_bert/char_segmented/scripts_for_medical/create_pretrain_data_21128_wiki_111_218.sh > logs/create_pretrain_data_21128_wiki_111_218.log & 
 
 ```
+
+7) run pretrain
+
+```bash
+
+
+
+```
