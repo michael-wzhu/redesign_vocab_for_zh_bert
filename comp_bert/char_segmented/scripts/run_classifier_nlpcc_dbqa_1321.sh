@@ -10,7 +10,7 @@ TPU_IP=10.132.160.186
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_segmented
-VOCAB_SIZE=5282
+VOCAB_SIZE=1321
 
 TASK_NAME=nlpcc_dbqa
 DATA_DIR=datasets/nlpcc-dbqa

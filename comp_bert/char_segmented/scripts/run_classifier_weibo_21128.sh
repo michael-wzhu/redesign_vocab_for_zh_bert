@@ -10,7 +10,7 @@ TPU_IP=10.165.184.58
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_segmented
-VOCAB_SIZE=5282
+VOCAB_SIZE=21128
 
 TASK_NAME=weibo
 DATA_DIR=datasets/weibo

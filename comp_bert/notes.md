@@ -1561,8 +1561,6 @@ nohup ./comp_bert/char_segmented/scripts/run_classifier_chn_21128.sh > logs/char
 grep "accuracy: " logs/char_segmented_run_classifier_chn_21128.log_to_commit (xxx)
 
 
-
-
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_chn_5282.sh > logs/char_segmented_run_classifier_chn_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_chn_5282.log_to_commit (done)
@@ -1577,6 +1575,7 @@ grep "accuracy: " logs/char_segmented_run_classifier_chn_1321.log_to_commit (xxx
 # char_segmented, vocab=21128
 nohup ./comp_bert/char_segmented/scripts/run_classifier_law_qa_21128.sh > logs/char_segmented_run_classifier_law_qa_21128.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_law_qa_21128.log_to_commit (xxx)
+
 
 
 # char_segmented, vocab=5282

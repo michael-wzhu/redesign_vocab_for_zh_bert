@@ -10,7 +10,7 @@ TPU_IP=10.187.138.58
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_segmented
-VOCAB_SIZE=5282
+VOCAB_SIZE=1321
 
 TASK_NAME=law_qa
 DATA_DIR=datasets/law_qa

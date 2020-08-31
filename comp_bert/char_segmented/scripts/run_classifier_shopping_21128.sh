@@ -10,7 +10,7 @@ TPU_IP=10.148.161.58
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_segmented
-VOCAB_SIZE=5282
+VOCAB_SIZE=21128
 
 TASK_NAME=shopping
 DATA_DIR=datasets/shopping

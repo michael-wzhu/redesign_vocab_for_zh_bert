@@ -6,14 +6,14 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.132.160.186
+TPU_IP=10.165.184.58
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_segmented
-VOCAB_SIZE=21128
+VOCAB_SIZE=1321
 
-TASK_NAME=nlpcc_dbqa
-DATA_DIR=datasets/nlpcc-dbqa
+TASK_NAME=weibo
+DATA_DIR=datasets/weibo
 
 DATE=0813
 
@@ -46,10 +46,10 @@ for run_idx in `seq 1 $((RUN_TIMES))`; do
       --optimizer=adamw \
       --train_batch_size=256 \
       --eval_batch_size=32 \
-      --learning_rate=5e-5 \
-      --warmup_step=600 \
-      --save_checkpoints_steps=750 \
-      --train_step=15000 \
+      --learning_rate=2e-5 \
+      --warmup_step=300 \
+      --save_checkpoints_steps=400 \
+      --train_step=8000 \
       --use_tpu=True \
       --tpu_name=${TPU_NAME} \
       --num_tpu_cores=8 \
