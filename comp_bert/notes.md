@@ -1623,16 +1623,22 @@ nohup ./comp_bert/char_segmented/scripts/run_classifier_nlpcc_dbqa_1321.sh > log
 grep "macro avg" logs/char_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit (xxx)
 
 
+# char_segmented, vocab=21128
+nohup ./comp_bert/char_segmented/scripts/run_classifier_book_review_21128.sh > logs/char_segmented_run_classifier_book_review_21128.log_to_commit &
+grep "accuracy: " logs/char_segmented_run_classifier_book_review_21128.log_to_commit (xxx)
+
+
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_book_review_5282.sh > logs/char_segmented_run_classifier_book_review_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_book_review_5282.log_to_commit (xxx)
 
-INFO:tensorflow:accuracy: 0.783300
-I0825 02:04:18.245216 139776369071872 run_classifier.py:535] accuracy: 0.783300
-INFO:tensorflow:accuracy: 0.787300
-I0825 02:23:08.357668 139890098325248 run_classifier.py:535] accuracy: 0.787300
-
 (0.7853, 0.002000)
+
+# char_segmented, vocab=1321
+nohup ./comp_bert/char_segmented/scripts/run_classifier_book_review_1321.sh > logs/char_segmented_run_classifier_book_review_1321.log_to_commit &
+grep "accuracy: " logs/char_segmented_run_classifier_book_review_1321.log_to_commit (xxx)
+
+
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_shopping_5282.sh > logs/char_segmented_run_classifier_shopping_5282.log_to_commit &
