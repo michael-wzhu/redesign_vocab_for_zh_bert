@@ -1556,61 +1556,72 @@ I0821 10:23:44.080285 139912884926208 run_classifier.py:535] accuracy: 0.854310
 
 ```bash
 
+# char_segmented, vocab=21128
+nohup ./comp_bert/char_segmented/scripts/run_classifier_chn_21128.sh > logs/char_segmented_run_classifier_chn_21128.log_to_commit &
+grep "accuracy: " logs/char_segmented_run_classifier_chn_21128.log_to_commit (xxx)
+
+
+
+
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_chn_5282.sh > logs/char_segmented_run_classifier_chn_5282.log_to_commit &
-grep "accuracy: " logs/char_segmented_run_classifier_chn_5282.log_to_commit (xxx)
-
-INFO:tensorflow:accuracy: 0.871667
-I0825 02:00:37.235349 139719687558912 run_classifier.py:535] accuracy: 0.871667
-INFO:tensorflow:accuracy: 0.880833
-I0825 02:19:21.298739 140109103163136 run_classifier.py:535] accuracy: 0.880833
+grep "accuracy: " logs/char_segmented_run_classifier_chn_5282.log_to_commit (done)
 
 (0.87625, 0.004583000000000004)
+
+# char_segmented, vocab=1321
+nohup ./comp_bert/char_segmented/scripts/run_classifier_chn_1321.sh > logs/char_segmented_run_classifier_chn_1321.log_to_commit &
+grep "accuracy: " logs/char_segmented_run_classifier_chn_1321.log_to_commit (xxx)
+
+
+# char_segmented, vocab=21128
+nohup ./comp_bert/char_segmented/scripts/run_classifier_law_qa_21128.sh > logs/char_segmented_run_classifier_law_qa_21128.log_to_commit &
+grep "accuracy: " logs/char_segmented_run_classifier_law_qa_21128.log_to_commit (xxx)
+
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_law_qa_5282.sh > logs/char_segmented_run_classifier_law_qa_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_law_qa_5282.log_to_commit (xxx)
 
-INFO:tensorflow:accuracy: 0.858166
-I0825 02:03:42.737190 139879124403968 run_classifier.py:535] accuracy: 0.858166
-INFO:tensorflow:accuracy: 0.853484
-I0825 02:23:31.543319 139740051719936 run_classifier.py:535] accuracy: 0.853484
+(0.8567, )
+
+
+# char_segmented, vocab=1321
+nohup ./comp_bert/char_segmented/scripts/run_classifier_law_qa_1321.sh > logs/char_segmented_run_classifier_law_qa_1321.log_to_commit &
+grep "accuracy: " logs/char_segmented_run_classifier_law_qa_1321.log_to_commit (xxx)
+
+
+# char_segmented, vocab=21128
+nohup ./comp_bert/char_segmented/scripts/run_classifier_lcqmc_21128.sh > logs/char_segmented_run_classifier_lcqmc_21128.log_to_commit &
+grep "accuracy: " logs/char_segmented_run_classifier_lcqmc_21128.log_to_commit (xxx)
+
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_lcqmc_5282.sh > logs/char_segmented_run_classifier_lcqmc_5282.log_to_commit &
 grep "accuracy: " logs/char_segmented_run_classifier_lcqmc_5282.log_to_commit (xxx)
 
-INFO:tensorflow:accuracy: 0.793600
-I0825 02:17:03.366427 139773689669376 run_classifier.py:535] accuracy: 0.793600
-INFO:tensorflow:accuracy: 0.783680
-I0825 02:42:06.030442 139805456787200 run_classifier.py:535] accuracy: 0.783680
-INFO:tensorflow:accuracy: 0.786400
-I0825 03:07:01.723360 140226122008320 run_classifier.py:535] accuracy: 0.786400
-
 (0.7878933333333333, 0.004185222680920177)
+
+# char_segmented, vocab=1321
+nohup ./comp_bert/char_segmented/scripts/run_classifier_lcqmc_1321.sh > logs/char_segmented_run_classifier_lcqmc_1321.log_to_commit &
+grep "accuracy: " logs/char_segmented_run_classifier_lcqmc_1321.log_to_commit (xxx)
+
+
+# char_segmented, vocab=21128
+nohup ./comp_bert/char_segmented/scripts/run_classifier_nlpcc_dbqa_21128.sh > logs/char_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit &
+grep "macro avg" logs/char_segmented_run_classifier_nlpcc_dbqa_21128.log_to_commit (xxx)
+
 
 # char_segmented, vocab=5282
 nohup ./comp_bert/char_segmented/scripts/run_classifier_nlpcc_dbqa_5282.sh > logs/char_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit &
 grep "macro avg" logs/char_segmented_run_classifier_nlpcc_dbqa_5282.log_to_commit (xxx)
 
-"macro avg": {
-  "macro avg": {
-{'1': {'f1-score': 0.29288924134284955, 'recall': 0.27156862745098037, 'precision': 0.3178427997705106, 'support': 4080}, 'macro avg': {'f1-score': 0.6292427120633968, 'recall': 0.6204336630334844, 'precision': 0.6398823223708414, 'support': 81536}, '0': {'f1-score': 0.965596182783944, 'recall': 0.9692986986159884, 'precision': 0.9619218449711723, 'support': 77456}, 'weighted avg': {'f1-score': 0.9319344343405611, 'recall': 0.9343848116169545, 'precision': 0.9296926148836197, 'support': 81536}, 'accuracy': 0.9343848116169545}
-  "macro avg": {
-  "macro avg": {
-  
-  
-  
-{'macro avg': {'recall': 0.6239601433426087, 'support': 81536, 'precision': 0.6313333238321547, 'f1-score': 0.627510595399419}, '0': {'recall': 0.9653222474695311, 'support': 77456, 'precision': 0.9623280178127855, 'f1-score': 0.9638228071645407}, 'weighted avg': {'recall': 0.9311592425431711, 'support': 81536, 'precision': 0.9292025676695121, 'f1-score': 0.9301651878552369}, '1': {'recall': 0.28259803921568627, 'support': 4080, 'precision': 0.3003386298515238, 'f1-score': 0.2911983836342973}, 'accuracy': 0.9311592425431711}
-  "macro avg": {
-  "macro avg": {
-  
-  
-  
-{'macro avg': {'f1-score': 0.6039284089881783, 'precision': 0.6311919061878404, 'support': 81536, 'recall': 0.5876061703342771}, 'accuracy': 0.9370830062794349, 'weighted avg': {'f1-score': 0.9308280042120781, 'precision': 0.9258084314466984, 'support': 81536, 'recall': 0.9370830062794349}, '0': {'f1-score': 0.9671818623813301, 'precision': 0.9585721531828557, 'support': 77456, 'recall': 0.9759476347862012}, '1': {'f1-score': 0.24067495559502664, 'precision': 0.3038116591928251, 'support': 4080, 'recall': 0.19926470588235295}}
-
 [0.6292427120633968, 0.627510595399419, 0.6039284089881783]
 (0.620227238816998, 0.011546686317612926)
+
+# char_segmented, vocab=1321
+nohup ./comp_bert/char_segmented/scripts/run_classifier_nlpcc_dbqa_1321.sh > logs/char_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit &
+grep "macro avg" logs/char_segmented_run_classifier_nlpcc_dbqa_1321.log_to_commit (xxx)
 
 
 # char_segmented, vocab=5282
