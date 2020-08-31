@@ -6,11 +6,11 @@
 
 
 STORAGE_BUCKET=gs://sbt0
-TPU_IP=10.96.193.82
+TPU_IP=10.6.150.186
 TPU_NAME=grpc://${TPU_IP}:8470
 
 PREFIX=char_segmented
-VOCAB_SIZE=21128
+VOCAB_SIZE=1321
 
 TASK_NAME=book_review
 DATA_DIR=datasets/book_review
