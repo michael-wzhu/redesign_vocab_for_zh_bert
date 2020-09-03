@@ -59,7 +59,7 @@ def tokenize_single_sent(sent, tokenizer=None):
 
 
 def char2char_single_sent(sent,
-                          dict_char2comp,
+                          dict_char2comp=None,
                           tokenizer=None):
     sent = tokenizer.basic_tokenizer.tokenize(sent)
 
@@ -98,13 +98,39 @@ def printable_text(text):
 
 
 if __name__ == "__main__":
-    text_ = "⿰⿱立朩斤 ⿱冖⿺⿱一兀寸 ⿸疒⿱一内 ⿱龶母 已 ⿸㡏土 ⿱⿱䒑土大 ⿴囗玉 ⿱艹⿳日罒又 ⿺廴⿱丿䖻 ！"
+    text_ = "中国四大古城是哪些？"
 
     bpe_tokenizer = tokenization.FullTokenizer(
-        vocab_file="data_proc/tokenizers/sentencepiece/subchar_spaced_lower-21128-clean.vocab",
+        vocab_file="data_proc/tokenizers/sentencepiece/char_spaced_lower-21128-clean.vocab",
         do_lower_case=True,
-        spm_model_file="data_proc/tokenizers/sentencepiece/subchar_spaced_lower-21128-clean.model")
-    text_seg = tokenize_single_sent(text_, tokenizer=bpe_tokenizer)
+        spm_model_file="data_proc/tokenizers/sentencepiece/char_spaced_lower-21128-clean.model")
+    text_seg = char2char_single_sent(
+        text_,
+        tokenizer=bpe_tokenizer
+    )
     print(text_seg)
+    #['▁中', '▁国', '▁四', '▁大', '▁古', '▁城', '▁是', '▁', '哪', '▁些', '▁?']
+
+    bpe_tokenizer = tokenization.FullTokenizer(
+        vocab_file="data_proc/tokenizers/sentencepiece/char_spaced_lower-5282-clean.vocab",
+        do_lower_case=True,
+        spm_model_file="data_proc/tokenizers/sentencepiece/char_spaced_lower-5282-clean.model")
+    text_seg = char2char_single_sent(
+        text_,
+        tokenizer=bpe_tokenizer
+    )
+    print(text_seg)
+    #['▁中', '▁国', '▁四', '▁大', '▁古', '▁城', '▁是', '▁', '哪', '▁些', '▁?']
+
+    bpe_tokenizer = tokenization.FullTokenizer(
+        vocab_file="data_proc/tokenizers/sentencepiece/char_spaced_lower-1321-clean.vocab",
+        do_lower_case=True,
+        spm_model_file="data_proc/tokenizers/sentencepiece/char_spaced_lower-1321-clean.model")
+    text_seg = char2char_single_sent(
+        text_,
+        tokenizer=bpe_tokenizer
+    )
+    print(text_seg)
+    # ['▁中', '▁国', '▁', '四', '▁大', '▁', '古', '▁', '城', '▁是', '▁', '哪', '▁', '些', '▁', '?']
 
 

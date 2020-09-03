@@ -122,11 +122,4 @@ def printable_text(text):
 
 
 if __name__ == "__main__":
-    text_ = "⿰⿱立朩斤⿱冖⿺⿱一兀寸 ⿸疒⿱一内⿱龶母 已 ⿸㡏土 ⿱人王世⿱田⿱人⿰丿丨 ⿱艹⿳日罒又⿺廴⿱丿䖻 ！"
 
-    bpe_tokenizer = tokenization.FullTokenizer(
-        vocab_file="data_proc/tokenizers/sentencepiece/subchar_segmented_lower-21128-clean.vocab",
-        do_lower_case=True,
-        spm_model_file="data_proc/tokenizers/sentencepiece/subchar_segmented_lower-21128-clean.model")
-    text_seg = tokenize_single_sent(text_, tokenizer=bpe_tokenizer)
-    print(text_seg)
