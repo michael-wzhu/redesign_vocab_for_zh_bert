@@ -74,11 +74,14 @@ def char2comp_single_sent(sent,
         if contain_chinese_char(seg, tokenizer):
 
             seg_new = ""
-            for char in seg:
+            for i, char in enumerate(seg):
                 if contain_chinese_char(char, tokenizer):
                     tmp_ = char2comp_single_char(char, dict_char2comp)
                     if tmp_:
-                        seg_new += tmp_ + sep_token
+                        if i == len(seg) - 1:
+                            seg_new += tmp_
+                        else:
+                            seg_new += tmp_ + sep_token
                     else:
                         seg_new += char + sep_token
                 else:
@@ -90,6 +93,7 @@ def char2comp_single_sent(sent,
             sent_new.append(seg)
 
     sent_new = " ".join(sent_new)
+    print(sent_new)
     # drop redundent blank
     sent_new = drop_extra_blank(sent_new)
 
@@ -122,4 +126,52 @@ def printable_text(text):
 
 
 if __name__ == "__main__":
+    dict_char2comp = json.load(
+        open("data_proc/proc_comps/vocab/dict_char2comps_remapped_joined.json", "r", encoding="utf-8")
+    )
+
+    text_ = "我喜欢篮球"
+
+    bpe_tokenizer = tokenization.FullTokenizer(
+        vocab_file="data_proc/tokenizers/sentencepiece/subchar_segmented_lower-21128-clean.vocab",
+        do_lower_case=True,
+        spm_model_file="data_proc/tokenizers/sentencepiece/subchar_segmented_lower-21128-clean.model")
+    text_seg = char2comp_single_sent(
+        text_,
+        dict_char2comp=dict_char2comp,
+        tokenizer=bpe_tokenizer
+    )
+    print("vocab: ", len(bpe_tokenizer.vocab))
+    print(text_seg)
+    print(len(text_seg))
+    print(" ".join(text_seg))
+
+    bpe_tokenizer = tokenization.FullTokenizer(
+        vocab_file="data_proc/tokenizers/sentencepiece/subchar_segmented_lower-5282-clean.vocab",
+        do_lower_case=True,
+        spm_model_file="data_proc/tokenizers/sentencepiece/subchar_segmented_lower-5282-clean.model")
+    text_seg = char2comp_single_sent(
+        text_,
+        dict_char2comp=dict_char2comp,
+        tokenizer=bpe_tokenizer
+    )
+    print("vocab: ", len(bpe_tokenizer.vocab))
+    print(text_seg)
+    print(len(text_seg))
+    print(" ".join(text_seg))
+
+    bpe_tokenizer = tokenization.FullTokenizer(
+        vocab_file="data_proc/tokenizers/sentencepiece/subchar_segmented_lower-1321-clean.vocab",
+        do_lower_case=True,
+        spm_model_file="data_proc/tokenizers/sentencepiece/subchar_segmented_lower-1321-clean.model")
+    text_seg = char2comp_single_sent(
+        text_,
+        dict_char2comp=dict_char2comp,
+        tokenizer=bpe_tokenizer
+    )
+    print("vocab: ", len(bpe_tokenizer.vocab))
+    print(text_seg)
+    print(len(text_seg))
+    print(" ".join(text_seg))
+
 

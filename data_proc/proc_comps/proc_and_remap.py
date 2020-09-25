@@ -126,34 +126,45 @@ if __name__ == "__main__":
     #################
     # 使用 RAN 的映射表，并保留田字格
     #################
-    dict_dir_ = "data_proc/proc_comps/vocab/IDS_dictionary.txt"
-    ids_dict_char2comps = read_dict_char2comps(dict_dir_)
+    # dict_dir_ = "data_proc/proc_comps/vocab/IDS_dictionary.txt"
+    # ids_dict_char2comps = read_dict_char2comps(dict_dir_)
+    #
+    # # check whether chars in chinese bert vocab are in ids_dict_char2comps
+    # bpe_tokenizer = BertTokenizer.from_pretrained("bert-base-chinese")
+    #
+    # bert_vocab_file = "data_proc/proc_comps/vocab/bert-chinese-vocab.txt"
+    # check_bert_vocab(bert_vocab_file, ids_dict_char2comps, bpe_tokenizer=bpe_tokenizer)
+    #
+    # dict_comp2comp_remapped = remap_comps(ids_dict_char2comps)
+    # with open("data_proc/proc_comps/vocab/dict_comp2comp_remapped.json", "w", encoding="utf-8") as f:
+    #     json.dump(
+    #         dict_comp2comp_remapped,
+    #         f,
+    #         ensure_ascii=False
+    #     )
 
-    # check whether chars in chinese bert vocab are in ids_dict_char2comps
-    bpe_tokenizer = BertTokenizer.from_pretrained("bert-base-chinese")
-
-    bert_vocab_file = "data_proc/proc_comps/vocab/bert-chinese-vocab.txt"
-    check_bert_vocab(bert_vocab_file, ids_dict_char2comps, bpe_tokenizer=bpe_tokenizer)
-
-    dict_comp2comp_remapped = remap_comps(ids_dict_char2comps)
-    with open("data_proc/proc_comps/vocab/dict_comp2comp_remapped.json", "w", encoding="utf-8") as f:
+    dict_comp2comp_remapped = json.load(
+        open("data_proc/proc_comps/vocab/dict_comp2comp_remapped.json", "r", encoding="utf-8")
+    )
+    dict_comp2comp_remapped_reversed = {v: k for k, v in dict_comp2comp_remapped.items()}
+    with open("data_proc/proc_comps/vocab/dict_comp2comp_remapped_reversed.json", "w", encoding="utf-8") as f:
         json.dump(
-            dict_comp2comp_remapped,
+            dict_comp2comp_remapped_reversed,
             f,
             ensure_ascii=False
         )
 
-    dict_char2comps_remap, dict_char2comps_remap_joined = \
-        get_char2comps_remapped(ids_dict_char2comps, dict_comp2comp_remapped)
-    with open("data_proc/proc_comps/vocab/dict_char2comps_remapped.json", "w", encoding="utf-8") as f:
-        json.dump(
-            dict_char2comps_remap,
-            f,
-            ensure_ascii=False
-        )
-    with open("data_proc/proc_comps/vocab/dict_char2comps_remapped_joined.json", "w", encoding="utf-8") as f:
-        json.dump(
-            dict_char2comps_remap_joined,
-            f,
-            ensure_ascii=False
-        )
+    # dict_char2comps_remap, dict_char2comps_remap_joined = \
+    #     get_char2comps_remapped(ids_dict_char2comps, dict_comp2comp_remapped)
+    # with open("data_proc/proc_comps/vocab/dict_char2comps_remapped.json", "w", encoding="utf-8") as f:
+    #     json.dump(
+    #         dict_char2comps_remap,
+    #         f,
+    #         ensure_ascii=False
+    #     )
+    # with open("data_proc/proc_comps/vocab/dict_char2comps_remapped_joined.json", "w", encoding="utf-8") as f:
+    #     json.dump(
+    #         dict_char2comps_remap_joined,
+    #         f,
+    #         ensure_ascii=False
+    #     )

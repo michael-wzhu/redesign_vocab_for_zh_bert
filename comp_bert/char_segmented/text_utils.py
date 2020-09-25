@@ -67,8 +67,10 @@ def char2char_single_sent(sent,
 
     sent = list(jieba.cut(sent))
     sent = [w.strip() for w in sent if len(w.strip()) > 0]
+    print(sent)
 
     sent_new = " ".join(sent)
+    print(sent_new)
     # drop redundent blank
     sent_new = drop_extra_blank(sent_new)
 
@@ -101,7 +103,7 @@ def printable_text(text):
 
 
 if __name__ == "__main__":
-    text_ = "中国四大古城是哪些？"
+    text_ = "我喜欢篮球"
 
     bpe_tokenizer = tokenization.FullTokenizer(
         vocab_file="data_proc/tokenizers/sentencepiece/char_segmented_lower-21128-clean.vocab",
@@ -111,8 +113,9 @@ if __name__ == "__main__":
         text_,
         tokenizer=bpe_tokenizer
     )
+    print("vocab: ", len(bpe_tokenizer.vocab))
     print(text_seg)
-    # ['▁中国', '▁四大', '▁古城', '▁是', '▁哪些', '▁?']
+    print(" ".join(text_seg))
 
     bpe_tokenizer = tokenization.FullTokenizer(
         vocab_file="data_proc/tokenizers/sentencepiece/char_segmented_lower-5282-clean.vocab",
@@ -122,8 +125,9 @@ if __name__ == "__main__":
         text_,
         tokenizer=bpe_tokenizer
     )
+    print("vocab: ", len(bpe_tokenizer.vocab))
     print(text_seg)
-    # ['▁中国', '▁四', '大', '▁古', '城', '▁是', '▁', '哪', '些', '▁?']
+    print(" ".join(text_seg))
 
     bpe_tokenizer = tokenization.FullTokenizer(
         vocab_file="data_proc/tokenizers/sentencepiece/char_segmented_lower-1321-clean.vocab",
@@ -133,5 +137,6 @@ if __name__ == "__main__":
         text_,
         tokenizer=bpe_tokenizer
     )
+    print("vocab: ", len(bpe_tokenizer.vocab))
     print(text_seg)
-    # ['▁中', '国', '▁', '四', '大', '▁', '古', '城', '▁是', '▁', '哪', '些', '▁', '?']
+    print(" ".join(text_seg))

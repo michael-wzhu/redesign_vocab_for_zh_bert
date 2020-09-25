@@ -81,6 +81,7 @@ def char2comp_single_sent(sent,
             sent_new.append(seg)
 
     sent_new = " ".join(sent_new)
+    print(sent_new)
 
     line_seg = tokenize_single_sent(
         sent_new,
@@ -119,7 +120,7 @@ if __name__ == "__main__":
         open("data_proc/proc_comps/vocab/dict_char2comps_remapped_joined.json", "r", encoding="utf-8")
     )
 
-    text_ = "中国四大古城是哪些？"
+    text_ = "我喜欢篮球"
 
     bpe_tokenizer = tokenization.FullTokenizer(
         vocab_file="data_proc/tokenizers/sentencepiece/subchar_spaced_lower-21128-clean.vocab",
@@ -130,9 +131,10 @@ if __name__ == "__main__":
         dict_char2comp=dict_char2comp,
         tokenizer=bpe_tokenizer
     )
+    print("vocab: ", len(bpe_tokenizer.vocab))
     print(text_seg)
     print(len(text_seg))
-    # ['▁⿻', '口丨', '▁⿴', '囗玉', '▁⿴', '囗儿', '▁⿻', '一人', '▁⿱', '十口', '▁⿰', '土', '⿵', '戊𠃌', '▁⿱', '日', '⿱', '一龰', '▁⿰', '口', '⿰⿻', '刀二阝', '▁⿱⿰', '止匕二', '▁?']
+    print(" ".join(text_seg))
 
     bpe_tokenizer = tokenization.FullTokenizer(
         vocab_file="data_proc/tokenizers/sentencepiece/subchar_spaced_lower-5282-clean.vocab",
@@ -143,9 +145,10 @@ if __name__ == "__main__":
         dict_char2comp=dict_char2comp,
         tokenizer=bpe_tokenizer
     )
+    print("vocab: ", len(bpe_tokenizer.vocab))
     print(text_seg)
     print(len(text_seg))
-    # ['▁⿻', '口丨', '▁⿴', '囗玉', '▁⿴', '囗儿', '▁⿻', '一人', '▁⿱', '十口', '▁⿰', '土', '⿵', '戊𠃌', '▁⿱', '日', '⿱', '一龰', '▁⿰', '口', '⿰⿻', '刀二阝', '▁⿱⿰', '止匕二', '▁?']
+    print(" ".join(text_seg))
 
     bpe_tokenizer = tokenization.FullTokenizer(
         vocab_file="data_proc/tokenizers/sentencepiece/subchar_spaced_lower-1321-clean.vocab",
@@ -156,8 +159,7 @@ if __name__ == "__main__":
         dict_char2comp=dict_char2comp,
         tokenizer=bpe_tokenizer
     )
+    print("vocab: ", len(bpe_tokenizer.vocab))
     print(text_seg)
     print(len(text_seg))
-    # ['▁⿻', '口丨', '▁⿴', '囗玉', '▁⿴', '囗儿', '▁⿻', '一人', '▁⿱', '十口', '▁⿰', '土', '⿵', '戊𠃌', '▁⿱', '日', '⿱', '一龰', '▁⿰', '口', '⿰', '⿻', '刀二阝', '▁⿱⿰', '止匕二', '▁', '?']
-
-
+    print(" ".join(text_seg))

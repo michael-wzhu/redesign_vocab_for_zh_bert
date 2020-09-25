@@ -19,6 +19,7 @@ tmp/*
 # logs/*
 *.log
 outpatients-emr/*
+bert_visualization/*
 
 
 
