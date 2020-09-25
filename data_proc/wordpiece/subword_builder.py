@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
     # vocab: char
     # nohup python data_proc/wordpiece/subword_builder.py --corpus_filepattern ./tmp/zhwiki-latest-pages-articles_char_spaced_lower_simplified.txt --output_filename data_proc/tokenizers/wordpiece/char.txt --min_count 2 --corpus_max_lines 30000000 > logs/vocab_char.log &
-    # python data_proc/wordpiece/subword_builder.py --corpus_filepattern ./datasets/zh_sample/wiki.valid.raw.char --output_filename data_proc/tokenizers/wordpiece/char.txt.tmp --min_count 1 --corpus_max_lines 30000000
+    # python data_proc/wordpiece/subword_builder.py --corpus_filepattern ./datasets/zh_sample/wiki.valid.raw.char --output_filename data_proc/tokenizers/wordpiece/char.txt.tmp --min_count 2 --corpus_max_lines 30000000
 
     # vocab: seg_tok
     # python data_proc/wordpiece/subword_builder.py --corpus_filepattern ./tmp/zhwiki-latest-pages-articles_char_segmented_lower_simplified.txt --output_filename data_proc/tokenizers/wordpiece/seg_tok.txt --min_count 3 --corpus_max_lines 30000000
