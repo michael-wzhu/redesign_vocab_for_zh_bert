@@ -117,3 +117,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+    # python data_proc/char2char_spaced_mp.py datasets/zh_sample/wiki.valid.raw datasets/zh_sample/wiki.valid.raw.char 1
