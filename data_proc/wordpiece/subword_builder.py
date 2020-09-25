@@ -32,8 +32,8 @@ from __future__ import absolute_import
 from __future__ import division
 
 import sys
-
 sys.path.append("./")
+
 from data_proc.wordpiece import text_encoder
 from data_proc.wordpiece import tokenizer
 
