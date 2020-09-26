@@ -20,6 +20,7 @@ tmp/*
 *.log
 outpatients-emr/*
 bert_visualization/*
+*.json
 
 
 
