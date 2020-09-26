@@ -32,9 +32,8 @@ def get_words_freq(corpus_file, to_folder):
         reverse=True
     )
 
-
     json.dump(
-        dict_word2freq,
+        list_word2freq,
         open(os.path.join(to_folder, "dict_word2freq.json"), "w", encoding="utf-8")
     )
 
