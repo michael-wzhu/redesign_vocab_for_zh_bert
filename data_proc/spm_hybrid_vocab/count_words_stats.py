@@ -25,6 +25,13 @@ def get_words_freq(corpus_file, to_folder):
 
                 dict_word2freq[w] += 1
 
+    list_word2freq = list(dict_word2freq.items())
+    list_word2freq = sorted(
+        list_word2freq,
+        key=lambda x: x[1],
+        reverse=True
+    )
+
 
     json.dump(
         dict_word2freq,
