@@ -66,7 +66,8 @@ if __name__ == "__main__":
         do_lower_case=True,
         spm_model_file="data_proc/tokenizers/sentencepiece/char_segmented-21128-clean.model"
     )
-    sent = "我 喜欢 篮球"
+    # sent = "我 喜欢 篮球"
+    sent = "我 好色"
     line_seg = tokenize_single_sent(sent, tokenizer=bpe_tokenizer)
     line_seg = ["[CLS]"] + line_seg + ["[SEP]"]
     print(line_seg)
