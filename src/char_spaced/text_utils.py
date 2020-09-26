@@ -62,7 +62,16 @@ def proc_single_sent(sent):
 def tokenize_single_sent(sent, tokenizer=None):
     sent = proc_single_sent(sent)
 
-    line_seg = tokenizer.tokenize(sent)
+    # sent = sent.split(" ")
+
+
+    # line_seg = tokenizer.tokenize(sent)
+
+    sent = sent.split(" ")
+    line_seg = []
+    for w in sent:
+        line_seg.extend(tokenizer.tokenize(w))
+
 
     return line_seg
 
@@ -73,8 +82,11 @@ if __name__ == "__main__":
         do_lower_case=True,
         spm_model_file="data_proc/tokenizers/sentencepiece/char_spaced-21128-clean.model"
     )
-    sent = "不是电脑高手千万别买，没有windows系统，而且主板和bios有很多限制"
+    # sent = "我喜欢篮球"
+    sent = "▁我 ▁喜欢 ▁篮球"
     line_seg = tokenize_single_sent(sent, tokenizer=bpe_tokenizer)
     line_seg = ["[CLS]"] + line_seg + ["[SEP]"]
     print(line_seg)
     print(" ".join(line_seg))
+
+    # [CLS] ▁我 ▁喜 ▁欢 ▁篮 ▁球 [SEP]

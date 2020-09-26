@@ -15,11 +15,11 @@ if __name__ == "__main__":
     # vocab_sizes = [10564, 21128, 31692]
     # vocab_sizes = [5282, ]
     # vocab_sizes = [21128, 1321]
-    vocab_sizes = [1321]
+    vocab_sizes = [63384, ]
     prefixes = [
 
         "char_segmented",
-        "char_spaced",
+        # "char_spaced",
         # "char_no_space",
     ]
 
@@ -32,11 +32,11 @@ if __name__ == "__main__":
                 "data/corpus/%s_lower/zhwiki-latest-pages-articles_%s_lower_simplified.txt" % (prefix, prefix)
             )
             input_dir_local = "./tmp/zhwiki-latest-pages-articles_%s_lower_simplified.txt" % prefix
-            tf.gfile.Copy(input_dir_gs, input_dir_local, overwrite=True)
+            # tf.gfile.Copy(input_dir_gs, input_dir_local, overwrite=False)
 
             try:
                 spm.SentencePieceTrainer.train(
-                    '--input=./tmp/zhwiki-latest-pages-articles_%s_lower_simplified.txt --model_prefix=./data_proc/tokenizers/sentencepiece/%s_lower-%d-clean --vocab_size=%d --pad_id=0 --unk_id=1 --eos_id=-1 --bos_id=-1 --control_symbols=[CLS],[SEP],[MASK] --user_defined_symbols=(,),”,-,.,–,£,€ --shuffle_input_sentence=true --input_sentence_size=300 --shuffle_input_sentence=true --model_type=bpe --num_threads=12 --character_coverage=0.98' % (
+                    '--input=./tmp/zhwiki-latest-pages-articles_%s_lower_simplified.txt --model_prefix=./data_proc/tokenizers/sentencepiece/%s_lower-%d-clean --vocab_size=%d --pad_id=0 --unk_id=1 --eos_id=-1 --bos_id=-1 --control_symbols=[CLS],[SEP],[MASK] --user_defined_symbols=(,),”,-,.,–,£,€ --shuffle_input_sentence=true --input_sentence_size=30000000 --shuffle_input_sentence=true --model_type=bpe --num_threads=12' % (
                     prefix, prefix, vocab_size, vocab_size)
                 )
 

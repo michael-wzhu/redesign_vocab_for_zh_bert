@@ -33,7 +33,6 @@ from __future__ import division
 
 import sys
 sys.path.append("./")
-
 from data_proc.wordpiece import text_encoder
 from data_proc.wordpiece import tokenizer
 
@@ -46,6 +45,7 @@ tf.flags.DEFINE_string('corpus_filepattern', '',
 tf.flags.DEFINE_string('vocab_filepattern', '', 'One or more vocabulary files '
                                                 '(one word per line as "word,count")')
 tf.flags.DEFINE_integer('min_count', 5, 'Minimum subtoken count in corpus')
+tf.flags.DEFINE_integer('target_size', 5, 'target vocab size ')
 tf.flags.DEFINE_integer('corpus_max_lines', None,
                         'How many lines of corpus to read')
 tf.flags.DEFINE_integer('num_iterations', 5, 'Number of iterations')
@@ -75,18 +75,28 @@ def main(unused_argv):
             'Must provide one of --corpus_filepattern or --vocab_filepattern')
 
     encoder = text_encoder.SubwordTextEncoder()
-    encoder.build_from_token_counts(token_counts, FLAGS.min_count,
-                                    FLAGS.num_iterations, max_subtoken_length=FLAGS.max_subtoken_length)
-    encoder.store_to_file(FLAGS.output_filename, add_single_quotes=False)
+    # encoder.build_from_token_counts(token_counts,
+    #                                 FLAGS.min_count,
+    #                                 FLAGS.num_iterations,
+    #                                 max_subtoken_length=FLAGS.max_subtoken_length)
+
+    subtokenizer = encoder.build_to_target_size(
+        FLAGS.target_size,
+        token_counts,
+        min_val=int(1e0),
+        max_val=int(4112),
+        max_subtoken_length=None,
+        reserved_tokens=None,
+        num_iterations=4
+    )
+
+    subtokenizer.store_to_file(FLAGS.output_filename, add_single_quotes=False)
+
+
     # encoder.store_to_file_with_counts(FLAGS.output_filename + "_counts")
 
 
 if __name__ == '__main__':
     tf.app.run()
 
-    # vocab: char
-    # nohup python data_proc/wordpiece/subword_builder.py --corpus_filepattern ./tmp/zhwiki-latest-pages-articles_char_spaced_lower_simplified.txt --output_filename data_proc/tokenizers/wordpiece/char.txt --min_count 2 --corpus_max_lines 30000000 > logs/vocab_char.log &
-    # python data_proc/wordpiece/subword_builder.py --corpus_filepattern ./datasets/zh_sample/wiki.valid.raw.char --output_filename data_proc/tokenizers/wordpiece/char.txt.tmp --min_count 2 --corpus_max_lines 30000000
-
-    # vocab: seg_tok
-    # python data_proc/wordpiece/subword_builder.py --corpus_filepattern ./tmp/zhwiki-latest-pages-articles_char_segmented_lower_simplified.txt --output_filename data_proc/tokenizers/wordpiece/seg_tok.txt --min_count 3 --corpus_max_lines 30000000
+    # python data_proc/wordpiece/subword_builder.py --corpus_filepattern=datasets/zh_sample/wiki.valid.raw.char --corpus_max_lines=30000000 --output_filename=data_proc/tokenizers/wordpiece/char.txt.tmp --min_count=200 --target_size=21128

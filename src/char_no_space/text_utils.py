@@ -73,8 +73,10 @@ if __name__ == "__main__":
         do_lower_case=True,
         spm_model_file="data_proc/tokenizers/sentencepiece/char_no_space-21128-clean.model"
     )
-    sent = "不是电脑高手千万别买，没有windows系统，而且主板和bios有很多限制"
+    sent = "我喜欢篮球"
     line_seg = tokenize_single_sent(sent, tokenizer=bpe_tokenizer)
     line_seg = ["[CLS]"] + line_seg + ["[SEP]"]
     print(line_seg)
     print(" ".join(line_seg))
+
+    # [CLS] ▁我 喜欢 篮球 [SEP]

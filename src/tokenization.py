@@ -113,6 +113,9 @@ def encode_pieces(sp_model, text, return_unicode=True, sample=False):
         pieces = sp_model.EncodeAsPieces(text)
     else:
         pieces = sp_model.SampleEncodeAsPieces(text, 64, 0.1)
+
+    print("pieces: ", pieces)
+
     new_pieces = []
     for piece in pieces:
         piece = printable_text(piece)
